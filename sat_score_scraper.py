@@ -14,15 +14,16 @@ def get_scores():
 	school_jsons = []
 	for i in range(len(schools)):
 		school_JSON = {} 
-		school_JSON["school"] = re.sub(' +', ' ', schools[i]) # Clean up extraneous spaces 
+		school_JSON["school"] = re.sub(' +', ' ', schools[i]) + "" # Clean up extraneous spaces 
 		school_JSON["scores"] = {}
-		school_JSON["scores"]["sat_math"] = stats[i*3]
-		school_JSON["scores"]["sat_reading"] = stats[i*3+1]
-		school_JSON["scores"]["act"] = stats[i*3+2] 
+		school_JSON["scores"]["sat_math"] = stats[i*3] + ""
+		school_JSON["scores"]["sat_reading"] = stats[i*3+1] + ""
+		school_JSON["scores"]["act"] = stats[i*3+2] + ""
 		school_jsons.append(school_JSON)
 
 	print school_jsons
 
+# Had to run `sed -i -e "s/\'/\"/g" scores.json` to convert `'` to `"`
 get_scores()
 
 
