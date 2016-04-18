@@ -5,10 +5,7 @@ import requests as r
 import re # Regular expressions 
 import json
 
-
-
 def get_scores(): 
-
 	page = r.get("https://www.powerscore.com/sat/help/average_test_scores.cfm")
 	tree = html.fromstring(page.content)
 	schools = tree.xpath('//table[@id="collegestats"]/tbody/tr/td/b/text()')
