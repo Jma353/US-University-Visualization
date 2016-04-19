@@ -1,6 +1,6 @@
 # CS3300 P2 - US Universities Visualization 
 
-## Clustering of US Universities across the country in terms of various parameters 
+## Clustering of US universities across the country in terms of various parameters 
 
 ## Data Sources 
 
