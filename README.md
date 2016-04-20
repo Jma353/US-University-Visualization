@@ -7,3 +7,8 @@
 	https://www.powerscore.com/sat/help/average_test_scores.cfm
 	
 	http://www.payscale.com/college-salary-report/bachelors?page=1
+
+	http://www.collegesimply.com/guides/low-acceptance-rate/?view=all
+
+
+	
