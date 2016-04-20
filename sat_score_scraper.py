@@ -21,9 +21,10 @@ def get_scores():
 		school_JSON["scores"]["act"] = stats[i*3+2] + ""
 		school_jsons.append(school_JSON)
 
-	print school_jsons
+	with open("scores.json", "w") as outfile: 
+		json.dump(school_jsons, outfile)
 
-# Had to run `sed -i -e "s/\'/\"/g" scores.json` to convert `'` to `"`
+
 get_scores()
 
 
