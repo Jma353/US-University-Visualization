@@ -3,34 +3,64 @@
 import re # Regular expressions 
 import json
 
-# Obtain the scores.json file + corresponding JSON 
-with open('../JSONS/scores.json') as score_JSON: 
-	score_json = json.load(score_JSON)
+def compose_JSON(): 
+	# Obtain the scores.json file + corresponding JSON 
+	with open('../JSONS/scores.json') as score_JSON: 
+		score_json = json.load(score_JSON)
 
-# Obtain the curated_salaries.json + corresponding JSON 
-with open('../JSONS/curated_salaries.json') as salary_JSON: 
-	salary_json = json.load(salary_JSON)
+	# Obtain the curated_salaries.json + corresponding JSON 
+	with open('../JSONS/curated_salaries.json') as salary_JSON: 
+		salary_json = json.load(salary_JSON)
 
-# Obtain the admissions.json + corresponding JSON 
-with open('../JSONS/admissions.json') as admissions_JSON: 
-	admissions_json = json.load(admissions_JSON)
+	# Obtain the admissions.json + corresponding JSON 
+	with open('../JSONS/admissions.json') as admissions_JSON: 
+		admissions_json = json.load(admissions_JSON)
 
-
-overall_json = []
-
-for i in score_json: 
-	for j in salary_json: 
-		if (j["school"] in i["school"]) or (i["school"] in j["school"]): 
-			element = {} 
-			element["score_JSON"] = i 
-			element["salary_JSON"] = j 
-			overall_json.append(element)
-
-for lol_json in overall_json: 
-	print lol_json
+	# Start forming the json with intersecting elements 
+	overall_json = []
+	# Intersect score and salary 
+	for i in score_json: 
+		for j in salary_json: 
+			if (j["school"] in i["school"]) or (i["school"] in j["school"]): 
+				element = { "school": i["school"] } 
+				element["score_JSON"] = i
+				element["salary_JSON"] = j 
+				overall_json.append(element)
 
 
+	# At this point, have intersection of SCORES and SALARIES; need ADMISSIONS 
+
+	# Start forming the json with finalized, interesected JSONs 
+	final_json = []
+	# Intersect overall and admissions  
+	for i in overall_json: # i represents overall 
+		for j in admissions_json: 
+			if (j["school"] in i["school"]) or (i["school"] in j["school"]): 
+				element = { "school": i["school"] }
+				element["score_JSON"] = i["score_JSON"]
+				element["salary_JSON"] = i["salary_JSON"]
+				element["admissions_JSON"] = j
+				final_json.append(element)
 
 
-# inJorK = (j["school"] in k["school"]) or (k["school"] in j["school"])
-# inIorK = (k["school"] in i["school"]) or (i["school"] in k["school"])
+	#	Remove duplicate "schools" tags 
+	for i in range(len(final_json)): 
+		final_json[i]["score_JSON"].pop("school", 0)
+		final_json[i]["salary_JSON"].pop("school", 0)
+		final_json[i]["admissions_JSON"].pop("school", 0)
+
+		# Print out the resultant entry 
+		# print final_json[i] 
+		# print "\n"
+
+	# dump final_json to file 
+	with open("../schools.json", "w") as outfile: 
+		json.dump(final_json, outfile)
+
+
+
+compose_JSON() 
+
+
+
+
