@@ -4,15 +4,14 @@
 
 ## Data Sources 
 
-	https://www.powerscore.com/sat/help/average_test_scores.cfm // Test scores 
-	
 	http://www.payscale.com/college-salary-report/bachelors?page=1 // Salaries 
 
-	http://www.collegesimply.com/guides/low-acceptance-rate/?view=all // Acceptance rates 
+	http://www.collegesimply.com/guides/1600-on-the-sat // SAT + admissions 
 
 	https://developers.google.com/maps/documentation/geocoding/intro#Geocoding // Geocoding 
 
-	
+	http://www.collegesimply.com/guides/low-acceptance-rate/?view=all // Not currently used 
 
+	https://www.powerscore.com/sat/help/average_test_scores.cfm // Not currently used 
 
 	
