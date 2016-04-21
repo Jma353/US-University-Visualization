@@ -1,0 +1,218 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<!--[if lt IE 7]> <html lang="en" class="ie ie6 ielte9 ielte8 ielte7 ielte6"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="ie ie7 ielte9 ielte8 ielte7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8 ielte9 ielte8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie ie9 ielte9"> <![endif]-->
+<!--[if gt IE 9]> <html lang="en" class="ie"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+   <!-- Screen Title -->
+   <title>Cornell University - The College Board</title>
+	<link rel="image_src" href="https://bigfuture.collegeboard.org/images/bigfuture-social-logo.png" />
+
+
+
+    <meta property="og:image" content="https://bigfuture.collegeboard.org/images/bigfuture-social-logo.png"/>
+    <link rel="icon" href="/favicon.ico" />
+      <meta name="keywords" content="college search, university, schools, institutions,college matchmaker,cornell university">
+      <meta name="description" content="Explore key Cornell University information including application requirements, popular majors, tuition, SAT scores, AP credit policies, and more.">
+      <meta name="webanalyticspagename" content="bigfuture/colleges/cornell-university">
+      <meta name="keywords2" content="">
+      <script type="text/javascript">
+         var cpWebAnalyticsPageName;
+         cpWebAnalyticsPageName = 'bigfuture/colleges/cornell-university';
+
+         var serializedPageInfoDto = '//OK[0,1,258,1,257,256,1,5,255,254,1,5,8,44,-66,1,5,-68,-144,-88,-66,4,5,250,253,74,252,251,46,250,46,70,-123,-63,249,21,-61,-122,-59,248,21,-57,247,21,-55,246,21,-53,245,21,-51,244,21,-49,243,21,-47,242,21,-45,-113,-43,11,17,47,0,46,46,0,0,0,46,46,45,1,5,1,44,-66,1,5,-68,-67,-144,-66,4,5,238,241,74,240,239,46,238,46,70,237,21,-63,236,21,-61,235,21,-59,234,21,-57,233,21,-55,232,21,-53,231,21,-51,230,21,-49,229,21,-47,228,21,-43,227,21,-45,11,17,47,0,46,46,0,0,0,46,46,45,1,5,7,44,-66,1,5,-69,-145,-66,3,5,223,226,74,225,224,46,223,46,70,222,21,-61,221,21,-57,220,21,-55,219,21,-53,218,21,-51,217,21,-49,-191,-135,216,21,-47,215,21,-43,214,21,-45,10,17,47,0,46,46,0,0,0,46,46,45,1,5,10,44,-66,1,5,-164,-68,-66,3,5,213,212,74,211,210,46,209,46,70,208,21,-63,207,21,-61,206,21,-59,205,21,-57,204,21,-55,203,21,-53,202,21,-51,201,21,-49,200,21,-47,199,21,-45,198,21,-43,11,17,47,0,46,46,0,0,0,46,46,45,1,5,0,44,-66,1,5,-68,-125,-66,3,5,194,197,74,196,195,46,194,46,70,193,21,-63,192,21,-59,191,21,-61,190,21,-57,189,21,-55,188,21,-53,187,21,-51,186,21,-49,185,21,-47,184,21,-43,183,21,-45,11,17,47,0,46,46,0,0,0,46,46,45,1,5,3,44,-66,1,5,-145,-164,-125,-66,4,5,179,182,74,181,180,46,179,46,70,178,21,-61,177,21,-57,176,21,-55,175,21,-53,174,21,-51,173,21,-49,172,21,-135,171,21,-47,170,21,-45,169,21,-43,10,17,47,0,46,46,0,0,0,46,46,45,1,5,12,44,-66,1,5,-145,-144,-66,3,5,168,167,74,166,165,46,164,46,70,163,21,-61,162,21,-57,161,21,-55,160,21,-53,159,21,-51,158,21,-49,157,21,-135,156,21,-47,155,21,-45,154,21,-43,10,17,47,0,46,46,0,0,0,46,46,45,1,5,5,44,-66,1,5,16,76,-68,-67,-66,4,5,153,152,74,151,150,46,149,46,70,148,21,-63,147,21,-61,146,21,-59,145,21,-57,144,21,-55,143,21,-53,142,21,-51,141,21,-49,140,21,-47,139,21,-45,138,21,-43,11,17,47,0,46,46,0,0,0,46,46,45,1,5,11,44,-145,-66,2,5,0,76,19,76,-66,3,5,137,136,74,135,134,46,133,46,70,132,21,-61,131,21,-57,130,21,-55,129,21,-53,128,21,-51,127,21,-49,126,21,125,21,124,21,-47,123,21,-43,122,21,-45,10,17,47,0,46,46,0,0,0,46,46,45,1,5,6,44,-66,1,5,-69,-68,17,76,-66,4,5,118,121,74,120,119,46,118,46,70,117,21,-63,116,21,-59,115,21,-61,114,21,-57,113,21,-55,112,21,-53,111,21,-51,110,21,-49,109,21,-47,108,21,-45,107,21,-43,11,17,47,0,46,46,0,0,0,46,46,45,1,5,13,44,-66,1,5,-69,-68,-66,3,5,103,106,74,105,104,46,103,46,70,102,21,-63,101,21,-61,100,21,-59,99,21,-57,98,21,-55,97,21,-53,96,21,-51,95,21,-49,94,21,-47,93,21,-43,92,21,-45,11,17,47,0,46,46,0,0,0,46,46,45,1,5,14,44,-66,1,5,-68,18,76,-66,3,5,88,91,74,90,89,46,88,46,70,87,21,-63,86,21,-61,85,21,-59,84,21,-57,83,21,-55,82,21,-53,81,21,-51,80,21,-49,79,21,-47,78,21,-45,77,21,-43,11,17,47,0,46,46,0,0,0,46,46,45,1,5,2,44,-66,1,5,21,76,1,76,20,76,3,76,4,5,71,75,74,73,72,46,71,46,70,69,21,68,21,67,21,66,21,65,21,64,21,63,21,62,21,61,21,60,21,59,21,58,21,57,21,56,21,55,21,54,21,53,21,52,21,51,21,50,21,49,21,48,21,11,17,47,0,46,46,0,0,0,46,46,45,1,5,9,44,14,17,0,17,43,0,42,16,-26,15,41,0,40,39,0,0,38,0,0,37,21,-14,36,18,35,21,6,20,34,18,33,21,-14,32,18,31,21,2,20,30,18,29,21,14,20,28,18,27,21,21,20,26,18,25,21,5,20,24,18,23,21,3,20,22,18,14,21,1,20,19,18,9,17,\'I\',0,16,15,0,1,8,0,14,13,0,1,8,0,12,11,0,1,8,0,10,9,0,1,8,4,5,7,5,6,0,5,\'B4\',4,0,3,2,1,[\"org.collegeboard.pacollegeplan.shared.dto.content.CollegeProfilePageInfoDto/222154493\",\"http://collegesearch.collegeboard.com/apcreditpolicy/appolicy.jsp?match=true&searchType=APCredit&collegeId=\",\"http://www.fafsa.ed.gov/\",\"https://collegereadiness.collegeboard.org/sat/inside-the-test/compare-current-new-specifications\",\"java.util.ArrayList/4159755760\",\"java.lang.Integer/3438268394\",\"https://www.collegeboard.org/proxy/autocomplete\",\"org.collegeboard.pacollegeplan.shared.dto.content.BreadCrumbDto/907070322\",\"Home\",\"/\",\"Find Colleges\",\"/find-colleges\",\"College Search\",\"/college-search\",\"Cornell University\",\"/college-university-search/cornell-university\",\"java.util.HashMap/1797211028\",\"org.collegeboard.pacollegeplan.shared.dto.content.ExternalIdKey/1798413972\",\"collegeFinder\",\"org.collegeboard.pacollegeplan.shared.dto.content.common.PageTypeEnum/3717187543\",\"java.lang.String/2004016611\",\"characterCountsWhatAreCollegesLookingFor\",\"/get-in/applying-101/character-counts-what-are-colleges-looking-for\",\"compareColleges\",\"/compare-colleges\",\"majorProfile\",\"/major-profile\",\"actionPlan\",\"/make-a-plan\",\"collegeProfile\",\"/college-profile\",\"seoCollegesByStates\",\"/college-search/state\",\"myOrganizer\",\"/my-organizer\",\"seoCollegesByMajors\",\"/college-search/major\",\"client=gme-collegeboard\",\"Explore key Cornell University information including application requirements, popular majors, tuition, SAT scores, AP credit policies, and more.\",\"org.collegeboard.pacollegeplan.shared.dto.content.PageBaseMetadataDto/2239360936\",\"15\",\"http://student.collegeboard.org/css-financial-aid-profile\",\"https://bigfuture.collegeboard.org/sitesearch\",\"org.collegeboard.pacollegeplan.shared.dto.content.CollegeProfileTabContentEnum/1492406652\",\"org.collegeboard.pacollegeplan.shared.dto.content.TeaserContentDto/903727360\",\"\",\"org.collegeboard.pacollegeplan.shared.dto.content.MediaVideoContentDto/413956314\",\"Name\",\"Jeff Brenzel\",\"230w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_230w.jpg\",\"transcript\",\"/get-started/video-transcription/do-colleges-want-quality-or-a-quantity-of-activities\",\"220w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_220wx124h.jpg\",\"710w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_710w.jpg\",\"310w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_310w.jpg\",\"300w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_300w.jpg\",\"200w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_200w.jpg\",\"Institution\",\"Yale University\",\"110w\",\"/CollegePlanning/media/image/ExpertJBrenzel8176_Photo_110w.jpg\",\"Title\",\"Dean of Undergraduate Admissions\",\"https://secure-media.collegeboard.org\",\"Do colleges want quality or a quantity of activities? \",\"<p\>An admission officer talks about the role of high school activities in an application.</p\>\",\"8287.598\",\"video/mp4\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Jeff_8176.mp4\",\"org.collegeboard.pacollegeplan.shared.dto.content.ContentClassificationEnum/2115304760\",\"Carolyn Lindley\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_230w.jpg\",\"/get-started/video-transcription/not-sure-what-you-want-to-study\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_200w.jpg\",\"Northwestern University\",\"/CollegePlanning/media/image/ExpertCLindley8377_Photo_110w.jpg\",\"University Director of Financial Aid\",\"Not sure what you want to study?\",\"<p\>Find out how your interests in high school can help you narrow down your college list.</p\>\",\"2788.942\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Carolyn_8377.mp4\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_230w.jpg\",\"Earl Johnson\",\"/get-started/video-transcription/how-do-colleges-look-at-your-application\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_200w.jpg\",\"University of Tulsa\",\"/CollegePlanning/media/image/ExpertEJohnson8483_Photo_110w.jpg\",\"Associate Vice President and Dean of Admission \",\"How do colleges look at your application?  \",\"<p\>An admission officer talks about the different parts and their importance.</p\>\",\"4097.546\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Earl_8483.mp4\",\"Stephanie Balmer\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_230w.jpg\",\"/get-started/video-transcription/what-should-international-students-know\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_200w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8444_Photo_110w.jpg\",\"Dickinson College\",\"Dean of Admissions\",\"What should international students know?  \",\"<p\>An admission officer shares tips to help international students explore U.S. colleges.</p\>\",\"6387.543\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Stephanie_8444.mp4\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_230w.jpg\",\"Martavius\",\"/get-started/video-transcription/college-inspired-me-to-take-risks\",\"School_Year\",\"college sophomore\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_220w.jpg\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_710w.jpg\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_310w.jpg\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_300w.jpg\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_200w.jpg\",\"/CollegePlanning/media/image/Student_MP024025026_Photo_110w.jpg\",\"College inspired me to take risks  \",\"<p\>Trying something completely new paid off for Martavius in ways he could never have imagined.</p\>\",\"6099.847\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/student/Student_MP024025026_Video.mp4\",\"College inspired me to take risks\",\"Mary Nucciarone\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_230w.jpg\",\"/get-started/video-transcription/do-you-have-to-pay-a-colleges-sticker-price\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_200w.jpg\",\"University of Notre Dame\",\"/CollegePlanning/media/image/ExpertMNucciarone8403_Photo_110w.jpg\",\"Associate Director of Financial Aid\",\"Do you have to pay a college’s “sticker price”?  \",\"<p\>Find out why you probably won’t pay a college’s advertised price.</p\>\",\"3685.841\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Mary_8403.mp4\",\"Do you have to pay a college’s “sticker price”?\",\"Thomas\",\"/CollegePlanning/media/image/Student_TP7754_Photo_230w.jpg\",\"/get-started/video-transcription/i-thought-living-in-dorm-was-really-cool\",\"college senior\",\"/CollegePlanning/media/image/Student_TP7754_Photo_220w.jpg\",\"/CollegePlanning/media/image/Student_TP7754_Photo_710w.jpg\",\"/CollegePlanning/media/image/Student_TP7754_Photo_310w.jpg\",\"/CollegePlanning/media/image/Student_TP7754_Photo_300w.jpg\",\"/CollegePlanning/media/image/Student_TP7754_Photo_200w.jpg\",\"/CollegePlanning/media/image/Student_TP7754_Photo_110w.jpg\",\"I thought living in a dorm was really cool   \",\"<p\>Thomas made most of his friends while living in the dorm.</p\>\",\"4428.645\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/student/Thomas_7754.mp4\",\"I thought living in a dorm was really cool\",\"Magdy\",\"/CollegePlanning/media/image/Student_MA7672_Photo_230w.jpg   \",\"/get-started/video-transcription/i-spent-a-semester-at-community-college\",\"college junior\",\"/CollegePlanning/media/image/Student_MA7672_Photo_220w.jpg   \",\"/CollegePlanning/media/image/Student_MA7672_Photo_710w.jpg\",\"/CollegePlanning/media/image/Student_MA7672_Photo_310w.jpg\",\"/CollegePlanning/media/image/Student_MA7672_Photo_300w.jpg\",\"/CollegePlanning/media/image/Student_MA7672_Photo_200w.jpg   \",\"/CollegePlanning/media/image/Student_MA7672_Photo_110w.jpg\",\"I spent a semester at community college\",\"<p\>For Magdy, community college was a money-saving step on the way to a four-year college.</p\>\",\"1933.829\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/student/Magdie_7672.mp4\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_230w.jpg\",\"Dr. Joyce V. Brown\",\"/get-started/video-transcription/how-do-you-know-if-a-college-will-meet-your-needs\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_200w.jpg\",\"/CollegePlanning/media/image/ExpertJBrown8241_Photo_110w.jpg\",\"Chicago Public Schools\",\"Counseling Consultant\",\"How do you know if a college will meet your needs? \",\"<p\>A counselor discusses how to find a college that will work with your life.</p\>\",\"4219.397\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Joyce_8241.mp4\",\"William M. Schilling\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_230w.jpg\",\"/get-started/video-transcription/when-should-you-apply-for-financial-aid\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_200w.jpg\",\"University of Pennsylvania\",\"/CollegePlanning/media/image/ExpertBSchiling8352_Photo_110w.jpg\",\"University Director of Student Financial Aid\",\"Bill_8352.mp4\",\"<p\>A financial aid expert talks about why timing is important.</p\>\",\"2952.972\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Bill_8352.mp4\",\"When should you apply for financial aid?\",\"/CollegePlanning/media/image/Student_TR7388_Photo_230w.jpg   \",\"Taylor R.\",\"/get-started/video-transcription/didnt-do-as-well-on-admission-test-as-hoped\",\"/CollegePlanning/media/image/Student_TR7388_Photo_220w.jpg   \",\"/CollegePlanning/media/image/Student_TR7388_Photo_710w.jpg\",\"/CollegePlanning/media/image/Student_TR7388_Photo_310w.jpg\",\"/CollegePlanning/media/image/Student_TR7388_Photo_300w.jpg\",\"/CollegePlanning/media/image/Student_TR7388_Photo_200w.jpg   \",\"/CollegePlanning/media/image/Student_TR7388_Photo_110w.jpg   \",\"I didn\'t do as well on my admission test as I\'d hoped\",\"<p\>Taylor R. shares her testing experience and her advice on handling stress.</p\>\",\"3325.313\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/student/TaylorR_7388.mp4\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_230w.jpg\",\"Frieda Lee\",\"/get-started/video-transcription/where-can-you-go-for-help-with-a-problem\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_200w.jpg\",\"San Francisco State University\",\"/CollegePlanning/media/image/ExpertFLee8346_Photo_110w.jpg\",\"Director, Student Outreach Services\",\"Where can you go for help with a problem?\",\"<p\>Get the facts about on-campus student services and how to find them.</p\>\",\"2508.168\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Frieda_8346.mp4\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_230w.jpg\",\"/get-started/video-transcription/what-college-classes-should-you-take\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_220wx124h.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_710w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_310w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_300w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_200w.jpg\",\"/CollegePlanning/media/image/ExpertSBalmer8440_Photo_110w.jpg\",\"What college classes should you take? \",\"<p\>An expert encourages students to get out of their comfort zone when choosing courses.</p\>\",\"4503.500\",\"https://secure-media.collegeboard.org/CollegePlanning/media/video/expert/Stephanie_8440.mp4\",\"org.collegeboard.pacollegeplan.shared.dto.content.CpCollectionContentDto/2982852437\",\"NONE\",\"org.collegeboard.pacollegeplan.shared.dto.content.RankTypePathContentDto/457598597\",\"CollegePlanning/content/collection/6ad14867a2d33310VgnVCM2000003e8d14acRCRD/d01bbe61dc1d3310VgnVCM1000003d8d14acRCRD.xml\",\"CP_COLLECTION\"],0,7]';
+      </script>
+
+   <meta name="fragment" content="!">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="robots" content="index, follow">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <!-- GXT resources -->
+   <link rel="stylesheet" type="text/css" href="/gxtResources/css/gxt-all.css"/>
+   <link rel="stylesheet" type="text/css" href="/gxtResources/css/gxt-gray.css"/>
+   <link rel="stylesheet" type="text/css" href="//mango.collegeboard.org/cbmango1/prod/bigfuture/all/4/all.css"/>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/all-min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/message-widget-overrides.css"/>
+
+    <script type="text/javascript" src="/js/ext/jquery.min.js"></script>
+    <!-- Adobe Tag Manager Header -->
+    <script src="//assets.adobedtm.com/7a8a98de0363fbed05b98da851d6b23866ffa7cc/satelliteLib-680156eb19277c7ad2206ff3fac1c250f6d6214c.js"></script>
+    <!-- Message Widget -->
+    <script type="text/javascript" src="//mango.collegeboard.org/cbmango1/prod/bigfuture/all/4/all.js"></script>
+
+   <!-- This script loads your compiled module.   -->
+   <!-- If you add any GWT meta tags, they must   -->
+   <!-- be added before this line.                -->
+   <!--                                           -->
+
+      <script type="text/javascript" language="javascript" src="/collegeProfile/collegeProfile.nocache.js"></script>
+
+
+    <script type="text/javascript" src="/js/all-min.js"></script>
+   <script type="text/javascript" src="https://secure-media.collegeboard.org/digitalServices/cbsitesearch/cbsitesearch
+.js"></script>
+    <!--[if IE]>
+   <script type="text/javascript" src="/js/ext/innershiv.js"></script>
+   <![endif]-->
+   <!--[if lt IE 7]>
+   <script defer type="text/javascript" src="/js/ext/pngfix.js"></script>
+   <![endif]-->
+   <!-- <script type="text/javascript" src="https://common.collegeboard.org/js/cb.header.js"></script> -->
+      <!-- GHF script-->
+	<script src="//common.collegeboard.org/globalHeaderFooter/v2/js/cb.ghf.js" type="text/javascript"></script>
+
+
+	<!-- GHF script-->
+</head>
+<body>
+<div id="college-search-modal">
+    <a class="js-modal-close-trigger" href="#">Close</a>
+    <div id="college-search-hook"></div>
+</div>
+
+<script type="text/javascript" src="https://common.collegeboard.org/webanalytics/js/web_analytics_header.js"></script>
+
+
+      <script type="text/javascript">
+         if (!s.pageName)
+         {
+            s.pageName = 'bigfuture/colleges/cornell-university';
+         }
+      </script>
+
+   <!-- do some omniture setting  -->
+   <script type="text/javascript">
+      s.events = 'event22';
+   </script>
+
+   <div id="versionInfo">
+   <!--
+      CI Tag:              70
+      CM Tag:              
+      CM Revision:         
+      -->
+   </div>
+
+   <!-- GWT Iframe -->
+<!-- OPTIONAL: include this if you want history support -->
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+
+<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+<noscript>
+  <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+    Your web browser must have JavaScript enabled
+    in order for this application to display correctly.
+  </div>
+</noscript>   <!-- /GWT Iframe -->
+   <!-- ShareThis scripts -->
+   <script type="text/javascript">var switchTo5x = false;</script>
+   <script type="text/javascript">
+      var __st_loadLate = true; //if __st_loadLate is defined then the widget will not load on domcontent ready
+   </script>
+   <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+   <script type="text/javascript">stLight.options({publisher:'45227ec7-e9cc-4831-9efa-a25125ac37d4'});</script>
+
+<a href="#mainContent"><img src="/images/background-transparent-white.png" alt="Skip to main content" class="screenreaderonly" id="skipnav"></a>
+
+<div id="cbHeader" class="cpSpecific">
+  <ul style="position:absolute; top:-9999px; left:-9999px;">
+    <li><a href="//sat.collegeboard.org/home?affiliateId=nav&amp;bannerId=g-cbh-sat">SAT</a></li>
+    <li><a href="//apcentral.collegeboard.com/apc/Controller.jpf">AP</a></li>
+    <li><a href="//bigfuture.collegeboard.org">College Planning</a></li>
+    <li><a href="//bigfuture.collegeboard.org/college-search">College Search</a></li>
+    <li><a href="//professionals.collegeboard.com/prof-dev">Professional Development</a></li>
+    <li><a href="//store.collegeboard.com/sto/enter.do">Store</a></li>
+    <li><a href="//apcentral.collegeboard.com/apc/Controller.jpf"> AP Central®</a></li>
+    <li><a href="//professionals.collegeboard.com/k-12">K-12 Services </a></li>
+    <li><a href="//professionals.collegeboard.com/higher-ed">Higher Ed </a></li>
+    <li><a href="//professionals.collegeboard.com/guidance">College Guidance</a></li>
+    <li><a href="//www.collegeboard.com/padres/">En Español</a></li>
+  </ul>
+</div><!-- end cbHeader -->
+
+
+<div role="navigation" id="localNav" class="localNav container_12">
+</div>
+
+<div id="shareBread" class="clearfix container_12"></div>
+
+
+<!-- Javascript for Facebook -->
+<div id="fb-root"></div>
+
+<script>
+   function fbInit(d, s, id)
+   {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+   }
+</script>
+
+<!-- div for showing error message-->
+<div id="errorDiv"></div>
+
+<a name="mainContent"></a>
+
+<div id="gwtDiv" class="clearfix margin60 marginBottomOnly" style="min-height: 300px;height: 300px;height: auto;">
+</div>
+
+<div id="waitIcon" style="width:100%; position: absolute; top:300px;">
+   <img src="/images/spinning-loader.gif" style="display: block;margin: auto;"/>
+</div>
+
+<div id="myOrg" class="ui-droppable"></div>
+
+<!-- footer - There should be nothing placed in between the gwtDiv and the footer, other than myOrg. If anything
+     were to be placed, it may interfere with the footer position logic located in cpDock.js - gwt_dockLoaded() -->
+<div id="cbFooter" class="cpSpecific">
+  <ul style="position:absolute; top:-9999px; left:-9999px;">
+    <li><a href="//about.collegeboard.org">About Us</a></li>
+    <li><a href="//about.collegeboard.org/careers">Careers</a></li>
+    <li><a href="//advocacy.collegeboard.org">Advocacy</a></li>
+    <li><a href="//membership.collegeboard.org">Membership</a></li>
+    <li><a href="//press.collegeboard.org">News &amp; Press</a> </li>
+    <li><a href="//professionals.collegeboard.com/data-reports-research">Research</a></li>    
+    <li><a href="//www.collegeboard.org/sitemap">Site Map</a></li>
+    <li><a href="//www.collegeboard.org/site-terms">Terms of Use</a></li>
+    <li><a href="//www.collegeboard.org/privacy-policy">Privacy Policy</a></li>    
+    <li><a href="//sat.collegeboard.org/home">SAT<sup> ®</sup></a></li>
+    <li><a href="//sat.collegeboard.org/about-tests/sat-subject-tests">SAT Subject Tests™</a></li>
+    <li><a href="//apcentral.collegeboard.com/apc/Controller.jpf">AP<sup> ®</sup></a></li>
+    <li><a href="//www.collegeboard.com/student/testing/psat/about.html">PSAT/NMSQT<sup> ®</sup></a></li>     
+    <li><a href="//clep.collegeboard.org">CLEP<sup> ®</sup></a></li>
+    <li><a href="//www.collegeboard.org/springboardinfo">SpringBoard<sup> ®</sup></a></li>
+    <li><a href="//www.collegeboard.com/ssd/student/index.html">SSD</a></li>
+    <li><a href="http://accuplacer.collegeboard.org/students">Accuplacer<sup>&reg;</sup></a></li>
+    <li><a href="//www.collegeboard.org/contact-us">Contact Us</a></li>
+    <li><a href="//www.collegeboard.org/help">Help</a></li>
+    <li><a href="//www.collegeboard.com/padres/">En Español</a></li>
+    <li><a href="//socialmedia.collegeboard.org/">Social Media</a></li>
+  </ul>
+</div> <!-- end of #cbFooter -->
+<!-- /footer -->
+<script type="text/javascript" src="https://common.collegeboard.org/webanalytics/js/web_analytics_footer.js"></script>
+<!-- Adobe Tag Manager Footer -->
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+<script type="text/javascript" language="javascript" src="//mango.collegeboard.org/cbmango1/prod/bigfuture/all/4/site.js"></script>
+</body>
+</html>
+

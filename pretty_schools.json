@@ -10,7 +10,7 @@
             "lat": 38.9374808,
             "lng": -77.0852258
         },
-        "school": "American University",
+        "school": "American University - Washington D.C.",
         "salary_info": {
             "early_median_salary": 45000,
             "mid_career_median_salary": 89800,
@@ -91,7 +91,7 @@
             "lat": 40.8138912,
             "lng": -73.96243270000001
         },
-        "school": "Barnard College",
+        "school": "Barnard College - Columbia University",
         "salary_info": {
             "early_median_salary": 48300,
             "mid_career_median_salary": 81400,
@@ -217,60 +217,6 @@
     },
     {
         "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Laie, Hawaii",
-            "acceptance_rate": 23,
-            "applicants": 2856
-        },
-        "location_info": {
-            "lat": 40.2524308,
-            "lng": -111.6502622
-        },
-        "school": "Brigham Young University",
-        "salary_info": {
-            "early_median_salary": 51700,
-            "mid_career_median_salary": 93000,
-            "rank": 111,
-            "zip_code": "84602"
-        },
-        "scores": {
-            "high_sat_math": 690,
-            "low_sat_math": 590,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 26,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Laie, Hawaii",
-            "acceptance_rate": 23,
-            "applicants": 2856
-        },
-        "location_info": {
-            "lat": 43.81889839999999,
-            "lng": -111.783742
-        },
-        "school": "Brigham Young University",
-        "salary_info": {
-            "early_median_salary": 48700,
-            "mid_career_median_salary": 76800,
-            "rank": 428,
-            "zip_code": "83460"
-        },
-        "scores": {
-            "high_sat_math": 690,
-            "low_sat_math": 590,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 26,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
             "difficulty": "Very Hard",
             "location": "Providence, Rhode Island",
             "acceptance_rate": 10,
@@ -307,7 +253,7 @@
             "lat": 36.1585967,
             "lng": -94.4593791
         },
-        "school": "Brown University",
+        "school": "John Brown University",
         "salary_info": {
             "early_median_salary": 41000,
             "mid_career_median_salary": 68800,
@@ -361,7 +307,7 @@
             "lat": 34.1378866,
             "lng": -118.1247032
         },
-        "school": "California Institute of Technology",
+        "school": "California Institute of Technology (Caltech)",
         "salary_info": {
             "early_median_salary": 72600,
             "mid_career_median_salary": 125000,
@@ -375,33 +321,6 @@
             "high_act": 35,
             "low_act": 34,
             "low_sat_reading": 720
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Hard",
-            "location": "San Luis Obispo, California",
-            "acceptance_rate": 37,
-            "applicants": 33003
-        },
-        "location_info": {
-            "lat": 35.2959663,
-            "lng": -120.6531793
-        },
-        "school": "California Polytechnic State University",
-        "salary_info": {
-            "early_median_salary": 57800,
-            "mid_career_median_salary": 99500,
-            "rank": 68,
-            "zip_code": "93407"
-        },
-        "scores": {
-            "high_sat_math": 680,
-            "low_sat_math": 580,
-            "high_sat_reading": 650,
-            "high_act": 30,
-            "low_act": 25,
-            "low_sat_reading": 540
         }
     },
     {
@@ -442,7 +361,7 @@
             "lat": 40.4379259,
             "lng": -79.9556424
         },
-        "school": "Carnegie Mellon University",
+        "school": "Carnegie Mellon University (CMU)",
         "salary_info": {
             "early_median_salary": 64700,
             "mid_career_median_salary": 118000,
@@ -631,7 +550,7 @@
             "lat": 37.27,
             "lng": -76.7099999
         },
-        "school": "College of William and Mary",
+        "school": "The College of William and Mary",
         "salary_info": {
             "early_median_salary": 45900,
             "mid_career_median_salary": 92500,
@@ -658,7 +577,7 @@
             "lat": 38.8413423,
             "lng": -104.8162784
         },
-        "school": "Colorado College",
+        "school": "Colorado College (CC)",
         "salary_info": {
             "early_median_salary": 44100,
             "mid_career_median_salary": 85100,
@@ -712,7 +631,7 @@
             "lat": 40.8138912,
             "lng": -73.96243270000001
         },
-        "school": "Columbia University",
+        "school": "Columbia University in the City of New York",
         "salary_info": {
             "early_median_salary": 60200,
             "mid_career_median_salary": 104000,
@@ -732,14 +651,14 @@
         "admission_info": {
             "difficulty": "Very Hard",
             "location": "New York, New York",
-            "acceptance_rate": 7,
-            "applicants": 34810
+            "acceptance_rate": 23,
+            "applicants": 5440
         },
         "location_info": {
             "lat": 40.8138912,
             "lng": -73.96243270000001
         },
-        "school": "Columbia University",
+        "school": "Barnard College - Columbia University",
         "salary_info": {
             "early_median_salary": 48300,
             "mid_career_median_salary": 81400,
@@ -758,33 +677,6 @@
     {
         "admission_info": {
             "difficulty": "Very Hard",
-            "location": "New York, New York",
-            "acceptance_rate": 8,
-            "applicants": 3415
-        },
-        "location_info": {
-            "lat": 40.7322535,
-            "lng": -73.9874105
-        },
-        "school": "Cooper Union",
-        "salary_info": {
-            "early_median_salary": 62700,
-            "mid_career_median_salary": 114000,
-            "rank": 18,
-            "zip_code": "10003"
-        },
-        "scores": {
-            "high_sat_math": 770,
-            "low_sat_math": 610,
-            "high_sat_reading": 710,
-            "high_act": 33,
-            "low_act": 28,
-            "low_sat_reading": 620
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
             "location": "Ithaca, New York",
             "acceptance_rate": 17,
             "applicants": 37808
@@ -793,7 +685,7 @@
             "lat": 42.435511,
             "lng": -76.5257007
         },
-        "school": "Cornell University",
+        "school": "Cornell University - Ithaca, NY",
         "salary_info": {
             "early_median_salary": 59700,
             "mid_career_median_salary": 109000,
@@ -874,7 +766,7 @@
             "lat": 40.2631879,
             "lng": -77.17152279999999
         },
-        "school": "Dickinson College",
+        "school": "Dickinson College - Carlisle, PA",
         "salary_info": {
             "early_median_salary": 44500,
             "mid_career_median_salary": 89200,
@@ -901,7 +793,7 @@
             "lat": 40.7623187,
             "lng": -74.4232507
         },
-        "school": "Drew University",
+        "school": "Charles R Drew University of Medicine and Science",
         "salary_info": {
             "early_median_salary": 43700,
             "mid_career_median_salary": 80300,
@@ -1036,7 +928,7 @@
             "lat": 38.9079086,
             "lng": -77.0716829
         },
-        "school": "Georgetown University",
+        "school": "Georgetown University - Washington D.C.",
         "salary_info": {
             "early_median_salary": 51800,
             "mid_career_median_salary": 110000,
@@ -1117,7 +1009,7 @@
             "lat": 43.019149,
             "lng": -75.36453689999999
         },
-        "school": "Hamilton College",
+        "school": "Hamilton College - Clinton, NY",
         "salary_info": {
             "early_median_salary": 54700,
             "mid_career_median_salary": 94600,
@@ -1225,7 +1117,7 @@
             "lat": 40.5095467,
             "lng": -88.985868
         },
-        "school": "Illinois Wesleyan University",
+        "school": "Illinois Wesleyan University (IWU)",
         "salary_info": {
             "early_median_salary": 45900,
             "mid_career_median_salary": 81000,
@@ -1279,7 +1171,7 @@
             "lat": 40.61757610000001,
             "lng": -79.1583807
         },
-        "school": "Indiana University of Pennsylvania",
+        "school": "Indiana University of Pennsylvania (IUP)",
         "salary_info": {
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
@@ -1373,33 +1265,6 @@
             "high_sat_reading": 680,
             "high_act": 30,
             "low_act": 27,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "N/A",
-            "location": "Canton, New York",
-            "acceptance_rate": 48,
-            "applicants": 4067
-        },
-        "location_info": {
-            "lat": 44.5971465,
-            "lng": -75.2054607
-        },
-        "school": "Lawrence University",
-        "salary_info": {
-            "early_median_salary": 49100,
-            "mid_career_median_salary": 69300,
-            "rank": 670,
-            "zip_code": "13617"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 580,
-            "high_sat_reading": 720,
-            "high_act": 31,
-            "low_act": 25,
             "low_sat_reading": 580
         }
     },
@@ -1522,7 +1387,7 @@
             "lat": 42.36475590000001,
             "lng": -71.1032591
         },
-        "school": "Massachusetts Institute of Technology",
+        "school": "Massachusetts Institute of Technology (MIT)",
         "salary_info": {
             "early_median_salary": 74900,
             "mid_career_median_salary": 124000,
@@ -1630,7 +1495,7 @@
             "lat": 40.7250632,
             "lng": -73.9976946
         },
-        "school": "New York University",
+        "school": "New York University (NYU)",
         "salary_info": {
             "early_median_salary": 51400,
             "mid_career_median_salary": 99000,
@@ -1738,7 +1603,7 @@
             "lat": 40.298702,
             "lng": -83.06772440000002
         },
-        "school": "Ohio Wesleyan University",
+        "school": "Ohio Wesleyan University (OWU)",
         "salary_info": {
             "early_median_salary": 43600,
             "mid_career_median_salary": 81600,
@@ -1810,114 +1675,6 @@
     },
     {
         "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Hammond, Indiana",
-            "acceptance_rate": 47,
-            "applicants": 4000
-        },
-        "location_info": {
-            "lat": 40.4401775,
-            "lng": -86.9261008
-        },
-        "school": "Purdue University",
-        "salary_info": {
-            "early_median_salary": 55500,
-            "mid_career_median_salary": 92900,
-            "rank": 113,
-            "zip_code": "47907"
-        },
-        "scores": {
-            "high_sat_math": 620,
-            "low_sat_math": 550,
-            "high_sat_reading": 620,
-            "high_act": 30,
-            "low_act": 24,
-            "low_sat_reading": 510
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Hammond, Indiana",
-            "acceptance_rate": 47,
-            "applicants": 4000
-        },
-        "location_info": {
-            "lat": 41.5829905,
-            "lng": -87.45048880000002
-        },
-        "school": "Purdue University",
-        "salary_info": {
-            "early_median_salary": 43100,
-            "mid_career_median_salary": 83200,
-            "rank": 277,
-            "zip_code": "46323"
-        },
-        "scores": {
-            "high_sat_math": 620,
-            "low_sat_math": 550,
-            "high_sat_reading": 620,
-            "high_act": 30,
-            "low_act": 24,
-            "low_sat_reading": 510
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Hammond, Indiana",
-            "acceptance_rate": 47,
-            "applicants": 4000
-        },
-        "location_info": {
-            "lat": 39.7794767,
-            "lng": -86.1700894
-        },
-        "school": "Purdue University",
-        "salary_info": {
-            "early_median_salary": 43300,
-            "mid_career_median_salary": 73900,
-            "rank": 521,
-            "zip_code": "46202"
-        },
-        "scores": {
-            "high_sat_math": 620,
-            "low_sat_math": 550,
-            "high_sat_reading": 620,
-            "high_act": 30,
-            "low_act": 24,
-            "low_sat_reading": 510
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Hammond, Indiana",
-            "acceptance_rate": 47,
-            "applicants": 4000
-        },
-        "location_info": {
-            "lat": 41.1024994,
-            "lng": -85.1220031
-        },
-        "school": "Purdue University",
-        "salary_info": {
-            "early_median_salary": 43400,
-            "mid_career_median_salary": 70300,
-            "rank": 631,
-            "zip_code": "46805"
-        },
-        "scores": {
-            "high_sat_math": 620,
-            "low_sat_math": 550,
-            "high_sat_reading": 620,
-            "high_act": 30,
-            "low_act": 24,
-            "low_sat_reading": 510
-        }
-    },
-    {
-        "admission_info": {
             "difficulty": "Very Hard",
             "location": "Portland, Oregon",
             "acceptance_rate": 36,
@@ -1954,7 +1711,7 @@
             "lat": 42.734263,
             "lng": -73.5829689
         },
-        "school": "Rensselaer Polytechnic Institute",
+        "school": "Rensselaer Polytechnic Institute (RPI)",
         "salary_info": {
             "early_median_salary": 63300,
             "mid_career_median_salary": 110000,
@@ -2062,7 +1819,7 @@
             "lat": 42.8361156,
             "lng": -76.9873477
         },
-        "school": "Smith College",
+        "school": "Hobart William Smith Colleges",
         "salary_info": {
             "early_median_salary": 49000,
             "mid_career_median_salary": 94600,
@@ -2197,7 +1954,7 @@
             "lat": 32.7087439,
             "lng": -97.3617845
         },
-        "school": "Texas Christian University",
+        "school": "Texas Christian University (TCU)",
         "salary_info": {
             "early_median_salary": 47400,
             "mid_career_median_salary": 78500,
@@ -2224,7 +1981,7 @@
             "lat": 40.2697068,
             "lng": -74.82146929999999
         },
-        "school": "The College of New Jersey",
+        "school": "The College of New Jersey (TCNJ)",
         "salary_info": {
             "early_median_salary": 51000,
             "mid_career_median_salary": 79800,
@@ -2305,7 +2062,7 @@
             "lat": 41.743111,
             "lng": -72.70380469999999
         },
-        "school": "Trinity College",
+        "school": "Trinity College of Florida",
         "salary_info": {
             "early_median_salary": 49900,
             "mid_career_median_salary": 86500,
@@ -2386,7 +2143,7 @@
             "lat": 29.9450835,
             "lng": -90.1261013
         },
-        "school": "Tulane University",
+        "school": "Tulane University of Louisiana",
         "salary_info": {
             "early_median_salary": 44700,
             "mid_career_median_salary": 80100,
@@ -2413,7 +2170,7 @@
             "lat": 42.8162941,
             "lng": -73.91834639999999
         },
-        "school": "Union College",
+        "school": "Union College - Schenectady, NY",
         "salary_info": {
             "early_median_salary": 51700,
             "mid_career_median_salary": 99200,
@@ -2440,7 +2197,7 @@
             "lat": 42.8162941,
             "lng": -73.91834639999999
         },
-        "school": "Union College",
+        "school": "Union College - Schenectady, NY",
         "salary_info": {
             "early_median_salary": 51700,
             "mid_career_median_salary": 99200,
@@ -2454,141 +2211,6 @@
             "high_act": 32,
             "low_act": 28,
             "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Angwin, California",
-            "acceptance_rate": 47,
-            "applicants": 2105
-        },
-        "location_info": {
-            "lat": 42.8162941,
-            "lng": -73.91834639999999
-        },
-        "school": "Union College",
-        "salary_info": {
-            "early_median_salary": 51700,
-            "mid_career_median_salary": 99200,
-            "rank": 70,
-            "zip_code": "12308"
-        },
-        "scores": {
-            "high_sat_math": 700,
-            "low_sat_math": 620,
-            "high_sat_reading": 680,
-            "high_act": 32,
-            "low_act": 28,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Pine Bluff, Arkansas",
-            "acceptance_rate": 33,
-            "applicants": 4543
-        },
-        "location_info": {
-            "lat": 35.9980929,
-            "lng": -94.08999109999999
-        },
-        "school": "University of Arkansas",
-        "salary_info": {
-            "early_median_salary": 47200,
-            "mid_career_median_salary": 80700,
-            "rank": 325,
-            "zip_code": "72701"
-        },
-        "scores": {
-            "high_sat_math": 630,
-            "low_sat_math": 520,
-            "high_sat_reading": 610,
-            "high_act": 28,
-            "low_act": 23,
-            "low_sat_reading": 500
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Pine Bluff, Arkansas",
-            "acceptance_rate": 33,
-            "applicants": 4543
-        },
-        "location_info": {
-            "lat": 34.7179437,
-            "lng": -92.3714901
-        },
-        "school": "University of Arkansas",
-        "salary_info": {
-            "early_median_salary": 40800,
-            "mid_career_median_salary": 60400,
-            "rank": 920,
-            "zip_code": "72204"
-        },
-        "scores": {
-            "high_sat_math": 630,
-            "low_sat_math": 520,
-            "high_sat_reading": 610,
-            "high_act": 28,
-            "low_act": 23,
-            "low_sat_reading": 500
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Pine Bluff, Arkansas",
-            "acceptance_rate": 33,
-            "applicants": 4543
-        },
-        "location_info": {
-            "lat": 34.7486563,
-            "lng": -92.3542193
-        },
-        "school": "University of Arkansas",
-        "salary_info": {
-            "early_median_salary": 45100,
-            "mid_career_median_salary": 58100,
-            "rank": 966,
-            "zip_code": "72205"
-        },
-        "scores": {
-            "high_sat_math": 630,
-            "low_sat_math": 520,
-            "high_sat_reading": 610,
-            "high_act": 28,
-            "low_act": 23,
-            "low_sat_reading": 500
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Pine Bluff, Arkansas",
-            "acceptance_rate": 33,
-            "applicants": 4543
-        },
-        "location_info": {
-            "lat": 34.1609503,
-            "lng": -91.89038819999999
-        },
-        "school": "University of Arkansas",
-        "salary_info": {
-            "early_median_salary": 37100,
-            "mid_career_median_salary": 56200,
-            "rank": 990,
-            "zip_code": "71601"
-        },
-        "scores": {
-            "high_sat_math": 630,
-            "low_sat_math": 520,
-            "high_sat_reading": 610,
-            "high_act": 28,
-            "low_act": 23,
-            "low_sat_reading": 500
         }
     },
     {
@@ -2602,7 +2224,7 @@
             "lat": 28.6013431,
             "lng": -81.20092869999999
         },
-        "school": "University of Central Florida",
+        "school": "University of Central Florida (UCF)",
         "salary_info": {
             "early_median_salary": 42700,
             "mid_career_median_salary": 72600,
@@ -2656,34 +2278,7 @@
             "lat": 41.8193203,
             "lng": -72.2511833
         },
-        "school": "University of Connecticut",
-        "salary_info": {
-            "early_median_salary": 51900,
-            "mid_career_median_salary": 89100,
-            "rank": 161,
-            "zip_code": "06269"
-        },
-        "scores": {
-            "high_sat_math": 680,
-            "low_sat_math": 580,
-            "high_sat_reading": 650,
-            "high_act": 30,
-            "low_act": 26,
-            "low_sat_reading": 550
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Stamford, Connecticut",
-            "acceptance_rate": 45,
-            "applicants": 332
-        },
-        "location_info": {
-            "lat": 41.8193203,
-            "lng": -72.2511833
-        },
-        "school": "University of Connecticut",
+        "school": "University of Connecticut (UConn) - Main Campus",
         "salary_info": {
             "early_median_salary": 51900,
             "mid_career_median_salary": 89100,
@@ -2710,7 +2305,7 @@
             "lat": 29.6130239,
             "lng": -82.371937
         },
-        "school": "University of Florida",
+        "school": "University of Florida (UF)",
         "salary_info": {
             "early_median_salary": 49500,
             "mid_career_median_salary": 86300,
@@ -2729,249 +2324,6 @@
     {
         "admission_info": {
             "difficulty": "Very Hard",
-            "location": "New Orleans, Louisiana",
-            "acceptance_rate": 27,
-            "applicants": 30080
-        },
-        "location_info": {
-            "lat": 32.5291557,
-            "lng": -92.06989019999999
-        },
-        "school": "University of Louisiana",
-        "salary_info": {
-            "early_median_salary": 44300,
-            "mid_career_median_salary": 75000,
-            "rank": 486,
-            "zip_code": "71209"
-        },
-        "scores": {
-            "high_sat_math": "NA",
-            "low_sat_math": "NA",
-            "high_sat_reading": "NA",
-            "high_act": 25,
-            "low_act": 21,
-            "low_sat_reading": "NA"
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "New Orleans, Louisiana",
-            "acceptance_rate": 27,
-            "applicants": 30080
-        },
-        "location_info": {
-            "lat": 30.1716722,
-            "lng": -92.06161780000001
-        },
-        "school": "University of Louisiana",
-        "salary_info": {
-            "early_median_salary": 44800,
-            "mid_career_median_salary": 74800,
-            "rank": 493,
-            "zip_code": "70503"
-        },
-        "scores": {
-            "high_sat_math": "NA",
-            "low_sat_math": "NA",
-            "high_sat_reading": "NA",
-            "high_act": 25,
-            "low_act": 21,
-            "low_sat_reading": "NA"
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "New Orleans, Louisiana",
-            "acceptance_rate": 27,
-            "applicants": 30080
-        },
-        "location_info": {
-            "lat": 29.9566647,
-            "lng": -90.1073935
-        },
-        "school": "University of Louisiana",
-        "salary_info": {
-            "early_median_salary": 37400,
-            "mid_career_median_salary": 74000,
-            "rank": 514,
-            "zip_code": "70125"
-        },
-        "scores": {
-            "high_sat_math": "NA",
-            "low_sat_math": "NA",
-            "high_sat_reading": "NA",
-            "high_act": 25,
-            "low_act": 21,
-            "low_sat_reading": "NA"
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "College Park, Maryland",
-            "acceptance_rate": 47,
-            "applicants": 25326
-        },
-        "location_info": {
-            "lat": 38.9810284,
-            "lng": -76.9441362
-        },
-        "school": "University of Maryland",
-        "salary_info": {
-            "early_median_salary": 53900,
-            "mid_career_median_salary": 91700,
-            "rank": 127,
-            "zip_code": "20742"
-        },
-        "scores": {
-            "high_sat_math": 720,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 28,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "College Park, Maryland",
-            "acceptance_rate": 47,
-            "applicants": 25326
-        },
-        "location_info": {
-            "lat": 39.2546062,
-            "lng": -76.71200639999999
-        },
-        "school": "University of Maryland",
-        "salary_info": {
-            "early_median_salary": 49700,
-            "mid_career_median_salary": 84800,
-            "rank": 234,
-            "zip_code": "21250"
-        },
-        "scores": {
-            "high_sat_math": 720,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 28,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "College Park, Maryland",
-            "acceptance_rate": 47,
-            "applicants": 25326
-        },
-        "location_info": {
-            "lat": 38.9963501,
-            "lng": -76.97006689999999
-        },
-        "school": "University of Maryland",
-        "salary_info": {
-            "early_median_salary": 49300,
-            "mid_career_median_salary": 83300,
-            "rank": 273,
-            "zip_code": "20783"
-        },
-        "scores": {
-            "high_sat_math": 720,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 28,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "College Park, Maryland",
-            "acceptance_rate": 47,
-            "applicants": 25326
-        },
-        "location_info": {
-            "lat": 38.2169122,
-            "lng": -75.737149
-        },
-        "school": "University of Maryland",
-        "salary_info": {
-            "early_median_salary": 40200,
-            "mid_career_median_salary": 80600,
-            "rank": 329,
-            "zip_code": "21853"
-        },
-        "scores": {
-            "high_sat_math": 720,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 28,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "College Park, Maryland",
-            "acceptance_rate": 47,
-            "applicants": 25326
-        },
-        "location_info": {
-            "lat": 39.2963369,
-            "lng": -76.62105389999999
-        },
-        "school": "University of Maryland",
-        "salary_info": {
-            "early_median_salary": 57400,
-            "mid_career_median_salary": 66200,
-            "rank": 774,
-            "zip_code": "21201"
-        },
-        "scores": {
-            "high_sat_math": 720,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 28,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "College Park, Maryland",
-            "acceptance_rate": 47,
-            "applicants": 25326
-        },
-        "location_info": {
-            "lat": 46.7359015,
-            "lng": -100.6637567
-        },
-        "school": "University of Maryland",
-        "salary_info": {
-            "early_median_salary": 42900,
-            "mid_career_median_salary": 62800,
-            "rank": 871,
-            "zip_code": "58504"
-        },
-        "scores": {
-            "high_sat_math": 720,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 31,
-            "low_act": 28,
-            "low_sat_reading": 580
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
             "location": "Coral Gables, Florida",
             "acceptance_rate": 40,
             "applicants": 27757
@@ -2980,7 +2332,7 @@
             "lat": 25.7213213,
             "lng": -80.2711588
         },
-        "school": "University of Miami",
+        "school": "University of Miami (UM) - Florida",
         "salary_info": {
             "early_median_salary": 49300,
             "mid_career_median_salary": 76500,
@@ -2998,87 +2350,6 @@
     },
     {
         "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Ann Arbor, Michigan",
-            "acceptance_rate": 37,
-            "applicants": 42544
-        },
-        "location_info": {
-            "lat": 42.3053253,
-            "lng": -83.6694169
-        },
-        "school": "University of Michigan",
-        "salary_info": {
-            "early_median_salary": 58000,
-            "mid_career_median_salary": 96000,
-            "rank": 89,
-            "zip_code": "48109"
-        },
-        "scores": {
-            "high_sat_math": 760,
-            "low_sat_math": 650,
-            "high_sat_reading": 700,
-            "high_act": 32,
-            "low_act": 28,
-            "low_sat_reading": 610
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Ann Arbor, Michigan",
-            "acceptance_rate": 37,
-            "applicants": 42544
-        },
-        "location_info": {
-            "lat": 42.3197827,
-            "lng": -83.27735899999999
-        },
-        "school": "University of Michigan",
-        "salary_info": {
-            "early_median_salary": 50100,
-            "mid_career_median_salary": 89400,
-            "rank": 155,
-            "zip_code": "48128"
-        },
-        "scores": {
-            "high_sat_math": 760,
-            "low_sat_math": 650,
-            "high_sat_reading": 700,
-            "high_act": 32,
-            "low_act": 28,
-            "low_sat_reading": 610
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Ann Arbor, Michigan",
-            "acceptance_rate": 37,
-            "applicants": 42544
-        },
-        "location_info": {
-            "lat": 43.0142978,
-            "lng": -83.6893547
-        },
-        "school": "University of Michigan",
-        "salary_info": {
-            "early_median_salary": 41500,
-            "mid_career_median_salary": 57700,
-            "rank": 969,
-            "zip_code": "48502"
-        },
-        "scores": {
-            "high_sat_math": 760,
-            "low_sat_math": 650,
-            "high_sat_reading": 700,
-            "high_act": 32,
-            "low_act": 28,
-            "low_sat_reading": 610
-        }
-    },
-    {
-        "admission_info": {
             "difficulty": "Avg+",
             "location": "New Orleans, Louisiana",
             "acceptance_rate": 49,
@@ -3088,7 +2359,7 @@
             "lat": 30.0311171,
             "lng": -90.0635827
         },
-        "school": "University of New Orleans",
+        "school": "University of New Orleans (UNO)",
         "salary_info": {
             "early_median_salary": 45500,
             "mid_career_median_salary": 72900,
@@ -3115,309 +2386,12 @@
             "lat": 35.905249,
             "lng": -79.0581498
         },
-        "school": "University of North Carolina",
+        "school": "University of North Carolina at Chapel Hill (UNC)",
         "salary_info": {
             "early_median_salary": 46200,
             "mid_career_median_salary": 79400,
             "rank": 357,
             "zip_code": "27599"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Winston-Salem, North Carolina",
-            "acceptance_rate": 42,
-            "applicants": 703
-        },
-        "location_info": {
-            "lat": 35.905249,
-            "lng": -79.0581498
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 46200,
-            "mid_career_median_salary": 79400,
-            "rank": 357,
-            "zip_code": "27599"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Chapel Hill, North Carolina",
-            "acceptance_rate": 33,
-            "applicants": 22652
-        },
-        "location_info": {
-            "lat": 35.3024273,
-            "lng": -80.7346073
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 45200,
-            "mid_career_median_salary": 77700,
-            "rank": 406,
-            "zip_code": "28223"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Winston-Salem, North Carolina",
-            "acceptance_rate": 42,
-            "applicants": 703
-        },
-        "location_info": {
-            "lat": 35.3024273,
-            "lng": -80.7346073
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 45200,
-            "mid_career_median_salary": 77700,
-            "rank": 406,
-            "zip_code": "28223"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Chapel Hill, North Carolina",
-            "acceptance_rate": 33,
-            "applicants": 22652
-        },
-        "location_info": {
-            "lat": 35.6304783,
-            "lng": -82.5510469
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 35700,
-            "mid_career_median_salary": 63500,
-            "rank": 852,
-            "zip_code": "28804"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Winston-Salem, North Carolina",
-            "acceptance_rate": 42,
-            "applicants": 703
-        },
-        "location_info": {
-            "lat": 35.6304783,
-            "lng": -82.5510469
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 35700,
-            "mid_career_median_salary": 63500,
-            "rank": 852,
-            "zip_code": "28804"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Chapel Hill, North Carolina",
-            "acceptance_rate": 33,
-            "applicants": 22652
-        },
-        "location_info": {
-            "lat": 36.07,
-            "lng": -79.95
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 38900,
-            "mid_career_median_salary": 62700,
-            "rank": 874,
-            "zip_code": "27402"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Winston-Salem, North Carolina",
-            "acceptance_rate": 42,
-            "applicants": 703
-        },
-        "location_info": {
-            "lat": 36.07,
-            "lng": -79.95
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 38900,
-            "mid_career_median_salary": 62700,
-            "rank": 874,
-            "zip_code": "27402"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Chapel Hill, North Carolina",
-            "acceptance_rate": 33,
-            "applicants": 22652
-        },
-        "location_info": {
-            "lat": 34.2253022,
-            "lng": -77.8710285
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 39900,
-            "mid_career_median_salary": 62500,
-            "rank": 881,
-            "zip_code": "28403"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Winston-Salem, North Carolina",
-            "acceptance_rate": 42,
-            "applicants": 703
-        },
-        "location_info": {
-            "lat": 34.2253022,
-            "lng": -77.8710285
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 39900,
-            "mid_career_median_salary": 62500,
-            "rank": 881,
-            "zip_code": "28403"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Chapel Hill, North Carolina",
-            "acceptance_rate": 33,
-            "applicants": 22652
-        },
-        "location_info": {
-            "lat": 34.7100395,
-            "lng": -79.17742679999999
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 37900,
-            "mid_career_median_salary": 54500,
-            "rank": 1001,
-            "zip_code": "28372"
-        },
-        "scores": {
-            "high_sat_math": 710,
-            "low_sat_math": 610,
-            "high_sat_reading": 690,
-            "high_act": 32,
-            "low_act": 27,
-            "low_sat_reading": 590
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Winston-Salem, North Carolina",
-            "acceptance_rate": 42,
-            "applicants": 703
-        },
-        "location_info": {
-            "lat": 34.7100395,
-            "lng": -79.17742679999999
-        },
-        "school": "University of North Carolina",
-        "salary_info": {
-            "early_median_salary": 37900,
-            "mid_career_median_salary": 54500,
-            "rank": 1001,
-            "zip_code": "28372"
         },
         "scores": {
             "high_sat_math": 710,
@@ -3493,7 +2467,7 @@
             "lat": 39.9583587,
             "lng": -75.1953934
         },
-        "school": "University of Pennsylvania",
+        "school": "Lincoln University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
@@ -3520,7 +2494,7 @@
             "lat": 39.9583587,
             "lng": -75.1953934
         },
-        "school": "University of Pennsylvania",
+        "school": "Edinboro University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
@@ -3547,7 +2521,7 @@
             "lat": 39.9583587,
             "lng": -75.1953934
         },
-        "school": "University of Pennsylvania",
+        "school": "Clarion University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
@@ -3574,88 +2548,7 @@
             "lat": 41.0159555,
             "lng": -76.4331698
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 43100,
-            "mid_career_median_salary": 79000,
-            "rank": 365,
-            "zip_code": "17815"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 41.0159555,
-            "lng": -76.4331698
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 43100,
-            "mid_career_median_salary": 79000,
-            "rank": 365,
-            "zip_code": "17815"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 41.0159555,
-            "lng": -76.4331698
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 43100,
-            "mid_career_median_salary": 79000,
-            "rank": 365,
-            "zip_code": "17815"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 41.0159555,
-            "lng": -76.4331698
-        },
-        "school": "University of Pennsylvania",
+        "school": "Bloomsburg University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 43100,
             "mid_career_median_salary": 79000,
@@ -3682,61 +2575,7 @@
             "lat": 41.1678894,
             "lng": -79.3578201
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 36400,
-            "mid_career_median_salary": 78200,
-            "rank": 388,
-            "zip_code": "16214"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 41.1678894,
-            "lng": -79.3578201
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 36400,
-            "mid_career_median_salary": 78200,
-            "rank": 388,
-            "zip_code": "16214"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 41.1678894,
-            "lng": -79.3578201
-        },
-        "school": "University of Pennsylvania",
+        "school": "Clarion University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 36400,
             "mid_career_median_salary": 78200,
@@ -3763,7 +2602,7 @@
             "lat": 41.1678894,
             "lng": -79.3578201
         },
-        "school": "University of Pennsylvania",
+        "school": "Clarion University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 36400,
             "mid_career_median_salary": 78200,
@@ -3790,88 +2629,7 @@
             "lat": 40.61757610000001,
             "lng": -79.1583807
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 42500,
-            "mid_career_median_salary": 70500,
-            "rank": 626,
-            "zip_code": "15705"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 40.61757610000001,
-            "lng": -79.1583807
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 42500,
-            "mid_career_median_salary": 70500,
-            "rank": 626,
-            "zip_code": "15705"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 40.61757610000001,
-            "lng": -79.1583807
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 42500,
-            "mid_career_median_salary": 70500,
-            "rank": 626,
-            "zip_code": "15705"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 40.61757610000001,
-            "lng": -79.1583807
-        },
-        "school": "University of Pennsylvania",
+        "school": "Indiana University of Pennsylvania (IUP)",
         "salary_info": {
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
@@ -3898,88 +2656,7 @@
             "lat": 39.9796881,
             "lng": -76.37530459999999
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 41100,
-            "mid_career_median_salary": 69700,
-            "rank": 651,
-            "zip_code": "17551"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 39.9796881,
-            "lng": -76.37530459999999
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 41100,
-            "mid_career_median_salary": 69700,
-            "rank": 651,
-            "zip_code": "17551"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 39.9796881,
-            "lng": -76.37530459999999
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 41100,
-            "mid_career_median_salary": 69700,
-            "rank": 651,
-            "zip_code": "17551"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 39.9796881,
-            "lng": -76.37530459999999
-        },
-        "school": "University of Pennsylvania",
+        "school": "Millersville University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 41100,
             "mid_career_median_salary": 69700,
@@ -4006,88 +2683,7 @@
             "lat": 40.0570046,
             "lng": -77.4931403
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 42100,
-            "mid_career_median_salary": 67600,
-            "rank": 721,
-            "zip_code": "17257"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 40.0570046,
-            "lng": -77.4931403
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 42100,
-            "mid_career_median_salary": 67600,
-            "rank": 721,
-            "zip_code": "17257"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 40.0570046,
-            "lng": -77.4931403
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 42100,
-            "mid_career_median_salary": 67600,
-            "rank": 721,
-            "zip_code": "17257"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 40.0570046,
-            "lng": -77.4931403
-        },
-        "school": "University of Pennsylvania",
+        "school": "Shippensburg University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 42100,
             "mid_career_median_salary": 67600,
@@ -4114,88 +2710,7 @@
             "lat": 40.0631883,
             "lng": -79.8940806
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 39200,
-            "mid_career_median_salary": 67300,
-            "rank": 735,
-            "zip_code": "15419"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 40.0631883,
-            "lng": -79.8940806
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 39200,
-            "mid_career_median_salary": 67300,
-            "rank": 735,
-            "zip_code": "15419"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 40.0631883,
-            "lng": -79.8940806
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 39200,
-            "mid_career_median_salary": 67300,
-            "rank": 735,
-            "zip_code": "15419"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 40.0631883,
-            "lng": -79.8940806
-        },
-        "school": "University of Pennsylvania",
+        "school": "California University of Pennsylvania (Cal U)",
         "salary_info": {
             "early_median_salary": 39200,
             "mid_career_median_salary": 67300,
@@ -4222,88 +2737,7 @@
             "lat": 40.533145,
             "lng": -75.737149
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 37600,
-            "mid_career_median_salary": 63900,
-            "rank": 839,
-            "zip_code": "19530"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 40.533145,
-            "lng": -75.737149
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 37600,
-            "mid_career_median_salary": 63900,
-            "rank": 839,
-            "zip_code": "19530"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 40.533145,
-            "lng": -75.737149
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 37600,
-            "mid_career_median_salary": 63900,
-            "rank": 839,
-            "zip_code": "19530"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 40.533145,
-            "lng": -75.737149
-        },
-        "school": "University of Pennsylvania",
+        "school": "Kutztown University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 37600,
             "mid_career_median_salary": 63900,
@@ -4330,88 +2764,7 @@
             "lat": 41.8002861,
             "lng": -77.0794705
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 37100,
-            "mid_career_median_salary": 62300,
-            "rank": 886,
-            "zip_code": "16933"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 41.8002861,
-            "lng": -77.0794705
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 37100,
-            "mid_career_median_salary": 62300,
-            "rank": 886,
-            "zip_code": "16933"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Edinboro, Pennsylvania",
-            "acceptance_rate": 44,
-            "applicants": 3992
-        },
-        "location_info": {
-            "lat": 41.8002861,
-            "lng": -77.0794705
-        },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 37100,
-            "mid_career_median_salary": 62300,
-            "rank": 886,
-            "zip_code": "16933"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 41.8002861,
-            "lng": -77.0794705
-        },
-        "school": "University of Pennsylvania",
+        "school": "Mansfield University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 37100,
             "mid_career_median_salary": 62300,
@@ -4438,34 +2791,7 @@
             "lat": 41.8707895,
             "lng": -80.1293626
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 36400,
-            "mid_career_median_salary": 58900,
-            "rank": 951,
-            "zip_code": "16444"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Lincoln University, Pennsylvania",
-            "acceptance_rate": 25,
-            "applicants": 5202
-        },
-        "location_info": {
-            "lat": 41.8707895,
-            "lng": -80.1293626
-        },
-        "school": "University of Pennsylvania",
+        "school": "Edinboro University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 36400,
             "mid_career_median_salary": 58900,
@@ -4492,34 +2818,7 @@
             "lat": 41.8707895,
             "lng": -80.1293626
         },
-        "school": "University of Pennsylvania",
-        "salary_info": {
-            "early_median_salary": 36400,
-            "mid_career_median_salary": 58900,
-            "rank": 951,
-            "zip_code": "16444"
-        },
-        "scores": {
-            "high_sat_math": 780,
-            "low_sat_math": 690,
-            "high_sat_reading": 760,
-            "high_act": 34,
-            "low_act": 30,
-            "low_sat_reading": 660
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Easy",
-            "location": "Clarion, Pennsylvania",
-            "acceptance_rate": 47,
-            "applicants": 3798
-        },
-        "location_info": {
-            "lat": 41.8707895,
-            "lng": -80.1293626
-        },
-        "school": "University of Pennsylvania",
+        "school": "Edinboro University of Pennsylvania",
         "salary_info": {
             "early_median_salary": 36400,
             "mid_career_median_salary": 58900,
@@ -4600,7 +2899,7 @@
             "lat": 32.7657318,
             "lng": -117.199996
         },
-        "school": "University of San Diego",
+        "school": "University of San Diego (USD)",
         "salary_info": {
             "early_median_salary": 50600,
             "mid_career_median_salary": 83500,
@@ -4618,33 +2917,6 @@
     },
     {
         "admission_info": {
-            "difficulty": "Hard",
-            "location": "Tampa, Florida",
-            "acceptance_rate": 43,
-            "applicants": 28547
-        },
-        "location_info": {
-            "lat": 28.0634666,
-            "lng": -82.4129729
-        },
-        "school": "University of South Florida",
-        "salary_info": {
-            "early_median_salary": 42700,
-            "mid_career_median_salary": 76000,
-            "rank": 456,
-            "zip_code": "33620"
-        },
-        "scores": {
-            "high_sat_math": 640,
-            "low_sat_math": 540,
-            "high_sat_reading": 630,
-            "high_act": 28,
-            "low_act": 23,
-            "low_sat_reading": 530
-        }
-    },
-    {
-        "admission_info": {
             "difficulty": "Very Hard",
             "location": "Los Angeles, California",
             "acceptance_rate": 20,
@@ -4654,7 +2926,7 @@
             "lat": 34.0220127,
             "lng": -118.2892046
         },
-        "school": "University of Southern California",
+        "school": "University of Southern California (USC)",
         "salary_info": {
             "early_median_salary": 53000,
             "mid_career_median_salary": 99500,
@@ -4695,33 +2967,6 @@
             "high_act": 29,
             "low_act": 23,
             "low_sat_reading": 520
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Very Hard",
-            "location": "Charlottesville, Virginia",
-            "acceptance_rate": 30,
-            "applicants": 27178
-        },
-        "location_info": {
-            "lat": 38.0335948,
-            "lng": -78.5887951
-        },
-        "school": "University of Virginia",
-        "salary_info": {
-            "early_median_salary": 54700,
-            "mid_career_median_salary": 97600,
-            "rank": 77,
-            "zip_code": "22903"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 640,
-            "high_sat_reading": 720,
-            "high_act": 32,
-            "low_act": 28,
-            "low_sat_reading": 620
         }
     },
     {
@@ -4861,33 +3106,6 @@
     },
     {
         "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Owensboro, Kentucky",
-            "acceptance_rate": 21,
-            "applicants": 910
-        },
-        "location_info": {
-            "lat": 43.1206737,
-            "lng": -77.7337628
-        },
-        "school": "Wesleyan College",
-        "salary_info": {
-            "early_median_salary": 41800,
-            "mid_career_median_salary": 67100,
-            "rank": 739,
-            "zip_code": "14624"
-        },
-        "scores": {
-            "high_sat_math": 540,
-            "low_sat_math": 420,
-            "high_sat_reading": 580,
-            "high_act": 25,
-            "low_act": 18,
-            "low_sat_reading": 450
-        }
-    },
-    {
-        "admission_info": {
             "difficulty": "Avg+",
             "location": "Rochester, New York",
             "acceptance_rate": 47,
@@ -4897,66 +3115,12 @@
             "lat": 43.1206737,
             "lng": -77.7337628
         },
-        "school": "Wesleyan College",
+        "school": "Roberts Wesleyan College",
         "salary_info": {
             "early_median_salary": 41800,
             "mid_career_median_salary": 67100,
             "rank": 739,
             "zip_code": "14624"
-        },
-        "scores": {
-            "high_sat_math": 540,
-            "low_sat_math": 420,
-            "high_sat_reading": 580,
-            "high_act": 25,
-            "low_act": 18,
-            "low_sat_reading": 450
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Owensboro, Kentucky",
-            "acceptance_rate": 21,
-            "applicants": 910
-        },
-        "location_info": {
-            "lat": 36.000632,
-            "lng": -77.8481628
-        },
-        "school": "Wesleyan College",
-        "salary_info": {
-            "early_median_salary": 42000,
-            "mid_career_median_salary": 66300,
-            "rank": 771,
-            "zip_code": "27804"
-        },
-        "scores": {
-            "high_sat_math": 540,
-            "low_sat_math": 420,
-            "high_sat_reading": 580,
-            "high_act": 25,
-            "low_act": 18,
-            "low_sat_reading": 450
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg+",
-            "location": "Rochester, New York",
-            "acceptance_rate": 47,
-            "applicants": 1929
-        },
-        "location_info": {
-            "lat": 36.000632,
-            "lng": -77.8481628
-        },
-        "school": "Wesleyan College",
-        "salary_info": {
-            "early_median_salary": 42000,
-            "mid_career_median_salary": 66300,
-            "rank": 771,
-            "zip_code": "27804"
         },
         "scores": {
             "high_sat_math": 540,
@@ -4978,34 +3142,7 @@
             "lat": 41.5577629,
             "lng": -72.65392159999999
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 46400,
-            "mid_career_median_salary": 97600,
-            "rank": 77,
-            "zip_code": "06459"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 41.5577629,
-            "lng": -72.65392159999999
-        },
-        "school": "Wesleyan University",
+        "school": "Wesleyan University - Middletown, CT",
         "salary_info": {
             "early_median_salary": 46400,
             "mid_career_median_salary": 97600,
@@ -5032,34 +3169,7 @@
             "lat": 40.298702,
             "lng": -83.06772440000002
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 43600,
-            "mid_career_median_salary": 81600,
-            "rank": 308,
-            "zip_code": "43015"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 40.298702,
-            "lng": -83.06772440000002
-        },
-        "school": "Wesleyan University",
+        "school": "Ohio Wesleyan University (OWU)",
         "salary_info": {
             "early_median_salary": 43600,
             "mid_career_median_salary": 81600,
@@ -5086,34 +3196,7 @@
             "lat": 40.5095467,
             "lng": -88.985868
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 45900,
-            "mid_career_median_salary": 81000,
-            "rank": 323,
-            "zip_code": "61702"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 40.5095467,
-            "lng": -88.985868
-        },
-        "school": "Wesleyan University",
+        "school": "Illinois Wesleyan University (IWU)",
         "salary_info": {
             "early_median_salary": 45900,
             "mid_career_median_salary": 81000,
@@ -5140,34 +3223,7 @@
             "lat": 32.7274015,
             "lng": -97.27068070000001
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 36100,
-            "mid_career_median_salary": 74000,
-            "rank": 514,
-            "zip_code": "76105"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 32.7274015,
-            "lng": -97.27068070000001
-        },
-        "school": "Wesleyan University",
+        "school": "Texas Wesleyan University",
         "salary_info": {
             "early_median_salary": 36100,
             "mid_career_median_salary": 74000,
@@ -5194,34 +3250,7 @@
             "lat": 36.7017377,
             "lng": -95.8775964
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 42200,
-            "mid_career_median_salary": 67700,
-            "rank": 717,
-            "zip_code": "74006"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 36.7017377,
-            "lng": -95.8775964
-        },
-        "school": "Wesleyan University",
+        "school": "Oklahoma Wesleyan University (OWU)",
         "salary_info": {
             "early_median_salary": 42200,
             "mid_career_median_salary": 67700,
@@ -5248,34 +3277,7 @@
             "lat": 40.8524941,
             "lng": -96.6584666
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 39200,
-            "mid_career_median_salary": 67500,
-            "rank": 728,
-            "zip_code": "68504"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 40.8524941,
-            "lng": -96.6584666
-        },
-        "school": "Wesleyan University",
+        "school": "Nebraska Wesleyan University (NWU)",
         "salary_info": {
             "early_median_salary": 39200,
             "mid_career_median_salary": 67500,
@@ -5302,34 +3304,7 @@
             "lat": 40.5347721,
             "lng": -85.7051116
         },
-        "school": "Wesleyan University",
-        "salary_info": {
-            "early_median_salary": 41900,
-            "mid_career_median_salary": 59500,
-            "rank": 943,
-            "zip_code": "46953"
-        },
-        "scores": {
-            "high_sat_math": 740,
-            "low_sat_math": 660,
-            "high_sat_reading": 740,
-            "high_act": 33,
-            "low_act": 29,
-            "low_sat_reading": 640
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Salina, Kansas",
-            "acceptance_rate": 48,
-            "applicants": 728
-        },
-        "location_info": {
-            "lat": 40.5347721,
-            "lng": -85.7051116
-        },
-        "school": "Wesleyan University",
+        "school": "Indiana Wesleyan University (IWU)",
         "salary_info": {
             "early_median_salary": 41900,
             "mid_career_median_salary": 59500,
@@ -5356,39 +3331,12 @@
             "lat": 38.1798853,
             "lng": -81.3234382
         },
-        "school": "West Virginia University",
+        "school": "West Virginia University Institute of Technology (WVU Tech)",
         "salary_info": {
             "early_median_salary": 55700,
             "mid_career_median_salary": 95800,
             "rank": 91,
             "zip_code": "25136"
-        },
-        "scores": {
-            "high_sat_math": 580,
-            "low_sat_math": 470,
-            "high_sat_reading": 560,
-            "high_act": 26,
-            "low_act": 21,
-            "low_sat_reading": 460
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Montgomery, West Virginia",
-            "acceptance_rate": 46,
-            "applicants": 1120
-        },
-        "location_info": {
-            "lat": 39.654181,
-            "lng": -79.9594886
-        },
-        "school": "West Virginia University",
-        "salary_info": {
-            "early_median_salary": 47300,
-            "mid_career_median_salary": 81500,
-            "rank": 309,
-            "zip_code": "26506"
         },
         "scores": {
             "high_sat_math": 580,
@@ -5437,66 +3385,12 @@
             "lat": 39.1405079,
             "lng": -84.47239
         },
-        "school": "Xavier University",
+        "school": "Saint Xavier University",
         "salary_info": {
             "early_median_salary": 47100,
             "mid_career_median_salary": 74900,
             "rank": 491,
             "zip_code": "45207"
-        },
-        "scores": {
-            "high_sat_math": 610,
-            "low_sat_math": 510,
-            "high_sat_reading": 600,
-            "high_act": 27,
-            "low_act": 23,
-            "low_sat_reading": 500
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Chicago, Illinois",
-            "acceptance_rate": 49,
-            "applicants": 10247
-        },
-        "location_info": {
-            "lat": 29.9566647,
-            "lng": -90.1073935
-        },
-        "school": "Xavier University",
-        "salary_info": {
-            "early_median_salary": 37400,
-            "mid_career_median_salary": 74000,
-            "rank": 514,
-            "zip_code": "70125"
-        },
-        "scores": {
-            "high_sat_math": 610,
-            "low_sat_math": 510,
-            "high_sat_reading": 600,
-            "high_act": 27,
-            "low_act": 23,
-            "low_sat_reading": 500
-        }
-    },
-    {
-        "admission_info": {
-            "difficulty": "Avg-",
-            "location": "Chicago, Illinois",
-            "acceptance_rate": 49,
-            "applicants": 10247
-        },
-        "location_info": {
-            "lat": 41.6931543,
-            "lng": -87.7123355
-        },
-        "school": "Xavier University",
-        "salary_info": {
-            "early_median_salary": 41100,
-            "mid_career_median_salary": 69300,
-            "rank": 670,
-            "zip_code": "60655"
         },
         "scores": {
             "high_sat_math": 610,

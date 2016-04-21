@@ -15,6 +15,9 @@ def reformat_salaries():
 		# Reformat / curate each JSON
 		element_JSON = {} 
 		element_JSON["school"] = element["School Name"]
+		if "University of Maryland" in element_JSON["school"]: 
+			print element["Zip Code"]
+
 		element_JSON["salary_info"] = {} 
 		element_JSON["salary_info"]["early_median_salary"] = int(element["Early Career Median Pay"])
 		element_JSON["salary_info"]["mid_career_median_salary"] = int(element["Mid-Career Median Pay"])

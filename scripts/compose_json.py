@@ -35,11 +35,22 @@ def compose_JSON(api_key):
 	# Intersect score and salary 
 	for i in score_json: 
 		for j in salary_json: 
-			if (j["school"] in i["school"]) or (i["school"] in j["school"]): 
-				element = { "school": i["school"] } 
+			if j["school"] == "University of Mary": 
+				continue # Disregard this school 
+			if (j["school"] in i["school"]) or (i["school"] in j["school"]):
+
+				# Decide the name 
+				if j["school"] in i["school"]: 
+					element = { "school": i["school"] } 
+				else: 
+					element = { "school": j["school"] }
+
+				# Fill in other details 
 				element["score_JSON"] = i
 				element["salary_JSON"] = j 
-				overall_json.append(element)
+				overall_json.append(element)	
+
+
 
 
 	# At this point, have intersection of SCORES and SALARIES; need ADMISSIONS 
@@ -50,7 +61,12 @@ def compose_JSON(api_key):
 	for i in overall_json: # i represents overall 
 		for j in admissions_json: 
 			if (j["school"] in i["school"]) or (i["school"] in j["school"]): 
-				element = { "school": i["school"] }
+
+				# Decide the name 
+				if j["school"] in i["school"]: 
+					element = { "school": i["school"] }
+				else: 
+					element = { "school": j["school"] }
 
 				# score JSON addition 
 				score_JSON = i["score_JSON"].copy()

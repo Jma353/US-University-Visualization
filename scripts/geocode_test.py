@@ -7,11 +7,11 @@ import json
 import sys
 
 
-def geocode_test(api_key): 
+def geocode_test(): 
 
-	geocode = r.get("https://maps.googleapis.com/maps/api/geocode/json?components=postal_code:07733&key=" + api_key)
-	print geocode.json()["results"][0]["geometry"]["location"] 
+	school = r.get("https://bigfuture.collegeboard.org/college-university-search/cornell-university")
+	print school.content 
 
 
-geocode_test(str(sys.argv[1]))
+geocode_test()
 

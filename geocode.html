@@ -9,7 +9,6 @@
 			}
 
 			svg {
-				margin-left: 15%; 
 				fill: #B58AA5; /* Purple fill */
 				stroke: white; /* White path */
 			}
@@ -38,11 +37,11 @@
 
 
 			// Assign dimensions of SVG element 
-			var width = 1500; 
-			var height = 800; 
+			var width = 2500; 
+			var height = 1500; 
 
 			// Set the projection, based on the fact that we're using a US map 
-			var projection = d3.geo.albersUsa().scale(1500).translate([width / 2, height / 2]); 
+			var projection = d3.geo.albersUsa().scale(2500).translate([width / 2, height / 2]); 
 
 			// Set the path based on this projection 
 			var path = d3.geo.path().projection(projection); 
@@ -64,10 +63,12 @@
 			}); 
 
 			// load the universities 
-			d3.json('schools.json', function(error, data) {
+			d3.json('salary_schools.json', function(error, data) {
 					
 				// Mapping inspiration taken from 
 				// http://chimera.labs.oreilly.com/books/1230000000345/ch12.html#_adding_points
+				var defCircleR = 3; 
+				var largeCircleR = 10; 
 
 
 				svg.selectAll("circle")
@@ -84,8 +85,15 @@
 						var lng = d["location_info"]["lng"]; 
 						return projection([lng, lat])[1]; 
 					})
-					.attr("r", 2.5)
-					.style("fill", "#825A6C"); 
+					.attr("r", defCircleR)
+					.style("fill", "#825A6C")
+					.on("mouseover", function(d) {
+						d3.select(this).transition().duration(500).attr("r", largeCircleR); 
+						console.log(d); 
+					})
+					.on("mouseleave", function(d) {
+						d3.select(this).transition().duration(500).attr("r", defCircleR)
+					}); 
 
 			
 
