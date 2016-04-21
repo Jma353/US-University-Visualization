@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<style>
+
+
+			html {
+				font-family: Helvetica; 
+			}
+
+			svg {
+				margin-left: 25%; 
+			}
+
+
+		</style> 
+	</head> 
+
+	<body>
+
+		<!-- Where the map goes --> 
+		<div class="us-map">
+
+		</div> 
+
+
+		
+		<script src="d3/d3.min.js"></script> 
+		<script src="http://d3js.org/topojson.v0.min.js"></script>
+		<!-- Start of JS --> 
+		<script>
+			// Assign dimensions of SVG element 
+			var width = 960; 
+			var height = 500; 
+
+			// Set the projection, based on the fact that we're using a US map 
+			var projection = d3.geo.albersUsa().scale(1000).translate([width / 2, height / 2]); 
+
+			// Set the path based on this projection 
+			var path = d3.geo.path().projection(projection); 
+
+			// SVG element 
+			var svg = d3.select(".us-map").append("svg").attr("width", width).attr("height", height); 
+
+			// load the map JSON 
+			d3.json("us-states.json", function(error, json) {
+
+				if (error) throw error; 
+
+				svg.selectAll("path")
+					.data(json.features)
+					.enter()
+					.append("path")
+					.attr("d", path); 
+
+			}); 
+
+
+
+
+		</script> 
+
+
+
+	</body> 
+
+
+
+
+</html> 
+
+
+
+
+
