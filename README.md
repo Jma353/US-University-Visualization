@@ -1,8 +1,8 @@
 # CS3300 P2 - US Universities Visualization 
 
-## Clustering of US universities across the country in terms of various parameters 
+## Clustering of US universities in terms of various parameters 
 
-## Data Sources 
+### Data Sources 
 
 	http://www.payscale.com/college-salary-report/bachelors?page=1 // Salaries 
 
@@ -15,3 +15,8 @@
 	https://www.powerscore.com/sat/help/average_test_scores.cfm // Not currently used 
 
 	
+### References
+
+	Used for map : https://bl.ocks.org/mbostock/4090848
+
+	Used for mapping out universities based on latitude / longitude : http://chimera.labs.oreilly.com/books/1230000000345/ch12.html#_adding_points

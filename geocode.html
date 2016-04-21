@@ -40,6 +40,10 @@
 			var width = 2500; 
 			var height = 1500; 
 
+			var DARK_PURPLE = "#825A6C"; 
+			var LIGHT_PURPLE = "#B58AA5"
+			var PINK = "#E39AB2"
+
 			// Set the projection, based on the fact that we're using a US map 
 			var projection = d3.geo.albersUsa().scale(2500).translate([width / 2, height / 2]); 
 
@@ -60,14 +64,22 @@
 					.append("path")
 					.attr("d", path)
 					.on("mouseover", function(d) {
-						d3.selectAll("path").style("fill", "#B58AA5"); // Set all equal to this color 
-						d3.select(this).style("fill", "#E39AB2"); // Set the most recent to this color 
+						d3.selectAll("path").style("fill", LIGHT_PURPLE); // Set all equal to this color 
+						d3.select(this).style("fill", PINK); // Set the most recent to this color 
+						d3.selectAll("circle").style("stroke", "white").style("fill", DARK_PURPLE);  // Set all previous circles to old color 
+					
+						// Highlight relevant circles 
 						var stateName = d["properties"]["name"]; 
-						var unis = []; 
-						var circles = d3.selectAll("circle"); 
-						circles.forEach(function(d) {
-							console.log(d); 
-						}); 
+						var relevantCircles  = 	d3.selectAll("circle").filter(function(d) {
+
+													var circleState = d["location_info"]["state"];
+
+													// Check this condition 
+													circleState = circleState == "District of Columbia" ? "Maryland" : circleState; 
+													return circleState == stateName; 
+												}); 
+						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
+
 					}); 
 
 			}); 
@@ -105,7 +117,7 @@
 					.attr("data", function(d) {
 						return data.indexOf(d); // Return the index of the data we care about
 					})
-					.style("fill", "#825A6C")
+					.style("fill", DARK_PURPLE)
 					.on("mouseover", function(d) {
 						d3.select(this).transition().duration(500).attr("r", largeCircleR); 
 						console.log(d); 
@@ -118,14 +130,9 @@
 			}); 
 
 
-
 		</script> 
 
-
-
 	</body> 
-
-
 
 
 </html> 
