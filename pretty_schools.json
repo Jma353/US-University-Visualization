@@ -11,7 +11,7 @@
             "early_median_salary": 45000,
             "mid_career_median_salary": 89800,
             "rank": 144,
-            "zip_code": 20016
+            "zip_code": "20016"
         },
         "scores": {
             "high_sat_math": 670,
@@ -34,7 +34,7 @@
             "early_median_salary": 60700,
             "mid_career_median_salary": 121000,
             "rank": 9,
-            "zip_code": 2457
+            "zip_code": "02457"
         },
         "scores": {
             "high_sat_math": 700,
@@ -57,7 +57,7 @@
             "early_median_salary": 43100,
             "mid_career_median_salary": 63800,
             "rank": 845,
-            "zip_code": 12504
+            "zip_code": "12504"
         },
         "scores": {
             "high_sat_math": 670,
@@ -80,7 +80,7 @@
             "early_median_salary": 48300,
             "mid_career_median_salary": 81400,
             "rank": 313,
-            "zip_code": 10027
+            "zip_code": "10027"
         },
         "scores": {
             "high_sat_math": 710,
@@ -103,7 +103,7 @@
             "early_median_salary": 58600,
             "mid_career_median_salary": 97200,
             "rank": 82,
-            "zip_code": 2452
+            "zip_code": "02452"
         },
         "scores": {
             "high_sat_math": 670,
@@ -126,7 +126,7 @@
             "early_median_salary": 53100,
             "mid_career_median_salary": 104000,
             "rank": 46,
-            "zip_code": 2467
+            "zip_code": "02467"
         },
         "scores": {
             "high_sat_math": 740,
@@ -149,7 +149,7 @@
             "early_median_salary": 50600,
             "mid_career_median_salary": 91000,
             "rank": 131,
-            "zip_code": 2215
+            "zip_code": "02215"
         },
         "scores": {
             "high_sat_math": 720,
@@ -172,7 +172,7 @@
             "early_median_salary": 45300,
             "mid_career_median_salary": 96200,
             "rank": 88,
-            "zip_code": 2454
+            "zip_code": "02454"
         },
         "scores": {
             "high_sat_math": 740,
@@ -195,7 +195,7 @@
             "early_median_salary": 51700,
             "mid_career_median_salary": 93000,
             "rank": 111,
-            "zip_code": 84602
+            "zip_code": "84602"
         },
         "scores": {
             "high_sat_math": 690,
@@ -218,7 +218,7 @@
             "early_median_salary": 48700,
             "mid_career_median_salary": 76800,
             "rank": 428,
-            "zip_code": 83460
+            "zip_code": "83460"
         },
         "scores": {
             "high_sat_math": 690,
@@ -241,7 +241,7 @@
             "early_median_salary": 57100,
             "mid_career_median_salary": 108000,
             "rank": 35,
-            "zip_code": 2912
+            "zip_code": "02912"
         },
         "scores": {
             "high_sat_math": 770,
@@ -264,7 +264,7 @@
             "early_median_salary": 41000,
             "mid_career_median_salary": 68800,
             "rank": 692,
-            "zip_code": 72761
+            "zip_code": "72761"
         },
         "scores": {
             "high_sat_math": 770,
@@ -287,7 +287,7 @@
             "early_median_salary": 57100,
             "mid_career_median_salary": 99600,
             "rank": 67,
-            "zip_code": 17837
+            "zip_code": "17837"
         },
         "scores": {
             "high_sat_math": 710,
@@ -310,7 +310,7 @@
             "early_median_salary": 72600,
             "mid_career_median_salary": 125000,
             "rank": 5,
-            "zip_code": 91125
+            "zip_code": "91125"
         },
         "scores": {
             "high_sat_math": 800,
@@ -333,7 +333,7 @@
             "early_median_salary": 57800,
             "mid_career_median_salary": 99500,
             "rank": 68,
-            "zip_code": 93407
+            "zip_code": "93407"
         },
         "scores": {
             "high_sat_math": 680,
@@ -356,7 +356,7 @@
             "early_median_salary": 44000,
             "mid_career_median_salary": 107000,
             "rank": 38,
-            "zip_code": 55057
+            "zip_code": "55057"
         },
         "scores": {
             "high_sat_math": 760,
@@ -379,7 +379,7 @@
             "early_median_salary": 64700,
             "mid_career_median_salary": 118000,
             "rank": 14,
-            "zip_code": 15213
+            "zip_code": "15213"
         },
         "scores": {
             "high_sat_math": 790,
@@ -402,7 +402,7 @@
             "early_median_salary": 43800,
             "mid_career_median_salary": 75000,
             "rank": 486,
-            "zip_code": 92866
+            "zip_code": "92866"
         },
         "scores": {
             "high_sat_math": 660,
@@ -425,7 +425,7 @@
             "early_median_salary": 54400,
             "mid_career_median_salary": 105000,
             "rank": 44,
-            "zip_code": 91711
+            "zip_code": "91711"
         },
         "scores": {
             "high_sat_math": 760,
@@ -448,7 +448,7 @@
             "early_median_salary": 48700,
             "mid_career_median_salary": 95100,
             "rank": 96,
-            "zip_code": 4901
+            "zip_code": "04901"
         },
         "scores": {
             "high_sat_math": 720,
@@ -471,7 +471,7 @@
             "early_median_salary": 53700,
             "mid_career_median_salary": 115000,
             "rank": 16,
-            "zip_code": 13346
+            "zip_code": "13346"
         },
         "scores": {
             "high_sat_math": 720,
@@ -494,7 +494,7 @@
             "early_median_salary": 50700,
             "mid_career_median_salary": 92000,
             "rank": 125,
-            "zip_code": 1610
+            "zip_code": "01610"
         },
         "scores": {
             "high_sat_math": 680,
@@ -517,7 +517,7 @@
             "early_median_salary": 35200,
             "mid_career_median_salary": 71800,
             "rank": 586,
-            "zip_code": 65726
+            "zip_code": "65726"
         },
         "scores": {
             "high_sat_math": 560,
@@ -540,7 +540,7 @@
             "early_median_salary": 45900,
             "mid_career_median_salary": 92500,
             "rank": 117,
-            "zip_code": 23187
+            "zip_code": "23187"
         },
         "scores": {
             "high_sat_math": 720,
@@ -563,7 +563,7 @@
             "early_median_salary": 44100,
             "mid_career_median_salary": 85100,
             "rank": 232,
-            "zip_code": 80903
+            "zip_code": "80903"
         },
         "scores": {
             "high_sat_math": 710,
@@ -586,7 +586,7 @@
             "early_median_salary": 65500,
             "mid_career_median_salary": 109000,
             "rank": 32,
-            "zip_code": 80401
+            "zip_code": "80401"
         },
         "scores": {
             "high_sat_math": 720,
@@ -609,7 +609,7 @@
             "early_median_salary": 60200,
             "mid_career_median_salary": 104000,
             "rank": 46,
-            "zip_code": 10027
+            "zip_code": "10027"
         },
         "scores": {
             "high_sat_math": 790,
@@ -632,7 +632,7 @@
             "early_median_salary": 48300,
             "mid_career_median_salary": 81400,
             "rank": 313,
-            "zip_code": 10027
+            "zip_code": "10027"
         },
         "scores": {
             "high_sat_math": 790,
@@ -655,7 +655,7 @@
             "early_median_salary": 62700,
             "mid_career_median_salary": 114000,
             "rank": 18,
-            "zip_code": 10003
+            "zip_code": "10003"
         },
         "scores": {
             "high_sat_math": 770,
@@ -678,7 +678,7 @@
             "early_median_salary": 59700,
             "mid_career_median_salary": 109000,
             "rank": 32,
-            "zip_code": 14853
+            "zip_code": "14853"
         },
         "scores": {
             "high_sat_math": 780,
@@ -701,7 +701,7 @@
             "early_median_salary": 56300,
             "mid_career_median_salary": 111000,
             "rank": 26,
-            "zip_code": 3755
+            "zip_code": "03755"
         },
         "scores": {
             "high_sat_math": 780,
@@ -724,7 +724,7 @@
             "early_median_salary": 48800,
             "mid_career_median_salary": 88100,
             "rank": 178,
-            "zip_code": 28035
+            "zip_code": "28035"
         },
         "scores": {
             "high_sat_math": 720,
@@ -747,7 +747,7 @@
             "early_median_salary": 44500,
             "mid_career_median_salary": 89200,
             "rank": 160,
-            "zip_code": 17013
+            "zip_code": "17013"
         },
         "scores": {
             "high_sat_math": 690,
@@ -770,7 +770,7 @@
             "early_median_salary": 43700,
             "mid_career_median_salary": 80300,
             "rank": 334,
-            "zip_code": 7940
+            "zip_code": "07940"
         },
         "scores": {
             "high_sat_math": 600,
@@ -793,7 +793,7 @@
             "early_median_salary": 60600,
             "mid_career_median_salary": 111000,
             "rank": 26,
-            "zip_code": 27708
+            "zip_code": "27708"
         },
         "scores": {
             "high_sat_math": 790,
@@ -816,7 +816,7 @@
             "early_median_salary": 43300,
             "mid_career_median_salary": 77400,
             "rank": 414,
-            "zip_code": 2116
+            "zip_code": "02116"
         },
         "scores": {
             "high_sat_math": 650,
@@ -839,7 +839,7 @@
             "early_median_salary": 51300,
             "mid_career_median_salary": 89800,
             "rank": 144,
-            "zip_code": 30322
+            "zip_code": "30322"
         },
         "scores": {
             "high_sat_math": 760,
@@ -862,7 +862,7 @@
             "early_median_salary": 49500,
             "mid_career_median_salary": 88900,
             "rank": 164,
-            "zip_code": 10458
+            "zip_code": "10458"
         },
         "scores": {
             "high_sat_math": 680,
@@ -885,7 +885,7 @@
             "early_median_salary": 51800,
             "mid_career_median_salary": 110000,
             "rank": 29,
-            "zip_code": 20057
+            "zip_code": "20057"
         },
         "scores": {
             "high_sat_math": 750,
@@ -908,7 +908,7 @@
             "early_median_salary": 48900,
             "mid_career_median_salary": 100000,
             "rank": 64,
-            "zip_code": 17325
+            "zip_code": "17325"
         },
         "scores": {
             "high_sat_math": 670,
@@ -931,7 +931,7 @@
             "early_median_salary": 42500,
             "mid_career_median_salary": 84200,
             "rank": 256,
-            "zip_code": 50112
+            "zip_code": "50112"
         },
         "scores": {
             "high_sat_math": 750,
@@ -954,7 +954,7 @@
             "early_median_salary": 54700,
             "mid_career_median_salary": 94600,
             "rank": 101,
-            "zip_code": 13323
+            "zip_code": "13323"
         },
         "scores": {
             "high_sat_math": 740,
@@ -977,7 +977,7 @@
             "early_median_salary": 39900,
             "mid_career_median_salary": 74900,
             "rank": 491,
-            "zip_code": 23668
+            "zip_code": "23668"
         },
         "scores": {
             "high_sat_math": 593,
@@ -1000,7 +1000,7 @@
             "early_median_salary": 78200,
             "mid_career_median_salary": 133000,
             "rank": 2,
-            "zip_code": 91711
+            "zip_code": "91711"
         },
         "scores": {
             "high_sat_math": 800,
@@ -1023,7 +1023,7 @@
             "early_median_salary": 42400,
             "mid_career_median_salary": 78000,
             "rank": 394,
-            "zip_code": 1063
+            "zip_code": "01063"
         },
         "scores": {
             "high_sat_math": 660,
@@ -1046,7 +1046,7 @@
             "early_median_salary": 45900,
             "mid_career_median_salary": 81000,
             "rank": 323,
-            "zip_code": 61702
+            "zip_code": "61702"
         },
         "scores": {
             "high_sat_math": 700,
@@ -1069,7 +1069,7 @@
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 19104
+            "zip_code": "19104"
         },
         "scores": {
             "high_sat_math": 540,
@@ -1092,7 +1092,7 @@
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
             "rank": 626,
-            "zip_code": 15705
+            "zip_code": "15705"
         },
         "scores": {
             "high_sat_math": 540,
@@ -1115,7 +1115,7 @@
             "early_median_salary": 57500,
             "mid_career_median_salary": 97500,
             "rank": 81,
-            "zip_code": 21218
+            "zip_code": "21218"
         },
         "scores": {
             "high_sat_math": 770,
@@ -1138,7 +1138,7 @@
             "early_median_salary": 45800,
             "mid_career_median_salary": 97600,
             "rank": 77,
-            "zip_code": 43022
+            "zip_code": "43022"
         },
         "scores": {
             "high_sat_math": 680,
@@ -1161,7 +1161,7 @@
             "early_median_salary": 58900,
             "mid_career_median_salary": 102000,
             "rank": 52,
-            "zip_code": 18042
+            "zip_code": "18042"
         },
         "scores": {
             "high_sat_math": 710,
@@ -1184,7 +1184,7 @@
             "early_median_salary": 49100,
             "mid_career_median_salary": 69300,
             "rank": 670,
-            "zip_code": 13617
+            "zip_code": "13617"
         },
         "scores": {
             "high_sat_math": 710,
@@ -1207,7 +1207,7 @@
             "early_median_salary": 60400,
             "mid_career_median_salary": 108000,
             "rank": 35,
-            "zip_code": 18015
+            "zip_code": "18015"
         },
         "scores": {
             "high_sat_math": 730,
@@ -1230,7 +1230,7 @@
             "early_median_salary": 50600,
             "mid_career_median_salary": 107000,
             "rank": 38,
-            "zip_code": 60637
+            "zip_code": "60637"
         },
         "scores": {
             "high_sat_math": 650,
@@ -1253,7 +1253,7 @@
             "early_median_salary": 40300,
             "mid_career_median_salary": 89300,
             "rank": 157,
-            "zip_code": 55105
+            "zip_code": "55105"
         },
         "scores": {
             "high_sat_math": 730,
@@ -1276,7 +1276,7 @@
             "early_median_salary": 45200,
             "mid_career_median_salary": 75700,
             "rank": 467,
-            "zip_code": 12601
+            "zip_code": "12601"
         },
         "scores": {
             "high_sat_math": 640,
@@ -1299,7 +1299,7 @@
             "early_median_salary": 74900,
             "mid_career_median_salary": 124000,
             "rank": 6,
-            "zip_code": 2139
+            "zip_code": "02139"
         },
         "scores": {
             "high_sat_math": 800,
@@ -1322,7 +1322,7 @@
             "early_median_salary": 50100,
             "mid_career_median_salary": 93900,
             "rank": 106,
-            "zip_code": 5753
+            "zip_code": "05753"
         },
         "scores": {
             "high_sat_math": 740,
@@ -1345,7 +1345,7 @@
             "early_median_salary": 44400,
             "mid_career_median_salary": 65000,
             "rank": 806,
-            "zip_code": 1075
+            "zip_code": "01075"
         },
         "scores": {
             "high_sat_math": 700,
@@ -1368,7 +1368,7 @@
             "early_median_salary": 49100,
             "mid_career_median_salary": 81500,
             "rank": 309,
-            "zip_code": 18104
+            "zip_code": "18104"
         },
         "scores": {
             "high_sat_math": 680,
@@ -1391,7 +1391,7 @@
             "early_median_salary": 51400,
             "mid_career_median_salary": 99000,
             "rank": 71,
-            "zip_code": 10012
+            "zip_code": "10012"
         },
         "scores": {
             "high_sat_math": 740,
@@ -1414,7 +1414,7 @@
             "early_median_salary": 55000,
             "mid_career_median_salary": 89600,
             "rank": 151,
-            "zip_code": 2115
+            "zip_code": "02115"
         },
         "scores": {
             "high_sat_math": 740,
@@ -1437,7 +1437,7 @@
             "early_median_salary": 56300,
             "mid_career_median_salary": 102000,
             "rank": 52,
-            "zip_code": 60208
+            "zip_code": "60208"
         },
         "scores": {
             "high_sat_math": 780,
@@ -1460,7 +1460,7 @@
             "early_median_salary": 41700,
             "mid_career_median_salary": 100000,
             "rank": 64,
-            "zip_code": 44074
+            "zip_code": "44074"
         },
         "scores": {
             "high_sat_math": 720,
@@ -1483,7 +1483,7 @@
             "early_median_salary": 43600,
             "mid_career_median_salary": 81600,
             "rank": 308,
-            "zip_code": 43015
+            "zip_code": "43015"
         },
         "scores": {
             "high_sat_math": 640,
@@ -1506,7 +1506,7 @@
             "early_median_salary": 48300,
             "mid_career_median_salary": 87500,
             "rank": 189,
-            "zip_code": 90263
+            "zip_code": "90263"
         },
         "scores": {
             "high_sat_math": 680,
@@ -1529,7 +1529,7 @@
             "early_median_salary": 61300,
             "mid_career_median_salary": 122000,
             "rank": 8,
-            "zip_code": 8544
+            "zip_code": "08544"
         },
         "scores": {
             "high_sat_math": 800,
@@ -1552,7 +1552,7 @@
             "early_median_salary": 55500,
             "mid_career_median_salary": 92900,
             "rank": 113,
-            "zip_code": 47907
+            "zip_code": "47907"
         },
         "scores": {
             "high_sat_math": 620,
@@ -1575,7 +1575,7 @@
             "early_median_salary": 43100,
             "mid_career_median_salary": 83200,
             "rank": 277,
-            "zip_code": 46323
+            "zip_code": "46323"
         },
         "scores": {
             "high_sat_math": 620,
@@ -1598,7 +1598,7 @@
             "early_median_salary": 43300,
             "mid_career_median_salary": 73900,
             "rank": 521,
-            "zip_code": 46202
+            "zip_code": "46202"
         },
         "scores": {
             "high_sat_math": 620,
@@ -1621,7 +1621,7 @@
             "early_median_salary": 43400,
             "mid_career_median_salary": 70300,
             "rank": 631,
-            "zip_code": 46805
+            "zip_code": "46805"
         },
         "scores": {
             "high_sat_math": 620,
@@ -1644,7 +1644,7 @@
             "early_median_salary": 47600,
             "mid_career_median_salary": 103000,
             "rank": 49,
-            "zip_code": 97202
+            "zip_code": "97202"
         },
         "scores": {
             "high_sat_math": 720,
@@ -1667,7 +1667,7 @@
             "early_median_salary": 63300,
             "mid_career_median_salary": 110000,
             "rank": 29,
-            "zip_code": 12180
+            "zip_code": "12180"
         },
         "scores": {
             "high_sat_math": 770,
@@ -1690,7 +1690,7 @@
             "early_median_salary": 63900,
             "mid_career_median_salary": 114000,
             "rank": 18,
-            "zip_code": 77005
+            "zip_code": "77005"
         },
         "scores": {
             "high_sat_math": 780,
@@ -1713,7 +1713,7 @@
             "early_median_salary": 49800,
             "mid_career_median_salary": 75100,
             "rank": 484,
-            "zip_code": 2115
+            "zip_code": "02115"
         },
         "scores": {
             "high_sat_math": 620,
@@ -1736,7 +1736,7 @@
             "early_median_salary": 43200,
             "mid_career_median_salary": 97600,
             "rank": 77,
-            "zip_code": 12866
+            "zip_code": "12866"
         },
         "scores": {
             "high_sat_math": 670,
@@ -1759,7 +1759,7 @@
             "early_median_salary": 49000,
             "mid_career_median_salary": 94600,
             "rank": 101,
-            "zip_code": 14456
+            "zip_code": "14456"
         },
         "scores": {
             "high_sat_math": 710,
@@ -1782,7 +1782,7 @@
             "early_median_salary": 42400,
             "mid_career_median_salary": 78000,
             "rank": 394,
-            "zip_code": 1063
+            "zip_code": "01063"
         },
         "scores": {
             "high_sat_math": 710,
@@ -1805,7 +1805,7 @@
             "early_median_salary": 65900,
             "mid_career_median_salary": 123000,
             "rank": 7,
-            "zip_code": 94305
+            "zip_code": "94305"
         },
         "scores": {
             "high_sat_math": 790,
@@ -1828,7 +1828,7 @@
             "early_median_salary": 66800,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 7030
+            "zip_code": "07030"
         },
         "scores": {
             "high_sat_math": 670,
@@ -1851,7 +1851,7 @@
             "early_median_salary": 48000,
             "mid_career_median_salary": 109000,
             "rank": 32,
-            "zip_code": 19081
+            "zip_code": "19081"
         },
         "scores": {
             "high_sat_math": 770,
@@ -1874,7 +1874,7 @@
             "early_median_salary": 47400,
             "mid_career_median_salary": 78500,
             "rank": 379,
-            "zip_code": 76129
+            "zip_code": "76129"
         },
         "scores": {
             "high_sat_math": 650,
@@ -1897,7 +1897,7 @@
             "early_median_salary": 51000,
             "mid_career_median_salary": 79800,
             "rank": 347,
-            "zip_code": 8628
+            "zip_code": "08628"
         },
         "scores": {
             "high_sat_math": 680,
@@ -1920,7 +1920,7 @@
             "early_median_salary": 39900,
             "mid_career_median_salary": 68400,
             "rank": 701,
-            "zip_code": 57069
+            "zip_code": "57069"
         },
         "scores": {
             "high_sat_math": 620,
@@ -1943,7 +1943,7 @@
             "early_median_salary": 56400,
             "mid_career_median_salary": 88900,
             "rank": 164,
-            "zip_code": 74104
+            "zip_code": "74104"
         },
         "scores": {
             "high_sat_math": 690,
@@ -1966,7 +1966,7 @@
             "early_median_salary": 49900,
             "mid_career_median_salary": 86500,
             "rank": 203,
-            "zip_code": 6106
+            "zip_code": "06106"
         },
         "scores": {
             "high_sat_math": 700,
@@ -1989,7 +1989,7 @@
             "early_median_salary": 49900,
             "mid_career_median_salary": 86500,
             "rank": 203,
-            "zip_code": 6106
+            "zip_code": "06106"
         },
         "scores": {
             "high_sat_math": 700,
@@ -2012,7 +2012,7 @@
             "early_median_salary": 54200,
             "mid_career_median_salary": 115000,
             "rank": 16,
-            "zip_code": 2155
+            "zip_code": "02155"
         },
         "scores": {
             "high_sat_math": 770,
@@ -2035,7 +2035,7 @@
             "early_median_salary": 44700,
             "mid_career_median_salary": 80100,
             "rank": 337,
-            "zip_code": 70118
+            "zip_code": "70118"
         },
         "scores": {
             "high_sat_math": 700,
@@ -2058,7 +2058,7 @@
             "early_median_salary": 51700,
             "mid_career_median_salary": 99200,
             "rank": 70,
-            "zip_code": 12308
+            "zip_code": "12308"
         },
         "scores": {
             "high_sat_math": 700,
@@ -2081,7 +2081,7 @@
             "early_median_salary": 51700,
             "mid_career_median_salary": 99200,
             "rank": 70,
-            "zip_code": 12308
+            "zip_code": "12308"
         },
         "scores": {
             "high_sat_math": 700,
@@ -2104,7 +2104,7 @@
             "early_median_salary": 51700,
             "mid_career_median_salary": 99200,
             "rank": 70,
-            "zip_code": 12308
+            "zip_code": "12308"
         },
         "scores": {
             "high_sat_math": 700,
@@ -2127,7 +2127,7 @@
             "early_median_salary": 47200,
             "mid_career_median_salary": 80700,
             "rank": 325,
-            "zip_code": 72701
+            "zip_code": "72701"
         },
         "scores": {
             "high_sat_math": 630,
@@ -2150,7 +2150,7 @@
             "early_median_salary": 40800,
             "mid_career_median_salary": 60400,
             "rank": 920,
-            "zip_code": 72204
+            "zip_code": "72204"
         },
         "scores": {
             "high_sat_math": 630,
@@ -2173,7 +2173,7 @@
             "early_median_salary": 45100,
             "mid_career_median_salary": 58100,
             "rank": 966,
-            "zip_code": 72205
+            "zip_code": "72205"
         },
         "scores": {
             "high_sat_math": 630,
@@ -2196,7 +2196,7 @@
             "early_median_salary": 37100,
             "mid_career_median_salary": 56200,
             "rank": 990,
-            "zip_code": 71601
+            "zip_code": "71601"
         },
         "scores": {
             "high_sat_math": 630,
@@ -2219,7 +2219,7 @@
             "early_median_salary": 42700,
             "mid_career_median_salary": 72600,
             "rank": 559,
-            "zip_code": 32816
+            "zip_code": "32816"
         },
         "scores": {
             "high_sat_math": 650,
@@ -2242,7 +2242,7 @@
             "early_median_salary": 50600,
             "mid_career_median_salary": 107000,
             "rank": 38,
-            "zip_code": 60637
+            "zip_code": "60637"
         },
         "scores": {
             "high_sat_math": 790,
@@ -2265,7 +2265,7 @@
             "early_median_salary": 51900,
             "mid_career_median_salary": 89100,
             "rank": 161,
-            "zip_code": 6269
+            "zip_code": "06269"
         },
         "scores": {
             "high_sat_math": 680,
@@ -2288,7 +2288,7 @@
             "early_median_salary": 51900,
             "mid_career_median_salary": 89100,
             "rank": 161,
-            "zip_code": 6269
+            "zip_code": "06269"
         },
         "scores": {
             "high_sat_math": 680,
@@ -2311,7 +2311,7 @@
             "early_median_salary": 49500,
             "mid_career_median_salary": 86300,
             "rank": 209,
-            "zip_code": 32611
+            "zip_code": "32611"
         },
         "scores": {
             "high_sat_math": 690,
@@ -2334,7 +2334,7 @@
             "early_median_salary": 44300,
             "mid_career_median_salary": 75000,
             "rank": 486,
-            "zip_code": 71209
+            "zip_code": "71209"
         },
         "scores": {
             "high_sat_math": "NA",
@@ -2357,7 +2357,7 @@
             "early_median_salary": 44800,
             "mid_career_median_salary": 74800,
             "rank": 493,
-            "zip_code": 70503
+            "zip_code": "70503"
         },
         "scores": {
             "high_sat_math": "NA",
@@ -2380,7 +2380,7 @@
             "early_median_salary": 37400,
             "mid_career_median_salary": 74000,
             "rank": 514,
-            "zip_code": 70125
+            "zip_code": "70125"
         },
         "scores": {
             "high_sat_math": "NA",
@@ -2403,7 +2403,7 @@
             "early_median_salary": 53900,
             "mid_career_median_salary": 91700,
             "rank": 127,
-            "zip_code": 20742
+            "zip_code": "20742"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2426,7 +2426,7 @@
             "early_median_salary": 49700,
             "mid_career_median_salary": 84800,
             "rank": 234,
-            "zip_code": 21250
+            "zip_code": "21250"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2449,7 +2449,7 @@
             "early_median_salary": 49300,
             "mid_career_median_salary": 83300,
             "rank": 273,
-            "zip_code": 20783
+            "zip_code": "20783"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2472,7 +2472,7 @@
             "early_median_salary": 40200,
             "mid_career_median_salary": 80600,
             "rank": 329,
-            "zip_code": 21853
+            "zip_code": "21853"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2495,7 +2495,7 @@
             "early_median_salary": 57400,
             "mid_career_median_salary": 66200,
             "rank": 774,
-            "zip_code": 21201
+            "zip_code": "21201"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2518,7 +2518,7 @@
             "early_median_salary": 42900,
             "mid_career_median_salary": 62800,
             "rank": 871,
-            "zip_code": 58504
+            "zip_code": "58504"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2541,7 +2541,7 @@
             "early_median_salary": 49300,
             "mid_career_median_salary": 76500,
             "rank": 441,
-            "zip_code": 33146
+            "zip_code": "33146"
         },
         "scores": {
             "high_sat_math": 720,
@@ -2564,7 +2564,7 @@
             "early_median_salary": 58000,
             "mid_career_median_salary": 96000,
             "rank": 89,
-            "zip_code": 48109
+            "zip_code": "48109"
         },
         "scores": {
             "high_sat_math": 760,
@@ -2587,7 +2587,7 @@
             "early_median_salary": 50100,
             "mid_career_median_salary": 89400,
             "rank": 155,
-            "zip_code": 48128
+            "zip_code": "48128"
         },
         "scores": {
             "high_sat_math": 760,
@@ -2610,7 +2610,7 @@
             "early_median_salary": 41500,
             "mid_career_median_salary": 57700,
             "rank": 969,
-            "zip_code": 48502
+            "zip_code": "48502"
         },
         "scores": {
             "high_sat_math": 760,
@@ -2633,7 +2633,7 @@
             "early_median_salary": 45500,
             "mid_career_median_salary": 72900,
             "rank": 551,
-            "zip_code": 70148
+            "zip_code": "70148"
         },
         "scores": {
             "high_sat_math": 620,
@@ -2656,7 +2656,7 @@
             "early_median_salary": 46200,
             "mid_career_median_salary": 79400,
             "rank": 357,
-            "zip_code": 27599
+            "zip_code": "27599"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2679,7 +2679,7 @@
             "early_median_salary": 46200,
             "mid_career_median_salary": 79400,
             "rank": 357,
-            "zip_code": 27599
+            "zip_code": "27599"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2702,7 +2702,7 @@
             "early_median_salary": 45200,
             "mid_career_median_salary": 77700,
             "rank": 406,
-            "zip_code": 28223
+            "zip_code": "28223"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2725,7 +2725,7 @@
             "early_median_salary": 45200,
             "mid_career_median_salary": 77700,
             "rank": 406,
-            "zip_code": 28223
+            "zip_code": "28223"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2748,7 +2748,7 @@
             "early_median_salary": 35700,
             "mid_career_median_salary": 63500,
             "rank": 852,
-            "zip_code": 28804
+            "zip_code": "28804"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2771,7 +2771,7 @@
             "early_median_salary": 35700,
             "mid_career_median_salary": 63500,
             "rank": 852,
-            "zip_code": 28804
+            "zip_code": "28804"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2794,7 +2794,7 @@
             "early_median_salary": 38900,
             "mid_career_median_salary": 62700,
             "rank": 874,
-            "zip_code": 27402
+            "zip_code": "27402"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2817,7 +2817,7 @@
             "early_median_salary": 38900,
             "mid_career_median_salary": 62700,
             "rank": 874,
-            "zip_code": 27402
+            "zip_code": "27402"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2840,7 +2840,7 @@
             "early_median_salary": 39900,
             "mid_career_median_salary": 62500,
             "rank": 881,
-            "zip_code": 28403
+            "zip_code": "28403"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2863,7 +2863,7 @@
             "early_median_salary": 39900,
             "mid_career_median_salary": 62500,
             "rank": 881,
-            "zip_code": 28403
+            "zip_code": "28403"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2886,7 +2886,7 @@
             "early_median_salary": 37900,
             "mid_career_median_salary": 54500,
             "rank": 1001,
-            "zip_code": 28372
+            "zip_code": "28372"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2909,7 +2909,7 @@
             "early_median_salary": 37900,
             "mid_career_median_salary": 54500,
             "rank": 1001,
-            "zip_code": 28372
+            "zip_code": "28372"
         },
         "scores": {
             "high_sat_math": 710,
@@ -2932,7 +2932,7 @@
             "early_median_salary": 57400,
             "mid_career_median_salary": 106000,
             "rank": 42,
-            "zip_code": 46556
+            "zip_code": "46556"
         },
         "scores": {
             "high_sat_math": 770,
@@ -2955,7 +2955,7 @@
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 19104
+            "zip_code": "19104"
         },
         "scores": {
             "high_sat_math": 780,
@@ -2978,7 +2978,7 @@
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 19104
+            "zip_code": "19104"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3001,7 +3001,7 @@
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 19104
+            "zip_code": "19104"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3024,7 +3024,7 @@
             "early_median_salary": 60300,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 19104
+            "zip_code": "19104"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3047,7 +3047,7 @@
             "early_median_salary": 43100,
             "mid_career_median_salary": 79000,
             "rank": 365,
-            "zip_code": 17815
+            "zip_code": "17815"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3070,7 +3070,7 @@
             "early_median_salary": 43100,
             "mid_career_median_salary": 79000,
             "rank": 365,
-            "zip_code": 17815
+            "zip_code": "17815"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3093,7 +3093,7 @@
             "early_median_salary": 43100,
             "mid_career_median_salary": 79000,
             "rank": 365,
-            "zip_code": 17815
+            "zip_code": "17815"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3116,7 +3116,7 @@
             "early_median_salary": 43100,
             "mid_career_median_salary": 79000,
             "rank": 365,
-            "zip_code": 17815
+            "zip_code": "17815"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3139,7 +3139,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 78200,
             "rank": 388,
-            "zip_code": 16214
+            "zip_code": "16214"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3162,7 +3162,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 78200,
             "rank": 388,
-            "zip_code": 16214
+            "zip_code": "16214"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3185,7 +3185,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 78200,
             "rank": 388,
-            "zip_code": 16214
+            "zip_code": "16214"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3208,7 +3208,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 78200,
             "rank": 388,
-            "zip_code": 16214
+            "zip_code": "16214"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3231,7 +3231,7 @@
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
             "rank": 626,
-            "zip_code": 15705
+            "zip_code": "15705"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3254,7 +3254,7 @@
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
             "rank": 626,
-            "zip_code": 15705
+            "zip_code": "15705"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3277,7 +3277,7 @@
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
             "rank": 626,
-            "zip_code": 15705
+            "zip_code": "15705"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3300,7 +3300,7 @@
             "early_median_salary": 42500,
             "mid_career_median_salary": 70500,
             "rank": 626,
-            "zip_code": 15705
+            "zip_code": "15705"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3323,7 +3323,7 @@
             "early_median_salary": 41100,
             "mid_career_median_salary": 69700,
             "rank": 651,
-            "zip_code": 17551
+            "zip_code": "17551"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3346,7 +3346,7 @@
             "early_median_salary": 41100,
             "mid_career_median_salary": 69700,
             "rank": 651,
-            "zip_code": 17551
+            "zip_code": "17551"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3369,7 +3369,7 @@
             "early_median_salary": 41100,
             "mid_career_median_salary": 69700,
             "rank": 651,
-            "zip_code": 17551
+            "zip_code": "17551"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3392,7 +3392,7 @@
             "early_median_salary": 41100,
             "mid_career_median_salary": 69700,
             "rank": 651,
-            "zip_code": 17551
+            "zip_code": "17551"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3415,7 +3415,7 @@
             "early_median_salary": 42100,
             "mid_career_median_salary": 67600,
             "rank": 721,
-            "zip_code": 17257
+            "zip_code": "17257"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3438,7 +3438,7 @@
             "early_median_salary": 42100,
             "mid_career_median_salary": 67600,
             "rank": 721,
-            "zip_code": 17257
+            "zip_code": "17257"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3461,7 +3461,7 @@
             "early_median_salary": 42100,
             "mid_career_median_salary": 67600,
             "rank": 721,
-            "zip_code": 17257
+            "zip_code": "17257"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3484,7 +3484,7 @@
             "early_median_salary": 42100,
             "mid_career_median_salary": 67600,
             "rank": 721,
-            "zip_code": 17257
+            "zip_code": "17257"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3507,7 +3507,7 @@
             "early_median_salary": 39200,
             "mid_career_median_salary": 67300,
             "rank": 735,
-            "zip_code": 15419
+            "zip_code": "15419"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3530,7 +3530,7 @@
             "early_median_salary": 39200,
             "mid_career_median_salary": 67300,
             "rank": 735,
-            "zip_code": 15419
+            "zip_code": "15419"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3553,7 +3553,7 @@
             "early_median_salary": 39200,
             "mid_career_median_salary": 67300,
             "rank": 735,
-            "zip_code": 15419
+            "zip_code": "15419"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3576,7 +3576,7 @@
             "early_median_salary": 39200,
             "mid_career_median_salary": 67300,
             "rank": 735,
-            "zip_code": 15419
+            "zip_code": "15419"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3599,7 +3599,7 @@
             "early_median_salary": 37600,
             "mid_career_median_salary": 63900,
             "rank": 839,
-            "zip_code": 19530
+            "zip_code": "19530"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3622,7 +3622,7 @@
             "early_median_salary": 37600,
             "mid_career_median_salary": 63900,
             "rank": 839,
-            "zip_code": 19530
+            "zip_code": "19530"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3645,7 +3645,7 @@
             "early_median_salary": 37600,
             "mid_career_median_salary": 63900,
             "rank": 839,
-            "zip_code": 19530
+            "zip_code": "19530"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3668,7 +3668,7 @@
             "early_median_salary": 37600,
             "mid_career_median_salary": 63900,
             "rank": 839,
-            "zip_code": 19530
+            "zip_code": "19530"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3691,7 +3691,7 @@
             "early_median_salary": 37100,
             "mid_career_median_salary": 62300,
             "rank": 886,
-            "zip_code": 16933
+            "zip_code": "16933"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3714,7 +3714,7 @@
             "early_median_salary": 37100,
             "mid_career_median_salary": 62300,
             "rank": 886,
-            "zip_code": 16933
+            "zip_code": "16933"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3737,7 +3737,7 @@
             "early_median_salary": 37100,
             "mid_career_median_salary": 62300,
             "rank": 886,
-            "zip_code": 16933
+            "zip_code": "16933"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3760,7 +3760,7 @@
             "early_median_salary": 37100,
             "mid_career_median_salary": 62300,
             "rank": 886,
-            "zip_code": 16933
+            "zip_code": "16933"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3783,7 +3783,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 58900,
             "rank": 951,
-            "zip_code": 16444
+            "zip_code": "16444"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3806,7 +3806,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 58900,
             "rank": 951,
-            "zip_code": 16444
+            "zip_code": "16444"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3829,7 +3829,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 58900,
             "rank": 951,
-            "zip_code": 16444
+            "zip_code": "16444"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3852,7 +3852,7 @@
             "early_median_salary": 36400,
             "mid_career_median_salary": 58900,
             "rank": 951,
-            "zip_code": 16444
+            "zip_code": "16444"
         },
         "scores": {
             "high_sat_math": 780,
@@ -3875,7 +3875,7 @@
             "early_median_salary": 48200,
             "mid_career_median_salary": 86400,
             "rank": 206,
-            "zip_code": 23173
+            "zip_code": "23173"
         },
         "scores": {
             "high_sat_math": 720,
@@ -3898,7 +3898,7 @@
             "early_median_salary": 51400,
             "mid_career_median_salary": 101000,
             "rank": 59,
-            "zip_code": 14627
+            "zip_code": "14627"
         },
         "scores": {
             "high_sat_math": 750,
@@ -3921,7 +3921,7 @@
             "early_median_salary": 50600,
             "mid_career_median_salary": 83500,
             "rank": 270,
-            "zip_code": 92110
+            "zip_code": "92110"
         },
         "scores": {
             "high_sat_math": 670,
@@ -3944,7 +3944,7 @@
             "early_median_salary": 42700,
             "mid_career_median_salary": 76000,
             "rank": 456,
-            "zip_code": 33620
+            "zip_code": "33620"
         },
         "scores": {
             "high_sat_math": 640,
@@ -3967,7 +3967,7 @@
             "early_median_salary": 53000,
             "mid_career_median_salary": 99500,
             "rank": 68,
-            "zip_code": 90089
+            "zip_code": "90089"
         },
         "scores": {
             "high_sat_math": 760,
@@ -3990,7 +3990,7 @@
             "early_median_salary": 49000,
             "mid_career_median_salary": 95400,
             "rank": 92,
-            "zip_code": 95211
+            "zip_code": "95211"
         },
         "scores": {
             "high_sat_math": 690,
@@ -4013,7 +4013,7 @@
             "early_median_salary": 54700,
             "mid_career_median_salary": 97600,
             "rank": 77,
-            "zip_code": 22903
+            "zip_code": "22903"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4036,7 +4036,7 @@
             "early_median_salary": 57300,
             "mid_career_median_salary": 102000,
             "rank": 52,
-            "zip_code": 37240
+            "zip_code": "37240"
         },
         "scores": {
             "high_sat_math": 790,
@@ -4059,7 +4059,7 @@
             "early_median_salary": 55300,
             "mid_career_median_salary": 101000,
             "rank": 59,
-            "zip_code": 19085
+            "zip_code": "19085"
         },
         "scores": {
             "high_sat_math": 710,
@@ -4082,7 +4082,7 @@
             "early_median_salary": 49100,
             "mid_career_median_salary": 92100,
             "rank": 122,
-            "zip_code": 27106
+            "zip_code": "27106"
         },
         "scores": {
             "high_sat_math": 710,
@@ -4105,7 +4105,7 @@
             "early_median_salary": 54700,
             "mid_career_median_salary": 120000,
             "rank": 10,
-            "zip_code": 24450
+            "zip_code": "24450"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4128,7 +4128,7 @@
             "early_median_salary": 49000,
             "mid_career_median_salary": 78400,
             "rank": 381,
-            "zip_code": 2481
+            "zip_code": "02481"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4151,7 +4151,7 @@
             "early_median_salary": 41800,
             "mid_career_median_salary": 67100,
             "rank": 739,
-            "zip_code": 14624
+            "zip_code": "14624"
         },
         "scores": {
             "high_sat_math": 540,
@@ -4174,7 +4174,7 @@
             "early_median_salary": 41800,
             "mid_career_median_salary": 67100,
             "rank": 739,
-            "zip_code": 14624
+            "zip_code": "14624"
         },
         "scores": {
             "high_sat_math": 540,
@@ -4197,7 +4197,7 @@
             "early_median_salary": 42000,
             "mid_career_median_salary": 66300,
             "rank": 771,
-            "zip_code": 27804
+            "zip_code": "27804"
         },
         "scores": {
             "high_sat_math": 540,
@@ -4220,7 +4220,7 @@
             "early_median_salary": 42000,
             "mid_career_median_salary": 66300,
             "rank": 771,
-            "zip_code": 27804
+            "zip_code": "27804"
         },
         "scores": {
             "high_sat_math": 540,
@@ -4243,7 +4243,7 @@
             "early_median_salary": 46400,
             "mid_career_median_salary": 97600,
             "rank": 77,
-            "zip_code": 6459
+            "zip_code": "06459"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4266,7 +4266,7 @@
             "early_median_salary": 46400,
             "mid_career_median_salary": 97600,
             "rank": 77,
-            "zip_code": 6459
+            "zip_code": "06459"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4289,7 +4289,7 @@
             "early_median_salary": 43600,
             "mid_career_median_salary": 81600,
             "rank": 308,
-            "zip_code": 43015
+            "zip_code": "43015"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4312,7 +4312,7 @@
             "early_median_salary": 43600,
             "mid_career_median_salary": 81600,
             "rank": 308,
-            "zip_code": 43015
+            "zip_code": "43015"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4335,7 +4335,7 @@
             "early_median_salary": 45900,
             "mid_career_median_salary": 81000,
             "rank": 323,
-            "zip_code": 61702
+            "zip_code": "61702"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4358,7 +4358,7 @@
             "early_median_salary": 45900,
             "mid_career_median_salary": 81000,
             "rank": 323,
-            "zip_code": 61702
+            "zip_code": "61702"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4381,7 +4381,7 @@
             "early_median_salary": 36100,
             "mid_career_median_salary": 74000,
             "rank": 514,
-            "zip_code": 76105
+            "zip_code": "76105"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4404,7 +4404,7 @@
             "early_median_salary": 36100,
             "mid_career_median_salary": 74000,
             "rank": 514,
-            "zip_code": 76105
+            "zip_code": "76105"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4427,7 +4427,7 @@
             "early_median_salary": 42200,
             "mid_career_median_salary": 67700,
             "rank": 717,
-            "zip_code": 74006
+            "zip_code": "74006"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4450,7 +4450,7 @@
             "early_median_salary": 42200,
             "mid_career_median_salary": 67700,
             "rank": 717,
-            "zip_code": 74006
+            "zip_code": "74006"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4473,7 +4473,7 @@
             "early_median_salary": 39200,
             "mid_career_median_salary": 67500,
             "rank": 728,
-            "zip_code": 68504
+            "zip_code": "68504"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4496,7 +4496,7 @@
             "early_median_salary": 39200,
             "mid_career_median_salary": 67500,
             "rank": 728,
-            "zip_code": 68504
+            "zip_code": "68504"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4519,7 +4519,7 @@
             "early_median_salary": 41900,
             "mid_career_median_salary": 59500,
             "rank": 943,
-            "zip_code": 46953
+            "zip_code": "46953"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4542,7 +4542,7 @@
             "early_median_salary": 41900,
             "mid_career_median_salary": 59500,
             "rank": 943,
-            "zip_code": 46953
+            "zip_code": "46953"
         },
         "scores": {
             "high_sat_math": 740,
@@ -4565,7 +4565,7 @@
             "early_median_salary": 55700,
             "mid_career_median_salary": 95800,
             "rank": 91,
-            "zip_code": 25136
+            "zip_code": "25136"
         },
         "scores": {
             "high_sat_math": 580,
@@ -4588,7 +4588,7 @@
             "early_median_salary": 47300,
             "mid_career_median_salary": 81500,
             "rank": 309,
-            "zip_code": 26506
+            "zip_code": "26506"
         },
         "scores": {
             "high_sat_math": 580,
@@ -4611,7 +4611,7 @@
             "early_median_salary": 42400,
             "mid_career_median_salary": 101000,
             "rank": 59,
-            "zip_code": 99362
+            "zip_code": "99362"
         },
         "scores": {
             "high_sat_math": 690,
@@ -4634,7 +4634,7 @@
             "early_median_salary": 47100,
             "mid_career_median_salary": 74900,
             "rank": 491,
-            "zip_code": 45207
+            "zip_code": "45207"
         },
         "scores": {
             "high_sat_math": 610,
@@ -4657,7 +4657,7 @@
             "early_median_salary": 37400,
             "mid_career_median_salary": 74000,
             "rank": 514,
-            "zip_code": 70125
+            "zip_code": "70125"
         },
         "scores": {
             "high_sat_math": 610,
@@ -4680,7 +4680,7 @@
             "early_median_salary": 41100,
             "mid_career_median_salary": 69300,
             "rank": 670,
-            "zip_code": 60655
+            "zip_code": "60655"
         },
         "scores": {
             "high_sat_math": 610,
@@ -4703,7 +4703,7 @@
             "early_median_salary": 60300,
             "mid_career_median_salary": 104000,
             "rank": 46,
-            "zip_code": 6520
+            "zip_code": "06520"
         },
         "scores": {
             "high_sat_math": 790,
