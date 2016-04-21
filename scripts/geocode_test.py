@@ -5,9 +5,6 @@ import requests as r
 import re # Regular expressions 
 import json
 
-# DON'T COMMIT THIS 
-api_key = "AIzaSyCnkX05akk5jUcpy13lasHXzcnAzISyjHY"
-
 
 def geocode_test(api_key): 
 
