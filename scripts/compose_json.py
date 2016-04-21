@@ -37,21 +37,25 @@ def compose_JSON():
 		for j in admissions_json: 
 			if (j["school"] in i["school"]) or (i["school"] in j["school"]): 
 				element = { "school": i["school"] }
-				element["score_JSON"] = i["score_JSON"]
-				element["salary_JSON"] = i["salary_JSON"]
-				element["admissions_JSON"] = j
+
+				# score JSON addition 
+				score_JSON = i["score_JSON"].copy()
+				score_JSON.pop("school", 0)
+				element.update(score_JSON)
+
+				# salary JSON addition 
+				salary_JSON = i["salary_JSON"].copy() 
+				salary_JSON.pop("school", 0)
+				element.update(salary_JSON)
+
+				# admission JSON addition 
+				admissions_JSON = j.copy() 
+				admissions_JSON.pop("school", 0)
+				element.update(admissions_JSON)
+
+				# Add the refined JSON 
 				final_json.append(element)
 
-
-	#	Remove duplicate "schools" tags 
-	for i in range(len(final_json)): 
-		final_json[i]["score_JSON"].pop("school", 0)
-		final_json[i]["salary_JSON"].pop("school", 0)
-		final_json[i]["admissions_JSON"].pop("school", 0)
-
-		# Print out the resultant entry 
-		# print final_json[i] 
-		# print "\n"
 
 	# dump final_json to file 
 	with open("../schools.json", "w") as outfile: 
