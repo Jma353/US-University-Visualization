@@ -6,7 +6,7 @@ import json
 
 def reformat_salaries(): 
 	# Open the file 
-	with open('../salaries.json') as salary_JSON: 
+	with open('../JSONS/archive/salaries.json') as salary_JSON: 
 		salary_json = json.load(salary_JSON)
 
 	new_JSON = [] 
@@ -19,11 +19,12 @@ def reformat_salaries():
 		element_JSON["salary_info"]["early_median_salary"] = int(element["Early Career Median Pay"])
 		element_JSON["salary_info"]["mid_career_median_salary"] = int(element["Mid-Career Median Pay"])
 		element_JSON["salary_info"]["rank"] = int(element["Rank"])
-		element_JSON["salary_info"]["zip_code"] = int(element["Zip Code"])
+		zip_code = element["Zip Code"] if (len(element["Zip Code"]) == 5) else "0" + element["Zip Code"]
+		element_JSON["salary_info"]["zip_code"] = zip_code
 		new_JSON.append(element_JSON)
 
 	# Dump this new JSON 
-	with open('curated_salaries.json', 'w') as outfile: 
+	with open('../JSONS/curated_salaries.json', 'w') as outfile: 
 		json.dump(new_JSON, outfile)
 
 
