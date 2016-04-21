@@ -5,7 +5,6 @@ import requests as r
 import re # Regular expressions 
 import json
 
-
 def geocode_test(api_key): 
 
 	geocode = r.get("https://maps.googleapis.com/maps/api/geocode/json?components=postal_code:3755&key=" + api_key)
