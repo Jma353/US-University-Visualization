@@ -20,7 +20,7 @@ def get_lat_long(api_key, zip_code):
 
 def add_locales_to_salaries(api_key):
 	# Obtain the curated_salaries.json + corresponding JSON 
-	with open('../JSONS/curated_salaries.json') as salary_JSON: 
+	with open('../../JSONS/curated_salaries.json') as salary_JSON: 
 		salary_json = json.load(salary_JSON)
 
 	result_list = [] 
@@ -42,7 +42,7 @@ def add_locales_to_salaries(api_key):
 		result_list.append(element)
 
 	# dump final_json to file 
-	with open("../salary_schools.json", "w") as outfile: 
+	with open("../../salary_schools.json", "w") as outfile: 
 		json.dump(result_list, outfile)
 
 

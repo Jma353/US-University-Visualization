@@ -19,15 +19,15 @@ def get_lat_long(api_key, zip_code):
 
 def compose_JSON(api_key): 
 	# Obtain the scores.json file + corresponding JSON 
-	with open('../JSONS/scores.json') as score_JSON: 
+	with open('../../JSONS/scores.json') as score_JSON: 
 		score_json = json.load(score_JSON)
 
 	# Obtain the curated_salaries.json + corresponding JSON 
-	with open('../JSONS/curated_salaries.json') as salary_JSON: 
+	with open('../../JSONS/curated_salaries.json') as salary_JSON: 
 		salary_json = json.load(salary_JSON)
 
 	# Obtain the admissions.json + corresponding JSON 
-	with open('../JSONS/admissions.json') as admissions_JSON: 
+	with open('../../JSONS/admissions.json') as admissions_JSON: 
 		admissions_json = json.load(admissions_JSON)
 
 	# Start forming the json with intersecting elements 
@@ -102,7 +102,7 @@ def compose_JSON(api_key):
 
 
 	# dump final_json to file 
-	with open("../schools.json", "w") as outfile: 
+	with open("../../schools.json", "w+") as outfile: 
 		json.dump(final_json, outfile)
 
 

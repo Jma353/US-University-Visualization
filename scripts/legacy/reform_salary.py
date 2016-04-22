@@ -6,7 +6,7 @@ import json
 
 def reformat_salaries(): 
 	# Open the file 
-	with open('../JSONS/archive/salaries.json') as salary_JSON: 
+	with open('../../JSONS/archive/salaries.json') as salary_JSON: 
 		salary_json = json.load(salary_JSON)
 
 	new_JSON = [] 
@@ -27,7 +27,7 @@ def reformat_salaries():
 		new_JSON.append(element_JSON)
 
 	# Dump this new JSON 
-	with open('../JSONS/curated_salaries.json', 'w') as outfile: 
+	with open('../../JSONS/curated_salaries.json', 'w') as outfile: 
 		json.dump(new_JSON, outfile)
 
 

@@ -8,7 +8,7 @@ import sys
 
 
 # Load the current JSON we're working with 
-with open("../../salary_schools.json") as school_JSON: 
+with open("../../JSONS/salary_schools.json") as school_JSON: 
 	curr_schools = json.load(school_JSON)
 
 

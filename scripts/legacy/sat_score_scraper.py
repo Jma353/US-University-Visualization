@@ -72,7 +72,7 @@ def get_scores():
 		# Append to list 
 		school_jsons.append(school_JSON)
 
-	with open("../JSONS/scores.json", "w") as outfile: 
+	with open("../../JSONS/scores.json", "w") as outfile: 
 		json.dump(school_jsons, outfile)
 
 

@@ -34,7 +34,7 @@ def get_admissions():
 
 		school_jsons.append(school_JSON)
 
-	with open('admissions.json', 'w') as outfile:
+	with open('admissions.json', 'w+') as outfile:
 		json.dump(school_jsons, outfile)
 
 
