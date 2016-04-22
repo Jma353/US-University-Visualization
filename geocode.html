@@ -126,6 +126,63 @@
 				// Set the data of the 
 				phoneData = data; 
 
+				
+				//append lines to first variable
+					var allthelines=svg.selectAll("line")
+					.data(data)
+					.enter();
+				    allthelines.append("line").attr("x1", 1050)
+                    .attr("y1", 250)
+                    .attr("x2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[0]; 
+					})
+				    .attr("y2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[1]; 
+					})
+				    .attr("stroke-width", 0.2)
+				    .attr("stroke", "gray")
+				    .style("opacity", 1.0)
+					.attr("class",function(d) {
+						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
+					})
+					; //make red on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
+
+					//append lines to second variable
+					/*svg.selectAll("line")
+					.data(data)
+					.enter()*/
+				    allthelines.append("line").attr("x1", 500)
+                    .attr("y1", 600)
+                    .attr("x2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[0]; 
+					})
+				    .attr("y2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[1]; 
+					})
+				    .attr("stroke-width", 0.2)
+				    .attr("stroke", "gray")
+				    .style("opacity", 1.0)
+					.attr("class",function(d) {
+						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
+					});
+					
+					
+					svg.append("text").attr("x", 1050)
+                    .attr("y", 250)
+                    .text("Example: Acc Rate 0-15%").style("fill", "gray");
+					svg.append("text").attr("x", 500)
+                    .attr("y", 600)
+                    .text("var2").style("fill", "gray");
+					//append lines to third variable
+				//circles
 				svg.selectAll("circle")
 					.data(data)
 					.enter()
@@ -148,44 +205,21 @@
 					.on("mouseover", function(d) {
 						d3.select(this).transition().duration(500).attr("r", largeCircleR); 
 						console.log(d); 
-						console.log(d["school"]); 
-						d3.selectAll("."+d["school"].replace(/\s+/g, '')).style({
-       
-        'stroke': 'red'
-      });
+						console.log(d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()); 
+						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
+                           'stroke-width':'2px',
+                           'stroke': 'red'
+                        });
 					})
 					.on("mouseleave", function(d) {
-						d3.select(this).transition().duration(500).attr("r", defCircleR)
-					});
+						d3.select(this).transition().duration(500).attr("r", defCircleR);
+						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
+                           'stroke-width':'0.2px',
+                           'stroke': 'grey'
+                        });
+                    })
 
-
-					//append lines to first variable
-					svg.selectAll("line")
-					.data(data)
-					.enter()
-				    .append("line").attr("x1", 1050)
-                    .attr("y1", 250)
-                    .attr("x2", function(d) {
-						var lat = d["location_info"]["lat"]; 
-						var lng = d["location_info"]["lng"]; 
-						return projection([lng, lat])[0]; 
-					})
-				    .attr("y2", function(d) {
-						var lat = d["location_info"]["lat"]; 
-						var lng = d["location_info"]["lng"]; 
-						return projection([lng, lat])[1]; 
-					})
-				    .attr("stroke-width", 0.2)
-				    .attr("stroke", "gray")
-				    .style("opacity", 1.0)
-					.attr("class",function(d) {
-						return d["school"].replace(/\s+/g, ''); 
-					}); //make red on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
-					svg.append("text").attr("x", 1050)
-                    .attr("y", 250)
-                    .text("Example: Acc Rate 0-15%").style("fill", "gray");
-					//append lines to second variable
-					//append lines to third variable
+					
   
 
 
@@ -194,7 +228,7 @@
 			
 	
 
-			// Basic color fade-in on load up for map 
+			/*// Basic color fade-in on load up for map 
 			$(document).ready(function() {
 				// Set to 0 initially 
 				$('svg').css("fill-opacity", "0"); 
@@ -204,7 +238,7 @@
 				}, 5000, function() {}); 
 
 
-			}); 
+			}); */
 
 
 		
