@@ -148,6 +148,11 @@
 					.on("mouseover", function(d) {
 						d3.select(this).transition().duration(500).attr("r", largeCircleR); 
 						console.log(d); 
+						console.log(d["school"]); 
+						d3.selectAll("."+d["school"].replace(/\s+/g, '')).style({
+       
+        'stroke': 'red'
+      });
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR)
@@ -174,7 +179,7 @@
 				    .attr("stroke", "gray")
 				    .style("opacity", 1.0)
 					.attr("class",function(d) {
-						return d["school"]; 
+						return d["school"].replace(/\s+/g, ''); 
 					}); //make red on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
 					svg.append("text").attr("x", 1050)
                     .attr("y", 250)
