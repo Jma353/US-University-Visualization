@@ -9,10 +9,26 @@
 			}
 
 			svg {
-				fill: #B58AA5; /* Purple fill */
-				stroke: white; /* White path */
+				fill: #B58AA5; /* Purple fill #B58AA5 */
+				stroke: black; /* black path */
+			    stroke-dasharray: 2000px;
+			    stroke-dashoffset: 2000px;
+			    animation-name: draw;
+			    animation-duration: 10s;
+			    animation-fill-mode: forwards;
+			    animation-iteration-count: 1;
+			    animation-timing-function: linear;
 			}
 
+			circle {
+				stroke: white;
+			}
+
+			@keyframes draw {
+				to {
+					stroke-dashoffset: 0;
+				}
+			}
 
 		</style> 
 	</head> 
@@ -24,16 +40,18 @@
 
 		</div> 
 
-		
+		<!-- D3 --> 
 		<script src="d3/d3.min.js"></script> 
+		<!-- jQuery for some animations and UI stuff --> 
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- TopoJSON for the map --> 
 		<script src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- Start of JS --> 
 		<script>
 
+
 			// Map guide used: 
 			// https://bl.ocks.org/mbostock/4090848
-
-
 
 			// Assign dimensions of SVG element 
 			var width = 1000; 
@@ -128,9 +146,24 @@
 
 
 			
+			});
+			
+	
+
+			// Basic color fade-in on load up for map 
+			$(document).ready(function() {
+				// Set to 0 initially 
+				$('svg').css("fill-opacity", "0"); 
+				// Animate it in 
+				$('svg').animate({
+					"fill-opacity": "1.0"
+				}, 5000, function() {}); 
+
+
 			}); 
 
 
+		
 		</script> 
 
 	</body> 
