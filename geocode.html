@@ -12,7 +12,11 @@
 				fill: #B58AA5; /* Purple fill */
 				stroke: white; /* White path */
 			}
-
+text{
+fill:grey;
+stroke:grey;
+font-size:70%;
+}
 
 		</style> 
 	</head> 
@@ -36,7 +40,7 @@
 
 
 			// Assign dimensions of SVG element 
-			var width = 1000; 
+			var width = 1300; 
 			var height = 600; 
 
 			var DARK_PURPLE = "#825A6C"; 
@@ -123,8 +127,33 @@
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR)
-					}); 
-
+					});
+					//append lines to first variable
+					svg.selectAll("line")
+					.data(data)
+					.enter()
+				    .append("line").attr("x1", 1050)
+                    .attr("y1", 250)
+                    .attr("x2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[0]; 
+					})
+				    .attr("y2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[1]; 
+					})
+				    .attr("stroke-width", 0.2).attr("stroke", "grey").style("opacity",'1')
+					.attr("class",function(d) {
+						return d["school"]; 
+					}); //make red on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
+					svg.append("text").attr("x", 1050)
+                    .attr("y", 250)
+                    .text("Example: Acc Rate 0-15%").style("fill", "grey");
+					//append lines to second variable
+					//append lines to third variable
+  
 
 
 			
