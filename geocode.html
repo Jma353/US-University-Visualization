@@ -37,12 +37,11 @@
 
 			/* US Map styling */
 			.us-map {
-
-				margin-left: -175px;
-			}*/
+				margin-left: -200px;
+			}
 			
 			/* General SVG text styling */
-			text {
+			text, .graph-text {
 				fill: #c4a1b7;
 				stroke: #c4a1b7;
 				font-size:70%;
@@ -51,7 +50,6 @@
 			
 			/* University info name styling */
 			#univName{
-
 			    fill: #8d587a;
 				stroke: #6e455f;
 				stroke-width:0.3px;
@@ -76,11 +74,14 @@
 			.axis path, 
 			.axis line {
 				fill: none;
-				stroke: #000;
+				stroke: ;
 				shape-rendering: crispEdges;
 			}
 
-
+			/* Graph text size change */
+			.graph-text { 
+				font-size: 45%; 
+			}
 
 
 
@@ -100,7 +101,7 @@
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1700" height="800"> 
+	         <svg width="1500" height="1500"> 
 	         	<text x="650" y="60" id="univName">Hover over University dot on map for detailed info</text>
 			 	<text x="650" y="80" id="univInfo">.</text>
 			 </svg>
@@ -144,8 +145,9 @@
 					.enter()
 					.append("path")
 					.attr("d", path)
+					.attr("class", "state")
 					.on("mouseover", function(d) {
-						d3.selectAll("path").style("fill", LIGHT_PURPLE); // Set all equal to this color 
+						d3.selectAll(".state").style("fill", LIGHT_PURPLE); // Set all equal to this color 
 						d3.select(this).style("fill", PINK); // Set the most recent to this color 
 						d3.selectAll("circle").style("stroke", "white").style("fill", DARK_PURPLE);  // Set all previous circles to old color 
 					
@@ -165,7 +167,7 @@
 			}); 
 	
 			// Global list of university JSONs 
-			var uniJSONs; 
+			var uniJSONs = 'a'; 
 
 			// load the universities 
 			d3.json('UNIVERSITIES.json', function(error, data) {
@@ -239,7 +241,7 @@
 					
 					svg.append("text").attr("x", 1054)
                     .attr("y", 250)
-                    .text("Example: Acc Rate 0-15%");
+                    .text("0-15%");
 					svg.append("text").attr("x", 500)
                     .attr("y", 605)
                     .text("var2");
@@ -286,58 +288,86 @@
 						d3.select("#univInfo").text("");
                     })
 
-					
- 
+							
+
+
+					/* ALL CLUSTERING SVG THINGS */
+
+
+					// Dimensions of the clustering graph
+					var clusterHeight = 300; 
+					var clusterWidth = 300; 
+					var padding = 25; 	
+
+					// cluster SVG container w/proper margins 
+					var clusterSVG = svg.append("g")
+										.attr("class", "clustering")
+										.attr("height", function () { return clusterHeight + 2*padding; })
+										.attr("width", function () { return clusterWidth + 2*padding; })
+										.attr("transform", "translate(1100, 150)"); 
+
+
+					// SVG with proper dimensions 
+					var cSVG = clusterSVG.append("g")
+											.attr("class", "graph")
+											.attr("height", function () { return clusterHeight; })
+											.attr("width", function () { return clusterWidth; })
+											.attr("transform", "translate(" + padding + "," + padding +")"); 			
+						
+					// Scaling functions 
+					var xScale = d3.scale.linear().range([0, clusterWidth]); 
+					var yScale = d3.scale.linear().range([clusterHeight, 0]);
+
+					// Axes 
+					var xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
+					var yAxis = d3.svg.axis().scale(yScale).orient("left"); 
+
+					// Scaling of the original clustering 
+
+					// SAT score on x-axis 
+					xScale.domain(d3.extent(uniJSONs, function (d) { 
+						return d["score_info"]["mean_sat_score"]; 
+					})).nice(); 
+
+					// Admissions rate on the y-axis 
+					yScale.domain(d3.extent(uniJSONs, function (d) {
+						return d["admissions_info"]["acceptance_rate"]; 
+					})).nice(); 
+
+
+					// Axes setup is based off https://bl.ocks.org/mbostock/3887118 example 
+
+					// x-axis 
+					cSVG.append("g")
+						.attr("class", "x axis")
+						.style("stroke", DARK_PURPLE)
+						.attr("transform", "translate(0," + clusterHeight + ")")
+						.call(xAxis); 
+					// Add a label later 
+
+					// y-axis 
+					cSVG.append("g")
+						.attr("class", "y axis")
+						.style("stroke", DARK_PURPLE)
+						.call(yAxis); 
+					// Add a label later 
+
+
+					// Modify the graph text styling 
+					cSVG.selectAll(".axis text")
+						.attr("class", "graph-text"); 
+
+
+
+					// Physical axes added 
+
+
+
+
 
 			
 			});
 			
-			/* ALL CLUSTERING SVG THINGS */
-
-
-			// Dimensions of the clustering graph
-			var clusterHeight = 300; 
-			var clusterWidth = 300; 
-			var padding = 25; 	
-
-			// cluster SVG container w/proper margins 
-			var clusterSVG = svg.append("g")
-								.attr("class", "clustering")
-								.attr("height", function () { return clusterHeight + 2*padding; })
-								.attr("width", function () { return clusterWidth + 2*padding; }); 
-
-
-			// SVG with proper dimensions 
-			var cSVG = clusterSVG.append("g")
-									.attr("class", "graph")
-									.attr("height", function () { return clusterHeight; })
-									.attr("width", function () { return clusterWidth; })
-									.attr("transform", "translate(" + padding + "," + padding +")"); 			
-				
-			// Scaling functions 
-			var xScale = d3.scale.linear().range([0, clusterWidth]); 
-			var yScale = d3.scale.linear().range([clusterHeight, 0]);
-
-			// Axes 
-			var xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
-			var yAxis = d3.svg.axis().scale(yScale).orient("left"); 
-
-			// Scaling of the original clustering 
-			// SAT score on x-axis 
-			// Admissions rate on the y-axis 
-			xScale.domain(d3.extent(uniJSONs, function (d) { 
-				return d["score_info"]["mean_sat_score"]; 
-			})); 
-			yScale.domain(d3.extent(uniJSONs, function (d) {
-				return d["admissions_info"]["acceptance_rate"]; 
-			})); 
-
-			
-
-
-
-			// Physical axes added 
-
 
 
 			// Basic color fade-in on load up for map 
