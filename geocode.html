@@ -49,6 +49,7 @@
 			#univInfo{
 				stroke-width:0.3px;
 				text-anchor:middle;
+				font-size:65%;
 			}
 
 		</style> 
@@ -226,7 +227,7 @@
                            'stroke': '#660033'
                         });
 						d3.select("#univName").text(d["school"]);
-						d3.select("#univInfo").text("SAT Score: "+d["score_info"]["sat_math_low"]+" | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+" | Salary: "+d["salary_info"]["mid_career_median_salary"]);
+						d3.select("#univInfo").text("SAT Score: "+d["score_info"]["sat_math_low"]+" | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
