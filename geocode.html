@@ -72,6 +72,17 @@
 			}
 
 
+			/* Axes styling (courtesy of https://bl.ocks.org/mbostock/3887118 example) */ 
+			.axis path, 
+			.axis line {
+				fill: none;
+				stroke: #000;
+				shape-rendering: crispEdges;
+			}
+
+
+
+
 
 		</style> 
 	</head> 
@@ -108,7 +119,7 @@
 			var width = 1300; 
 			var height = 610; 
 
-
+			// Colors 
 			var DARK_PURPLE = "#825A6C"; 
 			var LIGHT_PURPLE = "#B58AA5"
 			var PINK = "#E39AB2"
@@ -152,7 +163,8 @@
 					}); 
 
 			}); 
-
+	
+			// Global list of university JSONs 
 			var uniJSONs; 
 
 			// load the universities 
@@ -167,6 +179,14 @@
 
 				// Set the data of the universities equal to the global variable tracking it 
 				uniJSONs = data; 
+
+				// Add field `mean_sat_score` to `score_info` section 
+				for (var i = 0; i < data.length; i++) {
+					var meanMathSATScore = (data[i]["score_info"]["sat_math_low"] + data[i]["score_info"]["sat_math_high"]) / 2; 
+					var meanReadingSATScore = (data[i]["score_info"]["sat_reading_low"] + data[i]["score_info"]["sat_reading_high"]) / 2; 
+					var meanSATScore = meanMathSATScore + meanReadingSATScore; 
+					data[i]["score_info"]["mean_sat_score"] = meanSATScore; 
+				}
 
 				
 				//append lines to first variable
@@ -254,10 +274,7 @@
                            'stroke': '#660033'
                         });
 						d3.select("#univName").text(d["school"]);
-						var meanMathSATScore = (d["score_info"]["sat_math_low"] + d["score_info"]["sat_math_high"]) / 2; 
-						var meanReadingSATScore = (d["score_info"]["sat_reading_low"] + d["score_info"]["sat_reading_high"]) / 2; 
-						var meanSATScore = meanMathSATScore + meanReadingSATScore; 
-						d3.select("#univInfo").text("SAT Score: " + meanSATScore + " | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
@@ -275,26 +292,53 @@
 			
 			});
 			
+			/* ALL CLUSTERING SVG THINGS */
+
+
 			// Dimensions of the clustering graph
 			var clusterHeight = 300; 
 			var clusterWidth = 300; 
 			var padding = 25; 	
+
+			// cluster SVG container w/proper margins 
 			var clusterSVG = svg.append("g")
 								.attr("class", "clustering")
 								.attr("height", function () { return clusterHeight + 2*padding; })
 								.attr("width", function () { return clusterWidth + 2*padding; }); 
 
-			
+
+			// SVG with proper dimensions 
 			var cSVG = clusterSVG.append("g")
 									.attr("class", "graph")
 									.attr("height", function () { return clusterHeight; })
-									.attr("width", function () { return clusterWidth; }); 			
+									.attr("width", function () { return clusterWidth; })
+									.attr("transform", "translate(" + padding + "," + padding +")"); 			
+				
+			// Scaling functions 
+			var xScale = d3.scale.linear().range([0, clusterWidth]); 
+			var yScale = d3.scale.linear().range([clusterHeight, 0]);
+
+			// Axes 
+			var xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
+			var yAxis = d3.svg.axis().scale(yScale).orient("left"); 
+
+			// Scaling of the original clustering 
+			// SAT score on x-axis 
+			// Admissions rate on the y-axis 
+			xScale.domain(d3.extent(uniJSONs, function (d) { 
+				return d["score_info"]["mean_sat_score"]; 
+			})); 
+			yScale.domain(d3.extent(uniJSONs, function (d) {
+				return d["admissions_info"]["acceptance_rate"]; 
+			})); 
+
 			
-			
 
 
 
-	
+			// Physical axes added 
+
+
 
 			// Basic color fade-in on load up for map 
 			$(document).ready(function() {
