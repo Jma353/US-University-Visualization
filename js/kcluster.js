@@ -3,7 +3,7 @@
 
 
 // Basic distance function 
-function distanceForm (a, b, x, y) {
+function distanceFrom (a, b, x, y) {
 	return Math.sqrt(
 		(a[x] - b[x]) * (a[x] - b[x]) + 
 		(a[y] - b[y]) * (a[y] - b[y])
@@ -29,19 +29,22 @@ function initalizeClusters (data, k) {
 // the provided parameter values, and a series of clusters that have just been 
 // initialized to random points, return the data JSONs with an extra field 
 // `clusterId` indicating which cluster the values belong to (minDist away)
+// NOTE: returns a copy of the data (to disallow tampering w/original)
 function initializeData (data, clusters, x, y) {
-	
+	var dataCopies = []
 	for (var i = 0; i < data.length; i++) {
 		var distances = clusters.map(function(d) {
-			return distanceForm(data[i], d, x, y); 
+			return distanceFrom(data[i], d, x, y); 
 		});
 		var minDist = d3.min(distances); 
 		var clusterIndex = distances.indexOf(minDist); 
 		var clusterId = clusters[clusterIndex].id; 
-		data[i]["clusterId"] = clusterId; 
+		var dataCopy = JSON.parse(JSON.stringify(data[i])); // Copies 
+		dataCopy["clusterId"] = clusterId; 
+		dataCopies.push(dataCopy); 
 	}
 
-	return data; 
+	return dataCopies; 
 
 }
 
@@ -70,9 +73,29 @@ function shiftClusters (data, clusters, x, y) {
 // to their proper locations, update the data's `clusterId` to be the closest 
 // cluster, and return the # of data values whose cluster changes 
 function changedClusters (data, clusters, x, y) {
-	// TODO 
+	// To track changed clusters 
+	var numChanged = 0; 
+
+	for (var i = 0; i < data.length; i++) {
+		var distances = clusters.map(function(d) {
+			return distanceFrom(data[i], d, x, y); 
+		});
+		var minDist = d3.min(distances); 
+		var cI = distances.indexOf(minDist); 
+		var clusterId = clusters[cI].id; 
+		var currentClusterId = data[i].clusterId; 
+		if (currentClusterId != clusterId) {
+			data[i].clusterId = clusterId; 
+			numChanged++; 
+		}
+
+	}
+
+	return numChanged; 
 
 }	
+
+
 
 
 
