@@ -10,11 +10,11 @@
 
 			svg {
 				fill: #B58AA5; /* Purple fill #B58AA5 */
-				stroke: black; /* black path */
+				stroke: #6e455f; /* black path */
 			    stroke-dasharray: 2000px;
 			    stroke-dashoffset: 2000px;
 			    animation-name: draw;
-			    animation-duration: 10s;
+			    animation-duration: 20s;
 			    animation-fill-mode: forwards;
 			    animation-iteration-count: 1;
 			    animation-timing-function: linear;
@@ -32,8 +32,8 @@
 			
 			text {
 
-				fill: gray;
-				stroke: gray;
+				fill: #c4a1b7;
+				stroke: #c4a1b7;
 				font-size:70%;
 
 			}
@@ -142,8 +142,8 @@
 						var lng = d["location_info"]["lng"]; 
 						return projection([lng, lat])[1]; 
 					})
-				    .attr("stroke-width", 0.2)
-				    .attr("stroke", "gray")
+				    .attr("stroke-width", 0.5)
+				    .attr("stroke", "#ceb1c3")
 				    .style("opacity", 1.0)
 					.attr("class",function(d) {
 						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
@@ -166,8 +166,8 @@
 						var lng = d["location_info"]["lng"]; 
 						return projection([lng, lat])[1]; 
 					})
-				    .attr("stroke-width", 0.2)
-				    .attr("stroke", "gray")
+				    .attr("stroke-width", 0.5)
+				    .attr("stroke", "#ceb1c3")
 				    .style("opacity", 1.0)
 					.attr("class",function(d) {
 						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
@@ -176,10 +176,10 @@
 					
 					svg.append("text").attr("x", 1050)
                     .attr("y", 250)
-                    .text("Example: Acc Rate 0-15%").style("fill", "gray");
+                    .text("Example: Acc Rate 0-15%");
 					svg.append("text").attr("x", 500)
                     .attr("y", 600)
-                    .text("var2").style("fill", "gray");
+                    .text("var2");
 					//append lines to third variable
 				//circles
 				svg.selectAll("circle")
@@ -206,15 +206,15 @@
 						console.log(d); 
 						console.log(d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()); 
 						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
-                           'stroke-width':'2px',
+                           'stroke-width':'1.5px',
                            'stroke': 'red'
                         });
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
 						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
-                           'stroke-width':'0.2px',
-                           'stroke': 'grey'
+                           'stroke-width':'0.5px',
+                           'stroke': '#ceb1c3'
                         });
                     })
 
