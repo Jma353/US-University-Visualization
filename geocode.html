@@ -3,11 +3,12 @@
 	<head>
 		<style>
 
-
+			/* Overall HTML */
 			html {
 				font-family: Helvetica; 
 			}
 
+			/* SVG styling + drawing animation */
 			svg {
 				fill: #B58AA5; /* Purple fill #B58AA5 */
 				stroke: #6e455f; /* black path */
@@ -22,33 +23,44 @@
 				border:1px black;/*temporary*/
 			}
 
+			/* University circle styling */
 			circle {
 				stroke: white;
 			}
 
+			/* Drawing animation on startup */
 			@keyframes draw {
 				to {
 					stroke-dashoffset: 0;
 				}
 			}
 
+			/* US Map styling */
 			.us-map {
 				margin-left: -350px;
 			}
 			
+			/* General SVG text styling */
 			text {
-
 				fill: #c4a1b7;
 				stroke: #c4a1b7;
 				font-size:70%;
-
 			}
-			#univInfo{
+
+			/* University info text styling */
+			#univInfo {
 			    fill: #8d587a;
 				stroke: #6e455f;
 				stroke-width:0.3px;
 				font-size:90%;
 			}
+
+
+			.clustering {
+				border: solid black 1px; 
+			}
+
+
 
 		</style> 
 	</head> 
@@ -65,7 +77,9 @@
 
 		<!-- Where the map goes --> 
 		<div class="us-map">
-         <svg width="1300" height="610"> <text x="350" y="50" id="univInfo">Hover over University dot on map for detailed info</text> </svg>
+	         <svg width="1700" height="600"> 
+	         	<text x="350" y="50" id="univInfo">Hover over University dot on map for detailed info</text> 
+	         </svg>
 		</div> 
 
 		
@@ -92,7 +106,8 @@
 			var path = d3.geo.path().projection(projection); 
 
 			// SVG element 
-			var svg = d3.select("svg");//(".us-map").append("svg").attr("width", width).attr("height", height); 
+			var svg = d3.select("svg"); 
+			//(".us-map").append("svg").attr("width", width).attr("height", height); 
 
 			// load the map JSON 
 			d3.json("us-states.json", function(error, json) {
@@ -141,7 +156,7 @@
 
 				
 				//append lines to first variable
-					var allthelines=svg.selectAll("line")
+				var allthelines=svg.selectAll("line")
 					.data(data)
 					.enter();
 				    allthelines.append("line").attr("x1", 1200)
@@ -195,6 +210,7 @@
                     .attr("y", 600)
                     .text("var2");
 					//append lines to third variable
+
 				//circles
 				svg.selectAll("circle")
 					.data(data)
@@ -240,6 +256,23 @@
 			
 			});
 			
+			// Dimensions of the clustering graph
+			var clusterHeight = 300; 
+			var clusterWidth = 300; 
+			var padding = 25; 	
+			var clusterSVG = svg.append("g")
+								.attr("class", "clustering")
+								.attr("height", function () { return clusterHeight + 2*padding; })
+								.attr("width", function () { return clusterWidth + 2*padding; }); 
+
+			
+			var cSVG = clusterSVG.append("g")
+									.attr("class", "graph")
+									.attr("height", function () { return clusterHeight; })
+									.attr("width", function () { return clusterWidth; }); 			
+			
+			
+
 
 
 	
