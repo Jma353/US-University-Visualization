@@ -39,11 +39,16 @@
 				font-size:70%;
 
 			}
-			#univInfo{
+			#univName{
 			    fill: #8d587a;
 				stroke: #6e455f;
 				stroke-width:0.3px;
-				font-size:90%;
+				font-size:100%;
+				text-anchor:middle;
+			}
+			#univInfo{
+				stroke-width:0.3px;
+				text-anchor:middle;
 			}
 
 		</style> 
@@ -61,7 +66,9 @@
 
 		<!-- Where the map goes --> 
 		<div class="us-map">
-         <svg width="1300" height="610"> <text x="350" y="50" id="univInfo">Hover over University dot on map for detailed info</text> </svg>
+         <svg width="1300" height="610"> <text x="650" y="40" id="univName">Hover over University dot on map for detailed info</text>
+		 <text x="650" y="60" id="univInfo">.</text>
+		 </svg>
 		</div> 
 
 		
@@ -218,7 +225,8 @@
                            'stroke-width':'4px',
                            'stroke': '#660033'
                         });
-						d3.select("#univInfo").text(d["school"]);
+						d3.select("#univName").text(d["school"]);
+						d3.select("#univInfo").text("SAT Score: "+d["score_info"]["sat_math_low"]+" | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+" | Salary: "+d["salary_info"]["mid_career_median_salary"]);
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
@@ -226,7 +234,8 @@
                            'stroke-width':'0.5px',
                            'stroke': '#ceb1c3'
                         });
-						d3.select("#univInfo").text("Hover over University dot on map for detailed info");
+						d3.select("#univName").text("Hover over University dot on map for detailed info");
+						d3.select("#univInfo").text("");
                     })
 
 					
