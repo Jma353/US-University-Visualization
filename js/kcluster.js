@@ -24,8 +24,10 @@ function initalizeClusters (data, k) {
 	return initial_centroids
 }
 
+
 // Given data array filled with JSONs, each with x and y values namespaced under 
-// the provided parameter values, return the data JSONs with an extra field 
+// the provided parameter values, and a series of clusters that have just been 
+// initialized to random points, return the data JSONs with an extra field 
 // `clusterId` indicating which cluster the values belong to (minDist away)
 function initializeData (data, clusters, x, y) {
 	
@@ -44,11 +46,42 @@ function initializeData (data, clusters, x, y) {
 }
 
 
+// Given data array filled with JSONs, each with x and y values namespaced under 
+// the provided parameter values, and a series of clusters that need to be 
+// updated dependent on the current JSON data associated with them, change the 
+// cluster x + y values as necessary (mean of all associated data)
+function shiftClusters (data, clusters, x, y) {
+
+	for (var i = 0; i < clusters.length; i++) {
+		// Finding relevant data 
+		var clusterId = clusters[i].id 
+		var relevantData = data.filter(function (d) { return d.clusterId == clusterId }); 
+		// Updating x + y values of cluster 
+		clusters[i][x] = d3.mean(relevantData, function (d) { return d[x] }); 
+		clusters[i][y] = d3.mean(relevantData, function (d) { return d[y] }); 
+	}	
+
+}
 
 
-function prepareClusters (data, clusters, x, y) {
+
+// Given data array filled with JSONs, each with x and y values namespaced under 
+// the provided parameter values, and a series of clusters that have been updated
+// to their proper locations, update the data's `clusterId` to be the closest 
+// cluster, and return the # of data values whose cluster changes 
+function changedClusters (data, clusters, x, y) {
 	// TODO 
+
 }	
+
+
+
+
+
+
+
+
+
 
 
 
