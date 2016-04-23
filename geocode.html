@@ -14,10 +14,12 @@
 			    stroke-dasharray: 2000px;
 			    stroke-dashoffset: 2000px;
 			    animation-name: draw;
-			    animation-duration: 20s;
+			    animation-duration: 15s;
 			    animation-fill-mode: forwards;
 			    animation-iteration-count: 1;
 			    animation-timing-function: linear;
+				
+				border:1px black;/*temporary*/
 			}
 
 			circle {
@@ -37,18 +39,18 @@
 				font-size:70%;
 
 			}
+			#univInfo{
+			    fill: #8d587a;
+				stroke: #6e455f;
+				stroke-width:0.3px;
+				font-size:90%;
+			}
 
 		</style> 
 	</head> 
 
 	<body>
-
-		<!-- Where the map goes --> 
-		<div class="us-map">
-
-		</div> 
-
-		<!-- D3 --> 
+	    <!-- D3 --> 
 		<script type="text/javascript" src="d3/d3.min.js"></script> 
 		<!-- jQuery for some animations and UI stuff --> 
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -56,6 +58,13 @@
 		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- k-means clustering functions we wrote --> 
 		<script type="text/javascript" src="js/kcluster.js"></script> 
+
+		<!-- Where the map goes --> 
+		<div class="us-map">
+         <svg width="1300" height="610"> <text x="350" y="50" id="univInfo">Hover over University dot on map for detailed info</text> </svg>
+		</div> 
+
+		
 		<!-- Start of JS --> 
 		<script>
 
@@ -65,7 +74,7 @@
 
 			// Assign dimensions of SVG element 
 			var width = 1300; 
-			var height = 600; 
+			var height = 610; 
 
 			var DARK_PURPLE = "#825A6C"; 
 			var LIGHT_PURPLE = "#B58AA5"
@@ -78,7 +87,7 @@
 			var path = d3.geo.path().projection(projection); 
 
 			// SVG element 
-			var svg = d3.select(".us-map").append("svg").attr("width", width).attr("height", height); 
+			var svg = d3.select("svg");//(".us-map").append("svg").attr("width", width).attr("height", height); 
 
 			// load the map JSON 
 			d3.json("us-states.json", function(error, json) {
@@ -149,7 +158,7 @@
 					.attr("class",function(d) {
 						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
 					})
-					; //make red on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
+					; //make #ff4d4d on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
 
 					//append lines to second variable
 					/*svg.selectAll("line")
@@ -207,9 +216,10 @@
 						console.log(d); 
 						console.log(d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()); 
 						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
-                           'stroke-width':'1.5px',
-                           'stroke': 'red'
+                           'stroke-width':'4px',
+                           'stroke': '#660033'
                         });
+						d3.select("#univInfo").text(d["school"]);
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
@@ -217,6 +227,7 @@
                            'stroke-width':'0.5px',
                            'stroke': '#ceb1c3'
                         });
+						d3.select("#univInfo").text("Hover over University dot on map for detailed info");
                     })
 
 					
