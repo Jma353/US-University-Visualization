@@ -3,7 +3,7 @@
 
 
 // Basic distance function 
-function distanceForm (a, b, x, y) {
+function distanceFrom (a, b, x, y) {
 	return Math.sqrt(
 		(a[x] - b[x]) * (a[x] - b[x]) + 
 		(a[y] - b[y]) * (a[y] - b[y])
@@ -24,31 +24,87 @@ function initalizeClusters (data, k) {
 	return initial_centroids
 }
 
+
 // Given data array filled with JSONs, each with x and y values namespaced under 
-// the provided parameter values, return the data JSONs with an extra field 
+// the provided parameter values, and a series of clusters that have just been 
+// initialized to random points, return the data JSONs with an extra field 
 // `clusterId` indicating which cluster the values belong to (minDist away)
+// NOTE: returns a copy of the data (to disallow tampering w/original)
 function initializeData (data, clusters, x, y) {
-	
+	var dataCopies = []
 	for (var i = 0; i < data.length; i++) {
 		var distances = clusters.map(function(d) {
-			return distanceForm(data[i], d, x, y); 
+			return distanceFrom(data[i], d, x, y); 
 		});
 		var minDist = d3.min(distances); 
 		var clusterIndex = distances.indexOf(minDist); 
 		var clusterId = clusters[clusterIndex].id; 
-		data[i]["clusterId"] = clusterId; 
+		var dataCopy = JSON.parse(JSON.stringify(data[i])); // Copies 
+		dataCopy["clusterId"] = clusterId; 
+		dataCopies.push(dataCopy); 
 	}
 
-	return data; 
+	return dataCopies; 
+
+}
+
+
+// Given data array filled with JSONs, each with x and y values namespaced under 
+// the provided parameter values, and a series of clusters that need to be 
+// updated dependent on the current JSON data associated with them, change the 
+// cluster x + y values as necessary (mean of all associated data)
+function shiftClusters (data, clusters, x, y) {
+
+	for (var i = 0; i < clusters.length; i++) {
+		// Finding relevant data 
+		var clusterId = clusters[i].id 
+		var relevantData = data.filter(function (d) { return d.clusterId == clusterId }); 
+		// Updating x + y values of cluster 
+		clusters[i][x] = d3.mean(relevantData, function (d) { return d[x] }); 
+		clusters[i][y] = d3.mean(relevantData, function (d) { return d[y] }); 
+	}	
 
 }
 
 
 
+// Given data array filled with JSONs, each with x and y values namespaced under 
+// the provided parameter values, and a series of clusters that have been updated
+// to their proper locations, update the data's `clusterId` to be the closest 
+// cluster, and return the # of data values whose cluster changes 
+function changedClusters (data, clusters, x, y) {
+	// To track changed clusters 
+	var numChanged = 0; 
 
-function prepareClusters (data, clusters, x, y) {
-	// TODO 
+	for (var i = 0; i < data.length; i++) {
+		var distances = clusters.map(function(d) {
+			return distanceFrom(data[i], d, x, y); 
+		});
+		var minDist = d3.min(distances); 
+		var cI = distances.indexOf(minDist); 
+		var clusterId = clusters[cI].id; 
+		var currentClusterId = data[i].clusterId; 
+		if (currentClusterId != clusterId) {
+			data[i].clusterId = clusterId; 
+			numChanged++; 
+		}
+
+	}
+
+	return numChanged; 
+
 }	
+
+
+
+
+
+
+
+
+
+
+
 
 
 

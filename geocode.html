@@ -106,12 +106,11 @@
 					
 						// Highlight relevant circles 
 						var stateName = d["properties"]["name"]; 
-						var relevantCircles  = 	d3.selectAll("circle").filter(function(d) {
-
+						var relevantCircles = d3.selectAll("circle")
+												.filter(function(d) {
 													var circleState = d["location_info"]["state"];
-
 													// Check this condition 
-													circleState = circleState == "District of Columbia" ? "Maryland" : circleState; 
+													circleState = circleState == "District of Columbia" ? "Maryland" : circleState 
 													return circleState == stateName; 
 												}); 
 						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
@@ -120,7 +119,7 @@
 
 			}); 
 
-			var phoneData; 
+			var uniJSONs; 
 
 			// load the universities 
 			d3.json('UNIVERSITIES.json', function(error, data) {
@@ -132,8 +131,8 @@
 				var defCircleR = 3; 
 				var largeCircleR = 10; 
 
-				// Set the data of the 
-				phoneData = data; 
+				// Set the data of the universities equal to the global variable tracking it 
+				uniJSONs = data; 
 
 				
 				//append lines to first variable
@@ -231,8 +230,7 @@
                     })
 
 					
-  
-
+ 
 
 			
 			});
