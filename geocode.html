@@ -90,8 +90,8 @@
 		<div class="us-map">
 
 	         <svg width="1700" height="600"> 
-	         	<text x="650" y="40" id="univName">Hover over University dot on map for detailed info</text>
-			 	<text x="650" y="60" id="univInfo">.</text>
+	         	<text x="650" y="60" id="univName">Hover over University dot on map for detailed info</text>
+			 	<text x="650" y="80" id="univInfo">.</text>
 			 </svg>
 
 		</div> 
@@ -173,7 +173,7 @@
 				var allthelines=svg.selectAll("line")
 					.data(data)
 					.enter();
-				    allthelines.append("line").attr("x1", 1200)
+				    allthelines.append("line").attr("x1", 1054)
                     .attr("y1", 250)
                     .attr("x2", function(d) {
 						var lat = d["location_info"]["lat"]; 
@@ -198,7 +198,7 @@
 					.data(data)
 					.enter()*/
 				    allthelines.append("line").attr("x1", 500)
-                    .attr("y1", 600)
+                    .attr("y1", 605)
                     .attr("x2", function(d) {
 						var lat = d["location_info"]["lat"]; 
 						var lng = d["location_info"]["lng"]; 
@@ -217,11 +217,11 @@
 					});
 					
 					
-					svg.append("text").attr("x", 1200)
+					svg.append("text").attr("x", 1054)
                     .attr("y", 250)
                     .text("Example: Acc Rate 0-15%");
 					svg.append("text").attr("x", 500)
-                    .attr("y", 600)
+                    .attr("y", 605)
                     .text("var2");
 					//append lines to third variable
 
