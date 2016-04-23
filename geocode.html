@@ -28,6 +28,11 @@
 				stroke: white;
 			}
 
+			/* Map circle (university mapping) styling */
+			.map-circle {
+				
+			}
+
 			/* Drawing animation on startup */
 			@keyframes draw {
 				to {
@@ -82,6 +87,7 @@
 			.graph-text { 
 				font-size: 45%; 
 			}
+
 
 
 
@@ -160,6 +166,7 @@
 													circleState = circleState == "District of Columbia" ? "Maryland" : circleState 
 													return circleState == stateName; 
 												}); 
+
 						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
 
 					}); 
@@ -247,6 +254,7 @@
                     .text("var2");
 					//append lines to third variable
 
+
 				//circles
 				svg.selectAll("circle")
 					.data(data)
@@ -266,6 +274,7 @@
 					.attr("data", function(d) {
 						return data.indexOf(d); // Return the index of the data we care about
 					})
+					.attr("class", "map-circle")
 					.style("fill", DARK_PURPLE)
 					.on("mouseover", function(d) {
 						d3.select(this).transition().duration(500).attr("r", largeCircleR); 
@@ -359,10 +368,15 @@
 
 
 
-					// Physical axes added 
-
-
-
+					// Add university dots 
+					cSVG.selectAll(".uniDot")
+						.data(uniJSONs).enter()
+					.append("circle")
+						.attr("r", 2)
+						.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
+						.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
+						.style("fill", DARK_PURPLE)
+						.style("stroke", LIGHT_PURPLE); 
 
 
 			
