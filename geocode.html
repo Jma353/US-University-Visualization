@@ -89,7 +89,7 @@
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1700" height="600"> 
+	         <svg width="1700" height="800"> 
 	         	<text x="650" y="60" id="univName">Hover over University dot on map for detailed info</text>
 			 	<text x="650" y="80" id="univInfo">.</text>
 			 </svg>
@@ -254,8 +254,8 @@
                            'stroke': '#660033'
                         });
 						d3.select("#univName").text(d["school"]);
-						var meanMathSATScore = d["score_info"]["sat_math_low"] + d["score_info"]["sat_math_high"] / 2; 
-						var meanReadingSATScore = d["score_info"]["sat_reading_low"] + d["score_info"]["sat_reading_high"] / 2; 
+						var meanMathSATScore = (d["score_info"]["sat_math_low"] + d["score_info"]["sat_math_high"]) / 2; 
+						var meanReadingSATScore = (d["score_info"]["sat_reading_low"] + d["score_info"]["sat_reading_high"]) / 2; 
 						var meanSATScore = meanMathSATScore + meanReadingSATScore; 
 						d3.select("#univInfo").text("SAT Score: " + meanSATScore + " | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 					})
