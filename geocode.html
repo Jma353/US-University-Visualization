@@ -29,6 +29,10 @@
 					stroke-dashoffset: 0;
 				}
 			}
+
+			.us-map {
+				margin-left: -350px;
+			}
 			
 			text {
 
@@ -64,7 +68,7 @@
 			// https://bl.ocks.org/mbostock/4090848
 
 			// Assign dimensions of SVG element 
-			var width = 1300; 
+			var width = 1700; 
 			var height = 600; 
 
 			var DARK_PURPLE = "#825A6C"; 
@@ -130,7 +134,7 @@
 					var allthelines=svg.selectAll("line")
 					.data(data)
 					.enter();
-				    allthelines.append("line").attr("x1", 1050)
+				    allthelines.append("line").attr("x1", 1200)
                     .attr("y1", 250)
                     .attr("x2", function(d) {
 						var lat = d["location_info"]["lat"]; 
@@ -174,7 +178,7 @@
 					});
 					
 					
-					svg.append("text").attr("x", 1050)
+					svg.append("text").attr("x", 1200)
                     .attr("y", 250)
                     .text("Example: Acc Rate 0-15%");
 					svg.append("text").attr("x", 500)
@@ -224,6 +228,8 @@
 			
 			});
 			
+
+
 	
 
 			// Basic color fade-in on load up for map 

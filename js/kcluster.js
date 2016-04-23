@@ -98,6 +98,26 @@ function changedClusters (data, clusters, x, y) {
 
 
 
+// Overall clustering function.  Takes in original data (`originalData`), # of 
+// clusters `k`, x and y namespaces, and a function to call after every clustering 
+// iteration.  Returns nothing.
+function kMeansCluster (originalData, k, x, y, iterFunc) {
+	// Initialize 
+	var clusters = initalizeClusters(data, k); 
+	var data = initializeData(originalData, clusters, x, y); 
+
+	// Initialize this to track the state of clustering
+	var numChanged = null; 
+	while (numChanged == null || numChanged > 0) {
+
+		shiftClusters(data, clusters, x, y); // Shift the clusters 
+		iterFunc(); 
+		numChanged = changedClusters(data, clusters, x, y); // Recalc 
+
+	}
+
+}
+
 
 
 
