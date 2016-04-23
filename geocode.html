@@ -254,7 +254,10 @@
                            'stroke': '#660033'
                         });
 						d3.select("#univName").text(d["school"]);
-						d3.select("#univInfo").text("SAT Score: "+d["score_info"]["sat_math_low"]+" | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+						var meanMathSATScore = d["score_info"]["sat_math_low"] + d["score_info"]["sat_math_high"] / 2; 
+						var meanReadingSATScore = d["score_info"]["sat_reading_low"] + d["score_info"]["sat_reading_high"] / 2; 
+						var meanSATScore = meanMathSATScore + meanReadingSATScore; 
+						d3.select("#univInfo").text("SAT Score: " + meanSATScore + " | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
