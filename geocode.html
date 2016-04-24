@@ -48,7 +48,7 @@
 
 			/* US Map styling */
 			.us-map {
-				margin-left: -100px;
+				margin-left: -140px;
 				margin-top: -20px;
 			}
 			
@@ -107,11 +107,12 @@
 				-moz-border-radius: 10;
 				border-radius: 10px;
 				color: #ffffff;
-				font-size: 20px;
+				font-size: 17px;
 				background: #B58AA5;
-				padding: 10px 20px 10px 20px;
+				padding: 7px 17px 7px 17px;
 				text-decoration: none;
 				text-align: center; 
+				cursor:pointer;
 			}
 
 
@@ -128,23 +129,24 @@
 				margin-left: 50px; 
 				margin-top: 20px; 
 				float: left;
-				margin-bottom: 50px;
+				margin-bottom: 10px;
 			}
 
 
 			/* Header styling */
-			.title-header, .title-subheader {
-				font-size: 200%; 
+			.title-header {
+				font-size: 150%; 
 				margin-left: 50px; 
-				margin-top: 50px; 
+				margin-top: 10px; 
 				color: #825A6C;
 			}
 
 
 			/* Sub-header styling */
 			.title-subheader {
-				font-size: 150%; 
-				margin-top: 20px;
+				font-size: 120%; 
+				margin-top: 0px;
+				margin-left: 50px; 
 			}
 
 
@@ -177,7 +179,7 @@
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1700" height="1000"> 
+	         <svg width="1700" height="620"> 
 	         	<text x="650" y="60" id="univName"></text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
@@ -281,10 +283,10 @@
 					data[i]["score_info"]["mean_sat_score"] = meanSATScore; 
 				}
                 //a list of all acc rate categories and their coordinates[[z],...] where [z]=[[xcoord,ycoord], [minrate,maxrate],[universities names]]
-				var adRate=[[[1054,130],[1,20],[]],[[1054,230],[21,40],[]],[[1054,330],[41,60],[]],[[1054,430],[61,80],[]],[[1054,530],[81,100],[]]];
+				var adRate=[[[1044,130],[1,20],[]],[[1044,230],[21,40],[]],[[1044,330],[41,60],[]],[[1044,430],[61,80],[]],[[1044,530],[81,100],[]]];
 				adRate.forEach( function(t){
 					svg.append("text").attr("x", t[0][0])
-                    .attr("y", t[0][1]).style({'cursor':'pointer'})
+                    .attr("y", t[0][1]).style({'cursor':'default'})
                     .text(t[1][0]+"-"+t[1][1]+"%").on("mouseover",
 					    function(){ //console.log("hi");
 						    
@@ -344,10 +346,10 @@
 					
 
                 //second variable
-				var satScore=[[[185,130],[901,1030],[]],[[185,230],[1031,1160],[]],[[185,330],[1161,1290],[]],[[185,430],[1291,1420],[]],[[185,530],[1421,1550],[]]];
+				var satScore=[[[220,130],[901,1030],[]],[[220,230],[1031,1160],[]],[[220,330],[1161,1290],[]],[[220,430],[1291,1420],[]],[[220,530],[1421,1550],[]]];
 				satScore.forEach( function(t){
 					svg.append("text").attr("x", t[0][0])
-                    .attr("y", t[0][1]).style({'cursor':'pointer'})
+                    .attr("y", t[0][1]).style({'cursor':'default'})
                     .text(t[1][0]+"-"+t[1][1]).style("text-anchor","end").on("mouseover",
 					    function(){ //console.log("hi");
 						    
@@ -424,7 +426,7 @@
 						return data.indexOf(d); // Return the index of the data we care about
 					})
 					.attr("class", "map-circle")
-					.style("fill", DARK_PURPLE)
+					.style("fill", DARK_PURPLE).style({'cursor':'pointer'})
 					.on("mouseover", function(d) {
 
 						// Highlight relevant lines 
