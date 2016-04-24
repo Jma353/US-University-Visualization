@@ -29,7 +29,7 @@
 			/* University circle styling */
 			circle {
 				stroke: white;
-                                stroke-width:1.6px;
+                                stroke-width:1.4px;
 			}
 
 
@@ -291,11 +291,11 @@
                     .text(t[1][0]+"-"+t[1][1]+"%").on("mouseover",
 					    function(){ //console.log("hi");
 						    
-					        t[2].forEach(function(e){d3.selectAll("."+e).moveToFront().style({'stroke-width':'0.8px','stroke': '#660033'});});
+					        t[2].forEach(function(e){d3.selectAll("."+e).style({'stroke-width':'1px','stroke': '#660033'});});
 					    }
 					).on("mouseleave",
 					    function(){ //console.log("hi");
-					        t[2].forEach(function(e){d3.selectAll("."+e).moveToFront().style({'stroke-width':'0.5px','stroke': '#ceb1c3'});});
+					        t[2].forEach(function(e){d3.selectAll("."+e).style({'stroke-width':'0.5px','stroke': '#ceb1c3'});});
 					    }
 					);
 				});
@@ -354,11 +354,11 @@
                     .text(t[1][0]+"-"+t[1][1]).style("text-anchor","end").on("mouseover",
 					    function(){ //console.log("hi");
 						    
-					        t[2].forEach(function(e){d3.selectAll("."+e).moveToFront().style({'stroke-width':'0.8px','stroke': '#660033'});});
+					        t[2].forEach(function(e){d3.selectAll("."+e).style({'stroke-width':'1px','stroke': '#660033'});});
 					    }
 					).on("mouseleave",
 					    function(){ //console.log("hi");
-					        t[2].forEach(function(e){d3.selectAll("."+e).moveToFront().style({'stroke-width':'0.5px','stroke': '#ceb1c3'});});
+					        t[2].forEach(function(e){d3.selectAll("."+e).style({'stroke-width':'0.5px','stroke': '#ceb1c3'});});
 					    }
 					);
 				});
