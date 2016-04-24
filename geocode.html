@@ -6,7 +6,7 @@
 
 			/* Overall HTML */
 			html {
-				font-family: Helvetica; 
+				font-family: "Avenir Next" !important; 
 			}
 
 
@@ -98,6 +98,39 @@
 				font-size: 45%; 
 			}
 
+			/* Button styling achieved through using this tool: http://css3buttongenerator.com/ */ 
+
+			/* Clustering button styling */ 
+			.btn {
+				-webkit-border-radius: 10;
+				-moz-border-radius: 10;
+				border-radius: 10px;
+				color: #ffffff;
+				font-size: 20px;
+				background: #B58AA5;
+				padding: 10px 20px 10px 20px;
+				text-decoration: none;
+				text-align: center; 
+			}
+
+
+			/* Button hover styling */
+			.btn:hover {
+				background: #825A6C;
+				text-decoration: none;
+			}
+
+
+			.cluster-btn-middle, .cluster-btn-edge {
+				width: 120px; 
+				margin-left: 100px; 
+				margin-top: 100px; 
+				float: left;
+			}
+
+			.cluster-btn-edge {
+				margin-left: 50px; 
+			}
 
 
 
@@ -113,6 +146,10 @@
 		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- k-means clustering functions we wrote --> 
 		<script type="text/javascript" src="js/kcluster.js"></script> 
+
+		<div class="btn cluster-btn-edge" style="width: 150px;">Admission Rate</div> 
+		<div class="btn cluster-btn-middle">SAT Score</div> 
+		<div class="btn cluster-btn-middle" style="width: 200px;">Median Career Salary</div> 
 
 		<!-- Where the map goes --> 
 		<div class="us-map">
