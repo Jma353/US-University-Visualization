@@ -3,10 +3,12 @@
 	<head>
 		<style>
 
+
 			/* Overall HTML */
 			html {
 				font-family: Helvetica; 
 			}
+
 
 			/* SVG styling + drawing animation */
 			svg {
@@ -23,15 +25,18 @@
 				border:1px black;/*temporary*/
 			}
 
+
 			/* University circle styling */
 			circle {
 				stroke: white;
 			}
 
+
 			/* Map circle (university mapping) styling */
 			.map-circle {
-				
+
 			}
+
 
 			/* Drawing animation on startup */
 			@keyframes draw {
@@ -40,11 +45,13 @@
 				}
 			}
 
+
 			/* US Map styling */
 			.us-map {
 				margin-left: -200px;
 			}
 			
+
 			/* General SVG text styling */
 			text, .graph-text {
 				fill: #c4a1b7;
@@ -62,12 +69,14 @@
 				text-anchor:middle;
 			}
 
+
 			/* University info text styling */
 			#univInfo{
 				stroke-width:0.3px;
 				text-anchor:middle;
 				font-size:65%;
 			}
+
 
 			/* Clustering styling */
 			.clustering {
@@ -82,6 +91,7 @@
 				stroke: ;
 				shape-rendering: crispEdges;
 			}
+
 
 			/* Graph text size change */
 			.graph-text { 
@@ -118,6 +128,13 @@
 		<!-- Start of JS --> 
 		<script>
 
+			// From http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3 .. 
+			// Solves the issue of bringing a highlighted circle to the front on hover 
+			d3.selection.prototype.moveToFront = function() {
+				return this.each(function() {
+					this.parentNode.appendChild(this); 
+				}); 
+			}
 
 			// Map guide used: 
 			// https://bl.ocks.org/mbostock/4090848
@@ -155,11 +172,12 @@
 					.on("mouseover", function(d) {
 						d3.selectAll(".state").style("fill", LIGHT_PURPLE); // Set all equal to this color 
 						d3.select(this).style("fill", PINK); // Set the most recent to this color 
-						d3.selectAll("circle").style("stroke", "white").style("fill", DARK_PURPLE);  // Set all previous circles to old color 
+						d3.selectAll(".map-circle").style("stroke", "white").style("fill", DARK_PURPLE);  // Set all previous circles to old color 
+						d3.selectAll(".cluster-circle").style("stroke", LIGHT_PURPLE); 
 					
 						// Highlight relevant circles 
 						var stateName = d["properties"]["name"]; 
-						var relevantCircles = d3.selectAll("circle")
+						var relevantCircles = d3.selectAll(".map-circle")
 												.filter(function(d) {
 													var circleState = d["location_info"]["state"];
 													// Check this condition 
@@ -167,6 +185,7 @@
 													return circleState == stateName; 
 												}); 
 
+						relevantCircles.each(function (d) { console.log(d); }); 
 						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
 
 					}); 
@@ -174,7 +193,7 @@
 			}); 
 	
 			// Global list of university JSONs 
-			var uniJSONs = 'a'; 
+			var uniJSONs; 
 
 			// load the universities 
 			d3.json('UNIVERSITIES.json', function(error, data) {
@@ -220,13 +239,17 @@
 					.attr("class",function(d) {
 						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
 					})
-					; //make #ff4d4d on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
+					; 
+
+					//make #ff4d4d on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
 
 					//append lines to second variable
 					/*svg.selectAll("line")
 					.data(data)
 					.enter()*/
-				    allthelines.append("line").attr("x1", 500)
+
+
+				allthelines.append("line").attr("x1", 500)
                     .attr("y1", 605)
                     .attr("x2", function(d) {
 						var lat = d["location_info"]["lat"]; 
@@ -277,7 +300,9 @@
 					.attr("class", "map-circle")
 					.style("fill", DARK_PURPLE)
 					.on("mouseover", function(d) {
-						d3.select(this).transition().duration(500).attr("r", largeCircleR); 
+						var sel = d3.select(this); // Get the element selected 
+						sel.moveToFront(); // Move it to the front 
+						sel.transition().duration(500).attr("r", largeCircleR); 
 						console.log(d); 
 						console.log(d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()); 
 						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
@@ -299,87 +324,101 @@
 
 							
 
-
-					/* ALL CLUSTERING SVG THINGS */
-
-
-					// Dimensions of the clustering graph
-					var clusterHeight = 300; 
-					var clusterWidth = 300; 
-					var padding = 25; 	
-
-					// cluster SVG container w/proper margins 
-					var clusterSVG = svg.append("g")
-										.attr("class", "clustering")
-										.attr("height", function () { return clusterHeight + 2*padding; })
-										.attr("width", function () { return clusterWidth + 2*padding; })
-										.attr("transform", "translate(1100, 150)"); 
+				/* ALL CLUSTERING SVG THINGS */
 
 
-					// SVG with proper dimensions 
-					var cSVG = clusterSVG.append("g")
-											.attr("class", "graph")
-											.attr("height", function () { return clusterHeight; })
-											.attr("width", function () { return clusterWidth; })
-											.attr("transform", "translate(" + padding + "," + padding +")"); 			
-						
-					// Scaling functions 
-					var xScale = d3.scale.linear().range([0, clusterWidth]); 
-					var yScale = d3.scale.linear().range([clusterHeight, 0]);
+				// Dimensions of the clustering graph
+				var clusterHeight = 300; 
+				var clusterWidth = 300; 
+				var padding = 25; 	
 
-					// Axes 
-					var xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
-					var yAxis = d3.svg.axis().scale(yScale).orient("left"); 
-
-					// Scaling of the original clustering 
-
-					// SAT score on x-axis 
-					xScale.domain(d3.extent(uniJSONs, function (d) { 
-						return d["score_info"]["mean_sat_score"]; 
-					})).nice(); 
-
-					// Admissions rate on the y-axis 
-					yScale.domain(d3.extent(uniJSONs, function (d) {
-						return d["admissions_info"]["acceptance_rate"]; 
-					})).nice(); 
+				// cluster SVG container w/proper margins 
+				var clusterSVG = svg.append("g")
+									.attr("class", "clustering")
+									.attr("height", function () { return clusterHeight + 2*padding; })
+									.attr("width", function () { return clusterWidth + 2*padding; })
+									.attr("transform", "translate(1100, 150)"); 
 
 
-					// Axes setup is based off https://bl.ocks.org/mbostock/3887118 example 
+				// SVG with proper dimensions 
+				var cSVG = clusterSVG.append("g")
+										.attr("class", "graph")
+										.attr("height", function () { return clusterHeight; })
+										.attr("width", function () { return clusterWidth; })
+										.attr("transform", "translate(" + padding + "," + padding +")"); 			
+					
+				// Scaling functions 
+				var xScale = d3.scale.linear().range([0, clusterWidth]); 
+				var yScale = d3.scale.linear().range([clusterHeight, 0]);
 
-					// x-axis 
-					cSVG.append("g")
-						.attr("class", "x axis")
-						.style("stroke", DARK_PURPLE)
-						.attr("transform", "translate(0," + clusterHeight + ")")
-						.call(xAxis); 
-					// Add a label later 
+				// Axes 
+				var xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
+				var yAxis = d3.svg.axis().scale(yScale).orient("left"); 
 
-					// y-axis 
-					cSVG.append("g")
-						.attr("class", "y axis")
-						.style("stroke", DARK_PURPLE)
-						.call(yAxis); 
-					// Add a label later 
+				// Scaling of the original clustering 
 
+				// SAT score on x-axis 
+				xScale.domain(d3.extent(uniJSONs, function (d) { 
+					return d["score_info"]["mean_sat_score"]; 
+				})).nice(); 
 
-					// Modify the graph text styling 
-					cSVG.selectAll(".axis text")
-						.attr("class", "graph-text"); 
-
-
-
-					// Add university dots 
-					cSVG.selectAll(".uniDot")
-						.data(uniJSONs).enter()
-					.append("circle")
-						.attr("r", 2)
-						.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
-						.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
-						.style("fill", DARK_PURPLE)
-						.style("stroke", LIGHT_PURPLE); 
+				// Admissions rate on the y-axis 
+				yScale.domain(d3.extent(uniJSONs, function (d) {
+					return d["admissions_info"]["acceptance_rate"]; 
+				})).nice(); 
 
 
-			
+				// Axes setup is based off https://bl.ocks.org/mbostock/3887118 example 
+
+				// x-axis 
+				cSVG.append("g")
+					.attr("class", "x axis")
+					.style("stroke", DARK_PURPLE)
+					.attr("transform", "translate(0," + clusterHeight + ")")
+					.call(xAxis); 
+				// Add a label later 
+
+				// y-axis 
+				cSVG.append("g")
+					.attr("class", "y axis")
+					.style("stroke", DARK_PURPLE)
+					.call(yAxis); 
+				// Add a label later 
+
+
+				// Modify the graph text styling 
+				cSVG.selectAll(".axis text")
+					.attr("class", "graph-text"); 
+
+
+				// k-means cluster this info 
+				var clusterResult = kMeansCluster(uniJSONs, 5, 
+										"score_info", "mean_sat_score", 
+										"admissions_info", "acceptance_rate") 
+
+
+				// Add university dots 
+				cSVG.selectAll("circle")
+					.data(clusterResult[0]).enter()
+				.append("circle")
+					.attr("r", 2)
+					.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
+					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
+					.attr("class", "map-circle cluster-circle")
+					.style("fill", DARK_PURPLE)
+					.style("stroke", LIGHT_PURPLE); 
+
+
+				cSVG.selectAll(".clusterDot")
+					.data(clusterResult[1]).enter()
+				.append("circle")
+					.attr("r", 4)
+					.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
+					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
+					.style("fill", "red")
+					.style("stroke", "red"); 
+
+
 			});
 			
 
