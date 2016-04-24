@@ -66,7 +66,7 @@
 			    fill: #8d587a;
 				stroke: #6e455f;
 				stroke-width:0.3px;
-				font-size:100%;
+				font-size:110%;
 				text-anchor:middle;
 			}
 
@@ -75,7 +75,7 @@
 			#univInfo{
 				stroke-width:0.3px;
 				text-anchor:middle;
-				font-size:65%;
+				font-size:75%;
 			}
 
 
@@ -171,9 +171,9 @@
 		<!-- Clustering buttons --> 
 		<div class="btn cluster-btn admin" style="width: 150px;">Admission Rate</div> 
 		<div class="btn cluster-btn sat">SAT Score</div> 
-		<div class="btn cluster-btn salary" style="width: 200px;">Median Career Salary</div> 
+		<div class="btn cluster-btn salary" style="width: 200px;">Median Mid-career Salary</div> 
 
-		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster</div> 
+		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster(state for which youd like to see which clusters its universities belong to?)</div> 
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
@@ -275,14 +275,49 @@
 					var meanSATScore = meanMathSATScore + meanReadingSATScore; 
 					data[i]["score_info"]["mean_sat_score"] = meanSATScore; 
 				}
-
+                //a list of all acc rate categories and their coordinates[[z],...] where [z]=[[xcoord,ycoord], [minrate,maxrate],[universities names]]
+				var adRate=[[[1054,130],[1,20],[]],[[1054,230],[21,40],[]],[[1054,330],[41,60],[]],[[1054,430],[61,80],[]],[[1054,530],[81,100],[]]];
+				adRate.forEach( function(t){
+					svg.append("text").attr("x", t[0][0])
+                    .attr("y", t[0][1]).style({'cursor':'pointer'})
+                    .text(t[1][0]+"-"+t[1][1]+"%").style("vertical-align","middle").on("mouseover",
+					    function(){ //console.log("hi");
+						    
+					        t[2].forEach(function(e){d3.selectAll("."+e).moveToFront().style({'stroke-width':'1px','stroke': '#660033'});});
+					    }
+					).on("mouseleave",
+					    function(){ console.log("hi");
+					        t[2].forEach(function(e){d3.selectAll("."+e).moveToFront().style({'stroke-width':'0.5px','stroke': '#ceb1c3'});});
+					    }
+					);
+				});
+									
 				
 				//append lines to first variable
 				var allthelines=svg.selectAll("line")
 					.data(data)
 					.enter();
-				    allthelines.append("line").attr("x1", 1054)
-                    .attr("y1", 250)
+				    allthelines.append("line").attr("x1", function(d) { 
+					    return adRate[0][0][0];
+						})
+                    .attr("y1", function(d) { 
+					    var acrate=d["admissions_info"]["acceptance_rate"];
+						var ycoord=0;
+						var i=0;
+						for(i=0;i<5;i++){
+						    var rng=adRate[i][1];
+							
+						    if(acrate>=rng[0]&&acrate<=rng[1]){
+							    ycoord= adRate[i][0][1];
+								adRate[i][2].push(d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase());
+						        return adRate[i][0][1];
+						    }
+						}
+						//console.log(ycoord);
+						//console.log(acrate);
+						//console.log(acrate>=adRate[i][1][0]&&acrate<=adRate[i][1][1]);
+						//return 550;
+					})
                     .attr("x2", function(d) {
 						var lat = d["location_info"]["lat"]; 
 						var lng = d["location_info"]["lng"]; 
@@ -301,12 +336,7 @@
 					})
 					; 
 
-					//make #ff4d4d on mouseover, in future 1200 , 250 will be replaced by other coordinate, and will have 3 such lines per circle
-
-					//append lines to second variable
-					/*svg.selectAll("line")
-					.data(data)
-					.enter()*/
+					
 
 
 				allthelines.append("line").attr("x1", 500)
@@ -329,9 +359,7 @@
 					});
 					
 					
-					svg.append("text").attr("x", 1054)
-                    .attr("y", 250)
-                    .text("0-15%");
+
 					svg.append("text").attr("x", 500)
                     .attr("y", 605)
                     .text("var2");
@@ -365,7 +393,7 @@
 						var relLines = d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase());
 						relLines.moveToFront(); 
 						relLines.style({
-                           'stroke-width':'4px',
+                           'stroke-width':'2px',
                            'stroke': '#660033'
                         });
 
@@ -376,7 +404,7 @@
                          
 						
 						d3.select("#univName").text(d["school"]);
-						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 					})
 					.on("mouseleave", function(d) {
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
