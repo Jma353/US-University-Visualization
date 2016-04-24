@@ -207,6 +207,7 @@
 			var DARK_PURPLE = "#825A6C"; 
 			var LIGHT_PURPLE = "#B58AA5"
 			var PINK = "#E39AB2"
+			var CLUSTER_PINK = "#FF9AB2"
 
 			// Set the projection, based on the fact that we're using a US map 
 			var projection = d3.geo.albersUsa().scale(1000).translate([width / 2, height / 2]); 
@@ -482,8 +483,8 @@
 					.attr("r", 4)
 					.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
-					.style("fill", "red")
-					.style("stroke", "red"); 
+					.style("fill", CLUSTER_PINK)
+					.style("stroke", CLUSTER_PINK); 
 
 
 			});
