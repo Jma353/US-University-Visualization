@@ -126,7 +126,7 @@
 			.cluster-btn {
 				width: 120px; 
 				margin-left: 50px; 
-				margin-top: 10px; 
+				margin-top: 20px; 
 				float: left;
 				margin-bottom: 50px;
 			}
@@ -169,15 +169,15 @@
 
 
 		<!-- Clustering buttons --> 
-		<div class="btn cluster-btn admin" style="width: 150px;">Admission Rate</div> 
-		<div class="btn cluster-btn sat">SAT Score</div> 
-		<div class="btn cluster-btn salary" style="width: 200px;">Median Mid-career Salary</div> 
+		<div class="btn cluster-btn admin" style="width: 150px;" data="admissions_info">Admissions Rate</div> 
+		<div class="btn cluster-btn sat" data="score_info">SAT Score</div> 
+		<div class="btn cluster-btn salary" style="width: 300px;" data="salary_info">Median Mid-career Salary</div> 
 
-		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster(state for which youd like to see which clusters its universities belong to?)</div> 
+		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster</div> 
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1500" height="1000"> 
+	         <svg width="1700" height="1000"> 
 	         	<text x="650" y="60" id="univName"></text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
@@ -208,6 +208,12 @@
 			var LIGHT_PURPLE = "#B58AA5"
 			var PINK = "#E39AB2"
 			var CLUSTER_PINK = "#FF9AB2"
+
+			// Global list of university JSONs 
+			var uniJSONs; 
+
+			// Selected parameters to cluster by 
+			var selectedParms = [];  
 
 			// Set the projection, based on the fact that we're using a US map 
 			var projection = d3.geo.albersUsa().scale(1000).translate([width / 2, height / 2]); 
@@ -253,8 +259,6 @@
 
 			}); 
 	
-			// Global list of university JSONs 
-			var uniJSONs; 
 
 			// load the universities 
 			d3.json('UNIVERSITIES.json', function(error, data) {
@@ -355,6 +359,8 @@
 					    }
 					);
 				});
+
+
 				//lines
 				allthelines.append("line").attr("x1", function(d) { 
 					    return satScore[0][0][0];
@@ -390,12 +396,12 @@
 						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
 					});
 					
-					
+				
 
-					svg.append("text").attr("x", 500)
-                    .attr("y", 605)
-                    .text("salary will go here");
-					
+				svg.append("text").attr("x", 500)
+                .attr("y", 605)
+                .text("salary will go here");
+				
 
 
 				//circles
@@ -463,7 +469,7 @@
 									.attr("class", "clustering")
 									.attr("height", function () { return clusterHeight + 2*padding; })
 									.attr("width", function () { return clusterWidth + 2*padding; })
-									.attr("transform", "translate(1100, 150)"); 
+									.attr("transform", "translate(1200, 150)"); 
 
 
 				// SVG with proper dimensions 
@@ -562,6 +568,23 @@
 
 			}); 
 
+
+			$(".cluster-btn").on("click", function(e) {
+				// Push this on if it's not in the array already 
+				var inArray = false; 
+				var s = $(this); 
+				selectedParms.forEach(function(d) {
+					inArray = inArray || (d.attr("data") == s.attr("data"))
+				}); 
+				if (!inArray) {
+					selectedParms.push($(this)); 
+					$(this).css("background", PINK); 
+					if (selectedParms.length > 2) {
+						var removedButton = selectedParms.splice(0, 1)[0]; // Remove the first element
+						removedButton.css("background", LIGHT_PURPLE); 
+					}		
+				}
+			}); 
 
 		
 		</script> 
