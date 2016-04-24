@@ -49,6 +49,7 @@
 			/* US Map styling */
 			.us-map {
 				margin-left: -200px;
+				margin-top: -20px;
 			}
 			
 
@@ -121,17 +122,30 @@
 			}
 
 
-			.cluster-btn-middle, .cluster-btn-edge {
+			/* Clustering button layout */ 
+			.cluster-btn {
 				width: 120px; 
-				margin-left: 100px; 
-				margin-top: 100px; 
-				float: left;
-			}
-
-			.cluster-btn-edge {
 				margin-left: 50px; 
+				margin-top: 10px; 
+				float: left;
+				margin-bottom: 50px;
 			}
 
+
+			/* Header styling */
+			.title-header, .title-subheader {
+				font-size: 200%; 
+				margin-left: 50px; 
+				margin-top: 50px; 
+				color: #825A6C;
+			}
+
+
+			/* Sub-header styling */
+			.title-subheader {
+				font-size: 150%; 
+				margin-top: 20px;
+			}
 
 
 		</style> 
@@ -147,16 +161,25 @@
 		<!-- k-means clustering functions we wrote --> 
 		<script type="text/javascript" src="js/kcluster.js"></script> 
 
-		<div class="btn cluster-btn-edge" style="width: 150px;">Admission Rate</div> 
-		<div class="btn cluster-btn-middle">SAT Score</div> 
-		<div class="btn cluster-btn-middle" style="width: 200px;">Median Career Salary</div> 
 
+		<!-- Title --> 	
+		<div class="title-header"><i>K</i>-Means Clustering of U.S. Universities based on Selected Metrics</div> 
+		<!-- Subtitle --> 
+		<div class="title-subheader">Select 2 parameters to cluster by</div> 
+
+
+		<!-- Clustering buttons --> 
+		<div class="btn cluster-btn admin" style="width: 150px;">Admission Rate</div> 
+		<div class="btn cluster-btn sat">SAT Score</div> 
+		<div class="btn cluster-btn salary" style="width: 200px;">Median Career Salary</div> 
+
+		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster</div> 
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1500" height="1500"> 
-	         	<text x="650" y="60" id="univName">Hover over University dot on map for detailed info</text>
-			 	<text x="650" y="80" id="univInfo">.</text>
+	         <svg width="1500" height="1000"> 
+	         	<text x="650" y="60" id="univName"></text>
+			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
 
 		</div> 
@@ -337,15 +360,21 @@
 					.attr("class", "map-circle")
 					.style("fill", DARK_PURPLE)
 					.on("mouseover", function(d) {
-						var sel = d3.select(this); // Get the element selected 
-						sel.moveToFront(); // Move it to the front 
-						sel.transition().duration(500).attr("r", largeCircleR); 
-						console.log(d); 
-						console.log(d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()); 
-						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
+
+						// Highlight relevant lines 
+						var relLines = d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase());
+						relLines.moveToFront(); 
+						relLines.style({
                            'stroke-width':'4px',
                            'stroke': '#660033'
                         });
+
+						// Highlight relevant circles 
+						var sel = d3.select(this); 
+						sel.moveToFront(); 
+						sel.transition().duration(500).attr("r", largeCircleR); 
+                         
+						
 						d3.select("#univName").text(d["school"]);
 						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Acceptance Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 					})
@@ -355,7 +384,7 @@
                            'stroke-width':'0.5px',
                            'stroke': '#ceb1c3'
                         });
-						d3.select("#univName").text("Hover over University dot on map for detailed info");
+						d3.select("#univName").text("");
 						d3.select("#univInfo").text("");
                     })
 
@@ -446,6 +475,7 @@
 					.style("stroke", LIGHT_PURPLE); 
 
 
+				// add cluster dots 
 				cSVG.selectAll(".clusterDot")
 					.data(clusterResult[1]).enter()
 				.append("circle")
