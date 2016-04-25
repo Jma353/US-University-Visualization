@@ -17,19 +17,19 @@
 			    stroke-dasharray: 2000px;
 			    stroke-dashoffset: 2000px;
 			    animation-name: draw;
-			    animation-duration: 15s;
+			    animation-duration: 3s;
 			    animation-fill-mode: forwards;
 			    animation-iteration-count: 1;
 			    animation-timing-function: linear;
 				
-				border:1px black;/*temporary*/
+				border:1px black; /*temporary*/
 			}
 
 
 			/* University circle styling */
 			circle {
 				stroke: white;
-                                stroke-width:1.4px;
+				stroke-width:1.4px;
 			}
 
 
@@ -270,6 +270,28 @@
 			// Overall data for clustering
 			var overAllData = []; 
 
+			// To refer to types of data via selected clustering categories 
+			var DATA_MAPPINGS = {
+									"score_info": "mean_sat_score", 
+									"admissions_info": "acceptance_rate",
+									"salary_info": "mid_career_median_salary"
+								}
+
+			var clusterSVG;
+
+			// Where the SVG goes for the clustering 
+			var cSVG; 
+
+
+			// Dimensions of the clustering graph
+			var clusterHeight = 400; 
+			var clusterWidth = 400; 
+			var padding = 25; 	
+
+			// Offsets for the clustering graph 
+			var xGraphOffset = 1050; 
+			var yGraphOffset = 100; 
+
 
 			/* END OF GLOBAL VARIABLE INIT */
 
@@ -460,7 +482,7 @@
                            'stroke-width':'0.5px',
                            'stroke': '#ceb1c3'
                         });
-						d3.select("#univName").text("");
+						d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
 						d3.select("#univInfo").text("");
                     })
 
@@ -469,21 +491,16 @@
 				/* ALL CLUSTERING SVG THINGS */
 
 
-				// Dimensions of the clustering graph
-				var clusterHeight = 400; 
-				var clusterWidth = 400; 
-				var padding = 25; 	
-
 				// cluster SVG container w/proper margins 
-				var clusterSVG = svg.append("g")
+				clusterSVG = svg.append("g")
 									.attr("class", "clustering")
 									.attr("height", function () { return clusterHeight + 2*padding; })
 									.attr("width", function () { return clusterWidth + 2*padding; })
-									.attr("transform", "translate(1050, 100)"); 
+									.attr("transform", "translate(" + xGraphOffset+ "," + yGraphOffset + ")"); 
 
 
 				// SVG with proper dimensions 
-				var cSVG = clusterSVG.append("g")
+				cSVG = clusterSVG.append("g")
 										.attr("class", "graph")
 										.attr("height", function () { return clusterHeight; })
 										.attr("width", function () { return clusterWidth; })
@@ -573,8 +590,7 @@
 				// Animate it in 
 				$('svg').animate({
 					"fill-opacity": "1.0"
-				}, 5000, function() {}); 
-
+				}, 1000, function() {}); 
 
 			}); 
 
@@ -651,14 +667,9 @@
 					currentDotLocations.push(dic); 
 				}); 
 
+				// Remove these 
+				d3.selectAll(".cluster-circle").remove(); 
 
-
-				// Remove current clustering dots w/animation + then legit removal 
-				d3.selectAll(".cluster-circle").each(function (c) {
-					var negOrPos = Math.random() > 0.5 ? -1 : 1; 
-					d3.select(this).transition().attr("cx", Math.ceil(Math.random()*10000)).attr("cy", negOrPos*Math.random()*10000); 
-				}); 
-				setTimeout(function() { d3.selectAll(".cluster-circle").remove() }, 1000); 
 				// Remove these straight up 
 				d3.selectAll(".clusterDot").remove(); 
 				
@@ -674,20 +685,69 @@
 				}
 
 
-
-				// Need to make dots, have them go on the cx + cy's I have
-				// Rescale xScale/yScale
-				// Rescale xAxis/yAxis
-				// Remove the current ones 
-				// Readd them 
-				// Move dots to projected spots 
+				// UPDATING CLUSTERING SCALING + SUCH 
 
 
+				// Rescale x + y axes based on the new overall data 
+				xScale.domain(d3.extent(overAllData, function (d) { 
+					return d[selectedParms[0].attr("data")][DATA_MAPPINGS[selectedParms[0].attr("data")]]; 
+				})).nice(); 
+
+				yScale.domain(d3.extent(overAllData, function (d) {
+					return d[selectedParms[1].attr("data")][DATA_MAPPINGS[selectedParms[1].attr("data")]]; 
+				})).nice(); 
+
+				// Remove current axes 
+				d3.select(".x.axis").remove();
+				d3.select(".y.axis").remove(); 
+
+				// Reestablish axes 
+
+				// Axes 
+				xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
+				yAxis = d3.svg.axis().scale(yScale).orient("left"); 
+
+				// x-axis 
+				cSVG.append("g")
+					.attr("class", "x axis")
+					.style("stroke", DARK_PURPLE)
+					.attr("transform", "translate(0," + clusterHeight + ")")
+					.call(xAxis); 
+
+				// y-axis 
+				cSVG.append("g")
+					.attr("class", "y axis")
+					.style("stroke", DARK_PURPLE)
+					.call(yAxis); 
+
+				// Modify the graph text styling 
+				cSVG.selectAll(".axis text")
+					.attr("class", "graph-text"); 
 
 
-				// theData.transition().attr("cx", 1200); 
+
+				// Add those cluster circles to the current cx and cy 
+				var newClusterCircles = svg.selectAll(".cluster-circle")
+							.data(overAllData).enter()
+						.append("circle")
+							.attr("r", 2)
+							.attr("cx", function (d) { return d["cx"] })
+							.attr("cy", function (d) { return d["cy" ]})
+							.attr("class", "cluster-circle")
+							.style("fill", DARK_PURPLE)
+							.style("stroke", LIGHT_PURPLE); 
 
 
+				// Move them to proper space on the clustering graph
+				d3.selectAll('.cluster-circle').each(function (d) {
+					var cx = xScale(d[selectedParms[0].attr("data")][DATA_MAPPINGS[selectedParms[0].attr("data")]]); 
+					var cy = yScale(d[selectedParms[1].attr("data")][DATA_MAPPINGS[selectedParms[1].attr("data")]]); 
+					var trueCX = cx + xGraphOffset + padding; 
+					var trueCY = cy + yGraphOffset + padding; 
+					d3.select(this).transition()
+						.attr("cx", trueCX)
+						.attr("cy", trueCY); 
+				}); 
 
 
 			}); 
