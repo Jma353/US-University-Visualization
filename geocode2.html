@@ -197,7 +197,7 @@
 		<!-- Clustering buttons --> 
 		<div class="btn cluster-btn admin" style="width: 150px;" data="admissions_info">Admissions Rate</div> 
 		<div class="btn cluster-btn sat" data="score_info">SAT Score</div> 
-		<div class="btn cluster-btn salary" style="width: 300px;" data="salary_info">Median Mid-career Salary</div> 
+		<div class="btn cluster-btn salary" style="width: 300px;" data="salary_info">Median Mid-Career Salary</div> 
 		<div class="start-cluster">Cluster</div>
 		<div class="reset-btn" style="margin-left: 20px;">Reset</div>
 
@@ -291,12 +291,23 @@
 
 			// To refer to types of data via selected clustering categories 
 			var DATA_MAPPINGS = {
-									"score_info": "mean_sat_score", 
-									"admissions_info": "acceptance_rate",
-									"salary_info": "mid_career_median_salary"
+									"score_info" : "mean_sat_score", 
+									"admissions_info" : "acceptance_rate",
+									"salary_info" : "mid_career_median_salary"
 								}
 
+
+			// To refer to the titles of the generated graphs 
+			var TITLE_MAPPINGS 	= 	{
+										"mean_sat_score" : "SAT Score",
+										"acceptance_rate" : "Acceptance Rate",
+										"mid_career_median_salary" : "Median Mid-Career Salary"
+								 	}
+
+
+			// The container SVG for the cluster graph
 			var clusterSVG;
+
 
 			// Where the SVG goes for the clustering 
 			var cSVG; 
@@ -524,12 +535,29 @@
 				/* ALL CLUSTERING SVG (ON INIT OF THE VIEW) */
 
 
+
+
+
 				// cluster SVG container w/proper margins 
 				clusterSVG = svg.append("g")
 									.attr("class", "clustering")
 									.attr("height", function () { return clusterHeight + 2*padding; })
 									.attr("width", function () { return clusterWidth + 2*padding; })
 									.attr("transform", "translate(" + xGraphOffset+ "," + yGraphOffset + ")"); 
+
+
+
+				// Init the title of the graph 
+				clusterSVG.append("text")
+								.attr("class", "cluster-title")
+								.attr("x", clusterWidth/2+padding)
+								.attr("y", padding/2)
+								.attr("alignment-baselines", "middle")
+								.attr("text-anchor", "middle")
+								.style("fill", DARK_PURPLE)
+								.style("font-size", 16)
+								.text("Admissions Rate vs. SAT Score")
+
 
 
 				// SVG with proper dimensions 
@@ -598,7 +626,50 @@
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
 					.attr("class", "cluster-circle")
 					.style("fill", DARK_PURPLE)
-					.style("stroke", LIGHT_PURPLE); 
+					.style("stroke", LIGHT_PURPLE)
+				.on("mouseover", function (d) {
+						var circ = d3.select(this); 
+						circ.transition().attr("r", clusterCircleExpanded).style("fill", "white"); 
+						circ.moveToFront(); 
+
+						// Select map elements 
+						var skool = d["school"]; 
+						var mapElements = d3.selectAll(".map-circle").filter(function (d) {
+							return d["school"] == skool; 
+						}); 
+
+						// Reset and move to back 
+						mapElements.transition().attr("r", largeCircleR); 
+						mapElements.moveToFront(); 
+
+                 		// Label at the top w/info 
+						d3.select("#univName").text(d["school"]);
+						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+
+
+					})
+					.on("mouseleave", function (d) {
+						var circ = d3.select(this); 
+						circ.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
+						circ.moveToBack(); 
+
+						// Select map elements 
+						var skool = d["school"]; 
+						var mapElements = d3.selectAll(".map-circle").filter(function (d) {
+							return d["school"] == skool; 
+						}); 
+
+						// Reset and move to back 
+						mapElements.transition().attr("r", defCircleR); 
+						
+
+						// Reset top label 
+  						d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
+						d3.select("#univInfo").text("");
+
+
+					}); 
+
 
 
 				// add cluster dots 
@@ -611,6 +682,13 @@
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
 					.style("fill", CLUSTER_PINK)
 					.style("stroke", CLUSTER_PINK); 
+
+
+
+
+
+				/* END OF CLUSTERING INIT */
+
 
 
 			});
@@ -737,11 +815,13 @@
 					overAllData.push(relevantData[i]); 
 				}	
 
+
 				// Obtain the data fields 
 				var firstParam = selectedParms[0].attr("data"); 
 				var firstData = DATA_MAPPINGS[selectedParms[0].attr("data")]; 
 				var secondParam = selectedParms[1].attr("data"); 
 				var secondData = DATA_MAPPINGS[selectedParms[1].attr("data")]; 
+
 
 				// k-means cluster this info 
 				var clusterResult = kMeansCluster(overAllData, 5, 
@@ -762,9 +842,18 @@
 					return d[secondParam][secondData]; 
 				})).nice(); 
 
+
 				// Remove current axes 
 				d3.select(".x.axis").remove();
 				d3.select(".y.axis").remove(); 
+
+
+				// Reset Title 
+				// Get two title 
+				var titleOne = TITLE_MAPPINGS[secondData];
+				var titleTwo = TITLE_MAPPINGS[firstData]; 
+				var title = d3.select(".cluster-title").text(titleOne + " vs. " + titleTwo); 
+
 
 				// Reestablish axes 
 
