@@ -305,6 +305,13 @@
 			var yGraphOffset = 100; 
 
 
+
+			// Cluster circles 
+
+			var clusterCircleSize = 5; 
+			var clusterCircleExpanded = 9; 
+
+
 			/* END OF GLOBAL VARIABLE INIT */
 
 
@@ -477,7 +484,7 @@
                  		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
                  			return d["school"] == circleSchool; 
                  		}); 
-                 		corrCluster.transition().duration(500).attr("r", largeCircleR+1); 
+                 		corrCluster.transition().duration(500).attr("r", clusterCircleExpanded).style("fill", "white"); 
                  		corrCluster.moveToFront(); 
 
 
@@ -500,7 +507,7 @@
                  		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
                  			return d["school"] == circleSchool; 
                  		}); 
-                 		corrCluster.transition().duration(500).attr("r", 4); 
+                 		corrCluster.transition().duration(500).attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
                  		corrCluster.moveToBack(); 
 
 
@@ -514,7 +521,7 @@
 
 							
 
-				/* ALL CLUSTERING SVG THINGS */
+				/* ALL CLUSTERING SVG (ON INIT OF THE VIEW) */
 
 
 				// cluster SVG container w/proper margins 
@@ -586,7 +593,7 @@
 				cSVG.selectAll("circle")
 					.data(clusterResult[0]).enter()
 				.append("circle")
-					.attr("r", 3)
+					.attr("r", clusterCircleSize)
 					.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
 					.attr("class", "cluster-circle")
@@ -788,12 +795,18 @@
 				var newClusterCircles = svg.selectAll(".cluster-circle")
 							.data(overAllData).enter()
 						.append("circle")
-							.attr("r", 4)
+							.attr("r", clusterCircleSize)
 							.attr("cx", function (d) { return d["cx"] })
 							.attr("cy", function (d) { return d["cy" ]})
 							.attr("class", "cluster-circle")
 							.style("fill", DARK_PURPLE)
-							.style("stroke", LIGHT_PURPLE); 
+							.style("stroke", LIGHT_PURPLE)
+					.on("mouseover", function (d) {
+						console.log(d); 
+					})
+					.on("mouseleave", function (d) {
+						console.log("you left"); 
+					}); 
 
 
 				// Move them to proper space on the clustering graph
@@ -828,7 +841,11 @@
 					.style("stroke", CLUSTER_PINK); 
 
 
+
+
 			}); 
+
+			
 
 
 
