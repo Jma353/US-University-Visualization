@@ -216,13 +216,25 @@
 		<!-- Start of JS --> 
 		<script>
 
-			// From http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3 .. 
-			// Solves the issue of bringing a highlighted circle to the front on hover 
+			// From http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3 
+			// Solves the issue of bringing an element to the front 
 			d3.selection.prototype.moveToFront = function() {
 				return this.each(function() {
 					this.parentNode.appendChild(this); 
 				}); 
 			}
+
+			// From http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3  
+			// Solves the issue of moving an element to the back 
+			d3.selection.prototype.moveToBack = function() { 
+			    return this.each(function() { 
+			        var firstChild = this.parentNode.firstChild; 
+			        if (firstChild) { 
+			            this.parentNode.insertBefore(this, firstChild); 
+			        } 
+			    }); 
+			};
+
 
 			// Map guide used: 
 			// https://bl.ocks.org/mbostock/4090848
@@ -447,36 +459,51 @@
 					.style("fill", DARK_PURPLE).style({'cursor':'pointer'})
 					.on("mouseover", function(d) {
 
-
-						// Highlight relevant lines 
-						var relLines = d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase());
-						relLines.moveToFront(); 
-						relLines.style({
-                           'stroke-width':'2px',
-                           'stroke': '#660033'
-                        });
-
-
 						// On hover of a circle in a particular state, highlight that state 
 						var circleState = d["location_info"]["state"]
 						d3.selectAll(".state").filter(function (d) {
-
 							return d["properties"]["name"] == circleState; 
 						}).style("fill", PINK); 
-
 
 
 						// Highlight relevant circles 
 						var sel = d3.select(this); 
 						sel.moveToFront(); 
 						sel.transition().duration(500).attr("r", largeCircleR); 
-                 		
-						
+                 			
+
+                 		// Highlight relevant cluster on the cluster graph (if it exists) + move to front 
+                 		var circleSchool = d["school"]; 
+                 		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
+                 			return d["school"] == circleSchool; 
+                 		}); 
+                 		corrCluster.transition().duration(500).attr("r", largeCircleR+1); 
+                 		corrCluster.moveToFront(); 
+
+
+
+                 		// Label at the top 
 						d3.select("#univName").text(d["school"]);
 						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+
+
+
+
 					})
 					.on("mouseleave", function(d) {
+
+						// Reset radius 
 						d3.select(this).transition().duration(500).attr("r", defCircleR);
+
+                 		// Reset cluster circle + move to back 
+                 		var circleSchool = d["school"]; 
+                 		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
+                 			return d["school"] == circleSchool; 
+                 		}); 
+                 		corrCluster.transition().duration(500).attr("r", 4); 
+                 		corrCluster.moveToBack(); 
+
+
 						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
                            'stroke-width':'0.5px',
                            'stroke': '#ceb1c3'
@@ -631,7 +658,7 @@
 				// Reset the button colors 
 				$(".cluster-btn").css("background", LIGHT_PURPLE); 
 
-				
+
 			}); 
 
 
@@ -761,7 +788,7 @@
 				var newClusterCircles = svg.selectAll(".cluster-circle")
 							.data(overAllData).enter()
 						.append("circle")
-							.attr("r", 2)
+							.attr("r", 4)
 							.attr("cx", function (d) { return d["cx"] })
 							.attr("cy", function (d) { return d["cy" ]})
 							.attr("class", "cluster-circle")
@@ -778,7 +805,6 @@
 					d3.select(this).transition()
 						.attr("cx", trueCX)
 						.attr("cy", trueCY)
-						.attr("r", 3); 
 				}); 
 
 
