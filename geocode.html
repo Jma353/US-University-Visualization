@@ -401,6 +401,32 @@
 					
 				
 
+				
+				
+				
+				
+				
+				
+				
+				allthelines.append("line").attr("x1", 500)
+                    .attr("y1", 605
+					)
+                    .attr("x2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[0]; 
+					})
+				    .attr("y2", function(d) {
+						var lat = d["location_info"]["lat"]; 
+						var lng = d["location_info"]["lng"]; 
+						return projection([lng, lat])[1]; 
+					})
+				    .attr("stroke-width", 0.5)
+				    .attr("stroke", "#ceb1c3")
+				    .style("opacity", 1.0)
+					.attr("class",function(d) {
+						return d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase(); 
+					});
 				svg.append("text").attr("x", 500)
                 .attr("y", 605)
                 .text("salary will go here");
