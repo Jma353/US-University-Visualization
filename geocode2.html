@@ -271,6 +271,13 @@
 			// SVG element 
 			var svg = d3.select("svg"); 
 			
+
+			// Map radii for various situations 
+			var defCircleR = 3; 
+			var largeCircleR = 10; 
+
+
+
 			// xScale + yScale 
 			var xScale; 
 			var yScale; 
@@ -310,6 +317,7 @@
 
 			var clusterCircleSize = 5; 
 			var clusterCircleExpanded = 9; 
+
 
 
 			/* END OF GLOBAL VARIABLE INIT */
@@ -427,9 +435,6 @@
 				// Mapping inspiration taken from 
 				// http://chimera.labs.oreilly.com/books/1230000000345/ch12.html#_adding_points
 
-				// Radii for various situations 
-				var defCircleR = 3; 
-				var largeCircleR = 10; 
 
 				// Set the data of the universities equal to the global variable tracking it 
 				uniJSONs = data; 
@@ -509,10 +514,7 @@
                  		corrCluster.moveToBack(); 
 
 
-						d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase()).style({
-                           'stroke-width':'0.5px',
-                           'stroke': '#ceb1c3'
-                        });
+
 						d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
 						d3.select("#univInfo").text("");
                     })
@@ -804,11 +806,42 @@
 						circ.transition().attr("r", clusterCircleExpanded).style("fill", "white"); 
 						circ.moveToFront(); 
 
+						// Select map elements 
+						var skool = d["school"]; 
+						var mapElements = d3.selectAll(".map-circle").filter(function (d) {
+							return d["school"] == skool; 
+						}); 
+
+						// Reset and move to back 
+						mapElements.transition().attr("r", largeCircleR).style("fill", "white"); 
+						mapElements.moveToFront(); 
+
+                 		// Label at the top w/info 
+						d3.select("#univName").text(d["school"]);
+						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+
+
 					})
 					.on("mouseleave", function (d) {
 						var circ = d3.select(this); 
 						circ.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
 						circ.moveToBack(); 
+
+						// Select map elements 
+						var skool = d["school"]; 
+						var mapElements = d3.selectAll(".map-circle").filter(function (d) {
+							return d["school"] == skool; 
+						}); 
+
+						// Reset and move to back 
+						mapElements.transition().attr("r", defCircleR); 
+						mapElements.moveToBack(); 
+
+						// Reset top label 
+  						d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
+						d3.select("#univInfo").text("");
+
+
 					}); 
 
 
