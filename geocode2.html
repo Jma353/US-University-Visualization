@@ -494,8 +494,6 @@
 						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 
 
-
-
 					})
 					.on("mouseleave", function(d) {
 
@@ -802,10 +800,15 @@
 							.style("fill", DARK_PURPLE)
 							.style("stroke", LIGHT_PURPLE)
 					.on("mouseover", function (d) {
-						console.log(d); 
+						var circ = d3.select(this); 
+						circ.transition().attr("r", clusterCircleExpanded).style("fill", "white"); 
+						circ.moveToFront(); 
+
 					})
 					.on("mouseleave", function (d) {
-						console.log("you left"); 
+						var circ = d3.select(this); 
+						circ.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
+						circ.moveToBack(); 
 					}); 
 
 
