@@ -3,10 +3,21 @@
 
 
 // Basic distance function 
-function distanceFrom (a, b, xname, x, yname, y) {
+function distanceFrom (a, b, xname, x, yname, y, data) {
+	var maxX = d3.max(data, function (d) {
+		return d[xname][x]; 
+	}); 
+	var maxY = d3.max(data, function (d) {
+		return d[yname][y]; 
+	}); 
+
+	var aX = a[xname][x] / (maxX).toFixed(4); 
+	var aY = a[yname][y] / (maxY).toFixed(4); 
+	var bX = b[xname][x] / (maxX).toFixed(4); 
+	var bY = b[yname][y] / (maxY).toFixed(4); 
+
 	return Math.sqrt(
-		(a[xname][x] - b[xname][x]) * (a[xname][x] - b[xname][x]) + 
-		(a[yname][y] - b[yname][y]) * (a[yname][y] - b[yname][y])
+		(aX - bX) * (aX - bX) + (aY - bY) * (aY - bY)
 	); 
 }
 
@@ -34,7 +45,7 @@ function initializeData (data, clusters, xname, x, yname, y) {
 	var dataCopies = []
 	for (var i = 0; i < data.length; i++) {
 		var distances = clusters.map(function(d) {
-			return distanceFrom(data[i], d, xname, x, yname, y); 
+			return distanceFrom(data[i], d, xname, x, yname, y, data); 
 		});
 		var minDist = d3.min(distances); 
 		var clusterIndex = distances.indexOf(minDist); 
@@ -81,7 +92,7 @@ function changedClusters (data, clusters, xname, x, yname, y) {
 
 	for (var i = 0; i < data.length; i++) {
 		var distances = clusters.map(function(d) {
-			return distanceFrom(data[i], d, xname, x, yname, y); 
+			return distanceFrom(data[i], d, xname, x, yname, y, data); 
 		});
 		var minDist = d3.min(distances); 
 		var cI = distances.indexOf(minDist); 
