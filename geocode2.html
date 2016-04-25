@@ -669,10 +669,9 @@
 
 				// Remove these 
 				d3.selectAll(".cluster-circle").remove(); 
-
-				// Remove these straight up 
 				d3.selectAll(".clusterDot").remove(); 
 				
+
 				// Intersect the two data sets 
 				overAllData = []; 
 				for (var i = 0; i < relevantData.length; i++) {
@@ -682,19 +681,31 @@
 					}
 					// Add them to overAllData
 					overAllData.push(relevantData[i]); 
-				}
+				}	
 
+				// Obtain the data fields 
+				var firstParam = selectedParms[0].attr("data"); 
+				var firstData = DATA_MAPPINGS[selectedParms[0].attr("data")]; 
+				var secondParam = selectedParms[1].attr("data"); 
+				var secondData = DATA_MAPPINGS[selectedParms[1].attr("data")]; 
+
+				// k-means cluster this info 
+				var clusterResult = kMeansCluster(overAllData, 5, 
+										firstParam, firstData, 
+										secondParam, secondData)
+
+				overAllData = clusterResult[0]; 
 
 				// UPDATING CLUSTERING SCALING + SUCH 
 
 
 				// Rescale x + y axes based on the new overall data 
 				xScale.domain(d3.extent(overAllData, function (d) { 
-					return d[selectedParms[0].attr("data")][DATA_MAPPINGS[selectedParms[0].attr("data")]]; 
+					return d[firstParam][firstData]; 
 				})).nice(); 
 
 				yScale.domain(d3.extent(overAllData, function (d) {
-					return d[selectedParms[1].attr("data")][DATA_MAPPINGS[selectedParms[1].attr("data")]]; 
+					return d[secondParam][secondData]; 
 				})).nice(); 
 
 				// Remove current axes 
@@ -740,20 +751,42 @@
 
 				// Move them to proper space on the clustering graph
 				d3.selectAll('.cluster-circle').each(function (d) {
-					var cx = xScale(d[selectedParms[0].attr("data")][DATA_MAPPINGS[selectedParms[0].attr("data")]]); 
-					var cy = yScale(d[selectedParms[1].attr("data")][DATA_MAPPINGS[selectedParms[1].attr("data")]]); 
+					var cx = xScale(d[firstParam][firstData]); 
+					var cy = yScale(d[secondParam][secondData]); 
 					var trueCX = cx + xGraphOffset + padding; 
 					var trueCY = cy + yGraphOffset + padding; 
 					d3.select(this).transition()
 						.attr("cx", trueCX)
-						.attr("cy", trueCY); 
+						.attr("cy", trueCY)
+						.attr("r", 3); 
 				}); 
+
+				console.log(clusterResult[1]); 
+
+				// add cluster dots 
+				var newClusters = svg.selectAll(".clusterDot")
+					.data(clusterResult[1]).enter()
+				.append("circle")
+					.attr("r", 4)
+					.attr("class", "clusterDot")
+					.attr("cx", function (d) { 
+						var cx = xScale(d[firstParam][firstData]); 
+						var trueCX = cx + xGraphOffset + padding; 
+						return trueCX; 
+					})
+					.attr("cy", function (d) { 
+						var cy = yScale(d[secondParam][secondData]); 
+						var trueCY = cy + yGraphOffset + padding; 
+						return trueCY; 
+					})
+					.style("fill", CLUSTER_PINK)
+					.style("stroke", CLUSTER_PINK); 
+
+
+
 
 
 			}); 
-
-
-
 
 
 
