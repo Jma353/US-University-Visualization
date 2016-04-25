@@ -500,7 +500,7 @@
 					.attr("r", 2)
 					.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
-					.attr("class", "map-circle cluster-circle")
+					.attr("class", "cluster-circle")
 					.style("fill", DARK_PURPLE)
 					.style("stroke", LIGHT_PURPLE); 
 
@@ -530,6 +530,7 @@
 
 
 			}); 
+
 
 			// Clustering parameter selection 
 			$(".cluster-btn").on("click", function (e) {
@@ -569,12 +570,26 @@
 											}); 
 											return inArray; 
 										}); 
-				console.log(selectedDots); 
+
 				// Can't run clustering on no data
 				if (selectedDots[0].length < 1) {
 					alert("Please select states with universities in them"); 
 					return; 
 				}	
+
+				var currentDotLocations = [];
+
+				selectedDots.each(function (d, i) {
+					var cx = parseFloat(d3.select(this).attr("cx")); 
+					var cy = parseFloat(d3.select(this).attr("cy")); 
+					var dic = { cx: cx, cy: cy }; 
+					currentDotLocations.push(dic); 
+				}); 
+				
+				console.log(currentDotLocations); 
+
+
+				// theData.transition().attr("cx", 1200); 
 
 
 			}); 
