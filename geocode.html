@@ -218,6 +218,9 @@
 			// Selected parameters to cluster by 
 			var selectedParms = [];  
 
+			// Selected states to include universities to cluster 
+			var selectedStates = []; 
+
 			// Set the projection, based on the fact that we're using a US map 
 			var projection = d3.geo.albersUsa().scale(1000).translate([width / 2, height / 2]); 
 
@@ -239,24 +242,58 @@
 					.append("path")
 					.attr("d", path)
 					.attr("class", "state")
-					.on("mouseover", function(d) {
-						d3.selectAll(".state").style("fill", LIGHT_PURPLE); // Set all equal to this color 
-						d3.select(this).style("fill", PINK); // Set the most recent to this color 
+					.on("mouseover", function (d) {
+
+						// Only reset non-selected states 
+						var nonSelectedStates = d3.selectAll(".state").filter(function (d) {
+							var inArray = false
+							selectedStates.forEach( function (s) {
+								inArray = inArray || (d["properties"]["name"] == s) 
+							}); 
+							return !inArray
+						}).style("fill", LIGHT_PURPLE); // Set all equal to this color
+
+						// Make the state that we're hovering over pink 
+						d3.select(this).style("fill", PINK); 
+
 						d3.selectAll(".map-circle").style("stroke", "white").style("fill", DARK_PURPLE);  // Set all previous circles to old color 
 						d3.selectAll(".cluster-circle").style("stroke", LIGHT_PURPLE); 
 					
 						// Highlight relevant circles 
 						var stateName = d["properties"]["name"]; 
 						var relevantCircles = d3.selectAll(".map-circle")
-												.filter(function(d) {
+												.filter(function (d) {
 													var circleState = d["location_info"]["state"];
 													// Check this condition 
 													circleState = circleState == "District of Columbia" ? "Maryland" : circleState 
 													return circleState == stateName; 
 												}); 
 
-						relevantCircles.each(function (d) { console.log(d); }); 
+						// relevantCircles.each(function (d) { console.log(d); }); 
 						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
+
+					})
+					.on("click", function (d) {
+						// Get the selected SVG element 
+						var s = d3.select(this); 
+
+						// Get the state name 
+						var state = d["properties"]["name"]
+
+						// Check to see if this state is already in the array 
+						var inArray = false; 
+						selectedStates.forEach(function (e) {
+							inArray = inArray || (state == e); 
+						}); 
+
+						// If this state is not in the array 
+						if (!inArray) {
+							// Add it to the array 
+							selectedStates.push(state); 
+							// Make the fill pink 
+							s.style("fill", PINK); 
+						}
+
 
 					}); 
 
@@ -454,7 +491,7 @@
 				// Push this on if it's not in the array already 
 				var inArray = false; 
 				var s = $(this); 
-				selectedParms.forEach(function(d) {
+				selectedParms.forEach(function (d) {
 					inArray = inArray || (d.attr("data") == s.attr("data"))
 				}); 
 				if (!inArray) {
@@ -466,6 +503,7 @@
 					}		
 				}
 			}); 
+
 
 		
 		</script> 
