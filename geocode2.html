@@ -49,7 +49,7 @@
 
 			/* US Map styling */
 			.us-map {
-				margin-left: -140px;
+				margin-left: -200px;
 				margin-top: -20px;
 			}
 			
@@ -74,9 +74,9 @@
 
 			/* University info text styling */
 			#univInfo{
-				stroke-width:0.3px;
-				text-anchor:middle;
-				font-size:75%;
+				stroke-width: 0.3px;
+				text-anchor: middle;
+				font-size: 75%;
 			}
 
 
@@ -205,7 +205,8 @@
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1500" height="620"> 
+			<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
+	         <svg width="1580" height="647"> 
 	         	<text x="650" y="60" id="univName">Interactive: Hover over states, universities, and data categories for effect</text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
@@ -300,8 +301,8 @@
 			// To refer to the titles of the generated graphs 
 			var TITLE_MAPPINGS 	= 	{
 										"mean_sat_score" : "SAT Score",
-										"acceptance_rate" : "Acceptance Rate",
-										"mid_career_median_salary" : "Median Mid-Career Salary"
+										"acceptance_rate" : "Acceptance Rate (%)",
+										"mid_career_median_salary" : "Median Mid-Career Salary ($)"
 								 	}
 
 
@@ -314,9 +315,9 @@
 
 
 			// Dimensions of the clustering graph
-			var clusterHeight = 400; 
-			var clusterWidth = 400; 
-			var padding = 25; 	
+			var clusterHeight = 450; 
+			var clusterWidth = 450; 
+			var padding = 60; 	
 
 			// Offsets for the clustering graph 
 			var xGraphOffset = 1050; 
@@ -507,7 +508,7 @@
 
                  		// Label at the top 
 						d3.select("#univName").text(d["school"]);
-						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admissions Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
 
 
 					})
@@ -536,8 +537,6 @@
 
 
 
-
-
 				// cluster SVG container w/proper margins 
 				clusterSVG = svg.append("g")
 									.attr("class", "clustering")
@@ -556,8 +555,27 @@
 								.attr("text-anchor", "middle")
 								.style("fill", DARK_PURPLE)
 								.style("font-size", 16)
-								.text("Admissions Rate vs. SAT Score")
+								.text("Acceptance Rate (%) vs. SAT Score")
 
+
+				// X-Axis Label 
+				clusterSVG.append("text")
+					.attr("class", "x-label")
+					.attr("x", clusterWidth/2 + padding)
+					.attr("y", clusterHeight + padding + padding/2)
+					.style("text-anchor", "middle")
+					.text("SAT Score"); 
+
+
+				// Y-Axis Label 
+				clusterSVG.append("text")
+					.attr("class", "y-label")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 0)
+					.attr("x", -clusterHeight/2 - padding)
+					.attr("dy", ".71em")
+					.style("text-anchor", "middle")
+					.text("Acceptance Rate (%)")
 
 
 				// SVG with proper dimensions 
@@ -596,14 +614,13 @@
 					.style("stroke", DARK_PURPLE)
 					.attr("transform", "translate(0," + clusterHeight + ")")
 					.call(xAxis); 
-				// Add a label later 
 
 				// y-axis 
 				cSVG.append("g")
 					.attr("class", "y axis")
 					.style("stroke", DARK_PURPLE)
 					.call(yAxis); 
-				// Add a label later 
+					
 
 
 				// Modify the graph text styling 
@@ -848,11 +865,14 @@
 				d3.select(".y.axis").remove(); 
 
 
-				// Reset Title 
-				// Get two title 
+				// Reset Title + Axes Labels 
+				// Get two titles 
 				var titleOne = TITLE_MAPPINGS[secondData];
 				var titleTwo = TITLE_MAPPINGS[firstData]; 
 				var title = d3.select(".cluster-title").text(titleOne + " vs. " + titleTwo); 
+				var xLabel = d3.select(".x-label").text(titleTwo); 
+				var yLabel = d3.select(".y-label").text(titleOne); 
+
 
 
 				// Reestablish axes 
