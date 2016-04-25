@@ -613,6 +613,27 @@
 			}); 
 
 
+			$(".reset-btn").on("click", function (e) {
+				// Empty these 
+				selectedParms = []; 
+				selectedStates = [];
+
+				// Reset all map circles 
+				d3.selectAll(".map-circle").style("fill", DARK_PURPLE).style("stroke", "white"); 
+
+				// Reset all states 
+				d3.selectAll(".state").style("fill", LIGHT_PURPLE); 
+
+				// Remove the clusters + dots 
+				d3.selectAll(".clusterDot").remove(); 
+				d3.selectAll(".cluster-circle").remove(); 
+
+				// Reset the button colors 
+				$(".cluster-btn").css("background", LIGHT_PURPLE); 
+
+				
+			}); 
+
 
 
 			/* CLUSTERING INTERACTION */
