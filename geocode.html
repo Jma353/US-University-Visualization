@@ -133,6 +133,29 @@
 				margin-bottom: 10px;
 			}
 
+			.start-cluster {
+				-webkit-border-radius: 10;
+				-moz-border-radius: 10;
+				border-radius: 10px;
+				border-color: #B58AA5; 
+				border: 1px solid; 
+				width: 120px; 
+				padding: 7px 17px 7px 17px;
+				margin-left: 200px; 
+				margin-top: 20px; 
+				float: left; 
+				color: #B58AA5;
+				text-align: center; 
+				text-decoration: none; 
+				font-size: 25px; 
+			}
+
+			.start-cluster:hover {
+				color: #825A6C;
+				text-decoration: none;
+			}
+
+
 
 			/* Header styling */
 			.title-header {
@@ -175,12 +198,13 @@
 		<div class="btn cluster-btn admin" style="width: 150px;" data="admissions_info">Admissions Rate</div> 
 		<div class="btn cluster-btn sat" data="score_info">SAT Score</div> 
 		<div class="btn cluster-btn salary" style="width: 300px;" data="salary_info">Median Mid-career Salary</div> 
+		<div class="start-cluster">Cluster</div>
 
 		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster</div> 
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
-	         <svg width="1700" height="620"> 
+	         <svg width="1500" height="620"> 
 	         	<text x="650" y="60" id="univName">Interactive: Hover over states, universities, and data categories for effect</text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
@@ -400,8 +424,8 @@
 
 
 				// Dimensions of the clustering graph
-				var clusterHeight = 300; 
-				var clusterWidth = 300; 
+				var clusterHeight = 400; 
+				var clusterWidth = 400; 
 				var padding = 25; 	
 
 				// cluster SVG container w/proper margins 
@@ -409,7 +433,7 @@
 									.attr("class", "clustering")
 									.attr("height", function () { return clusterHeight + 2*padding; })
 									.attr("width", function () { return clusterWidth + 2*padding; })
-									.attr("transform", "translate(1050, 150)"); 
+									.attr("transform", "translate(1050, 100)"); 
 
 
 				// SVG with proper dimensions 
@@ -509,7 +533,7 @@
 			}); 
 
 
-			$(".cluster-btn").on("click", function(e) {
+			$(".cluster-btn").on("click", function (e) {
 				// Push this on if it's not in the array already 
 				var inArray = false; 
 				var s = $(this); 
@@ -525,6 +549,16 @@
 					}		
 				}
 			}); 
+
+			$(".start-cluster").on("click", function (e) {
+
+				if (selectedParms.length < 2) {
+					alert("Please select 2 parameters to cluster by"); 
+				}
+
+			}); 
+
+
 
 
 		
