@@ -256,9 +256,22 @@
 						// Make the state that we're hovering over pink 
 						d3.select(this).style("fill", PINK); 
 
-						d3.selectAll(".map-circle").style("stroke", "white").style("fill", DARK_PURPLE);  // Set all previous circles to old color 
+						// Only move these back to original color if they're not part of the highlights / select state groupings
+						var nonSelectedMapCircles = d3.selectAll(".map-circle")
+														.filter(function (d) {
+															var inArray = false; 
+															selectedStates.forEach(function (s) {
+																inArray = inArray || (s == d["location_info"]["state"]); 
+															}); 
+															return !inArray; 
+														}).style("fill", DARK_PURPLE).style("stroke", "white"); 
+
+
+						// Set all previous circles to old color 
+						// Could be useless 
 						d3.selectAll(".cluster-circle").style("stroke", LIGHT_PURPLE); 
-					
+						
+
 						// Highlight relevant circles 
 						var stateName = d["properties"]["name"]; 
 						var relevantCircles = d3.selectAll(".map-circle")
@@ -292,6 +305,15 @@
 							selectedStates.push(state); 
 							// Make the fill pink 
 							s.style("fill", PINK); 
+							// Find the circles we need to highlight 
+							var relevantCircles = d3.selectAll(".map-circle")
+													.filter(function (d) {
+														// Find the state 
+														var circleState = d["location_info"]["state"]; 
+														circleState = circleState == "District of Columbia" ? "Maryland" : circleState; 
+														return circleState == state; 
+													}); 
+							relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
 						}
 
 
