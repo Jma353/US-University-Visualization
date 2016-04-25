@@ -652,11 +652,16 @@
 				}); 
 
 
-				// Remove current clustering dots 
-				d3.selectAll(".cluster-circle").remove(); 
+
+				// Remove current clustering dots w/animation + then legit removal 
+				d3.selectAll(".cluster-circle").each(function (c) {
+					var negOrPos = Math.random() > 0.5 ? -1 : 1; 
+					d3.select(this).transition().attr("cx", Math.ceil(Math.random()*10000)).attr("cy", negOrPos*Math.random()*10000); 
+				}); 
+				setTimeout(function() { d3.selectAll(".cluster-circle").remove() }, 1000); 
+				// Remove these straight up 
 				d3.selectAll(".clusterDot").remove(); 
-
-
+				
 				// Intersect the two data sets 
 				overAllData = []; 
 				for (var i = 0; i < relevantData.length; i++) {
@@ -668,7 +673,17 @@
 					overAllData.push(relevantData[i]); 
 				}
 
-				console.log(overAllData); 
+
+
+				// Need to make dots, have them go on the cx + cy's I have
+				// Rescale xScale/yScale
+				// Rescale xAxis/yAxis
+				// Remove the current ones 
+				// Readd them 
+				// Move dots to projected spots 
+
+
+
 
 				// theData.transition().attr("cx", 1200); 
 
