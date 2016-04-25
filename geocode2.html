@@ -331,8 +331,62 @@
 			var clusterCircleExpanded = 9; 
 
 
+			var clusterLines = []; 
 
 			/* END OF GLOBAL VARIABLE INIT */
+
+
+			/* UNIVERSAL CALLBACK FUNCTIONS FOR CLUSTERED POINTS */
+
+			// Cluster dot mouseover callback function 
+			function mouseOverCallback (d, selectedElmt) {
+
+				var circ = selectedElmt; 
+				circ.transition().attr("r", clusterCircleExpanded).style("fill", "white"); 
+				circ.moveToFront(); 
+
+				// Select map elements 
+				var skool = d["school"]; 
+				var mapElements = d3.selectAll(".map-circle").filter(function (d) {
+					return d["school"] == skool; 
+				}); 
+
+				// Reset and move to back 
+				mapElements.transition().attr("r", largeCircleR).style("fill", "white"); 
+				mapElements.moveToFront(); 
+
+         		// Label at the top w/info 
+				d3.select("#univName").text(d["school"]);
+				d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
+
+			}
+
+
+
+			// Cluster dot mouseleave callback function 
+		 	function mouseLeaveCallback (d, selectedElmt) {
+
+				var circ = selectedElmt; 
+				circ.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
+				circ.moveToBack(); 
+
+				// Select map elements 
+				var skool = d["school"]; 
+				var mapElements = d3.selectAll(".map-circle").filter(function (d) {
+					return d["school"] == skool; 
+				}); 
+
+				// Reset and move to back 
+				mapElements.transition().attr("r", defCircleR); 
+				
+
+				// Reset top label 
+				d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
+				d3.select("#univInfo").text("");
+
+		 	}
+
+		 	/* END OF UNIVERSAL CALLBACKS FOR CLUSTERED POINTS */
 
 
 
@@ -481,55 +535,12 @@
 					})
 					.attr("class", "map-circle")
 					.style("fill", DARK_PURPLE).style({'cursor':'pointer'})
-					.on("mouseover", function(d) {
-
-						// On hover of a circle in a particular state, highlight that state 
-						var circleState = d["location_info"]["state"]
-						d3.selectAll(".state").filter(function (d) {
-							return d["properties"]["name"] == circleState; 
-						}).style("fill", PINK); 
-
-
-						// Highlight relevant circles 
-						var sel = d3.select(this); 
-						sel.moveToFront(); 
-						sel.transition().duration(500).attr("r", largeCircleR); 
-                 			
-
-                 		// Highlight relevant cluster on the cluster graph (if it exists) + move to front 
-                 		var circleSchool = d["school"]; 
-                 		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
-                 			return d["school"] == circleSchool; 
-                 		}); 
-                 		corrCluster.transition().duration(500).attr("r", clusterCircleExpanded).style("fill", "white"); 
-                 		corrCluster.moveToFront(); 
-
-
-
-                 		// Label at the top 
-						d3.select("#univName").text(d["school"]);
-						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admissions Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
-
-
+					.on("mouseover", function (d) {
+						mouseOverCallback(d, d3.select(this)); 
 					})
-					.on("mouseleave", function(d) {
-
-						// Reset radius 
-						d3.select(this).transition().duration(500).attr("r", defCircleR);
-
-                 		// Reset cluster circle + move to back 
-                 		var circleSchool = d["school"]; 
-                 		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
-                 			return d["school"] == circleSchool; 
-                 		}); 
-                 		corrCluster.transition().duration(500).attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
-                 		corrCluster.moveToBack(); 
-
-
-
-						d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
-						d3.select("#univInfo").text("");
-                    })
+					.on("mouseleave", function (d) {
+						mouseLeaveCallback(d, d3.select(this));
+					}); 
 
 							
 
@@ -644,47 +655,11 @@
 					.attr("class", "cluster-circle")
 					.style("fill", DARK_PURPLE)
 					.style("stroke", LIGHT_PURPLE)
-				.on("mouseover", function (d) {
-						var circ = d3.select(this); 
-						circ.transition().attr("r", clusterCircleExpanded).style("fill", "white"); 
-						circ.moveToFront(); 
-
-						// Select map elements 
-						var skool = d["school"]; 
-						var mapElements = d3.selectAll(".map-circle").filter(function (d) {
-							return d["school"] == skool; 
-						}); 
-
-						// Reset and move to back 
-						mapElements.transition().attr("r", largeCircleR); 
-						mapElements.moveToFront(); 
-
-                 		// Label at the top w/info 
-						d3.select("#univName").text(d["school"]);
-						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
-
-
+					.on("mouseover", function (d) {
+						mouseOverCallback(d, d3.select(this)); 
 					})
 					.on("mouseleave", function (d) {
-						var circ = d3.select(this); 
-						circ.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
-						circ.moveToBack(); 
-
-						// Select map elements 
-						var skool = d["school"]; 
-						var mapElements = d3.selectAll(".map-circle").filter(function (d) {
-							return d["school"] == skool; 
-						}); 
-
-						// Reset and move to back 
-						mapElements.transition().attr("r", defCircleR); 
-						
-
-						// Reset top label 
-  						d3.select("#univName").text("Interactive: Hover over states, universities, and data categories for effect");
-						d3.select("#univInfo").text("");
-
-
+						mouseLeaveCallback(d, d3.select(this));
 					}); 
 
 
@@ -874,7 +849,6 @@
 				var yLabel = d3.select(".y-label").text(titleOne); 
 
 
-
 				// Reestablish axes 
 
 				// Axes 
@@ -960,9 +934,11 @@
 					var cy = yScale(d[secondParam][secondData]); 
 					var trueCX = cx + xGraphOffset + padding; 
 					var trueCY = cy + yGraphOffset + padding; 
+					d["cx"] = trueCX; 
+					d["cy"] = trueCY; 
 					d3.select(this).transition()
 						.attr("cx", trueCX)
-						.attr("cy", trueCY)
+						.attr("cy", trueCY); 
 				}); 
 
 
@@ -975,11 +951,13 @@
 					.attr("cx", function (d) { 
 						var cx = xScale(d[firstParam][firstData]); 
 						var trueCX = cx + xGraphOffset + padding; 
+						d["cx"] = trueCX; 
 						return trueCX; 
 					})
 					.attr("cy", function (d) { 
 						var cy = yScale(d[secondParam][secondData]); 
 						var trueCY = cy + yGraphOffset + padding; 
+						d["cy"] = trueCY; 
 						return trueCY; 
 					})
 					.style("fill", CLUSTER_PINK)
@@ -987,14 +965,9 @@
 
 
 
-
 			}); 
 
 			
-
-
-
-
 
 		
 		</script> 
