@@ -178,6 +178,7 @@
 	</head> 
 
 	<body>
+		
 	    <!-- D3 --> 
 		<script type="text/javascript" src="d3/d3.min.js"></script> 
 		<!-- jQuery for some animations and UI stuff --> 
@@ -186,7 +187,6 @@
 		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- k-means clustering functions we wrote --> 
 		<script type="text/javascript" src="js/kcluster.js"></script> 
-
 
 		<!-- Title --> 	
 		<div class="title-header"><i>K</i>-Means Clustering of U.S. Universities based on Selected Metrics</div> 
@@ -519,7 +519,6 @@
 			});
 			
 
-
 			// Basic color fade-in on load up for map 
 			$(document).ready(function() {
 				// Set to 0 initially 
@@ -532,7 +531,7 @@
 
 			}); 
 
-
+			// Clustering parameter selection 
 			$(".cluster-btn").on("click", function (e) {
 				// Push this on if it's not in the array already 
 				var inArray = false; 
@@ -550,13 +549,41 @@
 				}
 			}); 
 
+
+			// Clustering bulk work 
 			$(".start-cluster").on("click", function (e) {
 
+				// Can't run clustering on <2 params
 				if (selectedParms.length < 2) {
-					alert("Please select 2 parameters to cluster by"); 
+					alert("Please select 2 parameters to cluster by");
+					return; 
 				}
 
+				// Curate the dots 
+				var selectedDots = d3.selectAll(".map-circle")
+										.filter(function (d) {
+											var dotState = d["location_info"]["state"]; 
+											var inArray = false; 
+											selectedStates.forEach(function (s) {
+												inArray = inArray || (s == dotState); 
+											}); 
+											return inArray; 
+										}); 
+				console.log(selectedDots); 
+				// Can't run clustering on no data
+				if (selectedDots[0].length < 1) {
+					alert("Please select states with universities in them"); 
+					return; 
+				}	
+
+
 			}); 
+
+
+
+
+
+
 
 
 
@@ -568,6 +595,14 @@
 
 
 </html> 
+
+
+
+
+
+
+
+
 
 
 
