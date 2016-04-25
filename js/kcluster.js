@@ -4,6 +4,8 @@
 
 // Basic distance function 
 function distanceFrom (a, b, xname, x, yname, y, data) {
+	
+	// Maxes 
 	var maxX = d3.max(data, function (d) {
 		return d[xname][x]; 
 	}); 
@@ -11,10 +13,24 @@ function distanceFrom (a, b, xname, x, yname, y, data) {
 		return d[yname][y]; 
 	}); 
 
-	var aX = a[xname][x] / (maxX).toFixed(4); 
-	var aY = a[yname][y] / (maxY).toFixed(4); 
-	var bX = b[xname][x] / (maxX).toFixed(4); 
-	var bY = b[yname][y] / (maxY).toFixed(4); 
+
+	// Mins 
+	var minX = d3.min(data, function (d) {
+		return d[xname][x]; 
+	})
+	var minY = d3.min(data, function (d) {
+		return d[yname][y]; 
+	}); 
+
+	// Relative divisor 
+	var divX = maxX-minX; 
+	var divY = maxY-minY; 
+
+	// Relative division 
+	var aX = (a[xname][x]-minX) / (divX).toFixed(4); 
+	var aY = (a[yname][y]-minY) / (divY).toFixed(4); 
+	var bX = (b[xname][x]-minX) / (divX).toFixed(4); 
+	var bY = (b[yname][y]-minY) / (divY).toFixed(4); 
 
 	return Math.sqrt(
 		(aX - bX) * (aX - bX) + (aY - bY) * (aY - bY)
