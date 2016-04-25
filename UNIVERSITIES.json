@@ -1,1 +1,3802 @@
-[{"location_info": {"lat": 37.4135757, "lng": -122.1689284, "state": "California"}, "school": "Stanford University", "link": "/colleges/california/stanford-university/admission/", "salary_info": {"early_median_salary": 65900, "mid_career_median_salary": 123000, "rank": 7, "zip_code": "94305"}, "score_info": {"sat_reading_low": 680, "sat_reading_high": 780, "sat_math_high": 790, "sat_math_low": 700}, "admissions_info": {"applied": 36632, "acceptance_rate": 7}}, {"location_info": {"lat": 34.1707374, "lng": -117.702148, "state": "California"}, "school": "Claremont McKenna College", "link": "/colleges/california/claremont-mckenna-college/admission/", "salary_info": {"early_median_salary": 54400, "mid_career_median_salary": 105000, "rank": 44, "zip_code": "91711"}, "score_info": {"sat_reading_low": 650, "sat_reading_high": 740, "sat_math_high": 760, "sat_math_low": 670}, "admissions_info": {"applied": 5058, "acceptance_rate": 14}}, {"location_info": {"lat": 34.1707374, "lng": -117.702148, "state": "California"}, "school": "Harvey Mudd College", "link": "/colleges/california/harvey-mudd-college/admission/", "salary_info": {"early_median_salary": 78200, "mid_career_median_salary": 133000, "rank": 2, "zip_code": "91711"}, "score_info": {"sat_reading_low": 680, "sat_reading_high": 760, "sat_math_high": 800, "sat_math_low": 720}, "admissions_info": {"applied": 3336, "acceptance_rate": 19}}, {"location_info": {"lat": 34.13224690000001, "lng": -118.2117257, "state": "California"}, "school": "Occidental College", "link": "/colleges/california/occidental-college/admission/", "salary_info": {"early_median_salary": 46200, "mid_career_median_salary": 112000, "rank": 22, "zip_code": "90041"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 700, "sat_math_high": 700, "sat_math_low": 610}, "admissions_info": {"applied": 6135, "acceptance_rate": 39}}, {"location_info": {"lat": 39.7158773, "lng": -105.2311827, "state": "Colorado"}, "school": "Colorado School of Mines", "link": "/colleges/colorado/colorado-school-of-mines/admission/", "salary_info": {"early_median_salary": 65500, "mid_career_median_salary": 109000, "rank": 32, "zip_code": "80401"}, "score_info": {"sat_reading_low": 570, "sat_reading_high": 670, "sat_math_high": 720, "sat_math_low": 630}, "admissions_info": {"applied": 10145, "acceptance_rate": 45}}, {"location_info": {"lat": 39.6779591, "lng": -104.9631934, "state": "Colorado"}, "school": "University of Denver", "link": "/colleges/colorado/university-of-denver/admission/", "salary_info": {"early_median_salary": 47800, "mid_career_median_salary": 82100, "rank": 295, "zip_code": "80208"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 660, "sat_math_high": 660, "sat_math_low": 560}, "admissions_info": {"applied": 11442, "acceptance_rate": 68}}, {"location_info": {"lat": 38.9043608, "lng": -104.7637619, "state": "Colorado"}, "school": "University of Colorado at Colorado Springs", "link": "/colleges/colorado/university-of-colorado-colorado-springs/admission/", "salary_info": {"early_median_salary": 45900, "mid_career_median_salary": 77400, "rank": 414, "zip_code": "80918"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 580, "sat_math_high": 600, "sat_math_low": 470}, "admissions_info": {"applied": 8847, "acceptance_rate": 60}}, {"location_info": {"lat": 40.4075503, "lng": -104.6857493, "state": "Colorado"}, "school": "University of Northern Colorado", "link": "/colleges/colorado/university-of-northern-colorado/admission/", "salary_info": {"early_median_salary": 40700, "mid_career_median_salary": 71100, "rank": 608, "zip_code": "80639"}, "score_info": {"sat_reading_low": 450, "sat_reading_high": 570, "sat_math_high": 570, "sat_math_low": 450}, "admissions_info": {"applied": 8747, "acceptance_rate": 70}}, {"location_info": {"lat": 41.3065186, "lng": -72.9310714, "state": "Connecticut"}, "school": "Yale University", "link": "/colleges/connecticut/yale-university/admission/", "salary_info": {"early_median_salary": 60300, "mid_career_median_salary": 104000, "rank": 46, "zip_code": "06520"}, "score_info": {"sat_reading_low": 700, "sat_reading_high": 800, "sat_math_high": 790, "sat_math_low": 710}, "admissions_info": {"applied": 27283, "acceptance_rate": 8}}, {"location_info": {"lat": 41.743111, "lng": -72.70380469999999, "state": "Connecticut"}, "school": "Trinity College", "link": "/colleges/connecticut/trinity-college/admission/", "salary_info": {"early_median_salary": 49900, "mid_career_median_salary": 86500, "rank": 203, "zip_code": "06106"}, "score_info": {"sat_reading_low": 570, "sat_reading_high": 680, "sat_math_high": 670, "sat_math_low": 580}, "admissions_info": {"applied": 7720, "acceptance_rate": 34}}, {"location_info": {"lat": 41.7929916, "lng": -72.7451817, "state": "Connecticut"}, "school": "University of Hartford", "link": "/colleges/connecticut/university-of-hartford/admission/", "salary_info": {"early_median_salary": 46900, "mid_career_median_salary": 85900, "rank": 219, "zip_code": "06117"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 570, "sat_math_high": 580, "sat_math_low": 480}, "admissions_info": {"applied": 14683, "acceptance_rate": 41}}, {"location_info": {"lat": 41.4305881, "lng": -72.9106202, "state": "Connecticut"}, "school": "Quinnipiac University", "link": "/colleges/connecticut/quinnipiac-university/admission/", "salary_info": {"early_median_salary": 51200, "mid_career_median_salary": 78000, "rank": 394, "zip_code": "06518"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 580, "sat_math_high": 610, "sat_math_low": 510}, "admissions_info": {"applied": 18825, "acceptance_rate": 69}}, {"location_info": {"lat": 38.8993373, "lng": -77.0485308, "state": "District of Columbia"}, "school": "George Washington University (GWU)", "link": "/colleges/district-of-columbia/george-washington-university/admission/", "salary_info": {"early_median_salary": 48100, "mid_career_median_salary": 92800, "rank": 115, "zip_code": "20052"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 690, "sat_math_high": 700, "sat_math_low": 600}, "admissions_info": {"applied": 21591, "acceptance_rate": 33}}, {"location_info": {"lat": 38.9369141, "lng": -77.0003067, "state": "District of Columbia"}, "school": "Catholic University of America", "link": "/colleges/district-of-columbia/catholic-university-of-america/admission/", "salary_info": {"early_median_salary": 48400, "mid_career_median_salary": 87700, "rank": 185, "zip_code": "20064"}, "score_info": {"sat_reading_low": 500, "sat_reading_high": 610, "sat_math_high": 610, "sat_math_low": 510}, "admissions_info": {"applied": 6361, "acceptance_rate": 63}}, {"location_info": {"lat": 38.9217778, "lng": -77.0197426, "state": "District of Columbia"}, "school": "Howard University", "link": "/colleges/district-of-columbia/howard-university/admission/", "salary_info": {"early_median_salary": 48500, "mid_career_median_salary": 84500, "rank": 244, "zip_code": "20059"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 590, "sat_math_high": 590, "sat_math_low": 480}, "admissions_info": {"applied": 9015, "acceptance_rate": 54}}, {"location_info": {"lat": 28.5950986, "lng": -81.3509416, "state": "Florida"}, "school": "Rollins College", "link": "/colleges/florida/rollins-college/admission/", "salary_info": {"early_median_salary": 44700, "mid_career_median_salary": 65200, "rank": 798, "zip_code": "32789"}, "score_info": {"sat_reading_low": 550, "sat_reading_high": 640, "sat_math_high": 650, "sat_math_low": 550}, "admissions_info": {"applied": 4542, "acceptance_rate": 56}}, {"location_info": {"lat": 28.0634666, "lng": -82.4129729, "state": "Florida"}, "school": "University of South Florida - Main Campus", "link": "/colleges/florida/university-of-south-florida-main-campus/admission/", "salary_info": {"early_median_salary": 42700, "mid_career_median_salary": 76000, "rank": 456, "zip_code": "33620"}, "score_info": {"sat_reading_low": 530, "sat_reading_high": 620, "sat_math_high": 640, "sat_math_low": 550}, "admissions_info": {"applied": 28547, "acceptance_rate": 43}}, {"location_info": {"lat": 29.0226229, "lng": -81.3033269, "state": "Florida"}, "school": "Stetson University", "link": "/colleges/florida/stetson-university/admission/", "salary_info": {"early_median_salary": 38600, "mid_career_median_salary": 67100, "rank": 739, "zip_code": "32723"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 640, "sat_math_high": 630, "sat_math_low": 530}, "admissions_info": {"applied": 4862, "acceptance_rate": 60}}, {"location_info": {"lat": 33.7980995, "lng": -84.3259367, "state": "Georgia"}, "school": "Emory University", "link": "/colleges/georgia/emory-university/admission/", "salary_info": {"early_median_salary": 51300, "mid_career_median_salary": 89800, "rank": 144, "zip_code": "30322"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 710, "sat_math_high": 750, "sat_math_low": 650}, "admissions_info": {"applied": 17021, "acceptance_rate": 27}}, {"location_info": {"lat": 32.8287794, "lng": -83.6514674, "state": "Georgia"}, "school": "Mercer University", "link": "/colleges/georgia/mercer-university/admission/", "salary_info": {"early_median_salary": 46600, "mid_career_median_salary": 67900, "rank": 711, "zip_code": "31207"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 630, "sat_math_high": 640, "sat_math_low": 540}, "admissions_info": {"applied": 3519, "acceptance_rate": 63}}, {"location_info": {"lat": 32.08000000000001, "lng": -81.1, "state": "Georgia"}, "school": "Savannah College of Art and Design (SCAD)", "link": "/colleges/georgia/savannah-college-of-art-and-design/admission/", "salary_info": {"early_median_salary": 40900, "mid_career_median_salary": 67300, "rank": 735, "zip_code": "31402"}, "score_info": {"sat_reading_low": 480, "sat_reading_high": 600, "sat_math_high": 580, "sat_math_low": 460}, "admissions_info": {"applied": 8560, "acceptance_rate": 63}}, {"location_info": {"lat": 34.29039, "lng": -85.1802699, "state": "Georgia"}, "school": "Berry College", "link": "/colleges/georgia/berry-college/admission/", "salary_info": {"early_median_salary": 36800, "mid_career_median_salary": 63900, "rank": 839, "zip_code": "30149"}, "score_info": {"sat_reading_low": 530, "sat_reading_high": 640, "sat_math_high": 630, "sat_math_low": 530}, "admissions_info": {"applied": 3485, "acceptance_rate": 66}}, {"location_info": {"lat": 41.7805099, "lng": -87.603826, "state": "Illinois"}, "school": "University of Chicago", "link": "/colleges/illinois/university-of-chicago/admission/", "salary_info": {"early_median_salary": 50600, "mid_career_median_salary": 107000, "rank": 38, "zip_code": "60637"}, "score_info": {"sat_reading_low": 720, "sat_reading_high": 800, "sat_math_high": 790, "sat_math_low": 720}, "admissions_info": {"applied": 25271, "acceptance_rate": 13}}, {"location_info": {"lat": 42.0541119, "lng": -87.6759889, "state": "Illinois"}, "school": "Northwestern University", "link": "/colleges/illinois/northwestern-university/admission/", "salary_info": {"early_median_salary": 56300, "mid_career_median_salary": 102000, "rank": 52, "zip_code": "60208"}, "score_info": {"sat_reading_low": 690, "sat_reading_high": 760, "sat_math_high": 790, "sat_math_low": 700}, "admissions_info": {"applied": 30926, "acceptance_rate": 18}}, {"location_info": {"lat": 40.6964443, "lng": -89.616008, "state": "Illinois"}, "school": "Bradley University", "link": "/colleges/illinois/bradley-university/admission/", "salary_info": {"early_median_salary": 50100, "mid_career_median_salary": 88100, "rank": 178, "zip_code": "61625"}, "score_info": {"sat_reading_low": 500, "sat_reading_high": 640, "sat_math_high": 630, "sat_math_low": 510}, "admissions_info": {"applied": 7562, "acceptance_rate": 63}}, {"location_info": {"lat": 41.63541540000001, "lng": -88.099845, "state": "Illinois"}, "school": "Lewis University", "link": "/colleges/illinois/lewis-university/admission/", "salary_info": {"early_median_salary": 45100, "mid_career_median_salary": 73200, "rank": 540, "zip_code": "60446"}, "score_info": {"sat_reading_low": 440, "sat_reading_high": 550, "sat_math_high": 590, "sat_math_low": 480}, "admissions_info": {"applied": 5568, "acceptance_rate": 56}}, {"location_info": {"lat": 41.87848510000001, "lng": -87.627893, "state": "Illinois"}, "school": "DePaul University", "link": "/colleges/illinois/depaul-university/admission/", "salary_info": {"early_median_salary": 48600, "mid_career_median_salary": 84700, "rank": 239, "zip_code": "60604"}, "score_info": {"sat_reading_low": 530, "sat_reading_high": 630, "sat_math_high": 630, "sat_math_low": 520}, "admissions_info": {"applied": 18160, "acceptance_rate": 62}}, {"location_info": {"lat": 41.7043332, "lng": -86.2412543, "state": "Indiana"}, "school": "University of Notre Dame", "link": "/colleges/indiana/university-of-notre-dame/admission/", "salary_info": {"early_median_salary": 57400, "mid_career_median_salary": 106000, "rank": 42, "zip_code": "46556"}, "score_info": {"sat_reading_low": 660, "sat_reading_high": 750, "sat_math_high": 770, "sat_math_low": 680}, "admissions_info": {"applied": 16957, "acceptance_rate": 23}}, {"location_info": {"lat": 39.6529824, "lng": -86.9423801, "state": "Indiana"}, "school": "DePauw University", "link": "/colleges/indiana/depauw-university/admission/", "salary_info": {"early_median_salary": 46200, "mid_career_median_salary": 88500, "rank": 173, "zip_code": "46135"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 650, "sat_math_high": 680, "sat_math_low": 550}, "admissions_info": {"applied": 4913, "acceptance_rate": 62}}, {"location_info": {"lat": 40.4401775, "lng": -86.9261008, "state": "Indiana"}, "school": "Purdue University - Main Campus", "link": "/colleges/indiana/purdue-university-main-campus/admission/", "salary_info": {"early_median_salary": 55500, "mid_career_median_salary": 92900, "rank": 113, "zip_code": "47907"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 630, "sat_math_high": 690, "sat_math_low": 560}, "admissions_info": {"applied": 31124, "acceptance_rate": 61}}, {"location_info": {"lat": 39.82060620000001, "lng": -86.1700894, "state": "Indiana"}, "school": "Butler University", "link": "/colleges/indiana/butler-university/admission/", "salary_info": {"early_median_salary": 44800, "mid_career_median_salary": 88200, "rank": 176, "zip_code": "46208"}, "score_info": {"sat_reading_low": 530, "sat_reading_high": 630, "sat_math_high": 640, "sat_math_low": 530}, "admissions_info": {"applied": 9682, "acceptance_rate": 66}}, {"location_info": {"lat": 41.7679201, "lng": -92.73816719999999, "state": "Iowa"}, "school": "Grinnell College", "link": "/colleges/iowa/grinnell-college/admission/", "salary_info": {"early_median_salary": 42500, "mid_career_median_salary": 84200, "rank": 256, "zip_code": "50112"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 730, "sat_math_high": 770, "sat_math_low": 630}, "admissions_info": {"applied": 4554, "acceptance_rate": 32}}, {"location_info": {"lat": 41.5999808, "lng": -93.6750005, "state": "Iowa"}, "school": "Drake University", "link": "/colleges/iowa/drake-university/admission/", "salary_info": {"early_median_salary": 44300, "mid_career_median_salary": 92300, "rank": 120, "zip_code": "50311"}, "score_info": {"sat_reading_low": 530, "sat_reading_high": 640, "sat_math_high": 680, "sat_math_low": 540}, "admissions_info": {"applied": 6357, "acceptance_rate": 66}}, {"location_info": {"lat": 42.0166364, "lng": -91.6663523, "state": "Iowa"}, "school": "Coe College", "link": "/colleges/iowa/coe-college/admission/", "salary_info": {"early_median_salary": 45000, "mid_career_median_salary": 70900, "rank": 613, "zip_code": "52402"}, "score_info": {"sat_reading_low": 493, "sat_reading_high": 693, "sat_math_high": 670, "sat_math_low": 495}, "admissions_info": {"applied": 2509, "acceptance_rate": 67}}, {"location_info": {"lat": 43.3932586, "lng": -91.7538817, "state": "Iowa"}, "school": "Luther College", "link": "/colleges/iowa/luther-college/admission/", "salary_info": {"early_median_salary": 43200, "mid_career_median_salary": 61300, "rank": 907, "zip_code": "52101"}, "score_info": {"sat_reading_low": 433, "sat_reading_high": 610, "sat_math_high": 638, "sat_math_low": 500}, "admissions_info": {"applied": 3556, "acceptance_rate": 70}}, {"location_info": {"lat": 41.444905, "lng": -92.8976254, "state": "Iowa"}, "school": "Central College", "link": "/colleges/iowa/central-college/admission/", "salary_info": {"early_median_salary": 43400, "mid_career_median_salary": 76600, "rank": 437, "zip_code": "50219"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 580, "sat_math_high": 620, "sat_math_low": 450}, "admissions_info": {"applied": 2471, "acceptance_rate": 65}}, {"location_info": {"lat": 42.7992829, "lng": -92.4208713, "state": "Iowa"}, "school": "Wartburg College", "link": "/colleges/iowa/wartburg-college/admission/", "salary_info": {"early_median_salary": 41900, "mid_career_median_salary": 56100, "rank": 991, "zip_code": "50677"}, "score_info": {"sat_reading_low": 380, "sat_reading_high": 540, "sat_math_high": 590, "sat_math_low": 440}, "admissions_info": {"applied": 2389, "acceptance_rate": 70}}, {"location_info": {"lat": 29.9566647, "lng": -90.1073935, "state": "Louisiana"}, "school": "Xavier University of Louisiana", "link": "/colleges/louisiana/xavier-university-of-louisiana/admission/", "salary_info": {"early_median_salary": 37400, "mid_career_median_salary": 74000, "rank": 514, "zip_code": "70125"}, "score_info": {"sat_reading_low": 440, "sat_reading_high": 560, "sat_math_high": 550, "sat_math_low": 420}, "admissions_info": {"applied": 3987, "acceptance_rate": 64}}, {"location_info": {"lat": 32.531509, "lng": -92.6293223, "state": "Louisiana"}, "school": "Louisiana Tech University", "link": "/colleges/louisiana/louisiana-tech-university/admission/", "salary_info": {"early_median_salary": 47000, "mid_career_median_salary": 86200, "rank": 211, "zip_code": "71272"}, "score_info": {"sat_reading_low": 450, "sat_reading_high": 590, "sat_math_high": 600, "sat_math_low": 490}, "admissions_info": {"applied": 4580, "acceptance_rate": 71}}, {"location_info": {"lat": 30.1412524, "lng": -93.2784825, "state": "Louisiana"}, "school": "McNeese State University", "link": "/colleges/louisiana/mcneese-state-university/admission/", "salary_info": {"early_median_salary": 46900, "mid_career_median_salary": 66100, "rank": 777, "zip_code": "70605"}, "score_info": {"sat_reading_low": 450, "sat_reading_high": 550, "sat_math_high": 560, "sat_math_low": 490}, "admissions_info": {"applied": 2964, "acceptance_rate": 69}}, {"location_info": {"lat": 44.55432769999999, "lng": -69.5419984, "state": "Maine"}, "school": "Colby College", "link": "/colleges/maine/colby-college/admission/", "salary_info": {"early_median_salary": 48700, "mid_career_median_salary": 95100, "rank": 96, "zip_code": "04901"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 710, "sat_math_high": 720, "sat_math_low": 640}, "admissions_info": {"applied": 5241, "acceptance_rate": 29}}, {"location_info": {"lat": 44.8504122, "lng": -68.86186169999999, "state": "Maine"}, "school": "Husson University", "link": "/colleges/maine/husson-university/admission/", "salary_info": {"early_median_salary": 37100, "mid_career_median_salary": 67400, "rank": 732, "zip_code": "04401"}, "score_info": {"sat_reading_low": 420, "sat_reading_high": 530, "sat_math_high": 550, "sat_math_low": 430}, "admissions_info": {"applied": 1509, "acceptance_rate": 77}}, {"location_info": {"lat": 39.3322127, "lng": -76.6008334, "state": "Maryland"}, "school": "Johns Hopkins University", "link": "/colleges/maryland/johns-hopkins-university/admission/", "salary_info": {"early_median_salary": 57500, "mid_career_median_salary": 97500, "rank": 81, "zip_code": "21218"}, "score_info": {"sat_reading_low": 650, "sat_reading_high": 740, "sat_math_high": 770, "sat_math_low": 670}, "admissions_info": {"applied": 21313, "acceptance_rate": 18}}, {"location_info": {"lat": 39.3056685, "lng": -76.6354952, "state": "Maryland"}, "school": "Maryland Institute College of Art", "link": "/colleges/maryland/maryland-institute-college-of-art/admission/", "salary_info": {"early_median_salary": 37900, "mid_career_median_salary": 57500, "rank": 972, "zip_code": "21217"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 670, "sat_math_high": 630, "sat_math_low": 510}, "admissions_info": {"applied": 3139, "acceptance_rate": 52}}, {"location_info": {"lat": 38.4001474, "lng": -75.632447, "state": "Maryland"}, "school": "Salisbury University", "link": "/colleges/maryland/salisbury-university/admission/", "salary_info": {"early_median_salary": 45100, "mid_career_median_salary": 71600, "rank": 590, "zip_code": "21801"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 610, "sat_math_high": 620, "sat_math_low": 540}, "admissions_info": {"applied": 8866, "acceptance_rate": 53}}, {"location_info": {"lat": 42.3803274, "lng": -71.13891009999999, "state": "Massachusetts"}, "school": "Harvard University", "link": "/colleges/massachusetts/harvard-university/admission/", "salary_info": {"early_median_salary": 61400, "mid_career_median_salary": 126000, "rank": 3, "zip_code": "02138"}, "score_info": {"sat_reading_low": 700, "sat_reading_high": 800, "sat_math_high": 800, "sat_math_low": 710}, "admissions_info": {"applied": 34216, "acceptance_rate": 6}}, {"location_info": {"lat": 42.36475590000001, "lng": -71.1032591, "state": "Massachusetts"}, "school": "Massachusetts Institute of Technology", "link": "/colleges/massachusetts/massachusetts-institute-of-technology/admission/", "salary_info": {"early_median_salary": 74900, "mid_career_median_salary": 124000, "rank": 6, "zip_code": "02139"}, "score_info": {"sat_reading_low": 680, "sat_reading_high": 770, "sat_math_high": 800, "sat_math_low": 750}, "admissions_info": {"applied": 18109, "acceptance_rate": 9}}, {"location_info": {"lat": 42.4274971, "lng": -71.10920120000002, "state": "Massachusetts"}, "school": "Tufts University", "link": "/colleges/massachusetts/tufts-university/admission/", "salary_info": {"early_median_salary": 54200, "mid_career_median_salary": 115000, "rank": 16, "zip_code": "02155"}, "score_info": {"sat_reading_low": 680, "sat_reading_high": 750, "sat_math_high": 770, "sat_math_low": 690}, "admissions_info": {"applied": 16378, "acceptance_rate": 21}}, {"location_info": {"lat": 42.3178198, "lng": -71.1626756, "state": "Massachusetts"}, "school": "Boston College", "link": "/colleges/massachusetts/boston-college/admission/", "salary_info": {"early_median_salary": 53100, "mid_career_median_salary": 104000, "rank": 46, "zip_code": "02467"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 710, "sat_math_high": 740, "sat_math_low": 650}, "admissions_info": {"applied": 34061, "acceptance_rate": 29}}, {"location_info": {"lat": 42.3093812, "lng": -71.28148159999999, "state": "Massachusetts"}, "school": "Wellesley College", "link": "/colleges/massachusetts/wellesley-college/admission/", "salary_info": {"early_median_salary": 49000, "mid_career_median_salary": 78400, "rank": 381, "zip_code": "02481"}, "score_info": {"sat_reading_low": 660, "sat_reading_high": 760, "sat_math_high": 750, "sat_math_low": 650}, "admissions_info": {"applied": 4548, "acceptance_rate": 30}}, {"location_info": {"lat": 42.416968, "lng": -71.25249910000001, "state": "Massachusetts"}, "school": "Brandeis University", "link": "/colleges/massachusetts/brandeis-university/admission/", "salary_info": {"early_median_salary": 45300, "mid_career_median_salary": 96200, "rank": 88, "zip_code": "02454"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 710, "sat_math_high": 760, "sat_math_low": 630}, "admissions_info": {"applied": 8380, "acceptance_rate": 39}}, {"location_info": {"lat": 42.339904, "lng": -71.0898892, "state": "Massachusetts"}, "school": "Northeastern University", "link": "/colleges/massachusetts/northeastern-university/admission/", "salary_info": {"early_median_salary": 55000, "mid_career_median_salary": 89600, "rank": 151, "zip_code": "02115"}, "score_info": {"sat_reading_low": 640, "sat_reading_high": 730, "sat_math_high": 750, "sat_math_low": 660}, "admissions_info": {"applied": 44208, "acceptance_rate": 32}}, {"location_info": {"lat": 41.9470795, "lng": -86.3385561, "state": "Michigan"}, "school": "Andrews University", "link": "/colleges/michigan/andrews-university/admission/", "salary_info": {"early_median_salary": 46700, "mid_career_median_salary": 67600, "rank": 721, "zip_code": "49104"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 620, "sat_math_high": 600, "sat_math_low": 450}, "admissions_info": {"applied": 2487, "acceptance_rate": 36}}, {"location_info": {"lat": 43.0528038, "lng": -83.75178509999999, "state": "Michigan"}, "school": "Kettering University", "link": "/colleges/michigan/kettering-university/admission/", "salary_info": {"early_median_salary": 64700, "mid_career_median_salary": 102000, "rank": 52, "zip_code": "48504"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 630, "sat_math_high": 660, "sat_math_low": 540}, "admissions_info": {"applied": 1770, "acceptance_rate": 62}}, {"location_info": {"lat": 42.9219281, "lng": -85.50972259999999, "state": "Michigan"}, "school": "Calvin College", "link": "/colleges/michigan/calvin-college/admission/", "salary_info": {"early_median_salary": 42300, "mid_career_median_salary": 77800, "rank": 400, "zip_code": "49546"}, "score_info": {"sat_reading_low": 518, "sat_reading_high": 650, "sat_math_high": 660, "sat_math_low": 530}, "admissions_info": {"applied": 3284, "acceptance_rate": 75}}, {"location_info": {"lat": 42.4595697, "lng": -83.2398943, "state": "Michigan"}, "school": "Lawrence Technological University", "link": "/colleges/michigan/lawrence-technological-university/admission/", "salary_info": {"early_median_salary": 56600, "mid_career_median_salary": 94000, "rank": 105, "zip_code": "48075"}, "score_info": {"sat_reading_low": 480, "sat_reading_high": 630, "sat_math_high": 630, "sat_math_low": 550}, "admissions_info": {"applied": 1713, "acceptance_rate": 51}}, {"location_info": {"lat": 47.0979653, "lng": -88.5606025, "state": "Michigan"}, "school": "Michigan Technological University", "link": "/colleges/michigan/michigan-technological-university/admission/", "salary_info": {"early_median_salary": 62800, "mid_career_median_salary": 99900, "rank": 66, "zip_code": "49931"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 650, "sat_math_high": 680, "sat_math_low": 580}, "admissions_info": {"applied": 4573, "acceptance_rate": 75}}, {"location_info": {"lat": 44.4695372, "lng": -93.1378173, "state": "Minnesota"}, "school": "Carleton College", "link": "/colleges/minnesota/carleton-college/admission/", "salary_info": {"early_median_salary": 44000, "mid_career_median_salary": 107000, "rank": 38, "zip_code": "55057"}, "score_info": {"sat_reading_low": 660, "sat_reading_high": 750, "sat_math_high": 770, "sat_math_low": 680}, "admissions_info": {"applied": 5856, "acceptance_rate": 26}}, {"location_info": {"lat": 44.9330076, "lng": -93.16290629999999, "state": "Minnesota"}, "school": "Macalester College", "link": "/colleges/minnesota/macalester-college/admission/", "salary_info": {"early_median_salary": 40300, "mid_career_median_salary": 89300, "rank": 157, "zip_code": "55105"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 740, "sat_math_high": 710, "sat_math_low": 610}, "admissions_info": {"applied": 6030, "acceptance_rate": 37}}, {"location_info": {"lat": 44.3661998, "lng": -94.028678, "state": "Minnesota"}, "school": "Gustavus Adolphus College", "link": "/colleges/minnesota/gustavus-adolphus-college/admission/", "salary_info": {"early_median_salary": 41100, "mid_career_median_salary": 84100, "rank": 258, "zip_code": "56082"}, "score_info": {"sat_reading_low": 550, "sat_reading_high": 680, "sat_math_high": 660, "sat_math_low": 530}, "admissions_info": {"applied": 4881, "acceptance_rate": 63}}, {"location_info": {"lat": 38.6682669, "lng": -90.32308069999999, "state": "Missouri"}, "school": "Washington University in St. Louis", "link": "/colleges/missouri/washington-university-in-st-louis/admission/", "salary_info": {"early_median_salary": 55500, "mid_career_median_salary": 105000, "rank": 44, "zip_code": "63130"}, "score_info": {"sat_reading_low": 700, "sat_reading_high": 760, "sat_math_high": 790, "sat_math_low": 720}, "admissions_info": {"applied": 27265, "acceptance_rate": 18}}, {"location_info": {"lat": 39.2593487, "lng": -94.3770704, "state": "Missouri"}, "school": "William Jewell College", "link": "/colleges/missouri/william-jewell-college/admission/", "salary_info": {"early_median_salary": 41400, "mid_career_median_salary": 74200, "rank": 508, "zip_code": "64068"}, "score_info": {"sat_reading_low": 498, "sat_reading_high": 670, "sat_math_high": 645, "sat_math_low": 510}, "admissions_info": {"applied": 3007, "acceptance_rate": 61}}, {"location_info": {"lat": 36.6194464, "lng": -93.2392553, "state": "Missouri"}, "school": "College of the Ozarks", "link": "/colleges/missouri/college-of-the-ozarks/admission/", "salary_info": {"early_median_salary": 35200, "mid_career_median_salary": 71800, "rank": 586, "zip_code": "65726"}, "score_info": {"sat_reading_low": 510, "sat_reading_high": 560, "sat_math_high": 548, "sat_math_low": 450}, "admissions_info": {"applied": 3048, "acceptance_rate": 9}}, {"location_info": {"lat": 38.5842641, "lng": -90.3513021, "state": "Missouri"}, "school": "Webster University", "link": "/colleges/missouri/webster-university/admission/", "salary_info": {"early_median_salary": 40500, "mid_career_median_salary": 67500, "rank": 728, "zip_code": "63119"}, "score_info": {"sat_reading_low": 500, "sat_reading_high": 650, "sat_math_high": 600, "sat_math_low": 490}, "admissions_info": {"applied": 1706, "acceptance_rate": 59}}, {"location_info": {"lat": 40.1575874, "lng": -92.5792482, "state": "Missouri"}, "school": "Truman State University", "link": "/colleges/missouri/truman-state-university/admission/", "salary_info": {"early_median_salary": 40300, "mid_career_median_salary": 72000, "rank": 580, "zip_code": "63501"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 680, "sat_math_high": 650, "sat_math_low": 540}, "admissions_info": {"applied": 4445, "acceptance_rate": 74}}, {"location_info": {"lat": 38.6624944, "lng": -90.4785495, "state": "Missouri"}, "school": "Maryville University of Saint Louis", "link": "/colleges/missouri/maryville-university-of-saint-louis/admission/", "salary_info": {"early_median_salary": 42600, "mid_career_median_salary": 60600, "rank": 918, "zip_code": "63141"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 610, "sat_math_high": 610, "sat_math_low": 510}, "admissions_info": {"applied": 1281, "acceptance_rate": 71}}, {"location_info": {"lat": 39.0362552, "lng": -94.57533939999999, "state": "Missouri"}, "school": "Rockhurst University", "link": "/colleges/missouri/rockhurst-university/admission/", "salary_info": {"early_median_salary": 46800, "mid_career_median_salary": 83000, "rank": 279, "zip_code": "64110"}, "score_info": {"sat_reading_low": 500, "sat_reading_high": 640, "sat_math_high": 649, "sat_math_low": 510}, "admissions_info": {"applied": 2184, "acceptance_rate": 78}}, {"location_info": {"lat": 43.7260338, "lng": -72.14291720000001, "state": "New Hampshire"}, "school": "Dartmouth College", "link": "/colleges/new-hampshire/dartmouth-college/admission/", "salary_info": {"early_median_salary": 56300, "mid_career_median_salary": 111000, "rank": 26, "zip_code": "03755"}, "score_info": {"sat_reading_low": 670, "sat_reading_high": 780, "sat_math_high": 780, "sat_math_low": 680}, "admissions_info": {"applied": 22385, "acceptance_rate": 10}}, {"location_info": {"lat": 43.0073961, "lng": -71.49523719999999, "state": "New Hampshire"}, "school": "Saint Anselm College", "link": "/colleges/new-hampshire/saint-anselm-college/admission/", "salary_info": {"early_median_salary": 49600, "mid_career_median_salary": 89800, "rank": 144, "zip_code": "03102"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 610, "sat_math_high": 620, "sat_math_low": 520}, "admissions_info": {"applied": 4089, "acceptance_rate": 75}}, {"location_info": {"lat": 43.0802842, "lng": -71.4536835, "state": "New Hampshire"}, "school": "Southern New Hampshire University", "link": "/colleges/new-hampshire/southern-new-hampshire-university/admission/", "salary_info": {"early_median_salary": 43300, "mid_career_median_salary": 64600, "rank": 822, "zip_code": "03106"}, "score_info": {"sat_reading_low": 430, "sat_reading_high": 520, "sat_math_high": 540, "sat_math_low": 440}, "admissions_info": {"applied": 4262, "acceptance_rate": 83}}, {"location_info": {"lat": 43.7570079, "lng": -71.6881497, "state": "New Hampshire"}, "school": "Plymouth State University", "link": "/colleges/new-hampshire/plymouth-state-university/admission/", "salary_info": {"early_median_salary": 40900, "mid_career_median_salary": 64100, "rank": 833, "zip_code": "03264"}, "score_info": {"sat_reading_low": 430, "sat_reading_high": 530, "sat_math_high": 540, "sat_math_low": 430}, "admissions_info": {"applied": 4940, "acceptance_rate": 76}}, {"location_info": {"lat": 42.9284584, "lng": -72.27749969999999, "state": "New Hampshire"}, "school": "Keene State College", "link": "/colleges/new-hampshire/keene-state-college/admission/", "salary_info": {"early_median_salary": 41900, "mid_career_median_salary": 71200, "rank": 604, "zip_code": "03435"}, "score_info": {"sat_reading_low": 430, "sat_reading_high": 540, "sat_math_high": 540, "sat_math_low": 440}, "admissions_info": {"applied": 6315, "acceptance_rate": 78}}, {"location_info": {"lat": 42.759337, "lng": -72.0231125, "state": "New Hampshire"}, "school": "Franklin Pierce University", "link": "/colleges/new-hampshire/franklin-pierce-university/admission/", "salary_info": {"early_median_salary": 42700, "mid_career_median_salary": 68600, "rank": 698, "zip_code": "03461"}, "score_info": {"sat_reading_low": 440, "sat_reading_high": 530, "sat_math_high": 550, "sat_math_low": 440}, "admissions_info": {"applied": 3546, "acceptance_rate": 85}}, {"location_info": {"lat": 42.7470311, "lng": -71.4596201, "state": "New Hampshire"}, "school": "Rivier College", "link": "/colleges/new-hampshire/rivier-college/admission/", "salary_info": {"early_median_salary": 44900, "mid_career_median_salary": 69700, "rank": 651, "zip_code": "03060"}, "score_info": {"sat_reading_low": 430, "sat_reading_high": 500, "sat_math_high": 510, "sat_math_low": 430}, "admissions_info": {"applied": 791, "acceptance_rate": 82}}, {"location_info": {"lat": 40.3467174, "lng": -74.6568772, "state": "New Jersey"}, "school": "Princeton University", "link": "/colleges/new-jersey/princeton-university/admission/", "salary_info": {"early_median_salary": 61300, "mid_career_median_salary": 122000, "rank": 8, "zip_code": "08544"}, "score_info": {"sat_reading_low": 700, "sat_reading_high": 800, "sat_math_high": 800, "sat_math_low": 710}, "admissions_info": {"applied": 26664, "acceptance_rate": 8}}, {"location_info": {"lat": 40.744052, "lng": -74.0270745, "state": "New Jersey"}, "school": "Stevens Institute of Technology", "link": "/colleges/new-jersey/stevens-institute-of-technology/admission/", "salary_info": {"early_median_salary": 66800, "mid_career_median_salary": 120000, "rank": 10, "zip_code": "07030"}, "score_info": {"sat_reading_low": 570, "sat_reading_high": 670, "sat_math_high": 720, "sat_math_low": 640}, "admissions_info": {"applied": 4087, "acceptance_rate": 40}}, {"location_info": {"lat": 41.0887754, "lng": -74.1827119, "state": "New Jersey"}, "school": "Ramapo College of New Jersey", "link": "/colleges/new-jersey/ramapo-college-of-new-jersey/admission/", "salary_info": {"early_median_salary": 42500, "mid_career_median_salary": 76900, "rank": 424, "zip_code": "07430"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 590, "sat_math_high": 610, "sat_math_low": 510}, "admissions_info": {"applied": 6299, "acceptance_rate": 47}}, {"location_info": {"lat": 39.7017383, "lng": -75.11951069999999, "state": "New Jersey"}, "school": "Rowan University", "link": "/colleges/new-jersey/rowan-university/admission/", "salary_info": {"early_median_salary": 45400, "mid_career_median_salary": 73900, "rank": 521, "zip_code": "08028"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 600, "sat_math_high": 640, "sat_math_low": 510}, "admissions_info": {"applied": 6868, "acceptance_rate": 56}}, {"location_info": {"lat": 39.4728755, "lng": -74.4642861, "state": "New Jersey"}, "school": "The Richard Stockton College of New Jersey", "link": "/colleges/new-jersey/the-richard-stockton-college-of-new-jersey/admission/", "salary_info": {"early_median_salary": 39800, "mid_career_median_salary": 76700, "rank": 432, "zip_code": "08205"}, "score_info": {"sat_reading_low": 480, "sat_reading_high": 570, "sat_math_high": 600, "sat_math_low": 500}, "admissions_info": {"applied": 6195, "acceptance_rate": 57}}, {"location_info": {"lat": 40.8138912, "lng": -73.96243270000001, "state": "New York"}, "school": "Columbia University in City of New York", "link": "/colleges/new-york/columbia-university-in-the-city-of-new-york/admission/", "salary_info": {"early_median_salary": 60200, "mid_career_median_salary": 104000, "rank": 46, "zip_code": "10027"}, "score_info": {"sat_reading_low": 690, "sat_reading_high": 780, "sat_math_high": 790, "sat_math_low": 700}, "admissions_info": {"applied": 34810, "acceptance_rate": 7}}, {"location_info": {"lat": 42.435511, "lng": -76.5257007, "state": "New York"}, "school": "Cornell University", "link": "/colleges/new-york/cornell-university/admission/", "salary_info": {"early_median_salary": 59700, "mid_career_median_salary": 109000, "rank": 32, "zip_code": "14853"}, "score_info": {"sat_reading_low": 640, "sat_reading_high": 740, "sat_math_high": 780, "sat_math_low": 680}, "admissions_info": {"applied": 37808, "acceptance_rate": 17}}, {"location_info": {"lat": 42.8143452, "lng": -75.55096019999999, "state": "New York"}, "school": "Colgate University", "link": "/colleges/new-york/colgate-university/admission/", "salary_info": {"early_median_salary": 53700, "mid_career_median_salary": 115000, "rank": 16, "zip_code": "13346"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 720, "sat_math_high": 740, "sat_math_low": 650}, "admissions_info": {"applied": 7798, "acceptance_rate": 29}}, {"location_info": {"lat": 40.7322535, "lng": -73.9874105, "state": "New York"}, "school": "Cooper Union for The Advancement of Science and Art", "link": "/colleges/new-york/cooper-union-for-the-advancement-of-science-and-art/admission/", "salary_info": {"early_median_salary": 62700, "mid_career_median_salary": 114000, "rank": 18, "zip_code": "10003"}, "score_info": {"sat_reading_low": 610, "sat_reading_high": 710, "sat_math_high": 780, "sat_math_low": 610}, "admissions_info": {"applied": 3415, "acceptance_rate": 8}}, {"location_info": {"lat": 40.7250632, "lng": -73.9976946, "state": "New York"}, "school": "New York University (NYU)", "link": "/colleges/new-york/new-york-university/admission/", "salary_info": {"early_median_salary": 51400, "mid_career_median_salary": 99000, "rank": 71, "zip_code": "10012"}, "score_info": {"sat_reading_low": 620, "sat_reading_high": 720, "sat_math_high": 740, "sat_math_low": 630}, "admissions_info": {"applied": 42807, "acceptance_rate": 35}}, {"location_info": {"lat": 43.1318593, "lng": -77.623931, "state": "New York"}, "school": "University of Rochester", "link": "/colleges/new-york/university-of-rochester/admission/", "salary_info": {"early_median_salary": 51400, "mid_career_median_salary": 101000, "rank": 59, "zip_code": "14627"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 700, "sat_math_high": 750, "sat_math_low": 650}, "admissions_info": {"applied": 16033, "acceptance_rate": 35}}, {"location_info": {"lat": 35.9992263, "lng": -78.94720889999999, "state": "North Carolina"}, "school": "Duke University", "link": "/colleges/north-carolina/duke-university/admission/", "salary_info": {"early_median_salary": 60600, "mid_career_median_salary": 111000, "rank": 26, "zip_code": "27708"}, "score_info": {"sat_reading_low": 670, "sat_reading_high": 760, "sat_math_high": 790, "sat_math_low": 690}, "admissions_info": {"applied": 28145, "acceptance_rate": 14}}, {"location_info": {"lat": 35.50603, "lng": -80.83945, "state": "North Carolina"}, "school": "Davidson College", "link": "/colleges/north-carolina/davidson-college/admission/", "salary_info": {"early_median_salary": 48800, "mid_career_median_salary": 88100, "rank": 178, "zip_code": "28035"}, "score_info": {"sat_reading_low": 630, "sat_reading_high": 730, "sat_math_high": 710, "sat_math_low": 600}, "admissions_info": {"applied": 4770, "acceptance_rate": 25}}, {"location_info": {"lat": 35.905249, "lng": -79.0581498, "state": "North Carolina"}, "school": "University of North Carolina at Chapel Hill (UNC)", "link": "/colleges/north-carolina/university-of-north-carolina-at-chapel-hill/admission/", "salary_info": {"early_median_salary": 46200, "mid_career_median_salary": 79400, "rank": 357, "zip_code": "27599"}, "score_info": {"sat_reading_low": 590, "sat_reading_high": 700, "sat_math_high": 710, "sat_math_low": 610}, "admissions_info": {"applied": 22652, "acceptance_rate": 33}}, {"location_info": {"lat": 36.2229011, "lng": -79.5041322, "state": "North Carolina"}, "school": "Elon University", "link": "/colleges/north-carolina/elon-university/admission/", "salary_info": {"early_median_salary": 44800, "mid_career_median_salary": 78400, "rank": 381, "zip_code": "27244"}, "score_info": {"sat_reading_low": 560, "sat_reading_high": 660, "sat_math_high": 660, "sat_math_low": 560}, "admissions_info": {"applied": 10241, "acceptance_rate": 52}}, {"location_info": {"lat": 35.4134031, "lng": -78.7360351, "state": "North Carolina"}, "school": "Campbell University", "link": "/colleges/north-carolina/campbell-university/admission/", "salary_info": {"early_median_salary": 43400, "mid_career_median_salary": 70400, "rank": 629, "zip_code": "27506"}, "score_info": {"sat_reading_low": 380, "sat_reading_high": 655, "sat_math_high": 645, "sat_math_low": 385}, "admissions_info": {"applied": 12445, "acceptance_rate": 29}}, {"location_info": {"lat": 34.2253022, "lng": -77.8710285, "state": "North Carolina"}, "school": "University of North Carolina at Wilmington (UNCW)", "link": "/colleges/north-carolina/university-of-north-carolina-at-wilmington/admission/", "salary_info": {"early_median_salary": 39900, "mid_career_median_salary": 62500, "rank": 881, "zip_code": "28403"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 620, "sat_math_high": 630, "sat_math_low": 560}, "admissions_info": {"applied": 10339, "acceptance_rate": 53}}, {"location_info": {"lat": 36.2139148, "lng": -81.6795209, "state": "North Carolina"}, "school": "Appalachian State University", "link": "/colleges/north-carolina/appalachian-state-university/admission/", "salary_info": {"early_median_salary": 40100, "mid_career_median_salary": 65000, "rank": 806, "zip_code": "28608"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 620, "sat_math_high": 620, "sat_math_low": 540}, "admissions_info": {"applied": 12959, "acceptance_rate": 62}}, {"location_info": {"lat": 41.2795429, "lng": -82.2365981, "state": "Ohio"}, "school": "Oberlin College", "link": "/colleges/ohio/oberlin-college/admission/", "salary_info": {"early_median_salary": 41700, "mid_career_median_salary": 100000, "rank": 64, "zip_code": "44074"}, "score_info": {"sat_reading_low": 650, "sat_reading_high": 740, "sat_math_high": 715, "sat_math_low": 620}, "admissions_info": {"applied": 7172, "acceptance_rate": 31}}, {"location_info": {"lat": 40.3760148, "lng": -82.3966872, "state": "Ohio"}, "school": "Kenyon College", "link": "/colleges/ohio/kenyon-college/admission/", "salary_info": {"early_median_salary": 45800, "mid_career_median_salary": 97600, "rank": 77, "zip_code": "43022"}, "score_info": {"sat_reading_low": 630, "sat_reading_high": 720, "sat_math_high": 690, "sat_math_low": 600}, "admissions_info": {"applied": 3947, "acceptance_rate": 36}}, {"location_info": {"lat": 40.089177, "lng": -82.5402275, "state": "Ohio"}, "school": "Denison University", "link": "/colleges/ohio/denison-university/admission/", "salary_info": {"early_median_salary": 45900, "mid_career_median_salary": 84800, "rank": 234, "zip_code": "43023"}, "score_info": {"sat_reading_low": 590, "sat_reading_high": 660, "sat_math_high": 670, "sat_math_low": 600}, "admissions_info": {"applied": 4757, "acceptance_rate": 50}}, {"location_info": {"lat": 41.5091257, "lng": -81.6089873, "state": "Ohio"}, "school": "Case Western Reserve University", "link": "/colleges/ohio/case-western-reserve-university/admission/", "salary_info": {"early_median_salary": 58400, "mid_career_median_salary": 103000, "rank": 49, "zip_code": "44106"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 720, "sat_math_high": 760, "sat_math_low": 670}, "admissions_info": {"applied": 14778, "acceptance_rate": 54}}, {"location_info": {"lat": 39.7395406, "lng": -84.1787904, "state": "Ohio"}, "school": "University of Dayton", "link": "/colleges/ohio/university-of-dayton/admission/", "salary_info": {"early_median_salary": 52100, "mid_career_median_salary": 88700, "rank": 169, "zip_code": "45469"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 600, "sat_math_high": 630, "sat_math_low": 530}, "admissions_info": {"applied": 15101, "acceptance_rate": 55}}, {"location_info": {"lat": 40.80216000000001, "lng": -81.9971108, "state": "Ohio"}, "school": "The College of Wooster", "link": "/colleges/ohio/the-college-of-wooster/admission/", "salary_info": {"early_median_salary": 38000, "mid_career_median_salary": 74800, "rank": 493, "zip_code": "44691"}, "score_info": {"sat_reading_low": 550, "sat_reading_high": 670, "sat_math_high": 660, "sat_math_low": 550}, "admissions_info": {"applied": 5208, "acceptance_rate": 58}}, {"location_info": {"lat": 39.1405079, "lng": -84.47239, "state": "Ohio"}, "school": "Xavier University", "link": "/colleges/ohio/xavier-university/admission/", "salary_info": {"early_median_salary": 47100, "mid_career_median_salary": 74900, "rank": 491, "zip_code": "45207"}, "score_info": {"sat_reading_low": 500, "sat_reading_high": 600, "sat_math_high": 610, "sat_math_low": 510}, "admissions_info": {"applied": 11232, "acceptance_rate": 68}}, {"location_info": {"lat": 36.142324, "lng": -95.956825, "state": "Oklahoma"}, "school": "University of Tulsa", "link": "/colleges/oklahoma/university-of-tulsa/admission/", "salary_info": {"early_median_salary": 56400, "mid_career_median_salary": 88900, "rank": 164, "zip_code": "74104"}, "score_info": {"sat_reading_low": 560, "sat_reading_high": 710, "sat_math_high": 690, "sat_math_low": 570}, "admissions_info": {"applied": 6984, "acceptance_rate": 41}}, {"location_info": {"lat": 35.4778286, "lng": -97.5409718, "state": "Oklahoma"}, "school": "Oklahoma City University", "link": "/colleges/oklahoma/oklahoma-city-university/admission/", "salary_info": {"early_median_salary": 42500, "mid_career_median_salary": 66400, "rank": 769, "zip_code": "73106"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 620, "sat_math_high": 610, "sat_math_low": 500}, "admissions_info": {"applied": 1286, "acceptance_rate": 70}}, {"location_info": {"lat": 36.0501104, "lng": -95.9579174, "state": "Oklahoma"}, "school": "Oral Roberts University (ORU)", "link": "/colleges/oklahoma/oral-roberts-university/admission/", "salary_info": {"early_median_salary": 44400, "mid_career_median_salary": 63000, "rank": 866, "zip_code": "74171"}, "score_info": {"sat_reading_low": 460, "sat_reading_high": 570, "sat_math_high": 560, "sat_math_low": 450}, "admissions_info": {"applied": 1163, "acceptance_rate": 59}}, {"location_info": {"lat": 45.4807521, "lng": -122.6427372, "state": "Oregon"}, "school": "Reed College", "link": "/colleges/oregon/reed-college/admission/", "salary_info": {"early_median_salary": 47600, "mid_career_median_salary": 103000, "rank": 49, "zip_code": "97202"}, "score_info": {"sat_reading_low": 660, "sat_reading_high": 750, "sat_math_high": 720, "sat_math_low": 620}, "admissions_info": {"applied": 3131, "acceptance_rate": 36}}, {"location_info": {"lat": 45.6008356, "lng": -122.760606, "state": "Oregon"}, "school": "University of Portland", "link": "/colleges/oregon/university-of-portland/admission/", "salary_info": {"early_median_salary": 50200, "mid_career_median_salary": 90500, "rank": 135, "zip_code": "97203"}, "score_info": {"sat_reading_low": 550, "sat_reading_high": 650, "sat_math_high": 650, "sat_math_low": 540}, "admissions_info": {"applied": 8696, "acceptance_rate": 67}}, {"location_info": {"lat": 44.9464822, "lng": -123.0018941, "state": "Oregon"}, "school": "Willamette University", "link": "/colleges/oregon/willamette-university/admission/", "salary_info": {"early_median_salary": 42000, "mid_career_median_salary": 85200, "rank": 231, "zip_code": "97301"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 660, "sat_math_high": 650, "sat_math_low": 540}, "admissions_info": {"applied": 6462, "acceptance_rate": 83}}, {"location_info": {"lat": 44.0350489, "lng": -123.0473566, "state": "Oregon"}, "school": "University of Oregon", "link": "/colleges/oregon/university-of-oregon/admission/", "salary_info": {"early_median_salary": 43300, "mid_career_median_salary": 76500, "rank": 441, "zip_code": "97403"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 600, "sat_math_high": 620, "sat_math_low": 500}, "admissions_info": {"applied": 23012, "acceptance_rate": 73}}, {"location_info": {"lat": 45.3295718, "lng": -122.9651975, "state": "Oregon"}, "school": "George Fox University", "link": "/colleges/oregon/george-fox-university/admission/", "salary_info": {"early_median_salary": 44400, "mid_career_median_salary": 64800, "rank": 814, "zip_code": "97132"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 600, "sat_math_high": 600, "sat_math_low": 470}, "admissions_info": {"applied": 2215, "acceptance_rate": 75}}, {"location_info": {"lat": 45.57017099999999, "lng": -123.13223, "state": "Oregon"}, "school": "Pacific University", "link": "/colleges/oregon/pacific-university/admission/", "salary_info": {"early_median_salary": 40700, "mid_career_median_salary": 65200, "rank": 798, "zip_code": "97116"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 600, "sat_math_high": 610, "sat_math_low": 500}, "admissions_info": {"applied": 2619, "acceptance_rate": 85}}, {"location_info": {"lat": 39.9583587, "lng": -75.1953934, "state": "Pennsylvania"}, "school": "University of Pennsylvania", "link": "/colleges/pennsylvania/university-of-pennsylvania/admission/", "salary_info": {"early_median_salary": 60300, "mid_career_median_salary": 120000, "rank": 10, "zip_code": "19104"}, "score_info": {"sat_reading_low": 670, "sat_reading_high": 760, "sat_math_high": 780, "sat_math_low": 690}, "admissions_info": {"applied": 31218, "acceptance_rate": 13}}, {"location_info": {"lat": 39.8975179, "lng": -75.347048, "state": "Pennsylvania"}, "school": "Swarthmore College", "link": "/colleges/pennsylvania/swarthmore-college/admission/", "salary_info": {"early_median_salary": 48000, "mid_career_median_salary": 109000, "rank": 32, "zip_code": "19081"}, "score_info": {"sat_reading_low": 680, "sat_reading_high": 760, "sat_math_high": 770, "sat_math_low": 670}, "admissions_info": {"applied": 6589, "acceptance_rate": 14}}, {"location_info": {"lat": 40.4379259, "lng": -79.9556424, "state": "Pennsylvania"}, "school": "Carnegie Mellon University (CMU)", "link": "/colleges/pennsylvania/carnegie-mellon-university/admission/", "salary_info": {"early_median_salary": 64700, "mid_career_median_salary": 118000, "rank": 14, "zip_code": "15213"}, "score_info": {"sat_reading_low": 640, "sat_reading_high": 740, "sat_math_high": 790, "sat_math_low": 700}, "admissions_info": {"applied": 17313, "acceptance_rate": 28}}, {"location_info": {"lat": 40.9564657, "lng": -76.9412601, "state": "Pennsylvania"}, "school": "Bucknell University", "link": "/colleges/pennsylvania/bucknell-university/admission/", "salary_info": {"early_median_salary": 57100, "mid_career_median_salary": 99600, "rank": 67, "zip_code": "17837"}, "score_info": {"sat_reading_low": 580, "sat_reading_high": 680, "sat_math_high": 720, "sat_math_low": 620}, "admissions_info": {"applied": 8291, "acceptance_rate": 27}}, {"location_info": {"lat": 40.6551234, "lng": -75.2128996, "state": "Pennsylvania"}, "school": "Lafayette College", "link": "/colleges/pennsylvania/lafayette-college/admission/", "salary_info": {"early_median_salary": 58900, "mid_career_median_salary": 102000, "rank": 52, "zip_code": "18042"}, "score_info": {"sat_reading_low": 570, "sat_reading_high": 670, "sat_math_high": 700, "sat_math_low": 610}, "admissions_info": {"applied": 6660, "acceptance_rate": 34}}, {"location_info": {"lat": 40.5967701, "lng": -75.3761952, "state": "Pennsylvania"}, "school": "Lehigh University", "link": "/colleges/pennsylvania/lehigh-university/admission/", "salary_info": {"early_median_salary": 60400, "mid_career_median_salary": 108000, "rank": 35, "zip_code": "18015"}, "score_info": {"sat_reading_low": 580, "sat_reading_high": 670, "sat_math_high": 740, "sat_math_low": 640}, "admissions_info": {"applied": 11529, "acceptance_rate": 33}}, {"location_info": {"lat": 39.8243121, "lng": -77.2175223, "state": "Pennsylvania"}, "school": "Gettysburg College", "link": "/colleges/pennsylvania/gettysburg-college/admission/", "salary_info": {"early_median_salary": 48900, "mid_career_median_salary": 100000, "rank": 64, "zip_code": "17325"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 690, "sat_math_high": 680, "sat_math_low": 600}, "admissions_info": {"applied": 5620, "acceptance_rate": 40}}, {"location_info": {"lat": 41.8265437, "lng": -71.4013635, "state": "Rhode Island"}, "school": "Brown University", "link": "/colleges/rhode-island/brown-university/admission/", "salary_info": {"early_median_salary": 57100, "mid_career_median_salary": 108000, "rank": 35, "zip_code": "02912"}, "score_info": {"sat_reading_low": 660, "sat_reading_high": 760, "sat_math_high": 780, "sat_math_low": 670}, "admissions_info": {"applied": 28742, "acceptance_rate": 10}}, {"location_info": {"lat": 41.816736, "lng": -71.40915629999999, "state": "Rhode Island"}, "school": "Rhode Island School of Design (RISD)", "link": "/colleges/rhode-island/rhode-island-school-of-design/admission/", "salary_info": {"early_median_salary": 45400, "mid_career_median_salary": 82800, "rank": 282, "zip_code": "02903"}, "score_info": {"sat_reading_low": 530, "sat_reading_high": 670, "sat_math_high": 710, "sat_math_low": 560}, "admissions_info": {"applied": 3113, "acceptance_rate": 25}}, {"location_info": {"lat": 41.8430186, "lng": -71.4404284, "state": "Rhode Island"}, "school": "Providence College", "link": "/colleges/rhode-island/providence-college/admission/", "salary_info": {"early_median_salary": 51900, "mid_career_median_salary": 86700, "rank": 198, "zip_code": "02918"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 620, "sat_math_high": 640, "sat_math_low": 530}, "admissions_info": {"applied": 9652, "acceptance_rate": 61}}, {"location_info": {"lat": 41.4711987, "lng": -71.3171162, "state": "Rhode Island"}, "school": "Salve Regina University", "link": "/colleges/rhode-island/salve-regina-university/admission/", "salary_info": {"early_median_salary": 48300, "mid_career_median_salary": 62900, "rank": 869, "zip_code": "02840"}, "score_info": {"sat_reading_low": 510, "sat_reading_high": 590, "sat_math_high": 600, "sat_math_low": 510}, "admissions_info": {"applied": 4824, "acceptance_rate": 70}}, {"location_info": {"lat": 41.9036825, "lng": -71.51304449999999, "state": "Rhode Island"}, "school": "Bryant University", "link": "/colleges/rhode-island/bryant-university/admission/", "salary_info": {"early_median_salary": 52400, "mid_career_median_salary": 93700, "rank": 107, "zip_code": "02917"}, "score_info": {"sat_reading_low": 510, "sat_reading_high": 590, "sat_math_high": 630, "sat_math_low": 540}, "admissions_info": {"applied": 5177, "acceptance_rate": 77}}, {"location_info": {"lat": 41.8380136, "lng": -71.4358733, "state": "Rhode Island"}, "school": "Rhode Island College", "link": "/colleges/rhode-island/rhode-island-college/admission/", "salary_info": {"early_median_salary": 39800, "mid_career_median_salary": 67000, "rank": 743, "zip_code": "02908"}, "score_info": {"sat_reading_low": 410, "sat_reading_high": 520, "sat_math_high": 520, "sat_math_low": 410}, "admissions_info": {"applied": 3349, "acceptance_rate": 73}}, {"location_info": {"lat": 36.1457192, "lng": -86.8066559, "state": "Tennessee"}, "school": "Vanderbilt University", "link": "/colleges/tennessee/vanderbilt-university/admission/", "salary_info": {"early_median_salary": 57300, "mid_career_median_salary": 102000, "rank": 52, "zip_code": "37240"}, "score_info": {"sat_reading_low": 700, "sat_reading_high": 780, "sat_math_high": 790, "sat_math_low": 710}, "admissions_info": {"applied": 28348, "acceptance_rate": 14}}, {"location_info": {"lat": 35.1433749, "lng": -89.9673469, "state": "Tennessee"}, "school": "Rhodes College", "link": "/colleges/tennessee/rhodes-college/admission/", "salary_info": {"early_median_salary": 43200, "mid_career_median_salary": 90700, "rank": 134, "zip_code": "38112"}, "score_info": {"sat_reading_low": 590, "sat_reading_high": 690, "sat_math_high": 680, "sat_math_low": 580}, "admissions_info": {"applied": 4138, "acceptance_rate": 55}}, {"location_info": {"lat": 36.1003494, "lng": -86.7718017, "state": "Tennessee"}, "school": "Lipscomb University", "link": "/colleges/tennessee/lipscomb-university/admission/", "salary_info": {"early_median_salary": 41400, "mid_career_median_salary": 75300, "rank": 477, "zip_code": "37204"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 650, "sat_math_high": 650, "sat_math_low": 510}, "admissions_info": {"applied": 3022, "acceptance_rate": 52}}, {"location_info": {"lat": 35.0500092, "lng": -85.04904979999999, "state": "Tennessee"}, "school": "Southern Adventist University", "link": "/colleges/tennessee/southern-adventist-university/admission/", "salary_info": {"early_median_salary": 45000, "mid_career_median_salary": 55600, "rank": 995, "zip_code": "37315"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 600, "sat_math_high": 580, "sat_math_low": 450}, "admissions_info": {"applied": 2205, "acceptance_rate": 45}}, {"location_info": {"lat": 29.7183467, "lng": -95.4306141, "state": "Texas"}, "school": "Rice University", "link": "/colleges/texas/rice-university/admission/", "salary_info": {"early_median_salary": 63900, "mid_career_median_salary": 114000, "rank": 18, "zip_code": "77005"}, "score_info": {"sat_reading_low": 670, "sat_reading_high": 760, "sat_math_high": 790, "sat_math_low": 700}, "admissions_info": {"applied": 15133, "acceptance_rate": 17}}, {"location_info": {"lat": 32.7087439, "lng": -97.3617845, "state": "Texas"}, "school": "Texas Christian University (TCU)", "link": "/colleges/texas/texas-christian-university/admission/", "salary_info": {"early_median_salary": 47400, "mid_career_median_salary": 78500, "rank": 379, "zip_code": "76129"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 620, "sat_math_high": 650, "sat_math_low": 550}, "admissions_info": {"applied": 19335, "acceptance_rate": 41}}, {"location_info": {"lat": 32.84, "lng": -96.78, "state": "Texas"}, "school": "Southern Methodist University (SMU)", "link": "/colleges/texas/southern-methodist-university/admission/", "salary_info": {"early_median_salary": 50100, "mid_career_median_salary": 88200, "rank": 176, "zip_code": "75275"}, "score_info": {"sat_reading_low": 600, "sat_reading_high": 690, "sat_math_high": 700, "sat_math_low": 620}, "admissions_info": {"applied": 11217, "acceptance_rate": 54}}, {"location_info": {"lat": 29.4595699, "lng": -98.49522280000001, "state": "Texas"}, "school": "Trinity University", "link": "/colleges/texas/trinity-university/admission/", "salary_info": {"early_median_salary": 42300, "mid_career_median_salary": 90000, "rank": 140, "zip_code": "78212"}, "score_info": {"sat_reading_low": 560, "sat_reading_high": 690, "sat_math_high": 680, "sat_math_low": 590}, "admissions_info": {"applied": 4402, "acceptance_rate": 64}}, {"location_info": {"lat": 31.5470221, "lng": -97.12432869999999, "state": "Texas"}, "school": "Baylor University", "link": "/colleges/texas/baylor-university/admission/", "salary_info": {"early_median_salary": 46800, "mid_career_median_salary": 82500, "rank": 289, "zip_code": "76798"}, "score_info": {"sat_reading_low": 550, "sat_reading_high": 660, "sat_math_high": 670, "sat_math_low": 570}, "admissions_info": {"applied": 27828, "acceptance_rate": 61}}, {"location_info": {"lat": 32.7433629, "lng": -96.8887202, "state": "Texas"}, "school": "Dallas Baptist University", "link": "/colleges/texas/dallas-baptist-university/admission/", "salary_info": {"early_median_salary": 44500, "mid_career_median_salary": 72400, "rank": 566, "zip_code": "75211"}, "score_info": {"sat_reading_low": 472, "sat_reading_high": 656, "sat_math_high": 648, "sat_math_low": 476}, "admissions_info": {"applied": 2692, "acceptance_rate": 41}}, {"location_info": {"lat": 30.6487339, "lng": -97.63311300000001, "state": "Texas"}, "school": "Southwestern University", "link": "/colleges/texas/southwestern-university/admission/", "salary_info": {"early_median_salary": 44800, "mid_career_median_salary": 83900, "rank": 262, "zip_code": "78626"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 640, "sat_math_high": 640, "sat_math_low": 540}, "admissions_info": {"applied": 2795, "acceptance_rate": 61}}, {"location_info": {"lat": 44.0229305, "lng": -73.1450146, "state": "Vermont"}, "school": "Middlebury College", "link": "/colleges/vermont/middlebury-college/admission/", "salary_info": {"early_median_salary": 50100, "mid_career_median_salary": 93900, "rank": 106, "zip_code": "05753"}, "score_info": {"sat_reading_low": 630, "sat_reading_high": 740, "sat_math_high": 740, "sat_math_low": 640}, "admissions_info": {"applied": 8533, "acceptance_rate": 18}}, {"location_info": {"lat": 44.1016224, "lng": -72.67894810000001, "state": "Vermont"}, "school": "Norwich University", "link": "/colleges/vermont/norwich-university/admission/", "salary_info": {"early_median_salary": 48800, "mid_career_median_salary": 87100, "rank": 194, "zip_code": "05663"}, "score_info": {"sat_reading_low": 470, "sat_reading_high": 570, "sat_math_high": 590, "sat_math_low": 480}, "admissions_info": {"applied": 3135, "acceptance_rate": 65}}, {"location_info": {"lat": 44.5372018, "lng": -72.0836695, "state": "Vermont"}, "school": "Lyndon State College", "link": "/colleges/vermont/lyndon-state-college/admission/", "salary_info": {"early_median_salary": 38400, "mid_career_median_salary": 48300, "rank": 1033, "zip_code": "05851"}, "score_info": {"sat_reading_low": 410, "sat_reading_high": 520, "sat_math_high": 530, "sat_math_low": 400}, "admissions_info": {"applied": 1492, "acceptance_rate": 98}}, {"location_info": {"lat": 37.8062214, "lng": -79.5153773, "state": "Virginia"}, "school": "Washington and Lee University", "link": "/colleges/virginia/washington-and-lee-university/admission/", "salary_info": {"early_median_salary": 54700, "mid_career_median_salary": 120000, "rank": 10, "zip_code": "24450"}, "score_info": {"sat_reading_low": 650, "sat_reading_high": 740, "sat_math_high": 720, "sat_math_low": 660}, "admissions_info": {"applied": 5972, "acceptance_rate": 19}}, {"location_info": {"lat": 37.5745428, "lng": -77.5433122, "state": "Virginia"}, "school": "University of Richmond", "link": "/colleges/virginia/university-of-richmond/admission/", "salary_info": {"early_median_salary": 48200, "mid_career_median_salary": 86400, "rank": 206, "zip_code": "23173"}, "score_info": {"sat_reading_low": 590, "sat_reading_high": 690, "sat_math_high": 720, "sat_math_low": 620}, "admissions_info": {"applied": 10232, "acceptance_rate": 30}}, {"location_info": {"lat": 38.8454321, "lng": -77.3209555, "state": "Virginia"}, "school": "George Mason University", "link": "/colleges/virginia/george-mason-university/admission/", "salary_info": {"early_median_salary": 51400, "mid_career_median_salary": 89700, "rank": 149, "zip_code": "22030"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 620, "sat_math_high": 630, "sat_math_low": 530}, "admissions_info": {"applied": 17621, "acceptance_rate": 55}}, {"location_info": {"lat": 38.43159929999999, "lng": -78.8651581, "state": "Virginia"}, "school": "James Madison University (JMU)", "link": "/colleges/virginia/james-madison-university/admission/", "salary_info": {"early_median_salary": 49100, "mid_career_median_salary": 85300, "rank": 227, "zip_code": "22807"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 620, "sat_math_high": 630, "sat_math_low": 530}, "admissions_info": {"applied": 22349, "acceptance_rate": 61}}, {"location_info": {"lat": 46.0819562, "lng": -118.3152699, "state": "Washington"}, "school": "Whitman College", "link": "/colleges/washington/whitman-college/admission/", "salary_info": {"early_median_salary": 42400, "mid_career_median_salary": 101000, "rank": 59, "zip_code": "99362"}, "score_info": {"sat_reading_low": 610, "sat_reading_high": 730, "sat_math_high": 693, "sat_math_low": 610}, "admissions_info": {"applied": 2854, "acceptance_rate": 49}}, {"location_info": {"lat": 47.2627842, "lng": -122.4814616, "state": "Washington"}, "school": "University of Puget Sound", "link": "/colleges/washington/university-of-puget-sound/admission/", "salary_info": {"early_median_salary": 44900, "mid_career_median_salary": 86400, "rank": 206, "zip_code": "98416"}, "score_info": {"sat_reading_low": 570, "sat_reading_high": 670, "sat_math_high": 660, "sat_math_low": 550}, "admissions_info": {"applied": 6878, "acceptance_rate": 54}}, {"location_info": {"lat": 47.6665181, "lng": -117.4015207, "state": "Washington"}, "school": "Gonzaga University", "link": "/colleges/washington/gonzaga-university/admission/", "salary_info": {"early_median_salary": 50300, "mid_career_median_salary": 89000, "rank": 162, "zip_code": "99258"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 640, "sat_math_high": 650, "sat_math_low": 550}, "admissions_info": {"applied": 6851, "acceptance_rate": 62}}, {"location_info": {"lat": 47.6087583, "lng": -122.2964235, "state": "Washington"}, "school": "Seattle University", "link": "/colleges/washington/seattle-university/admission/", "salary_info": {"early_median_salary": 49300, "mid_career_median_salary": 82900, "rank": 280, "zip_code": "98122"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 640, "sat_math_high": 630, "sat_math_low": 530}, "admissions_info": {"applied": 6862, "acceptance_rate": 71}}, {"location_info": {"lat": 48.7562157, "lng": -122.4894588, "state": "Washington"}, "school": "Western Washington University", "link": "/colleges/washington/western-washington-university/admission/", "salary_info": {"early_median_salary": 46000, "mid_career_median_salary": 76800, "rank": 428, "zip_code": "98225"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 620, "sat_math_high": 600, "sat_math_low": 500}, "admissions_info": {"applied": 9791, "acceptance_rate": 80}}, {"location_info": {"lat": 47.1427431, "lng": -122.4407344, "state": "Washington"}, "school": "Pacific Lutheran University", "link": "/colleges/washington/pacific-lutheran-university/admission/", "salary_info": {"early_median_salary": 43600, "mid_career_median_salary": 84400, "rank": 247, "zip_code": "98447"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 610, "sat_math_high": 610, "sat_math_low": 490}, "admissions_info": {"applied": 3550, "acceptance_rate": 74}}, {"location_info": {"lat": 47.6384586, "lng": -122.3674079, "state": "Washington"}, "school": "Seattle Pacific University (SPU)", "link": "/colleges/washington/seattle-pacific-university/admission/", "salary_info": {"early_median_salary": 44800, "mid_career_median_salary": 87600, "rank": 188, "zip_code": "98119"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 630, "sat_math_high": 610, "sat_math_low": 510}, "admissions_info": {"applied": 4559, "acceptance_rate": 79}}, {"location_info": {"lat": 43.0349801, "lng": -87.93838219999999, "state": "Wisconsin"}, "school": "Marquette University", "link": "/colleges/wisconsin/marquette-university/admission/", "salary_info": {"early_median_salary": 50900, "mid_career_median_salary": 92300, "rank": 120, "zip_code": "53233"}, "score_info": {"sat_reading_low": 520, "sat_reading_high": 630, "sat_math_high": 650, "sat_math_low": 550}, "admissions_info": {"applied": 22900, "acceptance_rate": 55}}, {"location_info": {"lat": 42.5276281, "lng": -89.0752499, "state": "Wisconsin"}, "school": "Beloit College", "link": "/colleges/wisconsin/beloit-college/admission/", "salary_info": {"early_median_salary": 38400, "mid_career_median_salary": 79500, "rank": 353, "zip_code": "53511"}, "score_info": {"sat_reading_low": 550, "sat_reading_high": 710, "sat_math_high": 660, "sat_math_low": 540}, "admissions_info": {"applied": 2205, "acceptance_rate": 67}}, {"location_info": {"lat": 43.0439776, "lng": -87.8991514, "state": "Wisconsin"}, "school": "Milwaukee School of Engineering", "link": "/colleges/wisconsin/milwaukee-school-of-engineering/admission/", "salary_info": {"early_median_salary": 61500, "mid_career_median_salary": 91700, "rank": 127, "zip_code": "53202"}, "score_info": {"sat_reading_low": 540, "sat_reading_high": 640, "sat_math_high": 680, "sat_math_low": 590}, "admissions_info": {"applied": 2014, "acceptance_rate": 57}}, {"location_info": {"lat": 42.638141, "lng": -87.82550069999999, "state": "Wisconsin"}, "school": "Carthage College", "link": "/colleges/wisconsin/carthage-college/admission/", "salary_info": {"early_median_salary": 40700, "mid_career_median_salary": 65000, "rank": 806, "zip_code": "53140"}, "score_info": {"sat_reading_low": 480, "sat_reading_high": 570, "sat_math_high": 610, "sat_math_low": 530}, "admissions_info": {"applied": 7274, "acceptance_rate": 70}}, {"location_info": {"lat": 43.1652687, "lng": -87.9040571, "state": "Wisconsin"}, "school": "Cardinal Stritch University", "link": "/colleges/wisconsin/cardinal-stritch-university/admission/", "salary_info": {"early_median_salary": 48900, "mid_career_median_salary": 62600, "rank": 878, "zip_code": "53217"}, "score_info": {"sat_reading_low": 420, "sat_reading_high": 550, "sat_math_high": 580, "sat_math_low": 450}, "admissions_info": {"applied": 957, "acceptance_rate": 42}}, {"location_info": {"lat": 43.8995087, "lng": -88.8263006, "state": "Wisconsin"}, "school": "Ripon College", "link": "/colleges/wisconsin/ripon-college/admission/", "salary_info": {"early_median_salary": 40600, "mid_career_median_salary": 62100, "rank": 889, "zip_code": "54971"}, "score_info": {"sat_reading_low": 490, "sat_reading_high": 630, "sat_math_high": 680, "sat_math_low": 510}, "admissions_info": {"applied": 1046, "acceptance_rate": 78}}]
+[
+    {
+        "location_info": {
+            "lat": 37.4135757,
+            "lng": -122.1689284,
+            "state": "California"
+        },
+        "school": "Stanford University",
+        "link": "/colleges/california/stanford-university/admission/",
+        "salary_info": {
+            "early_median_salary": 65900,
+            "mid_career_median_salary": 123000,
+            "rank": 7,
+            "zip_code": "94305"
+        },
+        "score_info": {
+            "sat_reading_low": 680,
+            "sat_reading_high": 780,
+            "sat_math_high": 790,
+            "sat_math_low": 700
+        },
+        "admissions_info": {
+            "applied": 36632,
+            "acceptance_rate": 7
+        }
+    },
+    {
+        "location_info": {
+            "lat": 34.1707374,
+            "lng": -117.702148,
+            "state": "California"
+        },
+        "school": "Claremont McKenna College",
+        "link": "/colleges/california/claremont-mckenna-college/admission/",
+        "salary_info": {
+            "early_median_salary": 54400,
+            "mid_career_median_salary": 105000,
+            "rank": 44,
+            "zip_code": "91711"
+        },
+        "score_info": {
+            "sat_reading_low": 650,
+            "sat_reading_high": 740,
+            "sat_math_high": 760,
+            "sat_math_low": 670
+        },
+        "admissions_info": {
+            "applied": 5058,
+            "acceptance_rate": 14
+        }
+    },
+    {
+        "location_info": {
+            "lat": 34.1707374,
+            "lng": -117.702148,
+            "state": "California"
+        },
+        "school": "Harvey Mudd College",
+        "link": "/colleges/california/harvey-mudd-college/admission/",
+        "salary_info": {
+            "early_median_salary": 78200,
+            "mid_career_median_salary": 133000,
+            "rank": 2,
+            "zip_code": "91711"
+        },
+        "score_info": {
+            "sat_reading_low": 680,
+            "sat_reading_high": 760,
+            "sat_math_high": 800,
+            "sat_math_low": 720
+        },
+        "admissions_info": {
+            "applied": 3336,
+            "acceptance_rate": 19
+        }
+    },
+    {
+        "location_info": {
+            "lat": 34.13224690000001,
+            "lng": -118.2117257,
+            "state": "California"
+        },
+        "school": "Occidental College",
+        "link": "/colleges/california/occidental-college/admission/",
+        "salary_info": {
+            "early_median_salary": 46200,
+            "mid_career_median_salary": 112000,
+            "rank": 22,
+            "zip_code": "90041"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 700,
+            "sat_math_high": 700,
+            "sat_math_low": 610
+        },
+        "admissions_info": {
+            "applied": 6135,
+            "acceptance_rate": 39
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.7158773,
+            "lng": -105.2311827,
+            "state": "Colorado"
+        },
+        "school": "Colorado School of Mines",
+        "link": "/colleges/colorado/colorado-school-of-mines/admission/",
+        "salary_info": {
+            "early_median_salary": 65500,
+            "mid_career_median_salary": 109000,
+            "rank": 32,
+            "zip_code": "80401"
+        },
+        "score_info": {
+            "sat_reading_low": 570,
+            "sat_reading_high": 670,
+            "sat_math_high": 720,
+            "sat_math_low": 630
+        },
+        "admissions_info": {
+            "applied": 10145,
+            "acceptance_rate": 45
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.6779591,
+            "lng": -104.9631934,
+            "state": "Colorado"
+        },
+        "school": "University of Denver",
+        "link": "/colleges/colorado/university-of-denver/admission/",
+        "salary_info": {
+            "early_median_salary": 47800,
+            "mid_career_median_salary": 82100,
+            "rank": 295,
+            "zip_code": "80208"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 660,
+            "sat_math_high": 660,
+            "sat_math_low": 560
+        },
+        "admissions_info": {
+            "applied": 11442,
+            "acceptance_rate": 68
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.9043608,
+            "lng": -104.7637619,
+            "state": "Colorado"
+        },
+        "school": "University of Colorado at Colorado Springs",
+        "link": "/colleges/colorado/university-of-colorado-colorado-springs/admission/",
+        "salary_info": {
+            "early_median_salary": 45900,
+            "mid_career_median_salary": 77400,
+            "rank": 414,
+            "zip_code": "80918"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 580,
+            "sat_math_high": 600,
+            "sat_math_low": 470
+        },
+        "admissions_info": {
+            "applied": 8847,
+            "acceptance_rate": 60
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.4075503,
+            "lng": -104.6857493,
+            "state": "Colorado"
+        },
+        "school": "University of Northern Colorado",
+        "link": "/colleges/colorado/university-of-northern-colorado/admission/",
+        "salary_info": {
+            "early_median_salary": 40700,
+            "mid_career_median_salary": 71100,
+            "rank": 608,
+            "zip_code": "80639"
+        },
+        "score_info": {
+            "sat_reading_low": 450,
+            "sat_reading_high": 570,
+            "sat_math_high": 570,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 8747,
+            "acceptance_rate": 70
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.3065186,
+            "lng": -72.9310714,
+            "state": "Connecticut"
+        },
+        "school": "Yale University",
+        "link": "/colleges/connecticut/yale-university/admission/",
+        "salary_info": {
+            "early_median_salary": 60300,
+            "mid_career_median_salary": 104000,
+            "rank": 46,
+            "zip_code": "06520"
+        },
+        "score_info": {
+            "sat_reading_low": 700,
+            "sat_reading_high": 800,
+            "sat_math_high": 790,
+            "sat_math_low": 710
+        },
+        "admissions_info": {
+            "applied": 27283,
+            "acceptance_rate": 8
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.743111,
+            "lng": -72.70380469999999,
+            "state": "Connecticut"
+        },
+        "school": "Trinity College",
+        "link": "/colleges/connecticut/trinity-college/admission/",
+        "salary_info": {
+            "early_median_salary": 49900,
+            "mid_career_median_salary": 86500,
+            "rank": 203,
+            "zip_code": "06106"
+        },
+        "score_info": {
+            "sat_reading_low": 570,
+            "sat_reading_high": 680,
+            "sat_math_high": 670,
+            "sat_math_low": 580
+        },
+        "admissions_info": {
+            "applied": 7720,
+            "acceptance_rate": 34
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.7929916,
+            "lng": -72.7451817,
+            "state": "Connecticut"
+        },
+        "school": "University of Hartford",
+        "link": "/colleges/connecticut/university-of-hartford/admission/",
+        "salary_info": {
+            "early_median_salary": 46900,
+            "mid_career_median_salary": 85900,
+            "rank": 219,
+            "zip_code": "06117"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 570,
+            "sat_math_high": 580,
+            "sat_math_low": 480
+        },
+        "admissions_info": {
+            "applied": 14683,
+            "acceptance_rate": 41
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.4305881,
+            "lng": -72.9106202,
+            "state": "Connecticut"
+        },
+        "school": "Quinnipiac University",
+        "link": "/colleges/connecticut/quinnipiac-university/admission/",
+        "salary_info": {
+            "early_median_salary": 51200,
+            "mid_career_median_salary": 78000,
+            "rank": 394,
+            "zip_code": "06518"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 580,
+            "sat_math_high": 610,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 18825,
+            "acceptance_rate": 69
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.8993373,
+            "lng": -77.0485308,
+            "state": "District of Columbia"
+        },
+        "school": "George Washington University (GWU)",
+        "link": "/colleges/district-of-columbia/george-washington-university/admission/",
+        "salary_info": {
+            "early_median_salary": 48100,
+            "mid_career_median_salary": 92800,
+            "rank": 115,
+            "zip_code": "20052"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 690,
+            "sat_math_high": 700,
+            "sat_math_low": 600
+        },
+        "admissions_info": {
+            "applied": 21591,
+            "acceptance_rate": 33
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.9369141,
+            "lng": -77.0003067,
+            "state": "District of Columbia"
+        },
+        "school": "Catholic University of America",
+        "link": "/colleges/district-of-columbia/catholic-university-of-america/admission/",
+        "salary_info": {
+            "early_median_salary": 48400,
+            "mid_career_median_salary": 87700,
+            "rank": 185,
+            "zip_code": "20064"
+        },
+        "score_info": {
+            "sat_reading_low": 500,
+            "sat_reading_high": 610,
+            "sat_math_high": 610,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 6361,
+            "acceptance_rate": 63
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.9217778,
+            "lng": -77.0197426,
+            "state": "District of Columbia"
+        },
+        "school": "Howard University",
+        "link": "/colleges/district-of-columbia/howard-university/admission/",
+        "salary_info": {
+            "early_median_salary": 48500,
+            "mid_career_median_salary": 84500,
+            "rank": 244,
+            "zip_code": "20059"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 590,
+            "sat_math_high": 590,
+            "sat_math_low": 480
+        },
+        "admissions_info": {
+            "applied": 9015,
+            "acceptance_rate": 54
+        }
+    },
+    {
+        "location_info": {
+            "lat": 28.5950986,
+            "lng": -81.3509416,
+            "state": "Florida"
+        },
+        "school": "Rollins College",
+        "link": "/colleges/florida/rollins-college/admission/",
+        "salary_info": {
+            "early_median_salary": 44700,
+            "mid_career_median_salary": 65200,
+            "rank": 798,
+            "zip_code": "32789"
+        },
+        "score_info": {
+            "sat_reading_low": 550,
+            "sat_reading_high": 640,
+            "sat_math_high": 650,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 4542,
+            "acceptance_rate": 56
+        }
+    },
+    {
+        "location_info": {
+            "lat": 28.0634666,
+            "lng": -82.4129729,
+            "state": "Florida"
+        },
+        "school": "University of South Florida - Main Campus",
+        "link": "/colleges/florida/university-of-south-florida-main-campus/admission/",
+        "salary_info": {
+            "early_median_salary": 42700,
+            "mid_career_median_salary": 76000,
+            "rank": 456,
+            "zip_code": "33620"
+        },
+        "score_info": {
+            "sat_reading_low": 530,
+            "sat_reading_high": 620,
+            "sat_math_high": 640,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 28547,
+            "acceptance_rate": 43
+        }
+    },
+    {
+        "location_info": {
+            "lat": 29.0226229,
+            "lng": -81.3033269,
+            "state": "Florida"
+        },
+        "school": "Stetson University",
+        "link": "/colleges/florida/stetson-university/admission/",
+        "salary_info": {
+            "early_median_salary": 38600,
+            "mid_career_median_salary": 67100,
+            "rank": 739,
+            "zip_code": "32723"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 640,
+            "sat_math_high": 630,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 4862,
+            "acceptance_rate": 60
+        }
+    },
+    {
+        "location_info": {
+            "lat": 33.7980995,
+            "lng": -84.3259367,
+            "state": "Georgia"
+        },
+        "school": "Emory University",
+        "link": "/colleges/georgia/emory-university/admission/",
+        "salary_info": {
+            "early_median_salary": 51300,
+            "mid_career_median_salary": 89800,
+            "rank": 144,
+            "zip_code": "30322"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 710,
+            "sat_math_high": 750,
+            "sat_math_low": 650
+        },
+        "admissions_info": {
+            "applied": 17021,
+            "acceptance_rate": 27
+        }
+    },
+    {
+        "location_info": {
+            "lat": 32.8287794,
+            "lng": -83.6514674,
+            "state": "Georgia"
+        },
+        "school": "Mercer University",
+        "link": "/colleges/georgia/mercer-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46600,
+            "mid_career_median_salary": 67900,
+            "rank": 711,
+            "zip_code": "31207"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 630,
+            "sat_math_high": 640,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 3519,
+            "acceptance_rate": 63
+        }
+    },
+    {
+        "location_info": {
+            "lat": 32.08000000000001,
+            "lng": -81.1,
+            "state": "Georgia"
+        },
+        "school": "Savannah College of Art and Design (SCAD)",
+        "link": "/colleges/georgia/savannah-college-of-art-and-design/admission/",
+        "salary_info": {
+            "early_median_salary": 40900,
+            "mid_career_median_salary": 67300,
+            "rank": 735,
+            "zip_code": "31402"
+        },
+        "score_info": {
+            "sat_reading_low": 480,
+            "sat_reading_high": 600,
+            "sat_math_high": 580,
+            "sat_math_low": 460
+        },
+        "admissions_info": {
+            "applied": 8560,
+            "acceptance_rate": 63
+        }
+    },
+    {
+        "location_info": {
+            "lat": 34.29039,
+            "lng": -85.1802699,
+            "state": "Georgia"
+        },
+        "school": "Berry College",
+        "link": "/colleges/georgia/berry-college/admission/",
+        "salary_info": {
+            "early_median_salary": 36800,
+            "mid_career_median_salary": 63900,
+            "rank": 839,
+            "zip_code": "30149"
+        },
+        "score_info": {
+            "sat_reading_low": 530,
+            "sat_reading_high": 640,
+            "sat_math_high": 630,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 3485,
+            "acceptance_rate": 66
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.7805099,
+            "lng": -87.603826,
+            "state": "Illinois"
+        },
+        "school": "University of Chicago",
+        "link": "/colleges/illinois/university-of-chicago/admission/",
+        "salary_info": {
+            "early_median_salary": 50600,
+            "mid_career_median_salary": 107000,
+            "rank": 38,
+            "zip_code": "60637"
+        },
+        "score_info": {
+            "sat_reading_low": 720,
+            "sat_reading_high": 800,
+            "sat_math_high": 790,
+            "sat_math_low": 720
+        },
+        "admissions_info": {
+            "applied": 25271,
+            "acceptance_rate": 13
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.0541119,
+            "lng": -87.6759889,
+            "state": "Illinois"
+        },
+        "school": "Northwestern University",
+        "link": "/colleges/illinois/northwestern-university/admission/",
+        "salary_info": {
+            "early_median_salary": 56300,
+            "mid_career_median_salary": 102000,
+            "rank": 52,
+            "zip_code": "60208"
+        },
+        "score_info": {
+            "sat_reading_low": 690,
+            "sat_reading_high": 760,
+            "sat_math_high": 790,
+            "sat_math_low": 700
+        },
+        "admissions_info": {
+            "applied": 30926,
+            "acceptance_rate": 18
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.6964443,
+            "lng": -89.616008,
+            "state": "Illinois"
+        },
+        "school": "Bradley University",
+        "link": "/colleges/illinois/bradley-university/admission/",
+        "salary_info": {
+            "early_median_salary": 50100,
+            "mid_career_median_salary": 88100,
+            "rank": 178,
+            "zip_code": "61625"
+        },
+        "score_info": {
+            "sat_reading_low": 500,
+            "sat_reading_high": 640,
+            "sat_math_high": 630,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 7562,
+            "acceptance_rate": 63
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.63541540000001,
+            "lng": -88.099845,
+            "state": "Illinois"
+        },
+        "school": "Lewis University",
+        "link": "/colleges/illinois/lewis-university/admission/",
+        "salary_info": {
+            "early_median_salary": 45100,
+            "mid_career_median_salary": 73200,
+            "rank": 540,
+            "zip_code": "60446"
+        },
+        "score_info": {
+            "sat_reading_low": 440,
+            "sat_reading_high": 550,
+            "sat_math_high": 590,
+            "sat_math_low": 480
+        },
+        "admissions_info": {
+            "applied": 5568,
+            "acceptance_rate": 56
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.87848510000001,
+            "lng": -87.627893,
+            "state": "Illinois"
+        },
+        "school": "DePaul University",
+        "link": "/colleges/illinois/depaul-university/admission/",
+        "salary_info": {
+            "early_median_salary": 48600,
+            "mid_career_median_salary": 84700,
+            "rank": 239,
+            "zip_code": "60604"
+        },
+        "score_info": {
+            "sat_reading_low": 530,
+            "sat_reading_high": 630,
+            "sat_math_high": 630,
+            "sat_math_low": 520
+        },
+        "admissions_info": {
+            "applied": 18160,
+            "acceptance_rate": 62
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.7043332,
+            "lng": -86.2412543,
+            "state": "Indiana"
+        },
+        "school": "University of Notre Dame",
+        "link": "/colleges/indiana/university-of-notre-dame/admission/",
+        "salary_info": {
+            "early_median_salary": 57400,
+            "mid_career_median_salary": 106000,
+            "rank": 42,
+            "zip_code": "46556"
+        },
+        "score_info": {
+            "sat_reading_low": 660,
+            "sat_reading_high": 750,
+            "sat_math_high": 770,
+            "sat_math_low": 680
+        },
+        "admissions_info": {
+            "applied": 16957,
+            "acceptance_rate": 23
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.6529824,
+            "lng": -86.9423801,
+            "state": "Indiana"
+        },
+        "school": "DePauw University",
+        "link": "/colleges/indiana/depauw-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46200,
+            "mid_career_median_salary": 88500,
+            "rank": 173,
+            "zip_code": "46135"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 650,
+            "sat_math_high": 680,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 4913,
+            "acceptance_rate": 62
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.4401775,
+            "lng": -86.9261008,
+            "state": "Indiana"
+        },
+        "school": "Purdue University - Main Campus",
+        "link": "/colleges/indiana/purdue-university-main-campus/admission/",
+        "salary_info": {
+            "early_median_salary": 55500,
+            "mid_career_median_salary": 92900,
+            "rank": 113,
+            "zip_code": "47907"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 630,
+            "sat_math_high": 690,
+            "sat_math_low": 560
+        },
+        "admissions_info": {
+            "applied": 31124,
+            "acceptance_rate": 61
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.82060620000001,
+            "lng": -86.1700894,
+            "state": "Indiana"
+        },
+        "school": "Butler University",
+        "link": "/colleges/indiana/butler-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44800,
+            "mid_career_median_salary": 88200,
+            "rank": 176,
+            "zip_code": "46208"
+        },
+        "score_info": {
+            "sat_reading_low": 530,
+            "sat_reading_high": 630,
+            "sat_math_high": 640,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 9682,
+            "acceptance_rate": 66
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.7679201,
+            "lng": -92.73816719999999,
+            "state": "Iowa"
+        },
+        "school": "Grinnell College",
+        "link": "/colleges/iowa/grinnell-college/admission/",
+        "salary_info": {
+            "early_median_salary": 42500,
+            "mid_career_median_salary": 84200,
+            "rank": 256,
+            "zip_code": "50112"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 730,
+            "sat_math_high": 770,
+            "sat_math_low": 630
+        },
+        "admissions_info": {
+            "applied": 4554,
+            "acceptance_rate": 32
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.5999808,
+            "lng": -93.6750005,
+            "state": "Iowa"
+        },
+        "school": "Drake University",
+        "link": "/colleges/iowa/drake-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44300,
+            "mid_career_median_salary": 92300,
+            "rank": 120,
+            "zip_code": "50311"
+        },
+        "score_info": {
+            "sat_reading_low": 530,
+            "sat_reading_high": 640,
+            "sat_math_high": 680,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 6357,
+            "acceptance_rate": 66
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.0166364,
+            "lng": -91.6663523,
+            "state": "Iowa"
+        },
+        "school": "Coe College",
+        "link": "/colleges/iowa/coe-college/admission/",
+        "salary_info": {
+            "early_median_salary": 45000,
+            "mid_career_median_salary": 70900,
+            "rank": 613,
+            "zip_code": "52402"
+        },
+        "score_info": {
+            "sat_reading_low": 493,
+            "sat_reading_high": 693,
+            "sat_math_high": 670,
+            "sat_math_low": 495
+        },
+        "admissions_info": {
+            "applied": 2509,
+            "acceptance_rate": 67
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.3932586,
+            "lng": -91.7538817,
+            "state": "Iowa"
+        },
+        "school": "Luther College",
+        "link": "/colleges/iowa/luther-college/admission/",
+        "salary_info": {
+            "early_median_salary": 43200,
+            "mid_career_median_salary": 61300,
+            "rank": 907,
+            "zip_code": "52101"
+        },
+        "score_info": {
+            "sat_reading_low": 433,
+            "sat_reading_high": 610,
+            "sat_math_high": 638,
+            "sat_math_low": 500
+        },
+        "admissions_info": {
+            "applied": 3556,
+            "acceptance_rate": 70
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.444905,
+            "lng": -92.8976254,
+            "state": "Iowa"
+        },
+        "school": "Central College",
+        "link": "/colleges/iowa/central-college/admission/",
+        "salary_info": {
+            "early_median_salary": 43400,
+            "mid_career_median_salary": 76600,
+            "rank": 437,
+            "zip_code": "50219"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 580,
+            "sat_math_high": 620,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 2471,
+            "acceptance_rate": 65
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.7992829,
+            "lng": -92.4208713,
+            "state": "Iowa"
+        },
+        "school": "Wartburg College",
+        "link": "/colleges/iowa/wartburg-college/admission/",
+        "salary_info": {
+            "early_median_salary": 41900,
+            "mid_career_median_salary": 56100,
+            "rank": 991,
+            "zip_code": "50677"
+        },
+        "score_info": {
+            "sat_reading_low": 380,
+            "sat_reading_high": 540,
+            "sat_math_high": 590,
+            "sat_math_low": 440
+        },
+        "admissions_info": {
+            "applied": 2389,
+            "acceptance_rate": 70
+        }
+    },
+    {
+        "location_info": {
+            "lat": 29.9566647,
+            "lng": -90.1073935,
+            "state": "Louisiana"
+        },
+        "school": "Xavier University of Louisiana",
+        "link": "/colleges/louisiana/xavier-university-of-louisiana/admission/",
+        "salary_info": {
+            "early_median_salary": 37400,
+            "mid_career_median_salary": 74000,
+            "rank": 514,
+            "zip_code": "70125"
+        },
+        "score_info": {
+            "sat_reading_low": 440,
+            "sat_reading_high": 560,
+            "sat_math_high": 550,
+            "sat_math_low": 420
+        },
+        "admissions_info": {
+            "applied": 3987,
+            "acceptance_rate": 64
+        }
+    },
+    {
+        "location_info": {
+            "lat": 32.531509,
+            "lng": -92.6293223,
+            "state": "Louisiana"
+        },
+        "school": "Louisiana Tech University",
+        "link": "/colleges/louisiana/louisiana-tech-university/admission/",
+        "salary_info": {
+            "early_median_salary": 47000,
+            "mid_career_median_salary": 86200,
+            "rank": 211,
+            "zip_code": "71272"
+        },
+        "score_info": {
+            "sat_reading_low": 450,
+            "sat_reading_high": 590,
+            "sat_math_high": 600,
+            "sat_math_low": 490
+        },
+        "admissions_info": {
+            "applied": 4580,
+            "acceptance_rate": 71
+        }
+    },
+    {
+        "location_info": {
+            "lat": 30.1412524,
+            "lng": -93.2784825,
+            "state": "Louisiana"
+        },
+        "school": "McNeese State University",
+        "link": "/colleges/louisiana/mcneese-state-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46900,
+            "mid_career_median_salary": 66100,
+            "rank": 777,
+            "zip_code": "70605"
+        },
+        "score_info": {
+            "sat_reading_low": 450,
+            "sat_reading_high": 550,
+            "sat_math_high": 560,
+            "sat_math_low": 490
+        },
+        "admissions_info": {
+            "applied": 2964,
+            "acceptance_rate": 69
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.55432769999999,
+            "lng": -69.5419984,
+            "state": "Maine"
+        },
+        "school": "Colby College",
+        "link": "/colleges/maine/colby-college/admission/",
+        "salary_info": {
+            "early_median_salary": 48700,
+            "mid_career_median_salary": 95100,
+            "rank": 96,
+            "zip_code": "04901"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 710,
+            "sat_math_high": 720,
+            "sat_math_low": 640
+        },
+        "admissions_info": {
+            "applied": 5241,
+            "acceptance_rate": 29
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.8504122,
+            "lng": -68.86186169999999,
+            "state": "Maine"
+        },
+        "school": "Husson University",
+        "link": "/colleges/maine/husson-university/admission/",
+        "salary_info": {
+            "early_median_salary": 37100,
+            "mid_career_median_salary": 67400,
+            "rank": 732,
+            "zip_code": "04401"
+        },
+        "score_info": {
+            "sat_reading_low": 420,
+            "sat_reading_high": 530,
+            "sat_math_high": 550,
+            "sat_math_low": 430
+        },
+        "admissions_info": {
+            "applied": 1509,
+            "acceptance_rate": 77
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.3322127,
+            "lng": -76.6008334,
+            "state": "Maryland"
+        },
+        "school": "Johns Hopkins University",
+        "link": "/colleges/maryland/johns-hopkins-university/admission/",
+        "salary_info": {
+            "early_median_salary": 57500,
+            "mid_career_median_salary": 97500,
+            "rank": 81,
+            "zip_code": "21218"
+        },
+        "score_info": {
+            "sat_reading_low": 650,
+            "sat_reading_high": 740,
+            "sat_math_high": 770,
+            "sat_math_low": 670
+        },
+        "admissions_info": {
+            "applied": 21313,
+            "acceptance_rate": 18
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.3056685,
+            "lng": -76.6354952,
+            "state": "Maryland"
+        },
+        "school": "Maryland Institute College of Art",
+        "link": "/colleges/maryland/maryland-institute-college-of-art/admission/",
+        "salary_info": {
+            "early_median_salary": 37900,
+            "mid_career_median_salary": 57500,
+            "rank": 972,
+            "zip_code": "21217"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 670,
+            "sat_math_high": 630,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 3139,
+            "acceptance_rate": 52
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.4001474,
+            "lng": -75.632447,
+            "state": "Maryland"
+        },
+        "school": "Salisbury University",
+        "link": "/colleges/maryland/salisbury-university/admission/",
+        "salary_info": {
+            "early_median_salary": 45100,
+            "mid_career_median_salary": 71600,
+            "rank": 590,
+            "zip_code": "21801"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 610,
+            "sat_math_high": 620,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 8866,
+            "acceptance_rate": 53
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.3803274,
+            "lng": -71.13891009999999,
+            "state": "Massachusetts"
+        },
+        "school": "Harvard University",
+        "link": "/colleges/massachusetts/harvard-university/admission/",
+        "salary_info": {
+            "early_median_salary": 61400,
+            "mid_career_median_salary": 126000,
+            "rank": 3,
+            "zip_code": "02138"
+        },
+        "score_info": {
+            "sat_reading_low": 700,
+            "sat_reading_high": 800,
+            "sat_math_high": 800,
+            "sat_math_low": 710
+        },
+        "admissions_info": {
+            "applied": 34216,
+            "acceptance_rate": 6
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.36475590000001,
+            "lng": -71.1032591,
+            "state": "Massachusetts"
+        },
+        "school": "Massachusetts Institute of Technology",
+        "link": "/colleges/massachusetts/massachusetts-institute-of-technology/admission/",
+        "salary_info": {
+            "early_median_salary": 74900,
+            "mid_career_median_salary": 124000,
+            "rank": 6,
+            "zip_code": "02139"
+        },
+        "score_info": {
+            "sat_reading_low": 680,
+            "sat_reading_high": 770,
+            "sat_math_high": 800,
+            "sat_math_low": 750
+        },
+        "admissions_info": {
+            "applied": 18109,
+            "acceptance_rate": 9
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.4274971,
+            "lng": -71.10920120000002,
+            "state": "Massachusetts"
+        },
+        "school": "Tufts University",
+        "link": "/colleges/massachusetts/tufts-university/admission/",
+        "salary_info": {
+            "early_median_salary": 54200,
+            "mid_career_median_salary": 115000,
+            "rank": 16,
+            "zip_code": "02155"
+        },
+        "score_info": {
+            "sat_reading_low": 680,
+            "sat_reading_high": 750,
+            "sat_math_high": 770,
+            "sat_math_low": 690
+        },
+        "admissions_info": {
+            "applied": 16378,
+            "acceptance_rate": 21
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.3178198,
+            "lng": -71.1626756,
+            "state": "Massachusetts"
+        },
+        "school": "Boston College",
+        "link": "/colleges/massachusetts/boston-college/admission/",
+        "salary_info": {
+            "early_median_salary": 53100,
+            "mid_career_median_salary": 104000,
+            "rank": 46,
+            "zip_code": "02467"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 710,
+            "sat_math_high": 740,
+            "sat_math_low": 650
+        },
+        "admissions_info": {
+            "applied": 34061,
+            "acceptance_rate": 29
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.3093812,
+            "lng": -71.28148159999999,
+            "state": "Massachusetts"
+        },
+        "school": "Wellesley College",
+        "link": "/colleges/massachusetts/wellesley-college/admission/",
+        "salary_info": {
+            "early_median_salary": 49000,
+            "mid_career_median_salary": 78400,
+            "rank": 381,
+            "zip_code": "02481"
+        },
+        "score_info": {
+            "sat_reading_low": 660,
+            "sat_reading_high": 760,
+            "sat_math_high": 750,
+            "sat_math_low": 650
+        },
+        "admissions_info": {
+            "applied": 4548,
+            "acceptance_rate": 30
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.416968,
+            "lng": -71.25249910000001,
+            "state": "Massachusetts"
+        },
+        "school": "Brandeis University",
+        "link": "/colleges/massachusetts/brandeis-university/admission/",
+        "salary_info": {
+            "early_median_salary": 45300,
+            "mid_career_median_salary": 96200,
+            "rank": 88,
+            "zip_code": "02454"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 710,
+            "sat_math_high": 760,
+            "sat_math_low": 630
+        },
+        "admissions_info": {
+            "applied": 8380,
+            "acceptance_rate": 39
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.339904,
+            "lng": -71.0898892,
+            "state": "Massachusetts"
+        },
+        "school": "Northeastern University",
+        "link": "/colleges/massachusetts/northeastern-university/admission/",
+        "salary_info": {
+            "early_median_salary": 55000,
+            "mid_career_median_salary": 89600,
+            "rank": 151,
+            "zip_code": "02115"
+        },
+        "score_info": {
+            "sat_reading_low": 640,
+            "sat_reading_high": 730,
+            "sat_math_high": 750,
+            "sat_math_low": 660
+        },
+        "admissions_info": {
+            "applied": 44208,
+            "acceptance_rate": 32
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.9470795,
+            "lng": -86.3385561,
+            "state": "Michigan"
+        },
+        "school": "Andrews University",
+        "link": "/colleges/michigan/andrews-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46700,
+            "mid_career_median_salary": 67600,
+            "rank": 721,
+            "zip_code": "49104"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 620,
+            "sat_math_high": 600,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 2487,
+            "acceptance_rate": 36
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.0528038,
+            "lng": -83.75178509999999,
+            "state": "Michigan"
+        },
+        "school": "Kettering University",
+        "link": "/colleges/michigan/kettering-university/admission/",
+        "salary_info": {
+            "early_median_salary": 64700,
+            "mid_career_median_salary": 102000,
+            "rank": 52,
+            "zip_code": "48504"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 630,
+            "sat_math_high": 660,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 1770,
+            "acceptance_rate": 62
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.9219281,
+            "lng": -85.50972259999999,
+            "state": "Michigan"
+        },
+        "school": "Calvin College",
+        "link": "/colleges/michigan/calvin-college/admission/",
+        "salary_info": {
+            "early_median_salary": 42300,
+            "mid_career_median_salary": 77800,
+            "rank": 400,
+            "zip_code": "49546"
+        },
+        "score_info": {
+            "sat_reading_low": 518,
+            "sat_reading_high": 650,
+            "sat_math_high": 660,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 3284,
+            "acceptance_rate": 75
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.4595697,
+            "lng": -83.2398943,
+            "state": "Michigan"
+        },
+        "school": "Lawrence Technological University",
+        "link": "/colleges/michigan/lawrence-technological-university/admission/",
+        "salary_info": {
+            "early_median_salary": 56600,
+            "mid_career_median_salary": 94000,
+            "rank": 105,
+            "zip_code": "48075"
+        },
+        "score_info": {
+            "sat_reading_low": 480,
+            "sat_reading_high": 630,
+            "sat_math_high": 630,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 1713,
+            "acceptance_rate": 51
+        }
+    },
+    {
+        "location_info": {
+            "lat": 47.0979653,
+            "lng": -88.5606025,
+            "state": "Michigan"
+        },
+        "school": "Michigan Technological University",
+        "link": "/colleges/michigan/michigan-technological-university/admission/",
+        "salary_info": {
+            "early_median_salary": 62800,
+            "mid_career_median_salary": 99900,
+            "rank": 66,
+            "zip_code": "49931"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 650,
+            "sat_math_high": 680,
+            "sat_math_low": 580
+        },
+        "admissions_info": {
+            "applied": 4573,
+            "acceptance_rate": 75
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.4695372,
+            "lng": -93.1378173,
+            "state": "Minnesota"
+        },
+        "school": "Carleton College",
+        "link": "/colleges/minnesota/carleton-college/admission/",
+        "salary_info": {
+            "early_median_salary": 44000,
+            "mid_career_median_salary": 107000,
+            "rank": 38,
+            "zip_code": "55057"
+        },
+        "score_info": {
+            "sat_reading_low": 660,
+            "sat_reading_high": 750,
+            "sat_math_high": 770,
+            "sat_math_low": 680
+        },
+        "admissions_info": {
+            "applied": 5856,
+            "acceptance_rate": 26
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.9330076,
+            "lng": -93.16290629999999,
+            "state": "Minnesota"
+        },
+        "school": "Macalester College",
+        "link": "/colleges/minnesota/macalester-college/admission/",
+        "salary_info": {
+            "early_median_salary": 40300,
+            "mid_career_median_salary": 89300,
+            "rank": 157,
+            "zip_code": "55105"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 740,
+            "sat_math_high": 710,
+            "sat_math_low": 610
+        },
+        "admissions_info": {
+            "applied": 6030,
+            "acceptance_rate": 37
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.3661998,
+            "lng": -94.028678,
+            "state": "Minnesota"
+        },
+        "school": "Gustavus Adolphus College",
+        "link": "/colleges/minnesota/gustavus-adolphus-college/admission/",
+        "salary_info": {
+            "early_median_salary": 41100,
+            "mid_career_median_salary": 84100,
+            "rank": 258,
+            "zip_code": "56082"
+        },
+        "score_info": {
+            "sat_reading_low": 550,
+            "sat_reading_high": 680,
+            "sat_math_high": 660,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 4881,
+            "acceptance_rate": 63
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.6682669,
+            "lng": -90.32308069999999,
+            "state": "Missouri"
+        },
+        "school": "Washington University in St. Louis",
+        "link": "/colleges/missouri/washington-university-in-st-louis/admission/",
+        "salary_info": {
+            "early_median_salary": 55500,
+            "mid_career_median_salary": 105000,
+            "rank": 44,
+            "zip_code": "63130"
+        },
+        "score_info": {
+            "sat_reading_low": 700,
+            "sat_reading_high": 760,
+            "sat_math_high": 790,
+            "sat_math_low": 720
+        },
+        "admissions_info": {
+            "applied": 27265,
+            "acceptance_rate": 18
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.2593487,
+            "lng": -94.3770704,
+            "state": "Missouri"
+        },
+        "school": "William Jewell College",
+        "link": "/colleges/missouri/william-jewell-college/admission/",
+        "salary_info": {
+            "early_median_salary": 41400,
+            "mid_career_median_salary": 74200,
+            "rank": 508,
+            "zip_code": "64068"
+        },
+        "score_info": {
+            "sat_reading_low": 498,
+            "sat_reading_high": 670,
+            "sat_math_high": 645,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 3007,
+            "acceptance_rate": 61
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.6194464,
+            "lng": -93.2392553,
+            "state": "Missouri"
+        },
+        "school": "College of the Ozarks",
+        "link": "/colleges/missouri/college-of-the-ozarks/admission/",
+        "salary_info": {
+            "early_median_salary": 35200,
+            "mid_career_median_salary": 71800,
+            "rank": 586,
+            "zip_code": "65726"
+        },
+        "score_info": {
+            "sat_reading_low": 510,
+            "sat_reading_high": 560,
+            "sat_math_high": 548,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 3048,
+            "acceptance_rate": 9
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.5842641,
+            "lng": -90.3513021,
+            "state": "Missouri"
+        },
+        "school": "Webster University",
+        "link": "/colleges/missouri/webster-university/admission/",
+        "salary_info": {
+            "early_median_salary": 40500,
+            "mid_career_median_salary": 67500,
+            "rank": 728,
+            "zip_code": "63119"
+        },
+        "score_info": {
+            "sat_reading_low": 500,
+            "sat_reading_high": 650,
+            "sat_math_high": 600,
+            "sat_math_low": 490
+        },
+        "admissions_info": {
+            "applied": 1706,
+            "acceptance_rate": 59
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.1575874,
+            "lng": -92.5792482,
+            "state": "Missouri"
+        },
+        "school": "Truman State University",
+        "link": "/colleges/missouri/truman-state-university/admission/",
+        "salary_info": {
+            "early_median_salary": 40300,
+            "mid_career_median_salary": 72000,
+            "rank": 580,
+            "zip_code": "63501"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 680,
+            "sat_math_high": 650,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 4445,
+            "acceptance_rate": 74
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.6624944,
+            "lng": -90.4785495,
+            "state": "Missouri"
+        },
+        "school": "Maryville University of Saint Louis",
+        "link": "/colleges/missouri/maryville-university-of-saint-louis/admission/",
+        "salary_info": {
+            "early_median_salary": 42600,
+            "mid_career_median_salary": 60600,
+            "rank": 918,
+            "zip_code": "63141"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 610,
+            "sat_math_high": 610,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 1281,
+            "acceptance_rate": 71
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.0362552,
+            "lng": -94.57533939999999,
+            "state": "Missouri"
+        },
+        "school": "Rockhurst University",
+        "link": "/colleges/missouri/rockhurst-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46800,
+            "mid_career_median_salary": 83000,
+            "rank": 279,
+            "zip_code": "64110"
+        },
+        "score_info": {
+            "sat_reading_low": 500,
+            "sat_reading_high": 640,
+            "sat_math_high": 649,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 2184,
+            "acceptance_rate": 78
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.7260338,
+            "lng": -72.14291720000001,
+            "state": "New Hampshire"
+        },
+        "school": "Dartmouth College",
+        "link": "/colleges/new-hampshire/dartmouth-college/admission/",
+        "salary_info": {
+            "early_median_salary": 56300,
+            "mid_career_median_salary": 111000,
+            "rank": 26,
+            "zip_code": "03755"
+        },
+        "score_info": {
+            "sat_reading_low": 670,
+            "sat_reading_high": 780,
+            "sat_math_high": 780,
+            "sat_math_low": 680
+        },
+        "admissions_info": {
+            "applied": 22385,
+            "acceptance_rate": 10
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.0073961,
+            "lng": -71.49523719999999,
+            "state": "New Hampshire"
+        },
+        "school": "Saint Anselm College",
+        "link": "/colleges/new-hampshire/saint-anselm-college/admission/",
+        "salary_info": {
+            "early_median_salary": 49600,
+            "mid_career_median_salary": 89800,
+            "rank": 144,
+            "zip_code": "03102"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 610,
+            "sat_math_high": 620,
+            "sat_math_low": 520
+        },
+        "admissions_info": {
+            "applied": 4089,
+            "acceptance_rate": 75
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.0802842,
+            "lng": -71.4536835,
+            "state": "New Hampshire"
+        },
+        "school": "Southern New Hampshire University",
+        "link": "/colleges/new-hampshire/southern-new-hampshire-university/admission/",
+        "salary_info": {
+            "early_median_salary": 43300,
+            "mid_career_median_salary": 64600,
+            "rank": 822,
+            "zip_code": "03106"
+        },
+        "score_info": {
+            "sat_reading_low": 430,
+            "sat_reading_high": 520,
+            "sat_math_high": 540,
+            "sat_math_low": 440
+        },
+        "admissions_info": {
+            "applied": 4262,
+            "acceptance_rate": 83
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.7570079,
+            "lng": -71.6881497,
+            "state": "New Hampshire"
+        },
+        "school": "Plymouth State University",
+        "link": "/colleges/new-hampshire/plymouth-state-university/admission/",
+        "salary_info": {
+            "early_median_salary": 40900,
+            "mid_career_median_salary": 64100,
+            "rank": 833,
+            "zip_code": "03264"
+        },
+        "score_info": {
+            "sat_reading_low": 430,
+            "sat_reading_high": 530,
+            "sat_math_high": 540,
+            "sat_math_low": 430
+        },
+        "admissions_info": {
+            "applied": 4940,
+            "acceptance_rate": 76
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.9284584,
+            "lng": -72.27749969999999,
+            "state": "New Hampshire"
+        },
+        "school": "Keene State College",
+        "link": "/colleges/new-hampshire/keene-state-college/admission/",
+        "salary_info": {
+            "early_median_salary": 41900,
+            "mid_career_median_salary": 71200,
+            "rank": 604,
+            "zip_code": "03435"
+        },
+        "score_info": {
+            "sat_reading_low": 430,
+            "sat_reading_high": 540,
+            "sat_math_high": 540,
+            "sat_math_low": 440
+        },
+        "admissions_info": {
+            "applied": 6315,
+            "acceptance_rate": 78
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.759337,
+            "lng": -72.0231125,
+            "state": "New Hampshire"
+        },
+        "school": "Franklin Pierce University",
+        "link": "/colleges/new-hampshire/franklin-pierce-university/admission/",
+        "salary_info": {
+            "early_median_salary": 42700,
+            "mid_career_median_salary": 68600,
+            "rank": 698,
+            "zip_code": "03461"
+        },
+        "score_info": {
+            "sat_reading_low": 440,
+            "sat_reading_high": 530,
+            "sat_math_high": 550,
+            "sat_math_low": 440
+        },
+        "admissions_info": {
+            "applied": 3546,
+            "acceptance_rate": 85
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.7470311,
+            "lng": -71.4596201,
+            "state": "New Hampshire"
+        },
+        "school": "Rivier College",
+        "link": "/colleges/new-hampshire/rivier-college/admission/",
+        "salary_info": {
+            "early_median_salary": 44900,
+            "mid_career_median_salary": 69700,
+            "rank": 651,
+            "zip_code": "03060"
+        },
+        "score_info": {
+            "sat_reading_low": 430,
+            "sat_reading_high": 500,
+            "sat_math_high": 510,
+            "sat_math_low": 430
+        },
+        "admissions_info": {
+            "applied": 791,
+            "acceptance_rate": 82
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.3467174,
+            "lng": -74.6568772,
+            "state": "New Jersey"
+        },
+        "school": "Princeton University",
+        "link": "/colleges/new-jersey/princeton-university/admission/",
+        "salary_info": {
+            "early_median_salary": 61300,
+            "mid_career_median_salary": 122000,
+            "rank": 8,
+            "zip_code": "08544"
+        },
+        "score_info": {
+            "sat_reading_low": 700,
+            "sat_reading_high": 800,
+            "sat_math_high": 800,
+            "sat_math_low": 710
+        },
+        "admissions_info": {
+            "applied": 26664,
+            "acceptance_rate": 8
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.744052,
+            "lng": -74.0270745,
+            "state": "New Jersey"
+        },
+        "school": "Stevens Institute of Technology",
+        "link": "/colleges/new-jersey/stevens-institute-of-technology/admission/",
+        "salary_info": {
+            "early_median_salary": 66800,
+            "mid_career_median_salary": 120000,
+            "rank": 10,
+            "zip_code": "07030"
+        },
+        "score_info": {
+            "sat_reading_low": 570,
+            "sat_reading_high": 670,
+            "sat_math_high": 720,
+            "sat_math_low": 640
+        },
+        "admissions_info": {
+            "applied": 4087,
+            "acceptance_rate": 40
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.0887754,
+            "lng": -74.1827119,
+            "state": "New Jersey"
+        },
+        "school": "Ramapo College of New Jersey",
+        "link": "/colleges/new-jersey/ramapo-college-of-new-jersey/admission/",
+        "salary_info": {
+            "early_median_salary": 42500,
+            "mid_career_median_salary": 76900,
+            "rank": 424,
+            "zip_code": "07430"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 590,
+            "sat_math_high": 610,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 6299,
+            "acceptance_rate": 47
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.7017383,
+            "lng": -75.11951069999999,
+            "state": "New Jersey"
+        },
+        "school": "Rowan University",
+        "link": "/colleges/new-jersey/rowan-university/admission/",
+        "salary_info": {
+            "early_median_salary": 45400,
+            "mid_career_median_salary": 73900,
+            "rank": 521,
+            "zip_code": "08028"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 600,
+            "sat_math_high": 640,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 6868,
+            "acceptance_rate": 56
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.4728755,
+            "lng": -74.4642861,
+            "state": "New Jersey"
+        },
+        "school": "The Richard Stockton College of New Jersey",
+        "link": "/colleges/new-jersey/the-richard-stockton-college-of-new-jersey/admission/",
+        "salary_info": {
+            "early_median_salary": 39800,
+            "mid_career_median_salary": 76700,
+            "rank": 432,
+            "zip_code": "08205"
+        },
+        "score_info": {
+            "sat_reading_low": 480,
+            "sat_reading_high": 570,
+            "sat_math_high": 600,
+            "sat_math_low": 500
+        },
+        "admissions_info": {
+            "applied": 6195,
+            "acceptance_rate": 57
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.8138912,
+            "lng": -73.96243270000001,
+            "state": "New York"
+        },
+        "school": "Columbia University in City of New York",
+        "link": "/colleges/new-york/columbia-university-in-the-city-of-new-york/admission/",
+        "salary_info": {
+            "early_median_salary": 60200,
+            "mid_career_median_salary": 104000,
+            "rank": 46,
+            "zip_code": "10027"
+        },
+        "score_info": {
+            "sat_reading_low": 690,
+            "sat_reading_high": 780,
+            "sat_math_high": 790,
+            "sat_math_low": 700
+        },
+        "admissions_info": {
+            "applied": 34810,
+            "acceptance_rate": 7
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.435511,
+            "lng": -76.5257007,
+            "state": "New York"
+        },
+        "school": "Cornell University",
+        "link": "/colleges/new-york/cornell-university/admission/",
+        "salary_info": {
+            "early_median_salary": 59700,
+            "mid_career_median_salary": 109000,
+            "rank": 32,
+            "zip_code": "14853"
+        },
+        "score_info": {
+            "sat_reading_low": 640,
+            "sat_reading_high": 740,
+            "sat_math_high": 780,
+            "sat_math_low": 680
+        },
+        "admissions_info": {
+            "applied": 37808,
+            "acceptance_rate": 17
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.8143452,
+            "lng": -75.55096019999999,
+            "state": "New York"
+        },
+        "school": "Colgate University",
+        "link": "/colleges/new-york/colgate-university/admission/",
+        "salary_info": {
+            "early_median_salary": 53700,
+            "mid_career_median_salary": 115000,
+            "rank": 16,
+            "zip_code": "13346"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 720,
+            "sat_math_high": 740,
+            "sat_math_low": 650
+        },
+        "admissions_info": {
+            "applied": 7798,
+            "acceptance_rate": 29
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.7322535,
+            "lng": -73.9874105,
+            "state": "New York"
+        },
+        "school": "Cooper Union for The Advancement of Science and Art",
+        "link": "/colleges/new-york/cooper-union-for-the-advancement-of-science-and-art/admission/",
+        "salary_info": {
+            "early_median_salary": 62700,
+            "mid_career_median_salary": 114000,
+            "rank": 18,
+            "zip_code": "10003"
+        },
+        "score_info": {
+            "sat_reading_low": 610,
+            "sat_reading_high": 710,
+            "sat_math_high": 780,
+            "sat_math_low": 610
+        },
+        "admissions_info": {
+            "applied": 3415,
+            "acceptance_rate": 8
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.7250632,
+            "lng": -73.9976946,
+            "state": "New York"
+        },
+        "school": "New York University (NYU)",
+        "link": "/colleges/new-york/new-york-university/admission/",
+        "salary_info": {
+            "early_median_salary": 51400,
+            "mid_career_median_salary": 99000,
+            "rank": 71,
+            "zip_code": "10012"
+        },
+        "score_info": {
+            "sat_reading_low": 620,
+            "sat_reading_high": 720,
+            "sat_math_high": 740,
+            "sat_math_low": 630
+        },
+        "admissions_info": {
+            "applied": 42807,
+            "acceptance_rate": 35
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.1318593,
+            "lng": -77.623931,
+            "state": "New York"
+        },
+        "school": "University of Rochester",
+        "link": "/colleges/new-york/university-of-rochester/admission/",
+        "salary_info": {
+            "early_median_salary": 51400,
+            "mid_career_median_salary": 101000,
+            "rank": 59,
+            "zip_code": "14627"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 700,
+            "sat_math_high": 750,
+            "sat_math_low": 650
+        },
+        "admissions_info": {
+            "applied": 16033,
+            "acceptance_rate": 35
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.9992263,
+            "lng": -78.94720889999999,
+            "state": "North Carolina"
+        },
+        "school": "Duke University",
+        "link": "/colleges/north-carolina/duke-university/admission/",
+        "salary_info": {
+            "early_median_salary": 60600,
+            "mid_career_median_salary": 111000,
+            "rank": 26,
+            "zip_code": "27708"
+        },
+        "score_info": {
+            "sat_reading_low": 670,
+            "sat_reading_high": 760,
+            "sat_math_high": 790,
+            "sat_math_low": 690
+        },
+        "admissions_info": {
+            "applied": 28145,
+            "acceptance_rate": 14
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.50603,
+            "lng": -80.83945,
+            "state": "North Carolina"
+        },
+        "school": "Davidson College",
+        "link": "/colleges/north-carolina/davidson-college/admission/",
+        "salary_info": {
+            "early_median_salary": 48800,
+            "mid_career_median_salary": 88100,
+            "rank": 178,
+            "zip_code": "28035"
+        },
+        "score_info": {
+            "sat_reading_low": 630,
+            "sat_reading_high": 730,
+            "sat_math_high": 710,
+            "sat_math_low": 600
+        },
+        "admissions_info": {
+            "applied": 4770,
+            "acceptance_rate": 25
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.905249,
+            "lng": -79.0581498,
+            "state": "North Carolina"
+        },
+        "school": "University of North Carolina at Chapel Hill (UNC)",
+        "link": "/colleges/north-carolina/university-of-north-carolina-at-chapel-hill/admission/",
+        "salary_info": {
+            "early_median_salary": 46200,
+            "mid_career_median_salary": 79400,
+            "rank": 357,
+            "zip_code": "27599"
+        },
+        "score_info": {
+            "sat_reading_low": 590,
+            "sat_reading_high": 700,
+            "sat_math_high": 710,
+            "sat_math_low": 610
+        },
+        "admissions_info": {
+            "applied": 22652,
+            "acceptance_rate": 33
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.2229011,
+            "lng": -79.5041322,
+            "state": "North Carolina"
+        },
+        "school": "Elon University",
+        "link": "/colleges/north-carolina/elon-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44800,
+            "mid_career_median_salary": 78400,
+            "rank": 381,
+            "zip_code": "27244"
+        },
+        "score_info": {
+            "sat_reading_low": 560,
+            "sat_reading_high": 660,
+            "sat_math_high": 660,
+            "sat_math_low": 560
+        },
+        "admissions_info": {
+            "applied": 10241,
+            "acceptance_rate": 52
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.4134031,
+            "lng": -78.7360351,
+            "state": "North Carolina"
+        },
+        "school": "Campbell University",
+        "link": "/colleges/north-carolina/campbell-university/admission/",
+        "salary_info": {
+            "early_median_salary": 43400,
+            "mid_career_median_salary": 70400,
+            "rank": 629,
+            "zip_code": "27506"
+        },
+        "score_info": {
+            "sat_reading_low": 380,
+            "sat_reading_high": 655,
+            "sat_math_high": 645,
+            "sat_math_low": 385
+        },
+        "admissions_info": {
+            "applied": 12445,
+            "acceptance_rate": 29
+        }
+    },
+    {
+        "location_info": {
+            "lat": 34.2253022,
+            "lng": -77.8710285,
+            "state": "North Carolina"
+        },
+        "school": "University of North Carolina at Wilmington (UNCW)",
+        "link": "/colleges/north-carolina/university-of-north-carolina-at-wilmington/admission/",
+        "salary_info": {
+            "early_median_salary": 39900,
+            "mid_career_median_salary": 62500,
+            "rank": 881,
+            "zip_code": "28403"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 620,
+            "sat_math_high": 630,
+            "sat_math_low": 560
+        },
+        "admissions_info": {
+            "applied": 10339,
+            "acceptance_rate": 53
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.2139148,
+            "lng": -81.6795209,
+            "state": "North Carolina"
+        },
+        "school": "Appalachian State University",
+        "link": "/colleges/north-carolina/appalachian-state-university/admission/",
+        "salary_info": {
+            "early_median_salary": 40100,
+            "mid_career_median_salary": 65000,
+            "rank": 806,
+            "zip_code": "28608"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 620,
+            "sat_math_high": 620,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 12959,
+            "acceptance_rate": 62
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.2795429,
+            "lng": -82.2365981,
+            "state": "Ohio"
+        },
+        "school": "Oberlin College",
+        "link": "/colleges/ohio/oberlin-college/admission/",
+        "salary_info": {
+            "early_median_salary": 41700,
+            "mid_career_median_salary": 100000,
+            "rank": 64,
+            "zip_code": "44074"
+        },
+        "score_info": {
+            "sat_reading_low": 650,
+            "sat_reading_high": 740,
+            "sat_math_high": 715,
+            "sat_math_low": 620
+        },
+        "admissions_info": {
+            "applied": 7172,
+            "acceptance_rate": 31
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.3760148,
+            "lng": -82.3966872,
+            "state": "Ohio"
+        },
+        "school": "Kenyon College",
+        "link": "/colleges/ohio/kenyon-college/admission/",
+        "salary_info": {
+            "early_median_salary": 45800,
+            "mid_career_median_salary": 97600,
+            "rank": 77,
+            "zip_code": "43022"
+        },
+        "score_info": {
+            "sat_reading_low": 630,
+            "sat_reading_high": 720,
+            "sat_math_high": 690,
+            "sat_math_low": 600
+        },
+        "admissions_info": {
+            "applied": 3947,
+            "acceptance_rate": 36
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.089177,
+            "lng": -82.5402275,
+            "state": "Ohio"
+        },
+        "school": "Denison University",
+        "link": "/colleges/ohio/denison-university/admission/",
+        "salary_info": {
+            "early_median_salary": 45900,
+            "mid_career_median_salary": 84800,
+            "rank": 234,
+            "zip_code": "43023"
+        },
+        "score_info": {
+            "sat_reading_low": 590,
+            "sat_reading_high": 660,
+            "sat_math_high": 670,
+            "sat_math_low": 600
+        },
+        "admissions_info": {
+            "applied": 4757,
+            "acceptance_rate": 50
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.5091257,
+            "lng": -81.6089873,
+            "state": "Ohio"
+        },
+        "school": "Case Western Reserve University",
+        "link": "/colleges/ohio/case-western-reserve-university/admission/",
+        "salary_info": {
+            "early_median_salary": 58400,
+            "mid_career_median_salary": 103000,
+            "rank": 49,
+            "zip_code": "44106"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 720,
+            "sat_math_high": 760,
+            "sat_math_low": 670
+        },
+        "admissions_info": {
+            "applied": 14778,
+            "acceptance_rate": 54
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.7395406,
+            "lng": -84.1787904,
+            "state": "Ohio"
+        },
+        "school": "University of Dayton",
+        "link": "/colleges/ohio/university-of-dayton/admission/",
+        "salary_info": {
+            "early_median_salary": 52100,
+            "mid_career_median_salary": 88700,
+            "rank": 169,
+            "zip_code": "45469"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 600,
+            "sat_math_high": 630,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 15101,
+            "acceptance_rate": 55
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.80216000000001,
+            "lng": -81.9971108,
+            "state": "Ohio"
+        },
+        "school": "The College of Wooster",
+        "link": "/colleges/ohio/the-college-of-wooster/admission/",
+        "salary_info": {
+            "early_median_salary": 38000,
+            "mid_career_median_salary": 74800,
+            "rank": 493,
+            "zip_code": "44691"
+        },
+        "score_info": {
+            "sat_reading_low": 550,
+            "sat_reading_high": 670,
+            "sat_math_high": 660,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 5208,
+            "acceptance_rate": 58
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.1405079,
+            "lng": -84.47239,
+            "state": "Ohio"
+        },
+        "school": "Xavier University",
+        "link": "/colleges/ohio/xavier-university/admission/",
+        "salary_info": {
+            "early_median_salary": 47100,
+            "mid_career_median_salary": 74900,
+            "rank": 491,
+            "zip_code": "45207"
+        },
+        "score_info": {
+            "sat_reading_low": 500,
+            "sat_reading_high": 600,
+            "sat_math_high": 610,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 11232,
+            "acceptance_rate": 68
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.142324,
+            "lng": -95.956825,
+            "state": "Oklahoma"
+        },
+        "school": "University of Tulsa",
+        "link": "/colleges/oklahoma/university-of-tulsa/admission/",
+        "salary_info": {
+            "early_median_salary": 56400,
+            "mid_career_median_salary": 88900,
+            "rank": 164,
+            "zip_code": "74104"
+        },
+        "score_info": {
+            "sat_reading_low": 560,
+            "sat_reading_high": 710,
+            "sat_math_high": 690,
+            "sat_math_low": 570
+        },
+        "admissions_info": {
+            "applied": 6984,
+            "acceptance_rate": 41
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.4778286,
+            "lng": -97.5409718,
+            "state": "Oklahoma"
+        },
+        "school": "Oklahoma City University",
+        "link": "/colleges/oklahoma/oklahoma-city-university/admission/",
+        "salary_info": {
+            "early_median_salary": 42500,
+            "mid_career_median_salary": 66400,
+            "rank": 769,
+            "zip_code": "73106"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 620,
+            "sat_math_high": 610,
+            "sat_math_low": 500
+        },
+        "admissions_info": {
+            "applied": 1286,
+            "acceptance_rate": 70
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.0501104,
+            "lng": -95.9579174,
+            "state": "Oklahoma"
+        },
+        "school": "Oral Roberts University (ORU)",
+        "link": "/colleges/oklahoma/oral-roberts-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44400,
+            "mid_career_median_salary": 63000,
+            "rank": 866,
+            "zip_code": "74171"
+        },
+        "score_info": {
+            "sat_reading_low": 460,
+            "sat_reading_high": 570,
+            "sat_math_high": 560,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 1163,
+            "acceptance_rate": 59
+        }
+    },
+    {
+        "location_info": {
+            "lat": 45.4807521,
+            "lng": -122.6427372,
+            "state": "Oregon"
+        },
+        "school": "Reed College",
+        "link": "/colleges/oregon/reed-college/admission/",
+        "salary_info": {
+            "early_median_salary": 47600,
+            "mid_career_median_salary": 103000,
+            "rank": 49,
+            "zip_code": "97202"
+        },
+        "score_info": {
+            "sat_reading_low": 660,
+            "sat_reading_high": 750,
+            "sat_math_high": 720,
+            "sat_math_low": 620
+        },
+        "admissions_info": {
+            "applied": 3131,
+            "acceptance_rate": 36
+        }
+    },
+    {
+        "location_info": {
+            "lat": 45.6008356,
+            "lng": -122.760606,
+            "state": "Oregon"
+        },
+        "school": "University of Portland",
+        "link": "/colleges/oregon/university-of-portland/admission/",
+        "salary_info": {
+            "early_median_salary": 50200,
+            "mid_career_median_salary": 90500,
+            "rank": 135,
+            "zip_code": "97203"
+        },
+        "score_info": {
+            "sat_reading_low": 550,
+            "sat_reading_high": 650,
+            "sat_math_high": 650,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 8696,
+            "acceptance_rate": 67
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.9464822,
+            "lng": -123.0018941,
+            "state": "Oregon"
+        },
+        "school": "Willamette University",
+        "link": "/colleges/oregon/willamette-university/admission/",
+        "salary_info": {
+            "early_median_salary": 42000,
+            "mid_career_median_salary": 85200,
+            "rank": 231,
+            "zip_code": "97301"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 660,
+            "sat_math_high": 650,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 6462,
+            "acceptance_rate": 83
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.0350489,
+            "lng": -123.0473566,
+            "state": "Oregon"
+        },
+        "school": "University of Oregon",
+        "link": "/colleges/oregon/university-of-oregon/admission/",
+        "salary_info": {
+            "early_median_salary": 43300,
+            "mid_career_median_salary": 76500,
+            "rank": 441,
+            "zip_code": "97403"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 600,
+            "sat_math_high": 620,
+            "sat_math_low": 500
+        },
+        "admissions_info": {
+            "applied": 23012,
+            "acceptance_rate": 73
+        }
+    },
+    {
+        "location_info": {
+            "lat": 45.3295718,
+            "lng": -122.9651975,
+            "state": "Oregon"
+        },
+        "school": "George Fox University",
+        "link": "/colleges/oregon/george-fox-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44400,
+            "mid_career_median_salary": 64800,
+            "rank": 814,
+            "zip_code": "97132"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 600,
+            "sat_math_high": 600,
+            "sat_math_low": 470
+        },
+        "admissions_info": {
+            "applied": 2215,
+            "acceptance_rate": 75
+        }
+    },
+    {
+        "location_info": {
+            "lat": 45.57017099999999,
+            "lng": -123.13223,
+            "state": "Oregon"
+        },
+        "school": "Pacific University",
+        "link": "/colleges/oregon/pacific-university/admission/",
+        "salary_info": {
+            "early_median_salary": 40700,
+            "mid_career_median_salary": 65200,
+            "rank": 798,
+            "zip_code": "97116"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 600,
+            "sat_math_high": 610,
+            "sat_math_low": 500
+        },
+        "admissions_info": {
+            "applied": 2619,
+            "acceptance_rate": 85
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.9583587,
+            "lng": -75.1953934,
+            "state": "Pennsylvania"
+        },
+        "school": "University of Pennsylvania",
+        "link": "/colleges/pennsylvania/university-of-pennsylvania/admission/",
+        "salary_info": {
+            "early_median_salary": 60300,
+            "mid_career_median_salary": 120000,
+            "rank": 10,
+            "zip_code": "19104"
+        },
+        "score_info": {
+            "sat_reading_low": 670,
+            "sat_reading_high": 760,
+            "sat_math_high": 780,
+            "sat_math_low": 690
+        },
+        "admissions_info": {
+            "applied": 31218,
+            "acceptance_rate": 13
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.8975179,
+            "lng": -75.347048,
+            "state": "Pennsylvania"
+        },
+        "school": "Swarthmore College",
+        "link": "/colleges/pennsylvania/swarthmore-college/admission/",
+        "salary_info": {
+            "early_median_salary": 48000,
+            "mid_career_median_salary": 109000,
+            "rank": 32,
+            "zip_code": "19081"
+        },
+        "score_info": {
+            "sat_reading_low": 680,
+            "sat_reading_high": 760,
+            "sat_math_high": 770,
+            "sat_math_low": 670
+        },
+        "admissions_info": {
+            "applied": 6589,
+            "acceptance_rate": 14
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.4379259,
+            "lng": -79.9556424,
+            "state": "Pennsylvania"
+        },
+        "school": "Carnegie Mellon University (CMU)",
+        "link": "/colleges/pennsylvania/carnegie-mellon-university/admission/",
+        "salary_info": {
+            "early_median_salary": 64700,
+            "mid_career_median_salary": 118000,
+            "rank": 14,
+            "zip_code": "15213"
+        },
+        "score_info": {
+            "sat_reading_low": 640,
+            "sat_reading_high": 740,
+            "sat_math_high": 790,
+            "sat_math_low": 700
+        },
+        "admissions_info": {
+            "applied": 17313,
+            "acceptance_rate": 28
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.9564657,
+            "lng": -76.9412601,
+            "state": "Pennsylvania"
+        },
+        "school": "Bucknell University",
+        "link": "/colleges/pennsylvania/bucknell-university/admission/",
+        "salary_info": {
+            "early_median_salary": 57100,
+            "mid_career_median_salary": 99600,
+            "rank": 67,
+            "zip_code": "17837"
+        },
+        "score_info": {
+            "sat_reading_low": 580,
+            "sat_reading_high": 680,
+            "sat_math_high": 720,
+            "sat_math_low": 620
+        },
+        "admissions_info": {
+            "applied": 8291,
+            "acceptance_rate": 27
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.6551234,
+            "lng": -75.2128996,
+            "state": "Pennsylvania"
+        },
+        "school": "Lafayette College",
+        "link": "/colleges/pennsylvania/lafayette-college/admission/",
+        "salary_info": {
+            "early_median_salary": 58900,
+            "mid_career_median_salary": 102000,
+            "rank": 52,
+            "zip_code": "18042"
+        },
+        "score_info": {
+            "sat_reading_low": 570,
+            "sat_reading_high": 670,
+            "sat_math_high": 700,
+            "sat_math_low": 610
+        },
+        "admissions_info": {
+            "applied": 6660,
+            "acceptance_rate": 34
+        }
+    },
+    {
+        "location_info": {
+            "lat": 40.5967701,
+            "lng": -75.3761952,
+            "state": "Pennsylvania"
+        },
+        "school": "Lehigh University",
+        "link": "/colleges/pennsylvania/lehigh-university/admission/",
+        "salary_info": {
+            "early_median_salary": 60400,
+            "mid_career_median_salary": 108000,
+            "rank": 35,
+            "zip_code": "18015"
+        },
+        "score_info": {
+            "sat_reading_low": 580,
+            "sat_reading_high": 670,
+            "sat_math_high": 740,
+            "sat_math_low": 640
+        },
+        "admissions_info": {
+            "applied": 11529,
+            "acceptance_rate": 33
+        }
+    },
+    {
+        "location_info": {
+            "lat": 39.8243121,
+            "lng": -77.2175223,
+            "state": "Pennsylvania"
+        },
+        "school": "Gettysburg College",
+        "link": "/colleges/pennsylvania/gettysburg-college/admission/",
+        "salary_info": {
+            "early_median_salary": 48900,
+            "mid_career_median_salary": 100000,
+            "rank": 64,
+            "zip_code": "17325"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 690,
+            "sat_math_high": 680,
+            "sat_math_low": 600
+        },
+        "admissions_info": {
+            "applied": 5620,
+            "acceptance_rate": 40
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.8265437,
+            "lng": -71.4013635,
+            "state": "Rhode Island"
+        },
+        "school": "Brown University",
+        "link": "/colleges/rhode-island/brown-university/admission/",
+        "salary_info": {
+            "early_median_salary": 57100,
+            "mid_career_median_salary": 108000,
+            "rank": 35,
+            "zip_code": "02912"
+        },
+        "score_info": {
+            "sat_reading_low": 660,
+            "sat_reading_high": 760,
+            "sat_math_high": 780,
+            "sat_math_low": 670
+        },
+        "admissions_info": {
+            "applied": 28742,
+            "acceptance_rate": 10
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.816736,
+            "lng": -71.40915629999999,
+            "state": "Rhode Island"
+        },
+        "school": "Rhode Island School of Design (RISD)",
+        "link": "/colleges/rhode-island/rhode-island-school-of-design/admission/",
+        "salary_info": {
+            "early_median_salary": 45400,
+            "mid_career_median_salary": 82800,
+            "rank": 282,
+            "zip_code": "02903"
+        },
+        "score_info": {
+            "sat_reading_low": 530,
+            "sat_reading_high": 670,
+            "sat_math_high": 710,
+            "sat_math_low": 560
+        },
+        "admissions_info": {
+            "applied": 3113,
+            "acceptance_rate": 25
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.8430186,
+            "lng": -71.4404284,
+            "state": "Rhode Island"
+        },
+        "school": "Providence College",
+        "link": "/colleges/rhode-island/providence-college/admission/",
+        "salary_info": {
+            "early_median_salary": 51900,
+            "mid_career_median_salary": 86700,
+            "rank": 198,
+            "zip_code": "02918"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 620,
+            "sat_math_high": 640,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 9652,
+            "acceptance_rate": 61
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.4711987,
+            "lng": -71.3171162,
+            "state": "Rhode Island"
+        },
+        "school": "Salve Regina University",
+        "link": "/colleges/rhode-island/salve-regina-university/admission/",
+        "salary_info": {
+            "early_median_salary": 48300,
+            "mid_career_median_salary": 62900,
+            "rank": 869,
+            "zip_code": "02840"
+        },
+        "score_info": {
+            "sat_reading_low": 510,
+            "sat_reading_high": 590,
+            "sat_math_high": 600,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 4824,
+            "acceptance_rate": 70
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.9036825,
+            "lng": -71.51304449999999,
+            "state": "Rhode Island"
+        },
+        "school": "Bryant University",
+        "link": "/colleges/rhode-island/bryant-university/admission/",
+        "salary_info": {
+            "early_median_salary": 52400,
+            "mid_career_median_salary": 93700,
+            "rank": 107,
+            "zip_code": "02917"
+        },
+        "score_info": {
+            "sat_reading_low": 510,
+            "sat_reading_high": 590,
+            "sat_math_high": 630,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 5177,
+            "acceptance_rate": 77
+        }
+    },
+    {
+        "location_info": {
+            "lat": 41.8380136,
+            "lng": -71.4358733,
+            "state": "Rhode Island"
+        },
+        "school": "Rhode Island College",
+        "link": "/colleges/rhode-island/rhode-island-college/admission/",
+        "salary_info": {
+            "early_median_salary": 39800,
+            "mid_career_median_salary": 67000,
+            "rank": 743,
+            "zip_code": "02908"
+        },
+        "score_info": {
+            "sat_reading_low": 410,
+            "sat_reading_high": 520,
+            "sat_math_high": 520,
+            "sat_math_low": 410
+        },
+        "admissions_info": {
+            "applied": 3349,
+            "acceptance_rate": 73
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.1457192,
+            "lng": -86.8066559,
+            "state": "Tennessee"
+        },
+        "school": "Vanderbilt University",
+        "link": "/colleges/tennessee/vanderbilt-university/admission/",
+        "salary_info": {
+            "early_median_salary": 57300,
+            "mid_career_median_salary": 102000,
+            "rank": 52,
+            "zip_code": "37240"
+        },
+        "score_info": {
+            "sat_reading_low": 700,
+            "sat_reading_high": 780,
+            "sat_math_high": 790,
+            "sat_math_low": 710
+        },
+        "admissions_info": {
+            "applied": 28348,
+            "acceptance_rate": 14
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.1433749,
+            "lng": -89.9673469,
+            "state": "Tennessee"
+        },
+        "school": "Rhodes College",
+        "link": "/colleges/tennessee/rhodes-college/admission/",
+        "salary_info": {
+            "early_median_salary": 43200,
+            "mid_career_median_salary": 90700,
+            "rank": 134,
+            "zip_code": "38112"
+        },
+        "score_info": {
+            "sat_reading_low": 590,
+            "sat_reading_high": 690,
+            "sat_math_high": 680,
+            "sat_math_low": 580
+        },
+        "admissions_info": {
+            "applied": 4138,
+            "acceptance_rate": 55
+        }
+    },
+    {
+        "location_info": {
+            "lat": 36.1003494,
+            "lng": -86.7718017,
+            "state": "Tennessee"
+        },
+        "school": "Lipscomb University",
+        "link": "/colleges/tennessee/lipscomb-university/admission/",
+        "salary_info": {
+            "early_median_salary": 41400,
+            "mid_career_median_salary": 75300,
+            "rank": 477,
+            "zip_code": "37204"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 650,
+            "sat_math_high": 650,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 3022,
+            "acceptance_rate": 52
+        }
+    },
+    {
+        "location_info": {
+            "lat": 35.0500092,
+            "lng": -85.04904979999999,
+            "state": "Tennessee"
+        },
+        "school": "Southern Adventist University",
+        "link": "/colleges/tennessee/southern-adventist-university/admission/",
+        "salary_info": {
+            "early_median_salary": 45000,
+            "mid_career_median_salary": 55600,
+            "rank": 995,
+            "zip_code": "37315"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 600,
+            "sat_math_high": 580,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 2205,
+            "acceptance_rate": 45
+        }
+    },
+    {
+        "location_info": {
+            "lat": 29.7183467,
+            "lng": -95.4306141,
+            "state": "Texas"
+        },
+        "school": "Rice University",
+        "link": "/colleges/texas/rice-university/admission/",
+        "salary_info": {
+            "early_median_salary": 63900,
+            "mid_career_median_salary": 114000,
+            "rank": 18,
+            "zip_code": "77005"
+        },
+        "score_info": {
+            "sat_reading_low": 670,
+            "sat_reading_high": 760,
+            "sat_math_high": 790,
+            "sat_math_low": 700
+        },
+        "admissions_info": {
+            "applied": 15133,
+            "acceptance_rate": 17
+        }
+    },
+    {
+        "location_info": {
+            "lat": 32.7087439,
+            "lng": -97.3617845,
+            "state": "Texas"
+        },
+        "school": "Texas Christian University (TCU)",
+        "link": "/colleges/texas/texas-christian-university/admission/",
+        "salary_info": {
+            "early_median_salary": 47400,
+            "mid_career_median_salary": 78500,
+            "rank": 379,
+            "zip_code": "76129"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 620,
+            "sat_math_high": 650,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 19335,
+            "acceptance_rate": 41
+        }
+    },
+    {
+        "location_info": {
+            "lat": 32.84,
+            "lng": -96.78,
+            "state": "Texas"
+        },
+        "school": "Southern Methodist University (SMU)",
+        "link": "/colleges/texas/southern-methodist-university/admission/",
+        "salary_info": {
+            "early_median_salary": 50100,
+            "mid_career_median_salary": 88200,
+            "rank": 176,
+            "zip_code": "75275"
+        },
+        "score_info": {
+            "sat_reading_low": 600,
+            "sat_reading_high": 690,
+            "sat_math_high": 700,
+            "sat_math_low": 620
+        },
+        "admissions_info": {
+            "applied": 11217,
+            "acceptance_rate": 54
+        }
+    },
+    {
+        "location_info": {
+            "lat": 29.4595699,
+            "lng": -98.49522280000001,
+            "state": "Texas"
+        },
+        "school": "Trinity University",
+        "link": "/colleges/texas/trinity-university/admission/",
+        "salary_info": {
+            "early_median_salary": 42300,
+            "mid_career_median_salary": 90000,
+            "rank": 140,
+            "zip_code": "78212"
+        },
+        "score_info": {
+            "sat_reading_low": 560,
+            "sat_reading_high": 690,
+            "sat_math_high": 680,
+            "sat_math_low": 590
+        },
+        "admissions_info": {
+            "applied": 4402,
+            "acceptance_rate": 64
+        }
+    },
+    {
+        "location_info": {
+            "lat": 31.5470221,
+            "lng": -97.12432869999999,
+            "state": "Texas"
+        },
+        "school": "Baylor University",
+        "link": "/colleges/texas/baylor-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46800,
+            "mid_career_median_salary": 82500,
+            "rank": 289,
+            "zip_code": "76798"
+        },
+        "score_info": {
+            "sat_reading_low": 550,
+            "sat_reading_high": 660,
+            "sat_math_high": 670,
+            "sat_math_low": 570
+        },
+        "admissions_info": {
+            "applied": 27828,
+            "acceptance_rate": 61
+        }
+    },
+    {
+        "location_info": {
+            "lat": 32.7433629,
+            "lng": -96.8887202,
+            "state": "Texas"
+        },
+        "school": "Dallas Baptist University",
+        "link": "/colleges/texas/dallas-baptist-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44500,
+            "mid_career_median_salary": 72400,
+            "rank": 566,
+            "zip_code": "75211"
+        },
+        "score_info": {
+            "sat_reading_low": 472,
+            "sat_reading_high": 656,
+            "sat_math_high": 648,
+            "sat_math_low": 476
+        },
+        "admissions_info": {
+            "applied": 2692,
+            "acceptance_rate": 41
+        }
+    },
+    {
+        "location_info": {
+            "lat": 30.6487339,
+            "lng": -97.63311300000001,
+            "state": "Texas"
+        },
+        "school": "Southwestern University",
+        "link": "/colleges/texas/southwestern-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44800,
+            "mid_career_median_salary": 83900,
+            "rank": 262,
+            "zip_code": "78626"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 640,
+            "sat_math_high": 640,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 2795,
+            "acceptance_rate": 61
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.0229305,
+            "lng": -73.1450146,
+            "state": "Vermont"
+        },
+        "school": "Middlebury College",
+        "link": "/colleges/vermont/middlebury-college/admission/",
+        "salary_info": {
+            "early_median_salary": 50100,
+            "mid_career_median_salary": 93900,
+            "rank": 106,
+            "zip_code": "05753"
+        },
+        "score_info": {
+            "sat_reading_low": 630,
+            "sat_reading_high": 740,
+            "sat_math_high": 740,
+            "sat_math_low": 640
+        },
+        "admissions_info": {
+            "applied": 8533,
+            "acceptance_rate": 18
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.1016224,
+            "lng": -72.67894810000001,
+            "state": "Vermont"
+        },
+        "school": "Norwich University",
+        "link": "/colleges/vermont/norwich-university/admission/",
+        "salary_info": {
+            "early_median_salary": 48800,
+            "mid_career_median_salary": 87100,
+            "rank": 194,
+            "zip_code": "05663"
+        },
+        "score_info": {
+            "sat_reading_low": 470,
+            "sat_reading_high": 570,
+            "sat_math_high": 590,
+            "sat_math_low": 480
+        },
+        "admissions_info": {
+            "applied": 3135,
+            "acceptance_rate": 65
+        }
+    },
+    {
+        "location_info": {
+            "lat": 44.5372018,
+            "lng": -72.0836695,
+            "state": "Vermont"
+        },
+        "school": "Lyndon State College",
+        "link": "/colleges/vermont/lyndon-state-college/admission/",
+        "salary_info": {
+            "early_median_salary": 38400,
+            "mid_career_median_salary": 48300,
+            "rank": 1033,
+            "zip_code": "05851"
+        },
+        "score_info": {
+            "sat_reading_low": 410,
+            "sat_reading_high": 520,
+            "sat_math_high": 530,
+            "sat_math_low": 400
+        },
+        "admissions_info": {
+            "applied": 1492,
+            "acceptance_rate": 98
+        }
+    },
+    {
+        "location_info": {
+            "lat": 37.8062214,
+            "lng": -79.5153773,
+            "state": "Virginia"
+        },
+        "school": "Washington and Lee University",
+        "link": "/colleges/virginia/washington-and-lee-university/admission/",
+        "salary_info": {
+            "early_median_salary": 54700,
+            "mid_career_median_salary": 120000,
+            "rank": 10,
+            "zip_code": "24450"
+        },
+        "score_info": {
+            "sat_reading_low": 650,
+            "sat_reading_high": 740,
+            "sat_math_high": 720,
+            "sat_math_low": 660
+        },
+        "admissions_info": {
+            "applied": 5972,
+            "acceptance_rate": 19
+        }
+    },
+    {
+        "location_info": {
+            "lat": 37.5745428,
+            "lng": -77.5433122,
+            "state": "Virginia"
+        },
+        "school": "University of Richmond",
+        "link": "/colleges/virginia/university-of-richmond/admission/",
+        "salary_info": {
+            "early_median_salary": 48200,
+            "mid_career_median_salary": 86400,
+            "rank": 206,
+            "zip_code": "23173"
+        },
+        "score_info": {
+            "sat_reading_low": 590,
+            "sat_reading_high": 690,
+            "sat_math_high": 720,
+            "sat_math_low": 620
+        },
+        "admissions_info": {
+            "applied": 10232,
+            "acceptance_rate": 30
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.8454321,
+            "lng": -77.3209555,
+            "state": "Virginia"
+        },
+        "school": "George Mason University",
+        "link": "/colleges/virginia/george-mason-university/admission/",
+        "salary_info": {
+            "early_median_salary": 51400,
+            "mid_career_median_salary": 89700,
+            "rank": 149,
+            "zip_code": "22030"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 620,
+            "sat_math_high": 630,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 17621,
+            "acceptance_rate": 55
+        }
+    },
+    {
+        "location_info": {
+            "lat": 38.43159929999999,
+            "lng": -78.8651581,
+            "state": "Virginia"
+        },
+        "school": "James Madison University (JMU)",
+        "link": "/colleges/virginia/james-madison-university/admission/",
+        "salary_info": {
+            "early_median_salary": 49100,
+            "mid_career_median_salary": 85300,
+            "rank": 227,
+            "zip_code": "22807"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 620,
+            "sat_math_high": 630,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 22349,
+            "acceptance_rate": 61
+        }
+    },
+    {
+        "location_info": {
+            "lat": 46.0819562,
+            "lng": -118.3152699,
+            "state": "Washington"
+        },
+        "school": "Whitman College",
+        "link": "/colleges/washington/whitman-college/admission/",
+        "salary_info": {
+            "early_median_salary": 42400,
+            "mid_career_median_salary": 101000,
+            "rank": 59,
+            "zip_code": "99362"
+        },
+        "score_info": {
+            "sat_reading_low": 610,
+            "sat_reading_high": 730,
+            "sat_math_high": 693,
+            "sat_math_low": 610
+        },
+        "admissions_info": {
+            "applied": 2854,
+            "acceptance_rate": 49
+        }
+    },
+    {
+        "location_info": {
+            "lat": 47.2627842,
+            "lng": -122.4814616,
+            "state": "Washington"
+        },
+        "school": "University of Puget Sound",
+        "link": "/colleges/washington/university-of-puget-sound/admission/",
+        "salary_info": {
+            "early_median_salary": 44900,
+            "mid_career_median_salary": 86400,
+            "rank": 206,
+            "zip_code": "98416"
+        },
+        "score_info": {
+            "sat_reading_low": 570,
+            "sat_reading_high": 670,
+            "sat_math_high": 660,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 6878,
+            "acceptance_rate": 54
+        }
+    },
+    {
+        "location_info": {
+            "lat": 47.6665181,
+            "lng": -117.4015207,
+            "state": "Washington"
+        },
+        "school": "Gonzaga University",
+        "link": "/colleges/washington/gonzaga-university/admission/",
+        "salary_info": {
+            "early_median_salary": 50300,
+            "mid_career_median_salary": 89000,
+            "rank": 162,
+            "zip_code": "99258"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 640,
+            "sat_math_high": 650,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 6851,
+            "acceptance_rate": 62
+        }
+    },
+    {
+        "location_info": {
+            "lat": 47.6087583,
+            "lng": -122.2964235,
+            "state": "Washington"
+        },
+        "school": "Seattle University",
+        "link": "/colleges/washington/seattle-university/admission/",
+        "salary_info": {
+            "early_median_salary": 49300,
+            "mid_career_median_salary": 82900,
+            "rank": 280,
+            "zip_code": "98122"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 640,
+            "sat_math_high": 630,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 6862,
+            "acceptance_rate": 71
+        }
+    },
+    {
+        "location_info": {
+            "lat": 48.7562157,
+            "lng": -122.4894588,
+            "state": "Washington"
+        },
+        "school": "Western Washington University",
+        "link": "/colleges/washington/western-washington-university/admission/",
+        "salary_info": {
+            "early_median_salary": 46000,
+            "mid_career_median_salary": 76800,
+            "rank": 428,
+            "zip_code": "98225"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 620,
+            "sat_math_high": 600,
+            "sat_math_low": 500
+        },
+        "admissions_info": {
+            "applied": 9791,
+            "acceptance_rate": 80
+        }
+    },
+    {
+        "location_info": {
+            "lat": 47.1427431,
+            "lng": -122.4407344,
+            "state": "Washington"
+        },
+        "school": "Pacific Lutheran University",
+        "link": "/colleges/washington/pacific-lutheran-university/admission/",
+        "salary_info": {
+            "early_median_salary": 43600,
+            "mid_career_median_salary": 84400,
+            "rank": 247,
+            "zip_code": "98447"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 610,
+            "sat_math_high": 610,
+            "sat_math_low": 490
+        },
+        "admissions_info": {
+            "applied": 3550,
+            "acceptance_rate": 74
+        }
+    },
+    {
+        "location_info": {
+            "lat": 47.6384586,
+            "lng": -122.3674079,
+            "state": "Washington"
+        },
+        "school": "Seattle Pacific University (SPU)",
+        "link": "/colleges/washington/seattle-pacific-university/admission/",
+        "salary_info": {
+            "early_median_salary": 44800,
+            "mid_career_median_salary": 87600,
+            "rank": 188,
+            "zip_code": "98119"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 630,
+            "sat_math_high": 610,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 4559,
+            "acceptance_rate": 79
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.0349801,
+            "lng": -87.93838219999999,
+            "state": "Wisconsin"
+        },
+        "school": "Marquette University",
+        "link": "/colleges/wisconsin/marquette-university/admission/",
+        "salary_info": {
+            "early_median_salary": 50900,
+            "mid_career_median_salary": 92300,
+            "rank": 120,
+            "zip_code": "53233"
+        },
+        "score_info": {
+            "sat_reading_low": 520,
+            "sat_reading_high": 630,
+            "sat_math_high": 650,
+            "sat_math_low": 550
+        },
+        "admissions_info": {
+            "applied": 22900,
+            "acceptance_rate": 55
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.5276281,
+            "lng": -89.0752499,
+            "state": "Wisconsin"
+        },
+        "school": "Beloit College",
+        "link": "/colleges/wisconsin/beloit-college/admission/",
+        "salary_info": {
+            "early_median_salary": 38400,
+            "mid_career_median_salary": 79500,
+            "rank": 353,
+            "zip_code": "53511"
+        },
+        "score_info": {
+            "sat_reading_low": 550,
+            "sat_reading_high": 710,
+            "sat_math_high": 660,
+            "sat_math_low": 540
+        },
+        "admissions_info": {
+            "applied": 2205,
+            "acceptance_rate": 67
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.0439776,
+            "lng": -87.8991514,
+            "state": "Wisconsin"
+        },
+        "school": "Milwaukee School of Engineering",
+        "link": "/colleges/wisconsin/milwaukee-school-of-engineering/admission/",
+        "salary_info": {
+            "early_median_salary": 61500,
+            "mid_career_median_salary": 91700,
+            "rank": 127,
+            "zip_code": "53202"
+        },
+        "score_info": {
+            "sat_reading_low": 540,
+            "sat_reading_high": 640,
+            "sat_math_high": 680,
+            "sat_math_low": 590
+        },
+        "admissions_info": {
+            "applied": 2014,
+            "acceptance_rate": 57
+        }
+    },
+    {
+        "location_info": {
+            "lat": 42.638141,
+            "lng": -87.82550069999999,
+            "state": "Wisconsin"
+        },
+        "school": "Carthage College",
+        "link": "/colleges/wisconsin/carthage-college/admission/",
+        "salary_info": {
+            "early_median_salary": 40700,
+            "mid_career_median_salary": 65000,
+            "rank": 806,
+            "zip_code": "53140"
+        },
+        "score_info": {
+            "sat_reading_low": 480,
+            "sat_reading_high": 570,
+            "sat_math_high": 610,
+            "sat_math_low": 530
+        },
+        "admissions_info": {
+            "applied": 7274,
+            "acceptance_rate": 70
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.1652687,
+            "lng": -87.9040571,
+            "state": "Wisconsin"
+        },
+        "school": "Cardinal Stritch University",
+        "link": "/colleges/wisconsin/cardinal-stritch-university/admission/",
+        "salary_info": {
+            "early_median_salary": 48900,
+            "mid_career_median_salary": 62600,
+            "rank": 878,
+            "zip_code": "53217"
+        },
+        "score_info": {
+            "sat_reading_low": 420,
+            "sat_reading_high": 550,
+            "sat_math_high": 580,
+            "sat_math_low": 450
+        },
+        "admissions_info": {
+            "applied": 957,
+            "acceptance_rate": 42
+        }
+    },
+    {
+        "location_info": {
+            "lat": 43.8995087,
+            "lng": -88.8263006,
+            "state": "Wisconsin"
+        },
+        "school": "Ripon College",
+        "link": "/colleges/wisconsin/ripon-college/admission/",
+        "salary_info": {
+            "early_median_salary": 40600,
+            "mid_career_median_salary": 62100,
+            "rank": 889,
+            "zip_code": "54971"
+        },
+        "score_info": {
+            "sat_reading_low": 490,
+            "sat_reading_high": 630,
+            "sat_math_high": 680,
+            "sat_math_low": 510
+        },
+        "admissions_info": {
+            "applied": 1046,
+            "acceptance_rate": 78
+        }
+    }
+]

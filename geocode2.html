@@ -341,6 +341,19 @@
 						}
 
 
+					}).on("mouseleave", function (d) {
+						// Get the state name 
+						var state = d["properties"]["name"]
+
+						// Check to see if this state is already in the array 
+						var inArray = false; 
+						selectedStates.forEach(function (e) {
+							inArray = inArray || (state == e); 
+						}); 
+
+						if (!inArray) {
+							d3.select(this).style("fill", LIGHT_PURPLE); 
+						}
 					}); 
 
 			}); 
@@ -391,6 +404,7 @@
 					.style("fill", DARK_PURPLE).style({'cursor':'pointer'})
 					.on("mouseover", function(d) {
 
+
 						// Highlight relevant lines 
 						var relLines = d3.selectAll("."+d["school"].replace(/\s+/g, '-').replace(/[^a-zA-Z-]/g, '').toLowerCase());
 						relLines.moveToFront(); 
@@ -399,11 +413,21 @@
                            'stroke': '#660033'
                         });
 
+
+						// On hover of a circle in a particular state, highlight that state 
+						var circleState = d["location_info"]["state"]
+						d3.selectAll(".state").filter(function (d) {
+
+							return d["properties"]["name"] == circleState; 
+						}).style("fill", PINK); 
+
+
+
 						// Highlight relevant circles 
 						var sel = d3.select(this); 
 						sel.moveToFront(); 
 						sel.transition().duration(500).attr("r", largeCircleR); 
-                         
+                 		
 						
 						d3.select("#univName").text(d["school"]);
 						d3.select("#univInfo").text("SAT Score: " + d["score_info"]["mean_sat_score"] + " | Admission Rate: "+d["admissions_info"]["acceptance_rate"]+"% | Median Mid-career Salary: $"+d["salary_info"]["mid_career_median_salary"]);
@@ -510,6 +534,7 @@
 					.data(clusterResult[1]).enter()
 				.append("circle")
 					.attr("r", 4)
+					.attr("class", "clusterDot")
 					.attr("cx", function (d) { return xScale(d["score_info"]["mean_sat_score"]); })
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
 					.style("fill", CLUSTER_PINK)
@@ -551,6 +576,11 @@
 			}); 
 
 
+
+
+			/* CLUSTERING INTERACTION */
+
+
 			// Clustering bulk work 
 			$(".start-cluster").on("click", function (e) {
 
@@ -558,7 +588,11 @@
 				if (selectedParms.length < 2) {
 					alert("Please select 2 parameters to cluster by");
 					return; 
-				}
+				}	
+
+
+				// Accumulate the actual data 
+				var relevantData = []; 
 
 				// Curate the dots 
 				var selectedDots = d3.selectAll(".map-circle")
@@ -568,6 +602,12 @@
 											selectedStates.forEach(function (s) {
 												inArray = inArray || (s == dotState); 
 											}); 
+
+											// Populate the above array at the same time 
+											if (inArray) {
+												relevantData.push(d); 
+											} 
+
 											return inArray; 
 										}); 
 
@@ -577,17 +617,18 @@
 					return; 
 				}	
 
+				// Accumulate the dot locations 
 				var currentDotLocations = [];
-
 				selectedDots.each(function (d, i) {
 					var cx = parseFloat(d3.select(this).attr("cx")); 
 					var cy = parseFloat(d3.select(this).attr("cy")); 
 					var dic = { cx: cx, cy: cy }; 
 					currentDotLocations.push(dic); 
 				}); 
-				
-				console.log(currentDotLocations); 
 
+				// Remove current clustering dots 
+				d3.selectAll(".cluster-circle").remove(); 
+				d3.selectAll(".clusterDot").remove(); 
 
 				// theData.transition().attr("cx", 1200); 
 
