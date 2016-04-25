@@ -133,7 +133,7 @@
 				margin-bottom: 10px;
 			}
 
-			.start-cluster {
+			.start-cluster, .reset-btn {
 				-webkit-border-radius: 10;
 				-moz-border-radius: 10;
 				border-radius: 10px;
@@ -141,7 +141,7 @@
 				border: 1px solid; 
 				width: 120px; 
 				padding: 7px 17px 7px 17px;
-				margin-left: 200px; 
+				margin-left: 150px; 
 				margin-top: 20px; 
 				float: left; 
 				color: #B58AA5;
@@ -150,7 +150,7 @@
 				font-size: 25px; 
 			}
 
-			.start-cluster:hover {
+			.start-cluster:hover, .reset-btn:hover {
 				color: #825A6C;
 				text-decoration: none;
 			}
@@ -199,6 +199,7 @@
 		<div class="btn cluster-btn sat" data="score_info">SAT Score</div> 
 		<div class="btn cluster-btn salary" style="width: 300px;" data="salary_info">Median Mid-career Salary</div> 
 		<div class="start-cluster">Cluster</div>
+		<div class="reset-btn" style="margin-left: 20px;">Reset</div>
 
 		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster</div> 
 		<!-- Where the map goes --> 
@@ -225,6 +226,10 @@
 
 			// Map guide used: 
 			// https://bl.ocks.org/mbostock/4090848
+
+
+
+			/* ALL THE VARIABLES WE NEED TO TRACK GLOBALLY */
 
 			// Assign dimensions of SVG element 
 			var width = 1300; 
@@ -253,7 +258,22 @@
 
 			// SVG element 
 			var svg = d3.select("svg"); 
-			//(".us-map").append("svg").attr("width", width).attr("height", height); 
+			
+			// xScale + yScale 
+			var xScale; 
+			var yScale; 
+
+			// Axes 
+			var xAxis; 
+			var yAxis; 
+
+			// Overall data for clustering
+			var overAllData = []; 
+
+
+			/* END OF GLOBAL VARIABLE INIT */
+
+
 
 			// load the map JSON 
 			d3.json("us-states.json", function(error, json) {
@@ -351,9 +371,11 @@
 							inArray = inArray || (state == e); 
 						}); 
 
+						// If not in array, make the fill light purple again (b/c mouse out)
 						if (!inArray) {
 							d3.select(this).style("fill", LIGHT_PURPLE); 
 						}
+
 					}); 
 
 			}); 
@@ -468,12 +490,12 @@
 										.attr("transform", "translate(" + padding + "," + padding +")"); 			
 					
 				// Scaling functions 
-				var xScale = d3.scale.linear().range([0, clusterWidth]); 
-				var yScale = d3.scale.linear().range([clusterHeight, 0]);
+				xScale = d3.scale.linear().range([0, clusterWidth]); 
+				yScale = d3.scale.linear().range([clusterHeight, 0]);
 
 				// Axes 
-				var xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
-				var yAxis = d3.svg.axis().scale(yScale).orient("left"); 
+				xAxis = d3.svg.axis().scale(xScale).orient("bottom"); 
+				yAxis = d3.svg.axis().scale(yScale).orient("left"); 
 
 				// Scaling of the original clustering 
 
@@ -605,17 +627,20 @@
 
 											// Populate the above array at the same time 
 											if (inArray) {
-												relevantData.push(d); 
+												var dataCopy = JSON.parse(JSON.stringify(d)); 
+												relevantData.push(dataCopy); 
 											} 
 
 											return inArray; 
 										}); 
+
 
 				// Can't run clustering on no data
 				if (selectedDots[0].length < 1) {
 					alert("Please select states with universities in them"); 
 					return; 
 				}	
+
 
 				// Accumulate the dot locations 
 				var currentDotLocations = [];
@@ -626,16 +651,31 @@
 					currentDotLocations.push(dic); 
 				}); 
 
+
 				// Remove current clustering dots 
 				d3.selectAll(".cluster-circle").remove(); 
 				d3.selectAll(".clusterDot").remove(); 
 
+
+				// Intersect the two data sets 
+				overAllData = []; 
+				for (var i = 0; i < relevantData.length; i++) {
+					// Combine the two 
+					for (var attr in currentDotLocations[i]) {
+						relevantData[i][attr] = currentDotLocations[i][attr]; 
+					}
+					// Add them to overAllData
+					overAllData.push(relevantData[i]); 
+				}
+
+				console.log(overAllData); 
+
 				// theData.transition().attr("cx", 1200); 
 
 
+
+
 			}); 
-
-
 
 
 
