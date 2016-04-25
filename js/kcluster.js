@@ -60,6 +60,9 @@ function shiftClusters (data, clusters, xname, x, yname, y) {
 		var clusterId = clusters[i].id 
 		var relevantData = data.filter(function (d) { return d.clusterId == clusterId }); 
 		// Updating x + y values of cluster 
+		if (relevantData.length == 0) {
+			continue; 
+		}
 		clusters[i][xname][x] = d3.mean(relevantData, function (d) { return d[xname][x] }); 
 		clusters[i][yname][y] = d3.mean(relevantData, function (d) { return d[yname][y] }); 
 	}	
@@ -114,10 +117,12 @@ function kMeansCluster (originalData, k, xname, x, yname, y) {
 		//iterFunc();  -- Would theoretically be a function run after each iteration 
 		numChanged = changedClusters(data, clusters, xname, x, yname, y); // Recalc 
 
-	}
+	}	
+
 
 	// Returns data, clusters 
 	return [data, clusters]
+	
 
 
 }

@@ -186,7 +186,7 @@
 		<!-- TopoJSON for the map --> 
 		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- k-means clustering functions we wrote --> 
-		<script type="text/javascript" src="js/kcluster.js"></script> 
+		<script type="text/javascript" src="js/kcluster.js?112"></script> 
 
 		<!-- Title --> 	
 		<div class="title-header"><i>K</i>-Means Clustering of U.S. Universities based on Selected Metrics</div> 
@@ -348,7 +348,6 @@
 													return circleState == stateName; 
 												}); 
 
-						// relevantCircles.each(function (d) { console.log(d); }); 
 						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
 
 					})
@@ -761,9 +760,8 @@
 						.attr("r", 3); 
 				}); 
 
-				console.log(clusterResult[1]); 
 
-				// add cluster dots 
+				// add cluster dots 		
 				var newClusters = svg.selectAll(".clusterDot")
 					.data(clusterResult[1]).enter()
 				.append("circle")
@@ -781,9 +779,6 @@
 					})
 					.style("fill", CLUSTER_PINK)
 					.style("stroke", CLUSTER_PINK); 
-
-
-
 
 
 			}); 
