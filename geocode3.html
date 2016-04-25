@@ -470,7 +470,12 @@
 															return !inArray; 
 														}).style("fill", DARK_PURPLE).style("stroke", "white"); 
 
-						/*
+
+						// Set all previous circles to old color 
+						// Could be useless 
+						d3.selectAll(".cluster-circle").style("stroke", LIGHT_PURPLE); 
+						
+
 						// Highlight relevant circles 
 						var stateName = d["properties"]["name"]; 
 						var relevantCircles = d3.selectAll(".map-circle")
@@ -482,7 +487,7 @@
 												}); 
 
 						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
-						*/  
+
 					})
 					.on("click", function (d) {
 						// Get the selected SVG element 
@@ -529,17 +534,6 @@
 						if (!inArray) {
 							d3.select(this).style("fill", LIGHT_PURPLE); 
 						}
-
-						// Control highlighting well 
-						var appropMapCircles = d3.selectAll(".map-circle").filter(function (d) {
-							var inArray = false; 
-							selectedStates.forEach(function (e) { 
-								inArray = inArray || (d["location_info"]["state"] == e); 
-							});
-							return !inArray 
-						});  
-
-						appropMapCircles.style("fill", DARK_PURPLE).style("stroke", "white"); 
 
 					}); 
 
@@ -834,10 +828,9 @@
 				// Reset all states 
 				d3.selectAll(".state").style("fill", LIGHT_PURPLE); 
 
-				// Remove the clusters + dots + lines 
+				// Remove the clusters + dots 
 				d3.selectAll(".clusterDot").remove(); 
 				d3.selectAll(".cluster-circle").remove(); 
-				d3.selectAll(".cluster-line").remove(); 
 
 				// Reset the button colors 
 				$(".cluster-btn").css("background", LIGHT_PURPLE); 
