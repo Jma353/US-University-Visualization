@@ -20,3 +20,9 @@
 	Used for map : https://bl.ocks.org/mbostock/4090848
 
 	Used for mapping out universities based on latitude / longitude : http://chimera.labs.oreilly.com/books/1230000000345/ch12.html#_adding_points
+
+	Used for dot plot inspiration : https://bl.ocks.org/mbostock/3887118
+
+	Used as a tool for button styling : http://css3buttongenerator.com/
+
+	moveToFront() and moveToBack() methods from : http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3
