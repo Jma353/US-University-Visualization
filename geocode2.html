@@ -13,15 +13,7 @@
 			/* SVG styling + drawing animation */
 			svg {
 				fill: #B58AA5; /* Purple fill #B58AA5 */
-				stroke: #6e455f; /* black path */
-			    stroke-dasharray: 2000px;
-			    stroke-dashoffset: 2000px;
-			    animation-name: draw;
-			    animation-duration: 3s;
-			    animation-fill-mode: forwards;
-			    animation-iteration-count: 1;
-			    animation-timing-function: linear;
-				
+				stroke: #6e455f; /* black path */			
 				border:1px black; /*temporary*/
 			}
 
@@ -92,6 +84,13 @@
 				fill: none;
 				stroke: ;
 				shape-rendering: crispEdges;
+			    stroke-dasharray: 2000px;
+			    stroke-dashoffset: 2000px;
+			    animation-name: draw;
+			    animation-duration: 3s;
+			    animation-fill-mode: forwards;
+			    animation-iteration-count: 1;
+			    animation-timing-function: linear;
 			}
 
 
@@ -624,11 +623,24 @@
 
                  		// Reset cluster circle + move to back 
                  		var circleSchool = d["school"]; 
+                 		var clusterId = null; 
                  		var corrCluster = d3.selectAll(".cluster-circle").filter(function (d) {
+                 			if (d["school"] == circleSchool) {
+                 				clusterId = d["clusterId"]; 
+                 			}
                  			return d["school"] == circleSchool; 
                  		}); 
+
+
                  		corrCluster.transition().duration(500).attr("r", clusterCircleSize).style("fill", DARK_PURPLE); 
                  		corrCluster.moveToBack(); 
+
+                 		var clusterLines = d3.selectAll(".cluster-line").filter(function (d) {
+                 			return d["clusterId"] == clusterId; 
+                 		}); 
+
+                 		clusterLines.moveToBack(); 
+
 
 
 
