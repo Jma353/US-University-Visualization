@@ -1,5 +1,6 @@
 // kcluster.js 
 // Functions written for k-means clustering functionality 
+// By Joseph Antonakakis 
 
 
 // Basic distance function 

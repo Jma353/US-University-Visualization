@@ -206,10 +206,15 @@
 		<div class="us-map">
 
 			<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
-	         <svg width="1580" height="647"> 
+	         <svg width="1580" height="647" id="mapSVG"> 
 	         	<text x="650" y="60" id="univName">Interactive: Hover over circles on map or graph</text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
+
+			 <!-- Linear regression graphs  --> 
+			 <svg width="1580" height="647" id="linRegSVG">
+
+			 </svg> 
 
 		</div> 
 
@@ -270,7 +275,7 @@
 			var path = d3.geo.path().projection(projection); 
 
 			// SVG element 
-			var svg = d3.select("svg"); 
+			var svg = d3.select("#mapSVG"); 
 			
 
 			// Map radii for various situations 
@@ -480,8 +485,6 @@
 
 
 
-
-
 			// load the map JSON 
 			d3.json("us-states.json", function(error, json) {
 
@@ -579,6 +582,9 @@
 
 			}); 
 	
+
+
+
 
 			// load the universities 
 			d3.json('UNIVERSITIES.json', function(error, data) {
@@ -832,6 +838,111 @@
 
 
 
+
+
+
+				/* LINEAR REGRESSION GRAPHS */ 
+
+
+				// Linear regression pairings 
+				var pairings = 	[
+									["score_info", "admissions_info"], 
+									["salary_info", "score_info"],
+									["admissions_info", "salary_info"]
+								]
+
+
+
+				// Dimensions for each graph 
+				var lgWidth = 350; 
+				var lgHeight = 350; 
+				var lgPadding = 40; 
+
+
+				// Axes scales 
+				var lgX = d3.scale.linear().range([0, lgWidth]); 
+				var lgY = d3.scale.linear().range([lgHeight, 0]); 
+
+
+				// Axes functions 
+				var lgXAxis = d3.svg.axis().scale(lgX).orient('bottom'); 
+				var lgYAxis = d3.svg.axis().scale(lgY).orient('left'); 
+
+				// The offset of each graph per iteration 
+				var xOffset = 450; 	
+
+				// The current value of x for the first graph 
+				var xTrack = 100; 
+
+				// This is where we do our work 
+				pairings.forEach(function (d) {
+
+					// Set up the SVG 
+					var lgSVG = d3.select("#linRegSVG")
+									.append("g")
+										.attr("width", lgWidth+2*lgPadding)
+										.attr("height", lgHeight+2*lgPadding)
+										.attr("x", xTrack)
+									.append("g")
+										.attr("transform", "translate(" + padding + "," + padding + ")");	
+						
+					// Each type of data is namespaced in the uniJSONs array, so obtain these from the array above 
+					var xNameSpace = d[0]; 
+					var yNameSpace = d[1]; 
+
+					// Obtain the names of the actual data values under these namespaces 
+					var xInfo = DATA_MAPPINGS[xNameSpace]; 
+					var yInfo = DATA_MAPPINGS[yNameSpace]; 
+
+					// Set the domains for the scales according to the data values 
+					lgX.domain(d3.extent(uniJSONs, function (d) {
+						return d[xNameSpace][xInfo]; 
+					})).nice(); 
+
+					lgY.domain(d3.extent(uniJSONs, function (d) {
+						return d[yNameSpace][yInfo]; 
+					})).nice(); 
+
+
+
+					// TODO, gen graphs + regression 
+
+				}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			});
 			
 
@@ -866,6 +977,7 @@
 			}); 
 
 
+			// Reset the view 
 			$(".reset-btn").on("click", function (e) {
 				// Empty these 
 				selectedParms = []; 
@@ -1083,13 +1195,11 @@
 						clusterMouseOver(d); 
 					
 					})
-					.on("mouseleave",function (d) {
+					.on("mouseleave", function (d) {
 
 						clusterMouseLeave(d); 
 
-					})
-					
-					;  
+					});  
 
 				newClusters.transition().duration(1000).style("opacity", 1.0); 
 
@@ -1100,6 +1210,19 @@
 				thaLines.moveToBack(); 
 
 			}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 			
 
