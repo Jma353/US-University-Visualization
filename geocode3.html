@@ -432,6 +432,53 @@
 		 	}
 
 
+		 	// Entering the centroid 
+		 	function clusterMouseOver (d) {
+				//highlight circles in same cluster **AA**
+				var cId = d["id"]; 
+				var skools=[];
+				var aCircles = svg.selectAll(".cluster-circle")
+							.filter(function (f) {
+								if (f["clusterId"] == cId){
+									skools.push(f["school"]);
+									return true;
+								} else {
+									return false;
+								} 
+							});
+				aCircles.transition().attr("r", clusterCircleExpanded).style("fill", "white");
+				skools.forEach(function (s) {
+			   		var mElements = d3.selectAll(".map-circle").filter(function (d) { return d["school"] == s; }); 
+                	// Reset and move to back 
+			   		mElements.transition().attr("r", largeCircleR); 
+			    	mElements.moveToFront(); 
+			    });
+		 	}
+
+
+		 	// Leaving the centroid 
+		 	function clusterMouseLeave (d) {
+				//highlight circles in same cluster **AA** 
+				var cId = d["id"]; 
+				var skools=[];
+				var aCircles = svg.selectAll(".cluster-circle").filter(function (f) {
+							if (f["clusterId"] == cId) {
+								skools.push(f["school"]);
+								return true;
+							} else {
+								return false;
+							} 
+						});
+
+				aCircles.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE);
+				skools.forEach(function (s) {
+			    	var mElements = d3.selectAll(".map-circle").filter(function (d) { return d["school"] == s; }); 
+                	// Reset and move to back 
+			    	mElements.transition().attr("r", defCircleR); 
+				});
+		 	}
+
+
 
 
 
@@ -470,19 +517,6 @@
 															return !inArray; 
 														}).style("fill", DARK_PURPLE).style("stroke", "white"); 
 
-						/*
-						// Highlight relevant circles 
-						var stateName = d["properties"]["name"]; 
-						var relevantCircles = d3.selectAll(".map-circle")
-												.filter(function (d) {
-													var circleState = d["location_info"]["state"];
-													// Check this condition 
-													circleState = circleState == "District of Columbia" ? "Maryland" : circleState 
-													return circleState == stateName; 
-												}); 
-
-						relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
-						*/  
 					})
 					.on("click", function (d) {
 						// Get the selected SVG element 
@@ -772,37 +806,16 @@
 					.attr("cy", function (d) { return yScale(d["admissions_info"]["acceptance_rate"]); })
 					.style("fill", CLUSTER_PINK)
 					.style("stroke", CLUSTER_PINK)
-					.on("mouseover", function(d){
-					//highlight circles in same cluster **AA**
-					var cId = d["id"]; 
-					var skools=[];
-					var aCircles = svg.selectAll(".cluster-circle").filter(function (f) {if (f["clusterId"] == cId){skools.push(f["school"]);return true;}else{return false;} });
-					aCircles.transition().attr("r", clusterCircleExpanded).style("fill", "white");
-					//aCircles.moveToFront();
-					console.log(skools);
-					skools.forEach( function(s){
-				    var mElements = d3.selectAll(".map-circle").filter(function (d) {return d["school"] == s; }); 
-                    // Reset and move to back 
-				    mElements.transition().attr("r", largeCircleR); 
-				    mElements.moveToFront(); });
+					.on("mouseover", function (d){
+
+						clusterMouseOver(d); 
 					
 					})
-					.on("mouseleave",function(d){
-					//highlight circles in same cluster **AA** 
-					var cId = d["id"]; 
-					var skools=[];
-					var aCircles = svg.selectAll(".cluster-circle").filter(function (f) {if (f["clusterId"] == cId){skools.push(f["school"]);return true;}else{return false;} });
-					aCircles.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE);
-					//aCircles.moveToBack();
-					console.log(skools);
-					skools.forEach( function(s){
-				    var mElements = d3.selectAll(".map-circle").filter(function (d) {return d["school"] == s; }); 
-                    // Reset and move to back 
-				    mElements.transition().attr("r", defCircleR); });
-					
-					})
-					
-					; 
+					.on("mouseleave",function (d) {
+
+						clusterMouseLeave(d); 
+
+					}); 
 
 				// Accumulate this info for lines 
 				newClusters.each(function (d) {
@@ -1065,34 +1078,15 @@
 					})
 					.style("fill", CLUSTER_PINK)
 					.style("stroke", CLUSTER_PINK)
-					.style("opacity", 0).on("mouseover", function(d){
-					//highlight circles in same cluster **AA**
-					var cId = d["id"]; 
-					var skools=[];
-					var aCircles = svg.selectAll(".cluster-circle").filter(function (f) {if (f["clusterId"] == cId){skools.push(f["school"]);return true;}else{return false;} });
-					aCircles.transition().attr("r", clusterCircleExpanded).style("fill", "white");
-					//aCircles.moveToFront();
-					console.log(skools);
-					skools.forEach( function(s){
-				    var mElements = d3.selectAll(".map-circle").filter(function (d) {return d["school"] == s; }); 
-                    // Reset and move to back 
-				    mElements.transition().attr("r", largeCircleR); 
-				    mElements.moveToFront(); });
+					.style("opacity", 0).on("mouseover", function (d) {
+
+						clusterMouseOver(d); 
 					
 					})
-					.on("mouseleave",function(d){
-					//highlight circles in same cluster **AA** 
-					var cId = d["id"]; 
-					var skools=[];
-					var aCircles = svg.selectAll(".cluster-circle").filter(function (f) {if (f["clusterId"] == cId){skools.push(f["school"]);return true;}else{return false;} });
-					aCircles.transition().attr("r", clusterCircleSize).style("fill", DARK_PURPLE);
-					//aCircles.moveToBack();
-					console.log(skools);
-					skools.forEach( function(s){
-				    var mElements = d3.selectAll(".map-circle").filter(function (d) {return d["school"] == s; }); 
-                    // Reset and move to back 
-				    mElements.transition().attr("r", defCircleR); });
-					
+					.on("mouseleave",function (d) {
+
+						clusterMouseLeave(d); 
+
 					})
 					
 					;  
