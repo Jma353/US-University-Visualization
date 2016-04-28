@@ -63,7 +63,7 @@
 
 			
 			/* University info name styling */
-			#univName{
+			#univName {
 			    fill: #8d587a;
 				stroke: #6e455f;
 				stroke-width:0.3px;
@@ -73,7 +73,7 @@
 
 
 			/* University info text styling */
-			#univInfo{
+			#univInfo {
 				stroke-width: 0.3px;
 				text-anchor: middle;
 				font-size: 75%;
@@ -128,9 +128,9 @@
 			.cluster-btn {
 				width: 120px; 
 				margin-left: 50px; 
-				margin-top: 20px; 
+				margin-top: 30px; 
 				float: left;
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 				cursor:pointer;
 			}
 
@@ -171,7 +171,7 @@
 			/* Sub-header styling */
 			.title-subheader {
 				font-size: 120%; 
-				margin-top: 0px;
+				margin-top: 20px;
 				margin-left: 50px; 
 			}
 
@@ -189,9 +189,11 @@
 		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- k-means clustering functions we wrote --> 
 		<script type="text/javascript" src="js/kcluster.js?112"></script> 
+		<!-- linear regression functions we wrote --> 
+		<script type="text/javascript" src="js/linreg.js?112"></script> 
 
 		<!-- Title --> 	
-		<div class="title-header"><i>K</i>-Means Clustering of U.S. Universities based on Selected Metrics</div> 
+		<div class="title-header" style="font-size: 30px"><i>K</i>-Means Clustering and Linear Regressions of U.S. Universities and Colleges</div> 
 		<!-- Subtitle --> 
 		<div class="title-subheader">Select 2 parameters to cluster by</div> 
 
@@ -214,7 +216,7 @@
 			 </svg>
 
 			 <!-- Linear regression graphs  --> 
-			 <svg width="1580" height="1000" id="linRegSVG">
+			 <svg width="1580" height="650" id="linRegSVG">
 
 			 </svg> 
 
@@ -853,6 +855,12 @@
 									["admissions_info", "salary_info"]
 								]
 
+				// To refer to linear regression axes  
+				var axes_map = 	{
+									"mean_sat_score" : "SAT Score",
+									"acceptance_rate" : "Acceptance Rate (%)",
+									"mid_career_median_salary" : "Median Mid-Career Salary (Thousands $)"
+								}
 
 
 				// Dimensions for each graph 
@@ -918,29 +926,56 @@
 						return d[yNameSpace][yInfo]; 
 					})).nice(); 
 
-
 					// Add the x and y axis to the view 
+					// x-axis function 
 					lgSVG.append("g")
 						.attr("class", "x axis")
 						.attr("transform", "translate(0," + lgHeight + ")")
 						.style("stroke", DARK_PURPLE)
 						.call(lgXAxis); 
 
+					// y-axis function 
 					lgSVG.append("g")
 						.attr("class", "y axis")
 						.style("stroke", DARK_PURPLE)
 						.call(lgYAxis); 
-
-
 
 					// Modify the graph text styling 
 					lgSVG.selectAll(".axis text")
 						.attr("class", "graph-text"); 
 						xTrack += xOffset
 
+					// Add dots 
+					lgSVG.selectAll(".lingRegDot")
+						.data(uniJSONs).enter()
+					.append("circle")
+						.style("stroke", LIGHT_PURPLE)
+						.style("fill", DARK_PURPLE)
+						.attr("r", 3.5)
+						.attr("cx", function (d) {
+							return lgX(d[xNameSpace][xInfo])
+						})
+						.attr("cy", function (d) {
+							return lgY(d[yNameSpace][yInfo])
+						})
 
+					// Perform linear regression + obtain B1 and B0 coefficients 
+					var linRegResult = linearRegression(uniJSONs, xNameSpace, xInfo, yNameSpace, yInfo); 
+					var B1 = linRegResult[0]; 
+					var B0 = linRegResult[1];  
+
+					// Compute linear regression coefficients 
 
 					// TODO, gen graphs + regression 
+
+
+
+
+
+
+
+
+
 					
 					
 
