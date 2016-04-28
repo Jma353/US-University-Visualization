@@ -545,13 +545,10 @@
 						var state = d["properties"]["name"]
 
 						// Check to see if this state is already in the array 
-						var inArray = false; 
-						selectedStates.forEach(function (e) {
-							inArray = inArray || (state == e); 
-						}); 
+						var ind = selectedStates.indexOf(state); 
 
 						// If this state is not in the array 
-						if (!inArray) {
+						if (ind == -1) {
 							// Add it to the array 
 							selectedStates.push(state); 
 							// Make the fill pink 
@@ -565,6 +562,12 @@
 														return circleState == state; 
 													}); 
 							relevantCircles.style("stroke", LIGHT_PURPLE).style("fill", "white"); 
+						} else {
+							selectedStates.splice(ind, 1); // Remove that state 
+							s.style("fill", LIGHT_PURPLE); 
+							d3.selectAll(".map-circle").filter(function (e) {
+								return e["location_info"]["state"] == state; 
+							}).style("fill", DARK_PURPLE).style("stroke", "white"); 
 						}
 
 
@@ -1227,13 +1230,9 @@
 							var coeff = pointYDiff.toFixed(5) / overallYDiff.toFixed(5); 
 
 							var coeffString = (100*coeff.toFixed(3)).toString().substring(0,4);  
-							return "Percent off Reg. Line: " + coeffString + "%"
+							return "Percent off Regression Line: " + coeffString + "%"
 						})
 						
-
-
-						
-
 
 					})
 					.on("mouseleave", function (d) {
