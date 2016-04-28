@@ -160,7 +160,7 @@
 
 
 			/* Header styling */
-			.title-header {
+			.title-header, .closing-title {
 				font-size: 150%; 
 				margin-left: 50px; 
 				margin-top: 10px; 
@@ -174,6 +174,23 @@
 				font-size: 120%; 
 				margin-top: 20px;
 				margin-left: 50px; 
+			}
+
+			.closing-title {
+				text-align: left;
+			}
+
+			.closing-statement, .last-closing-statement {
+				text-align: left;
+				margin-left: 60px;
+				font-size: 13px;
+				margin-top: 30px; 
+				color: #825A6C;
+				
+			}
+
+			.last-closing-statement {
+				margin-bottom: 200px; 
 			}
 
 
@@ -223,9 +240,62 @@
 		<!-- Title --> 	
 		<div class="title-header" style="font-size: 30px; margin-bottom: 30px; padding-top: 30px;">Linear Regressions of Various University Parameters</div> 
 		<!-- Linear regression graphs  --> 
-		<svg width="1650" height="700" id="linRegSVG"></svg> 
+		<svg width="1650" height="650" id="linRegSVG"></svg> 
 
 	
+
+		<div class="closing-title" style="font-size: 30px; margin-bottom: 30px;">Things we noticed</div> 
+
+		<p class="closing-statement">
+			There exist relatively consistent k-means clustering groupings of universities 
+		</p> 
+
+
+		<p class="closing-statement">
+			Unexpected schools break their way into certain groups one wouldn't expect them to be in 
+		</p> 
+
+
+		<p class="closing-statement">
+			Schools vary in how much they stick to the best-fit line of the paramters they're being judged by 
+		</p> 
+
+
+		<p class="closing-statement">
+			Outlier schools like Harvey Mudd College and Stevens Institute of Technology sometimes overpower </br> 
+			Ivy Leagues and "top schools" in the measured parameters selected.  In a sense, said universities </br> 
+			are "more efficient," because they allow for the promise of a high median career salary off of a </br> 
+			lower SAT score and easier admission
+		</p>
+
+
+		<p class="closing-statement">
+			On the opposite end of the spectrum, certain schools appear to be less efficient, requiring a higher</br> 
+			SAT score or more harsh admission statistics, only to yield a lower median career salary
+		</p> 
+
+
+		<p class="closing-statement">
+			In terms of scaled-% off the regression line, <i><strong>Acceptance Rate (%) vs. SAT Score</strong></i> appeared to have</br> 
+			the "tightest" regression, indicating that many universities from the dataset don't stray from a </br> linear correlation of SAT to acceptance rate
+		</p> 
+
+
+		<p class="last-closing-statement">
+			Clustering and regression allows one to spot outliers in terms of the parameter selected, and enables </br> 
+			the user to discover new universities, or view previously known universities in a new light 
+		</p> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
