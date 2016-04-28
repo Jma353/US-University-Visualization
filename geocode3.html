@@ -1141,9 +1141,13 @@
 						pop.moveToFront(); 
 
 
+					// ADD TEXT TO THE POPOVER 
+
+
+
 					var size = d["school"].split(" ").length; 
 					var yOff = 20; 
-					var yIncr = 15; 
+
 
 					var title = popContainer.append("text")
 						.attr("class", "pop-over")
@@ -1166,14 +1170,73 @@
 						})
 						.text(d["school"]); 
 					title.moveToFront(); 
-			
-
-					
 				
+					// get info to display
+					var xVal = d[xNameSpace][xInfo]; 
+					var yVal = d[yNameSpace][yInfo];; 
+
+					// Present the xParm 
+					var xParm = popContainer.append("text")
+						.attr("class", "pop-over")
+						.attr("x", POWidth/2)
+						.attr("y", yOff*2)
+						.attr("alignment-baselines", "middle")
+						.attr("text-anchor", "middle")
+						.style("fill", DARK_PURPLE)
+						.style("font-size", 8)
+						.text(function () {
+							return TITLE_MAPPINGS[xInfo] + ": " + xVal; 
+						}); 
+
+					// Present the yParm 
+					var yParm = popContainer.append("text")
+						.attr("class", "pop-over")
+						.attr("x", POWidth/2)
+						.attr("y", yOff*3)
+						.attr("alignment-baselines", "middle")
+						.attr("text-anchor", "middle")
+						.style("font-size", 8)
+						.text(function () {
+							return TITLE_MAPPINGS[yInfo] + ": " + yVal; 
+						})
+
+
+					// Percent off the trend line 
+					var percOff = popContainer.append("text")
+						.attr("class", "pop-over")
+						.attr("x", POWidth/2)
+						.attr("y", yOff*4)
+						.attr("alignment-baselines", "middle")
+						.attr("text-anchor", "middle")
+						.style("font-size", 8)
+						.text(function () {
+							// Get raw x + y values 
+							var xValue = d[xNameSpace][xInfo]; 
+							var yValue = d[yNameSpace][yInfo]; 
+
+							// Find the y-value given the raw line parameters 
+							var lineY = B1 * xValue + B0; 
+
+							// Get the overall y-diff 
+							var overallYDiff = Math.abs(yExtent[1] - yExtent[0]); 
+
+							// Get the point - line difference (absolute value)
+							var pointYDiff = Math.abs(yValue-lineY); 
+
+							// Get this coefficient 
+							var coeff = pointYDiff.toFixed(5) / overallYDiff.toFixed(5); 
+
+							var coeffString = (100*coeff.toFixed(3)).toString().substring(0,4);  
+							return "Percent off Reg. Line: " + coeffString + "%"
+						})
+						
 
 
 						
-					}).on("mouseleave", function (d) {
+
+
+					})
+					.on("mouseleave", function (d) {
 						d3.selectAll("g .pop-over").remove(); 	
 					}); 
 

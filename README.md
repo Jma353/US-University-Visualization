@@ -28,3 +28,5 @@
 	moveToFront() and moveToBack() methods from : http://stackoverflow.com/questions/14167863/how-can-i-bring-a-circle-to-the-front-with-d3
 
 	Used for general linear regression info : https://en.wikipedia.org/wiki/Linear_regression
+
+	Sketch software (https://www.sketchapp.com/) for popover SVG generation 
