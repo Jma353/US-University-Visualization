@@ -50,7 +50,7 @@
 			/* US Map styling */
 			#mapSVG, #linRegSVG {
 				margin-left: -200px;
-				margin-top: -20px;
+				margin-top: -5px;
 			}
 			
 
@@ -205,13 +205,13 @@
 		<div class="start-cluster">Cluster</div>
 		<div class="reset-btn" style="margin-left: 20px;">Reset</div>
 
-		<div class="title-subheader" style="clear: both;">Select states whose universities you'd like to cluster</div> 
+		<div class="title-subheader" style="clear: both;">Click on states whose universities you'd like to cluster (Interactive: hover over any circle on map or graph)</div> 
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
 			<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
 	         <svg width="1580" height="647" id="mapSVG"> 
-	         	<text x="650" y="60" id="univName">Interactive: Hover over any circle on map or graph</text>
+	         	<text x="650" y="60" id="univName"></text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
 
@@ -276,7 +276,7 @@
 			var selectedStates = []; 
 
 			// Set the projection, based on the fact that we're using a US map 
-			var projection = d3.geo.albersUsa().scale(1000).translate([width / 2, height / 2]); 
+			var projection = d3.geo.albersUsa().scale(1130).translate([width / 2, height / 2]); 
 
 			// Set the path based on this projection 
 			var path = d3.geo.path().projection(projection); 
@@ -332,8 +332,8 @@
 			var padding = 60; 	
 
 			// Offsets for the clustering graph 
-			var xGraphOffset = 1050; 
-			var yGraphOffset = 100; 
+			var xGraphOffset = 1058; 
+			var yGraphOffset = 30; 
 
 
 
@@ -403,7 +403,7 @@
 
 
 				// Reset top label 
-				d3.select("#univName").text("Interactive: Hover over any circle on map or graph");
+				d3.select("#univName").text("");
 				d3.select("#univInfo").text("");
 
 		 	}
@@ -678,7 +678,7 @@
 
 
 
-						d3.select("#univName").text("Interactive: Hover over any circle on map or graph");
+						d3.select("#univName").text("");
 						d3.select("#univInfo").text("");
                     })
 
@@ -722,7 +722,7 @@
 				clusterSVG.append("text")
 					.attr("class", "y-label")
 					.attr("transform", "rotate(-90)")
-					.attr("y", 0)
+					.attr("y", 25)
 					.attr("x", -clusterHeight/2 - padding)
 					.attr("dy", ".71em")
 					.style("text-anchor", "middle")
