@@ -188,9 +188,9 @@
 		<!-- TopoJSON for the map --> 
 		<script type="text/javascript" src="http://d3js.org/topojson.v0.min.js"></script>
 		<!-- k-means clustering functions we wrote --> 
-		<script type="text/javascript" src="js/kcluster.js?112"></script> 
+		<script type="text/javascript" src="js/kcluster.js?1"></script> 
 		<!-- linear regression functions we wrote --> 
-		<script type="text/javascript" src="js/linreg.js?112"></script> 
+		<script type="text/javascript" src="js/linreg.js?2"></script> 
 
 		<!-- Title --> 	
 		<div class="title-header" style="font-size: 30px"><i>K</i>-Means Clustering and Linear Regressions of U.S. Universities and Colleges</div> 
@@ -917,14 +917,19 @@
 					var xInfo = DATA_MAPPINGS[xNameSpace]; 
 					var yInfo = DATA_MAPPINGS[yNameSpace]; 
 
-					// Set the domains for the scales according to the data values 
-					lgX.domain(d3.extent(uniJSONs, function (d) {
+					// xExtent
+					var xExtent = d3.extent(uniJSONs, function (d) {
 						return d[xNameSpace][xInfo]; 
-					})).nice(); 
+					}); 
 
-					lgY.domain(d3.extent(uniJSONs, function (d) {
+					// yExtent 
+					var yExtent = d3.extent(uniJSONs, function (d) {
 						return d[yNameSpace][yInfo]; 
-					})).nice(); 
+					}); 
+
+					// Set the domains for the scales according to the data values 
+					lgX.domain(xExtent).nice(); 
+					lgY.domain(yExtent).nice(); 
 
 					// Add the x and y axis to the view 
 					// x-axis function 
@@ -959,47 +964,38 @@
 							return lgY(d[yNameSpace][yInfo])
 						})
 
+
 					// Perform linear regression + obtain B1 and B0 coefficients 
-					var linRegResult = linearRegression(uniJSONs, xNameSpace, xInfo, yNameSpace, yInfo); 
+					var linRegResult = linearRegression(uniJSONs, xNameSpace, xInfo, yNameSpace, 
+														yInfo); 
 					var B1 = linRegResult[0]; 
 					var B0 = linRegResult[1];  
 
-					// Compute linear regression coefficients 
+					console.log(B1); 
+					console.log(B0); 
 
-					// TODO, gen graphs + regression 
+					// Get boundary x-values (raw, unscaled)
+					var x1 = xExtent[0]; 
+					var x2 = xExtent[1]; 
 
+					// Perform line computation to get y's (raw, unscaled)
+					var y1 = B1 * x1 + B0; 
+					var y2 = B1 * x2 + B0; 
 
+					// Add the line to the graph + ensure it's in the front 
+					// Ensure scaling of x1, y1, x2, y2 
+					var linRegLine = lgSVG.append("line")	
+											.attr("x1", lgX(x1)).attr("y1", lgY(y1))
+											.attr("x2", lgX(x2)).attr("y2", lgY(y2))
+											.attr("class", "lin-reg-line")
+											.style("opacity", 1)
+											.style("stroke", PINK)
+											.style("stroke-width", 3);
+					linRegLine.moveToFront(); 	
 
-
-
-
-
-
-
-					
 					
 
 				}); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
