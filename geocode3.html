@@ -214,7 +214,7 @@
 			 </svg>
 
 			 <!-- Linear regression graphs  --> 
-			 <svg width="1580" height="647" id="linRegSVG">
+			 <svg width="1580" height="1000" id="linRegSVG">
 
 			 </svg> 
 
@@ -856,9 +856,9 @@
 
 
 				// Dimensions for each graph 
-				var lgWidth = 350; 
-				var lgHeight = 350; 
-				var lgPadding = 40; 
+				var lgWidth = 380; 
+				var lgHeight = 380; 
+				var lgPadding = 60; 
 
 
 				// Axes scales 
@@ -867,14 +867,27 @@
 
 
 				// Axes functions 
-				var lgXAxis = d3.svg.axis().scale(lgX).orient('bottom'); 
-				var lgYAxis = d3.svg.axis().scale(lgY).orient('left'); 
+				var lgXAxis = d3.svg.axis()
+								.scale(lgX)
+								.tickFormat(function (d) {
+									return d > 10000 ? d/1000.0 : d; 
+								})
+								.orient('bottom'); 
+
+				var lgYAxis = d3.svg.axis()
+								.scale(lgY)
+								.tickFormat(function (d) {
+									return d > 10000 ? d/1000.0 : d; 
+								})
+								.orient('left'); 
+
 
 				// The offset of each graph per iteration 
-				var xOffset = 450; 	
+				var xOffset = 450;  	
+
 
 				// The current value of x for the first graph 
-				var xTrack = 100; 
+				var xTrack = 200; 
 
 				// This is where we do our work 
 				pairings.forEach(function (d) {
@@ -884,7 +897,7 @@
 									.append("g")
 										.attr("width", lgWidth+2*lgPadding)
 										.attr("height", lgHeight+2*lgPadding)
-										.attr("x", xTrack)
+										.attr("transform", "translate(" + xTrack + ", 0)")
 									.append("g")
 										.attr("transform", "translate(" + padding + "," + padding + ")");	
 						
@@ -904,6 +917,26 @@
 					lgY.domain(d3.extent(uniJSONs, function (d) {
 						return d[yNameSpace][yInfo]; 
 					})).nice(); 
+
+
+					// Add the x and y axis to the view 
+					lgSVG.append("g")
+						.attr("class", "x axis")
+						.attr("transform", "translate(0," + lgHeight + ")")
+						.style("stroke", DARK_PURPLE)
+						.call(lgXAxis); 
+
+					lgSVG.append("g")
+						.attr("class", "y axis")
+						.style("stroke", DARK_PURPLE)
+						.call(lgYAxis); 
+
+
+
+					// Modify the graph text styling 
+					lgSVG.selectAll(".axis text")
+						.attr("class", "graph-text"); 
+						xTrack += xOffset
 
 
 
