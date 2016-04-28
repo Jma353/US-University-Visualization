@@ -48,7 +48,7 @@
 
 
 			/* US Map styling */
-			.us-map {
+			#mapSVG, #linRegSVG {
 				margin-left: -200px;
 				margin-top: -20px;
 			}
@@ -215,12 +215,15 @@
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
 
-			 <!-- Linear regression graphs  --> 
-			 <svg width="1580" height="650" id="linRegSVG">
-
-			 </svg> 
+			<!-- Title --> 	
+			<div class="title-header" style="font-size: 30px; margin-bottom: 30px;">Linear Regressions of Various University Parameters</div> 
+			<!-- Linear regression graphs  --> 
+			<svg width="1580" height="650" id="linRegSVG"></svg> 
 
 		</div> 
+
+
+
 
 		
 		<!-- Start of JS --> 
@@ -852,9 +855,9 @@
 
 				// Linear regression pairings 
 				var pairings = 	[
-									["score_info", "admissions_info"], 
-									["salary_info", "score_info"],
-									["admissions_info", "salary_info"]
+									["score_info", "admissions_info", "a"], 
+									["salary_info", "score_info", "b"],
+									["admissions_info", "salary_info", "c"]
 								]
 
 				// To refer to linear regression axes  
@@ -916,6 +919,9 @@
 					// Each type of data is namespaced in the uniJSONs array, so obtain these from the array above 
 					var xNameSpace = d[0]; 
 					var yNameSpace = d[1]; 
+
+					// Label for the dot classes 
+					var dotClass = "lin-reg-dot-" + d[2]; 
 
 					// Obtain the names of the actual data values under these namespaces 
 					var xInfo = DATA_MAPPINGS[xNameSpace]; 
@@ -997,6 +1003,7 @@
 					.append("circle")
 						.style("stroke", LIGHT_PURPLE)
 						.style("fill", DARK_PURPLE)
+						.attr("class", dotClass)
 						.attr("r", 3.5)
 						.attr("cx", function (d) {
 							return lgX(d[xNameSpace][xInfo])
@@ -1034,19 +1041,25 @@
 											.style("stroke-width", 3);
 					linRegLine.moveToFront(); 	
 
+					var linRegDots = d3.selectAll("." + dotClass)
+					.on("mouseover", function () {
+						var myDot = d3.select(this); 	
+						console.log(myDot.attr("cx")); 
+					}); 
+
+
+
 
 
 				}); 
+	
 
 
+				
 
 
 
 				/* END OF LINEAR REGRESSION GRAPHS */
-
-
-
-
 
 
 
@@ -1319,21 +1332,6 @@
 				thaLines.moveToBack(); 
 
 			}); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
 
 		
 		</script> 
