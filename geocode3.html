@@ -131,6 +131,7 @@
 				margin-top: 20px; 
 				float: left;
 				margin-bottom: 10px;
+				cursor:pointer;
 			}
 
 			.start-cluster, .reset-btn {
@@ -148,6 +149,7 @@
 				text-align: center; 
 				text-decoration: none; 
 				font-size: 25px; 
+				cursor:pointer;
 			}
 
 			.start-cluster:hover, .reset-btn:hover {
@@ -207,7 +209,7 @@
 
 			<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
 	         <svg width="1580" height="647" id="mapSVG"> 
-	         	<text x="650" y="60" id="univName">Interactive: Hover over circles on map or graph</text>
+	         	<text x="650" y="60" id="univName">Interactive: Hover over any circle on map or graph</text>
 			 	<text x="650" y="80" id="univInfo"></text>
 			 </svg>
 
@@ -396,7 +398,7 @@
 
 
 				// Reset top label 
-				d3.select("#univName").text("Interactive: Hover over circles on map or graph");
+				d3.select("#univName").text("Interactive: Hover over any circle on map or graph");
 				d3.select("#univInfo").text("");
 
 		 	}
@@ -671,7 +673,7 @@
 
 
 
-						d3.select("#univName").text("Interactive: Hover over circles on map or graph");
+						d3.select("#univName").text("Interactive: Hover over any circle on map or graph");
 						d3.select("#univInfo").text("");
                     })
 
