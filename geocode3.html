@@ -350,11 +350,11 @@
 
 
 			// Popover d values 
-			var popOverD = "M0,15.0033286 C0,6.71721901 6.71561686,0 15.0078608,0 L114.992139,0 C123.280752,0 130,6.71386735 130,15.0033286 L130,81.0179743 C130,89.3040839 123.285943,95.7838511 114.998724,95.5378288 C114.998724,95.5378288 83.7876572,94.1943408 77.8436993,96.0213029 C70.2582125,98.3528128 65,116 65,116 C65,116 59.2575686,98.2840499 51.8957995,96.0213029 C45.728124,94.125578 14.9902816,95.5159927 14.9902816,95.5159927 C6.71137767,95.7950678 0,89.3074356 0,81.0179743 L0,15.0033286 Z"; 
+			var popOverD = "M2.84217094e-14,15.0033286 C2.84217094e-14,6.71721901 6.72196489,0 14.9984654,0 L145.001535,0 C153.284958,0 160,6.71386735 160,15.0033286 L160,81.0179743 C160,89.3040839 153.293616,95.8257794 145.008705,95.615906 C145.008705,95.615906 103.12327,94.1943408 95.8076299,96.0213029 C86.4716462,98.3528128 80,116 80,116 C80,116 72.9323922,98.2840499 63.8717532,96.0213029 C56.280768,94.125578 14.998882,95.5969452 14.998882,95.5969452 C6.71522822,95.8313115 2.84217094e-14,89.3074356 2.84217094e-14,81.0179743 L2.84217094e-14,15.0033286 Z"; 
 
 			
 			// Dimensions of the popover 
-			var POWidth = 130; 
+			var POWidth = 160; 
 			var POHeight = 116; 
 
 
@@ -687,7 +687,7 @@
 
 
 
-						d3.select("#univName").text("");
+						d3.select("#univName").text("Interactive: hover over any circle on map or graph");
 						d3.select("#univInfo").text("");
                     })
 
@@ -1121,24 +1121,60 @@
 						// Where to add the popover (above the dot slightly )
 						
 						// Remove all like this currently 
-						d3.selectAll(".pop-over").remove(); 
+						d3.selectAll("g .pop-over").remove(); 
 
 						// Append the SVG element
-						var pop = lgSVGContainer.append("path")
+						var popContainer = lgSVGContainer.append("g")
+											.attr("transform", "translate(" + xTrans + "," + yTrans + ")")
+
+						var pop = popContainer.append("path")
 							.attr("d", popOverD)
 							.attr("class", "pop-over")
 							.attr("stroke", DARK_PURPLE)
 							.attr("fill", "white")
 							.style("opacity", 1.0)
-							.attr("transform", "translate(" + xTrans + "," + yTrans + ")")
+							
 							.on("mouseleave", function (d) {
 								d3.select(this).remove(); 
 							}); 
 						lgSVGContainer.moveToBack(); 
 						pop.moveToFront(); 
+
+
+					var size = d["school"].split(" ").length; 
+					var yOff = 20; 
+					var yIncr = 15; 
+
+					var title = popContainer.append("text")
+						.attr("class", "pop-over")
+						.attr("x", POWidth/2)
+						.attr("y", yOff)
+						.attr("alignment-baselines", "middle")
+						.attr("text-anchor", "middle")
+						.style("fill", DARK_PURPLE)
+						.style("opacity", 1.0)
+						.style("font-size", function () {
+							if (size < 3) {
+								return 10; 
+							} else if (size < 4) {
+								return 9; 
+							} else if (size < 6) {
+								return 8; 
+							} else {
+								return 6; 
+							}
+						})
+						.text(d["school"]); 
+					title.moveToFront(); 
+			
+
+					
+				
+
+
 						
 					}).on("mouseleave", function (d) {
-						d3.selectAll(".pop-over").remove(); 	
+						d3.selectAll("g .pop-over").remove(); 	
 					}); 
 
 
