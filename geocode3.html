@@ -845,6 +845,8 @@
 
 
 
+
+
 				/* LINEAR REGRESSION GRAPHS */ 
 
 
@@ -901,13 +903,15 @@
 				pairings.forEach(function (d) {
 
 					// Set up the SVG 
-					var lgSVG = d3.select("#linRegSVG")
-									.append("g")
-										.attr("width", lgWidth+2*lgPadding)
-										.attr("height", lgHeight+2*lgPadding)
-										.attr("transform", "translate(" + xTrack + ", 0)")
-									.append("g")
+					var lgSVGContainer = d3.select("#linRegSVG")
+											.append("g")
+											.attr("width", lgWidth+2*lgPadding)
+											.attr("height", lgHeight+2*lgPadding)
+											.attr("transform", "translate(" + xTrack + ", 0)")
+
+					var lgSVG = lgSVGContainer.append("g")
 										.attr("transform", "translate(" + padding + "," + padding + ")");	
+
 						
 					// Each type of data is namespaced in the uniJSONs array, so obtain these from the array above 
 					var xNameSpace = d[0]; 
@@ -949,6 +953,43 @@
 					lgSVG.selectAll(".axis text")
 						.attr("class", "graph-text"); 
 						xTrack += xOffset
+
+
+					// Init the title of the graph 
+					lgSVGContainer.append("text")
+							.attr("class", "reg-title")
+							.attr("x", lgWidth/2+lgPadding)
+							.attr("y", lgPadding/2)
+							.attr("alignment-baselines", "middle")
+							.attr("text-anchor", "middle")
+							.style("fill", DARK_PURPLE)
+							.style("font-size", 12)
+							.text(function() {
+								var yTitle = axes_map[yInfo]; 
+								var xTitle = axes_map[xInfo]; 
+								return yTitle + " vs. " + xTitle; 
+							})
+
+
+					// X-Axis Label 
+					lgSVGContainer.append("text")
+						.attr("class", "x-label")
+						.attr("x", lgWidth/2 + lgPadding)
+						.attr("y", lgHeight + lgPadding + lgPadding/2)
+						.style("text-anchor", "middle")
+						.text(axes_map[xInfo]); 
+
+
+					// Y-Axis Label 
+					lgSVGContainer.append("text")
+						.attr("class", "y-label")
+						.attr("transform", "rotate(-90)")
+						.attr("y", 20)
+						.attr("x", -lgHeight/2 - lgPadding)
+						.attr("dy", ".71em")
+						.style("text-anchor", "middle")
+						.text(axes_map[yInfo]); 
+
 
 					// Add dots 
 					lgSVG.selectAll(".lingRegDot")
@@ -993,7 +1034,7 @@
 											.style("stroke-width", 3);
 					linRegLine.moveToFront(); 	
 
-					
+
 
 				}); 
 
@@ -1001,7 +1042,7 @@
 
 
 
-
+				/* END OF LINEAR REGRESSION GRAPHS */
 
 
 
