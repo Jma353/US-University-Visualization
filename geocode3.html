@@ -125,7 +125,7 @@
 
 
 			/* Clustering button layout */ 
-			.cluster-btn {
+			.cluster-btn, .all-state-btn {
 				width: 120px; 
 				margin-left: 50px; 
 				margin-top: 30px; 
@@ -165,6 +165,7 @@
 				margin-left: 50px; 
 				margin-top: 10px; 
 				color: #825A6C;
+				clear: both;
 			}
 
 
@@ -174,6 +175,8 @@
 				margin-top: 20px;
 				margin-left: 50px; 
 			}
+
+
 
 
 		</style> 
@@ -205,22 +208,24 @@
 		<div class="start-cluster">Cluster</div>
 		<div class="reset-btn" style="margin-left: 20px;">Reset</div>
 
-		<div class="title-subheader" style="clear: both;">Click on states whose universities you'd like to cluster</div> 
-		<!-- Where the map goes --> 
-		<div class="us-map">
+		<div class="title-subheader" style="clear: both;">Click on states whose universities you'd like to cluster</div>
 
-			<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
-	         <svg width="1580" height="647" id="mapSVG"> 
-	         	<text x="675" y="55" id="univName">Interactive: hover over any circle on map or graph</text>
-			 	<text x="675" y="75" id="univInfo"></text>
-			 </svg>
 
-			<!-- Title --> 	
-			<div class="title-header" style="font-size: 30px; margin-bottom: 30px;">Linear Regressions of Various University Parameters</div> 
-			<!-- Linear regression graphs  --> 
-			<svg width="1580" height="650" id="linRegSVG"></svg> 
+		<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
+         <svg width="1580" height="647" id="mapSVG"> 
+         	<text x="675" y="55" id="univName">Interactive: hover over any circle on map or graph</text>
+		 	<text x="675" y="75" id="univInfo"></text>
+		 </svg>
 
-		</div> 
+		 <!-- Select all states --> 
+		 <div class="btn all-state-btn" style="width: 200px;">Select All States</div>
+
+		<!-- Title --> 	
+		<div class="title-header" style="font-size: 30px; margin-bottom: 30px; padding-top: 30px;">Linear Regressions of Various University Parameters</div> 
+		<!-- Linear regression graphs  --> 
+		<svg width="1580" height="650" id="linRegSVG"></svg> 
+
+	
 
 
 
@@ -1269,6 +1274,26 @@
 				}, 1000, function() {}); 
 
 			}); 
+
+
+			// Select all states button 
+			$(".all-state-btn").on("click", function (e) {
+				// Add these appropriate states to the array if they are not already there 
+				d3.selectAll(".state").each(function (d) {
+					var stateElmt = d3.select(this); 
+					var ind = selectedStates.indexOf(d["properties"]["name"]); 
+					if (ind == -1) {
+						selectedStates.push(d["properties"]["name"]); 
+					}
+					stateElmt.style("fill", PINK); 
+				}); 	
+
+				// Highlight all map circles 
+				d3.selectAll(".map-circle").style("fill", "white").style("stroke", LIGHT_PURPLE); 
+
+
+			}); 
+
 
 
 			// Clustering parameter selection 
