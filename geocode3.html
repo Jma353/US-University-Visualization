@@ -205,14 +205,14 @@
 		<div class="start-cluster">Cluster</div>
 		<div class="reset-btn" style="margin-left: 20px;">Reset</div>
 
-		<div class="title-subheader" style="clear: both;">Click on states whose universities you'd like to cluster (Interactive: hover over any circle on map or graph)</div> 
+		<div class="title-subheader" style="clear: both;">Click on states whose universities you'd like to cluster</div> 
 		<!-- Where the map goes --> 
 		<div class="us-map">
 
 			<!-- This is the absolute threshold size to disallow scrolling on a regular 13-inch monitor --> 
 	         <svg width="1580" height="647" id="mapSVG"> 
-	         	<text x="650" y="60" id="univName"></text>
-			 	<text x="650" y="80" id="univInfo"></text>
+	         	<text x="675" y="55" id="univName">Interactive: hover over any circle on map or graph</text>
+			 	<text x="675" y="75" id="univInfo"></text>
 			 </svg>
 
 			<!-- Title --> 	
@@ -412,7 +412,7 @@
 
 
 				// Reset top label 
-				d3.select("#univName").text("");
+				d3.select("#univName").text("Interactive: hover over any circle on map or graph");
 				d3.select("#univInfo").text("");
 
 		 	}
