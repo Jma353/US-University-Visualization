@@ -252,8 +252,6 @@
 			// Map guide used: 
 			// https://bl.ocks.org/mbostock/4090848
 
-
-
 			/* ALL THE VARIABLES WE NEED TO TRACK GLOBALLY */
 
 			// Assign dimensions of SVG element 
@@ -262,9 +260,10 @@
 
 			// Colors 
 			var DARK_PURPLE = "#825A6C"; 
-			var LIGHT_PURPLE = "#B58AA5"
-			var PINK = "#E39AB2"
-			var CLUSTER_PINK = "#FF9AB2"
+			var LIGHT_PURPLE = "#B58AA5"; 
+			var PINK = "#E39AB2"; 
+			var CLUSTER_PINK = "#FF9AB2"; 
+			var GRAY = "#E4E4E4"; 
 
 			// Global list of university JSONs 
 			var uniJSONs; 
@@ -347,6 +346,16 @@
 
 			// Line SVG elements 
 			var thaLines; 
+
+
+
+			// Popover d values 
+			var popOverD = "M0,15.0033286 C0,6.71721901 6.71561686,0 15.0078608,0 L114.992139,0 C123.280752,0 130,6.71386735 130,15.0033286 L130,81.0179743 C130,89.3040839 123.285943,95.7838511 114.998724,95.5378288 C114.998724,95.5378288 83.7876572,94.1943408 77.8436993,96.0213029 C70.2582125,98.3528128 65,116 65,116 C65,116 59.2575686,98.2840499 51.8957995,96.0213029 C45.728124,94.125578 14.9902816,95.5159927 14.9902816,95.5159927 C6.71137767,95.7950678 0,89.3074356 0,81.0179743 L0,15.0033286 Z"; 
+
+			
+			// Dimensions of the popover 
+			var POWidth = 130; 
+			var POHeight = 116; 
 
 
 			/* END OF GLOBAL VARIABLE INIT */
@@ -910,10 +919,10 @@
 											.append("g")
 											.attr("width", lgWidth+2*lgPadding)
 											.attr("height", lgHeight+2*lgPadding)
-											.attr("transform", "translate(" + xTrack + ", 0)")
+											.attr("transform", "translate(" + xTrack + ", 60)")
 
 					var lgSVG = lgSVGContainer.append("g")
-										.attr("transform", "translate(" + padding + "," + padding + ")");	
+										.attr("transform", "translate(" + lgPadding + "," + lgPadding + ")");	
 
 						
 					// Each type of data is namespaced in the uniJSONs array, so obtain these from the array above 
@@ -965,11 +974,11 @@
 					lgSVGContainer.append("text")
 							.attr("class", "reg-title")
 							.attr("x", lgWidth/2+lgPadding)
-							.attr("y", lgPadding/2)
+							.attr("y", 10)
 							.attr("alignment-baselines", "middle")
 							.attr("text-anchor", "middle")
 							.style("fill", DARK_PURPLE)
-							.style("font-size", 12)
+							.style("font-size", 13)
 							.text(function() {
 								var yTitle = axes_map[yInfo]; 
 								var xTitle = axes_map[xInfo]; 
@@ -1004,7 +1013,7 @@
 						.style("stroke", LIGHT_PURPLE)
 						.style("fill", DARK_PURPLE)
 						.attr("class", dotClass)
-						.attr("r", 3.5)
+						.attr("r", 4.5)
 						.attr("cx", function (d) {
 							return lgX(d[xNameSpace][xInfo])
 						})
@@ -1018,9 +1027,6 @@
 														yInfo); 
 					var B1 = linRegResult[0]; 
 					var B0 = linRegResult[1];  
-
-					console.log(B1); 
-					console.log(B0); 
 
 					// Get boundary x-values (raw, unscaled)
 					var x1 = xExtent[0]; 
@@ -1041,25 +1047,112 @@
 											.style("stroke-width", 3);
 					linRegLine.moveToFront(); 	
 
+					// AESTHETIC CHANGES + INTERACTION 
+
+					// Grab all the coefficients 
+					coefficients = []; 
+					d3.selectAll("." + dotClass).each(function (d) {
+						// Get raw x + y values 
+						var xValue = d[xNameSpace][xInfo]; 
+						var yValue = d[yNameSpace][yInfo]; 
+
+						// Find the y-value given the raw line parameters 
+						var lineY = B1 * xValue + B0; 
+
+						// Get the overall y-diff 
+						var overallYDiff = Math.abs(yExtent[1] - yExtent[0]); 
+
+						// Get the point - line difference (absolute value)
+						var pointYDiff = Math.abs(yValue-lineY); 
+					
+						var coeff = pointYDiff.toFixed(5) / overallYDiff.toFixed(5); 
+							
+						coefficients.push(coeff); 
+						
+					}); 
+
+
+					// Compute the max coefficient 
+					var maxCoeff = d3.max(coefficients);
+
+
+					// Opacity mods + mouseover interaction 
 					var linRegDots = d3.selectAll("." + dotClass)
-					.on("mouseover", function () {
+					.attr("opacity", function (d) {
+
+						// Get raw x + y values 
+						var xValue = d[xNameSpace][xInfo]; 
+						var yValue = d[yNameSpace][yInfo]; 
+
+						// Find the y-value given the raw line parameters 
+						var lineY = B1 * xValue + B0; 
+
+						// Get the overall y-diff 
+						var overallYDiff = Math.abs(yExtent[1] - yExtent[0]); 
+
+						// Get the point - line difference (absolute value)
+						var pointYDiff = Math.abs(yValue-lineY); 
+
+						// Get this coefficient 
+						var coeff = pointYDiff.toFixed(5) / overallYDiff.toFixed(5); 
+						
+						// compute the proper opacity, given the relative maxiumum  
+						if (coeff < maxCoeff * 0.25) {
+							return 0.25;
+						} else if (coeff < maxCoeff * 0.5) {
+							return 0.5; 
+						} else if (coeff < maxCoeff * 0.75) {
+							return 0.75; 
+						} else {
+							return 1.0; 
+						}
+
+					})
+					.on("mouseover", function (d) {
+
 						var myDot = d3.select(this); 	
-						console.log(myDot.attr("cx")); 
+
+						var cx = parseFloat(myDot.attr("cx")); 
+						var cy= parseFloat(myDot.attr("cy")); 
+
+						var xTrans =  cx + lgPadding - POWidth/2; 
+						var yTrans = cy + lgPadding - POHeight - 7; 
+	
+						// Where to add the popover (above the dot slightly )
+						
+						// Remove all like this currently 
+						d3.selectAll(".pop-over").remove(); 
+
+						// Append the SVG element
+						var pop = lgSVGContainer.append("path")
+							.attr("d", popOverD)
+							.attr("class", "pop-over")
+							.attr("stroke", DARK_PURPLE)
+							.attr("fill", "white")
+							.style("opacity", 1.0)
+							.attr("transform", "translate(" + xTrans + "," + yTrans + ")")
+							.on("mouseleave", function (d) {
+								d3.select(this).remove(); 
+							}); 
+						lgSVGContainer.moveToBack(); 
+						pop.moveToFront(); 
+						
+					}).on("mouseleave", function (d) {
+						d3.selectAll(".pop-over").remove(); 	
 					}); 
 
 
 
 
-
 				}); 
-	
-
-
-				
-
 
 
 				/* END OF LINEAR REGRESSION GRAPHS */
+
+
+
+
+
 
 
 
