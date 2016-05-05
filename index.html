@@ -1,4 +1,5 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<meta charset="utf-8">
 <html>
 	<head>
 		<style>
@@ -125,7 +126,7 @@
 
 
 			/* Clustering button layout */ 
-			.cluster-btn, .all-state-btn {
+			.cluster-btn {
 				width: 120px; 
 				margin-left: 50px; 
 				margin-top: 30px; 
@@ -134,25 +135,26 @@
 				cursor:pointer;
 			}
 
-			.start-cluster, .reset-btn {
+			.start-cluster, .reset-btn, .all-state-btn {
 				-webkit-border-radius: 10;
 				-moz-border-radius: 10;
 				border-radius: 10px;
 				border-color: #B58AA5; 
 				border: 1px solid; 
-				width: 120px; 
+				width: 60px; 
 				padding: 7px 17px 7px 17px;
-				margin-left: 150px; 
-				margin-top: 20px; 
+				margin-left: 75px; 
+				margin-top: 30px; 
 				float: left; 
 				color: #B58AA5;
 				text-align: center; 
 				text-decoration: none; 
 				font-size: 25px; 
-				cursor:pointer;
+				cursor: pointer;
+				font-size: 16px
 			}
 
-			.start-cluster:hover, .reset-btn:hover {
+			.start-cluster:hover, .reset-btn:hover, .all-state-btn:hover {
 				color: #825A6C;
 				text-decoration: none;
 			}
@@ -202,7 +204,7 @@
 	<body>
 		
 	    <!-- D3 --> 
-		<script type="text/javascript" src="d3/d3.min.js"></script> 
+		<script src="js/d3/d3.min.js"></script> 
 		<!-- jQuery for some animations and UI stuff --> 
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<!-- TopoJSON for the map --> 
@@ -222,8 +224,14 @@
 		<div class="btn cluster-btn admin" style="width: 150px;" data="admissions_info">Admissions Rate</div> 
 		<div class="btn cluster-btn sat" data="score_info">SAT Score</div> 
 		<div class="btn cluster-btn salary" style="width: 300px;" data="salary_info">Median Mid-Career Salary</div> 
+
+
 		<div class="start-cluster">Cluster</div>
 		<div class="reset-btn" style="margin-left: 20px;">Reset</div>
+		<div class="all-state-btn" style="margin-left: 20px; width:120px;">Select All States</div>
+
+
+
 
 		<div class="title-subheader" style="clear: both;">Click on states whose universities you'd like to cluster</div>
 
@@ -234,8 +242,6 @@
 		 	<text x="675" y="75" id="univInfo"></text>
 		 </svg>
 
-		 <!-- Select all states --> 
-		 <div class="btn all-state-btn" style="width: 200px;">Select All States</div>
 
 		<!-- Title --> 	
 		<div class="title-header" style="font-size: 30px; margin-bottom: 30px; padding-top: 30px;">Linear Regressions of Various University Parameters</div> 
@@ -287,13 +293,9 @@
 		</p> 
 
 
-
-
-
-
-
-
-
+		<p class="closing-statement">
+			By Joseph Antonakakis and Jane Stets 
+		</p>
 
 
 
@@ -577,7 +579,7 @@
 
 
 			// load the map JSON 
-			d3.json("us-states.json", function(error, json) {
+			d3.json("js/us-states.json", function(error, json) {
 
 				if (error) throw error; 
 
@@ -681,8 +683,7 @@
 
 
 			// load the universities 
-			d3.json('UNIVERSITIES.json', function(error, data) {
-					
+			d3.json('js/UNIVERSITIES.json', function(error, data) {
 				// Mapping inspiration taken from 
 				// http://chimera.labs.oreilly.com/books/1230000000345/ch12.html#_adding_points
 
